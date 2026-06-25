@@ -2,46 +2,101 @@
 import { useEffect, useRef, useState } from "react"
 import gsap from "gsap"
 
-export default function LoadingScreen() {
-  const topRef = useRef<HTMLDivElement>(null)
-  const botRef = useRef<HTMLDivElement>(null)
-  const lettersRef = useRef<HTMLDivElement>(null)
-  const lineRef = useRef<HTMLSpanElement>(null)
-  const counterRef = useRef<HTMLSpanElement>(null)
+const DOTS = [
+  { x: 20, y: 25 }, { x: 75, y: 15 }, { x: 85, y: 60 },
+  { x: 50, y: 80 }, { x: 15, y: 70 }, { x: 60, y: 40 },
+]
+const LINES = [
+  [0,1],[1,2],[2,3],[3,4],[4,0],[0,5],[5,2],[5,3],
+]
+
+export default function LoadingScreen({ onDone }: { onDone?: () => void }) {
+  const wrap = useRef<HTMLDivElement>(null)
+  const dotsRef = useRef<(HTMLDivElement | null)[]>([])
+  const svgRef = useRef<SVGSVGElement>(null)
+  const versaRef = useRef<HTMLDivElement>(null)
+  const subtitleRef = useRef<HTMLDivElement>(null)
+  const lineUnderRef = useRef<HTMLDivElement>(null)
   const [gone, setGone] = useState(false)
 
   useEffect(() => {
+    if (typeof sessionStorage !== "undefined" && sessionStorage.getItem("intro-done")) {
+      setGone(true); onDone?.(); return
+    }
     const ctx = gsap.context(() => {
-      const tl = gsap.timeline({ onComplete: () => setGone(true) })
-      const letters = lettersRef.current?.querySelectorAll(".ch")
-
-      gsap.set(letters ?? [], { opacity: 0, y: 20 })
-      gsap.set(lineRef.current, { width: 0 })
-
-      tl.to(letters ?? [], { opacity: 1, y: 0, stagger: 0.1, duration: 0.4, ease: "power3.out" })
-        .to(lineRef.current, { width: "100%", duration: 0.7, ease: "power2.out" }, "-=0.2")
-        .to(counterRef.current, { innerText: 100, snap: { innerText: 1 }, duration: 1.2, ease: "power2.inOut" }, "-=0.7")
-        .to([topRef.current, botRef.current], { duration: 0.01 })
-        .to(topRef.current, { y: "-100%", duration: 0.75, ease: "power4.inOut" })
-        .to(botRef.current, { y: "100%", duration: 0.75, ease: "power4.inOut" }, "<")
+      const tl = gsap.timeline({
+        onComplete: () => {
+          sessionStorage.setItem("intro-done", "1")
+          setGone(true); onDone?.()
+        }
+      })
+      // Phase 1: dots appear
+      dotsRef.current.forEach((d, i) => {
+        if (d) tl.to(d, { scale: 1, opacity: 1, duration: 0.18, ease: "back.out(2)" }, 0.1 * i)
+      })
+      // Phase 2: lines draw
+      const lines = svgRef.current?.querySelectorAll("line")
+      lines?.forEach((l, i) => {
+        tl.to(l, { strokeDashoffset: 0, opacity: 1, duration: 0.25, ease: "power2.out" }, 0.6 + i * 0.1)
+      })
+      // Phase 3: VERSA assembles
+      tl.to(versaRef.current, { opacity: 1, letterSpacing: "0.05em", duration: 0.6, ease: "power3.out" }, 1.5)
+      // Phase 4: subtitle + underline
+      tl.to(subtitleRef.current, { opacity: 1, duration: 0.4, ease: "power2.out" }, 2.2)
+      tl.to(lineUnderRef.current, { width: "100%", duration: 0.5, ease: "power2.out" }, 2.4)
+      // Phase 5: explode & exit
+      tl.to([dotsRef.current, svgRef.current], { scale: 2.5, opacity: 0, duration: 0.4, ease: "power2.in", stagger: 0.03 }, 3.2)
+      tl.to(wrap.current, { opacity: 0, duration: 0.4, ease: "power2.in" }, 3.5)
     })
     return () => ctx.revert()
-  }, [])
+  }, [onDone])
 
   if (gone) return null
 
   return (
-    <div className="fixed inset-0 z-[9999] pointer-events-none">
-      <div ref={topRef} className="absolute inset-x-0 top-0 h-1/2 bg-[#080E08] flex items-end justify-center pb-8">
-        <div className="text-center">
-          <div ref={lettersRef} className="flex items-center justify-center gap-0" style={{ fontSize: "clamp(60px, 12vw, 110px)", fontFamily: "var(--font-playfair)", fontWeight: 300, letterSpacing: "0.05em", color: "#fff" }}>
-            {"VERSA".split("").map((ch, i) => <span key={i} className="ch inline-block">{ch}</span>)}
-          </div>
-          <span ref={lineRef} className="block h-px bg-[#C9A84C] mt-2" style={{ width: 0 }} />
+    <div ref={wrap} className="fixed inset-0 z-[9999] bg-[#080E08] flex items-center justify-center overflow-hidden">
+      {/* Particle field */}
+      {Array.from({ length: 40 }).map((_, i) => (
+        <div key={i} className="absolute w-0.5 h-0.5 rounded-full bg-[#C9A84C]"
+          style={{ left: `${Math.random() * 100}%`, top: `${Math.random() * 100}%`, opacity: Math.random() * 0.3 + 0.05,
+            animation: `float ${3 + Math.random() * 4}s ease-in-out ${Math.random() * 3}s infinite` }} />
+      ))}
+
+      {/* Constellation SVG */}
+      <svg ref={svgRef} className="absolute inset-0 w-full h-full" style={{ zIndex: 1 }}>
+        {LINES.map(([a, b], i) => {
+          const x1 = `${DOTS[a].x}%`, y1 = `${DOTS[a].y}%`
+          const x2 = `${DOTS[b].x}%`, y2 = `${DOTS[b].y}%`
+          return (
+            <line key={i} x1={x1} y1={y1} x2={x2} y2={y2}
+              stroke="#C9A84C" strokeWidth="1" opacity="0"
+              strokeDasharray="300" strokeDashoffset="300"
+              style={{ filter: "drop-shadow(0 0 4px #C9A84C)" }} />
+          )
+        })}
+      </svg>
+
+      {/* Dots */}
+      {DOTS.map((d, i) => (
+        <div key={i} ref={el => { dotsRef.current[i] = el }}
+          className="absolute w-2 h-2 rounded-full bg-[#C9A84C]"
+          style={{ left: `${d.x}%`, top: `${d.y}%`, transform: "scale(0)", opacity: 0, zIndex: 2,
+            boxShadow: "0 0 8px #C9A84C, 0 0 20px rgba(201,168,76,.5)",
+            animation: `pulseGlow 2s ease-in-out ${i * 0.3}s infinite` }} />
+      ))}
+
+      {/* Center text */}
+      <div className="relative z-10 text-center">
+        <div ref={versaRef} className="font-playfair font-bold text-white"
+          style={{ fontSize: "clamp(64px,12vw,130px)", opacity: 0, letterSpacing: "0.8em",
+            textShadow: "0 0 40px rgba(201,168,76,.4)" }}>
+          VERSA
         </div>
-      </div>
-      <div ref={botRef} className="absolute inset-x-0 bottom-0 h-1/2 bg-[#080E08] flex items-start justify-end pr-8 pt-4">
-        <span ref={counterRef} className="font-mono text-[#C9A84C] tabular-nums" style={{ fontSize: 13 }}>0</span>
+        <div ref={subtitleRef} className="font-inter text-[#C9A84C] mt-1 opacity-0"
+          style={{ fontSize: 13, letterSpacing: "0.4em" }}>
+          GROWTH VENTURES
+        </div>
+        <div ref={lineUnderRef} className="h-px bg-[#C9A84C] mt-3 mx-auto" style={{ width: 0 }} />
       </div>
     </div>
   )

@@ -1,54 +1,38 @@
-import Link from "next/link"
+"use client"
 import { siteConfig, ventures } from "@/lib/data"
 
 export default function Footer() {
   return (
-    <footer className="bg-[#060E07] border-t border-[#4A7C59]/20 py-16 px-6">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-          <div className="md:col-span-2">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#4A7C59] to-[#8FBC5A] flex items-center justify-center">
-                <span className="text-white font-bold">V</span>
-              </div>
-              <span className="font-playfair text-white text-xl font-semibold">
-                Versa Growth Ventures
-              </span>
-            </div>
-            <p className="text-[#A8B89A] text-sm leading-relaxed max-w-sm">
-              A diversified growth ecosystem spanning education, technology, trading, exports, digital marketing, and AI innovation.
-            </p>
-          </div>
-
+    <footer className="bg-[#050A05] pt-20 pb-10">
+      <div className="max-w-6xl mx-auto px-6 md:px-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           <div>
-            <h4 className="text-[#8FBC5A] font-semibold mb-4 text-sm tracking-wider uppercase">Our Ventures</h4>
-            <div className="flex flex-col gap-2">
-              {ventures.filter(v => !v.comingSoon).map((v) => (
-                <a key={v.id} href={v.url} className="text-[#A8B89A] hover:text-white transition-colors text-sm">
-                  {v.name}
-                </a>
+            <p className="font-playfair font-bold text-xl text-white mb-3">VERSA<span className="inline-block w-1.5 h-1.5 rounded-full bg-[#C9A84C] ml-1 align-middle" /></p>
+            <p className="text-[#5A6B5C] text-sm font-inter leading-relaxed">Six ventures. One vision. Building Kerala&apos;s most diversified growth ecosystem.</p>
+          </div>
+          <div>
+            <p className="label text-[#C9A84C] mb-4">Ventures</p>
+            <ul className="space-y-2">
+              {ventures.map(v => (
+                <li key={v.id}>
+                  {v.url ? <a href={v.url} target="_blank" rel="noopener noreferrer" className="text-sm text-[#5A6B5C] hover:text-white transition-colors font-inter">{v.name}</a>
+                  : <span className="text-sm text-[#5A6B5C]/50 font-inter">{v.name} <span className="text-[10px] border border-[#5A6B5C]/30 px-1 py-0.5 rounded">Soon</span></span>}
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
-
           <div>
-            <h4 className="text-[#8FBC5A] font-semibold mb-4 text-sm tracking-wider uppercase">Contact</h4>
-            <div className="flex flex-col gap-2 text-[#A8B89A] text-sm">
-              <span>{siteConfig.phone}</span>
-              <span>{siteConfig.email}</span>
-              <span>{siteConfig.address}</span>
-            </div>
+            <p className="label text-[#C9A84C] mb-4">Contact</p>
+            <ul className="space-y-2 text-sm text-[#5A6B5C] font-inter">
+              <li>{siteConfig.phone}</li>
+              <li>{siteConfig.email}</li>
+              <li>{siteConfig.location}</li>
+            </ul>
           </div>
         </div>
-
-        <div className="border-t border-[#4A7C59]/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-[#A8B89A] text-sm">
-            &copy; {new Date().getFullYear()} Versa Growth Ventures. All rights reserved.
-          </p>
-          <p className="text-[#A8B89A] text-sm">
-            Built by{" "}
-            <span className="text-[#8FBC5A]">Loopgen Technologies</span>
-          </p>
+        <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between gap-2">
+          <p className="text-xs text-white/25 font-inter">© {new Date().getFullYear()} Versa Growth Ventures</p>
+          <p className="text-xs text-white/25 font-inter">Crafted by Loopgen Technologies</p>
         </div>
       </div>
     </footer>
