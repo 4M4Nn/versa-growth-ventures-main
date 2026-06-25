@@ -14,6 +14,6 @@ export async function saveLead(data: {
   source_website: string
   message?: string
 }) {
-  const { error } = await supabase.from('leads').insert([data])
+  const { error } = await supabase.from('versa_leads').insert([data])
   if (error) console.error('Lead save error:', error)
 }
