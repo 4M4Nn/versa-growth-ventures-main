@@ -1,38 +1,38 @@
-"use client"
-import { siteConfig, ventures } from "@/lib/data"
+import Link from "next/link"
+import { WA_URL, PHONE, EMAIL, ADDRESS } from "@/lib/data"
 
 export default function Footer() {
   return (
-    <footer className="bg-[#050A05] pt-20 pb-10">
-      <div className="max-w-6xl mx-auto px-6 md:px-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+    <footer className="bg-[#050A05] border-t border-[#C9A84C]/10 pt-16 pb-8">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
           <div>
-            <p className="font-playfair font-bold text-xl text-white mb-3">VERSA<span className="inline-block w-1.5 h-1.5 rounded-full bg-[#C9A84C] ml-1 align-middle" /></p>
-            <p className="text-[#5A6B5C] text-sm font-inter leading-relaxed">Six ventures. One vision. Building Kerala&apos;s most diversified growth ecosystem.</p>
+            <p className="font-playfair text-2xl text-[#C9A84C] tracking-widest mb-4">VERSA</p>
+            <p className="text-[#A8B89A] text-sm leading-relaxed">Five Ventures. One Vision. Infinite Growth.</p>
+            <p className="text-[#A8B89A] text-sm mt-3">{ADDRESS}</p>
           </div>
           <div>
-            <p className="label text-[#C9A84C] mb-4">Ventures</p>
-            <ul className="space-y-2">
-              {ventures.map(v => (
-                <li key={v.id}>
-                  {v.url ? <a href={v.url} target="_blank" rel="noopener noreferrer" className="text-sm text-[#5A6B5C] hover:text-white transition-colors font-inter">{v.name}</a>
-                  : <span className="text-sm text-[#5A6B5C]/50 font-inter">{v.name} <span className="text-[10px] border border-[#5A6B5C]/30 px-1 py-0.5 rounded">Soon</span></span>}
-                </li>
-              ))}
-            </ul>
+            <p className="text-[#C9A84C] text-xs tracking-widest uppercase mb-4">Ventures</p>
+            {[["IPB Kochi","https://versa-ipb-kochi-future-optima-s-projects.vercel.app"],["Versa Digital","https://versa-digital-marketing-future-optima-s-projects.vercel.app"],["Versa Global","https://versa-global-education-future-optima-s-projects.vercel.app"],["Versa Finance","#"],["Versa Exports","#"]].map(([n,h]) => (
+              <a key={n} href={h} className="block text-[#A8B89A] text-sm mb-2 hover:text-[#C9A84C] transition-colors">{n}</a>
+            ))}
           </div>
           <div>
-            <p className="label text-[#C9A84C] mb-4">Contact</p>
-            <ul className="space-y-2 text-sm text-[#5A6B5C] font-inter">
-              <li>{siteConfig.phone}</li>
-              <li>{siteConfig.email}</li>
-              <li>{siteConfig.location}</li>
-            </ul>
+            <p className="text-[#C9A84C] text-xs tracking-widest uppercase mb-4">Company</p>
+            {[["About","/about"],["Ventures","/ventures"],["Blog","/blog"],["Contact","/contact"]].map(([n,h]) => (
+              <Link key={n} href={h} className="block text-[#A8B89A] text-sm mb-2 hover:text-[#C9A84C] transition-colors">{n}</Link>
+            ))}
+          </div>
+          <div>
+            <p className="text-[#C9A84C] text-xs tracking-widest uppercase mb-4">Contact</p>
+            <a href={`tel:${PHONE}`} className="block text-[#A8B89A] text-sm mb-2 hover:text-[#C9A84C]">{PHONE}</a>
+            <a href={`mailto:${EMAIL}`} className="block text-[#A8B89A] text-sm mb-2 hover:text-[#C9A84C]">{EMAIL}</a>
+            <a href={WA_URL} target="_blank" rel="noopener noreferrer" className="block text-[#A8B89A] text-sm hover:text-[#C9A84C]">WhatsApp Us</a>
           </div>
         </div>
-        <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between gap-2">
-          <p className="text-xs text-white/25 font-inter">© {new Date().getFullYear()} Versa Growth Ventures</p>
-          <p className="text-xs text-white/25 font-inter">Crafted by Loopgen Technologies</p>
+        <div className="border-t border-[#C9A84C]/10 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="text-[#A8B89A] text-xs">© {new Date().getFullYear()} Versa Growth Ventures. All rights reserved.</p>
+          <p className="text-[#A8B89A] text-xs">Built by Versa Digital</p>
         </div>
       </div>
     </footer>
