@@ -3,10 +3,13 @@ export interface Venture {
   name: string
   tagline: string
   description: string
+  metric: string
+  metricLabel: string
   image: string
-  href: string
+  url: string
   color: string
-  badge?: string
+  features: string[]
+  status: "live" | "coming-soon"
 }
 
 export interface Founder {
@@ -15,47 +18,65 @@ export interface Founder {
   monogram: string
   color: string
   bio: string
+  expertise: string[]
 }
 
 export interface Testimonial {
   name: string
   role: string
   location: string
+  venture: string
   quote: string
   rating: number
+  image: string
 }
 
 export interface BlogPost {
   slug: string
   title: string
+  category: string
+  author: string
   date: string
+  readTime: string
   excerpt: string
   image: string
-  category: string
+  body: string
 }
 
 export interface Stat {
   value: number
   suffix: string
   label: string
-}
-
-export interface TrustBadge {
   icon: string
-  title: string
-  description: string
 }
 
 export interface FAQItem {
   question: string
   answer: string
+  category: string
 }
 
 export interface Scheme {
-  icon: string
-  title: string
-  venture: string
+  id: string
+  name: string
+  badge: string
+  price: string
   description: string
-  eligibility: string
+  includes: string[]
+  terms: string
   cta: string
+  highlight: boolean
+  color: string
+}
+
+export interface Milestone {
+  year: string
+  title: string
+  description: string
+}
+
+export interface Industry {
+  name: string
+  icon: string
+  description: string
 }

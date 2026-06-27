@@ -8,7 +8,7 @@ export async function saveLead(data: Record<string, string>) {
   if (error) throw error
 }
 
-export function openWhatsApp(message = "Hello, I would like to know more about Versa Growth Ventures.") {
-  const number = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "917907215816"
-  window.open(`https://wa.me/${number}?text=${encodeURIComponent(message)}`, "_blank")
+export function openWhatsApp(message = "Hello, I want to know more about Versa Growth Ventures.") {
+  const n = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "917907215816"
+  window.open(`https://wa.me/${n}?text=${encodeURIComponent(message)}`, "_blank")
 }

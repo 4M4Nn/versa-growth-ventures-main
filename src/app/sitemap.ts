@@ -1,11 +1,10 @@
 import type { MetadataRoute } from "next"
-import { BLOG_POSTS, SITE } from "@/lib/data"
+import { BLOG_POSTS } from "@/lib/data"
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = SITE.url
-
-  const staticPages = ["/", "/about", "/ventures", "/blog", "/contact"].map((path) => ({
-    url: `${base}${path}`,
+  const base = "https://versagrowthventures.com"
+  const staticPages = ["/", "/about", "/ventures", "/blog", "/schemes", "/faq", "/contact"].map((path) => ({
+    url: base + path,
     lastModified: new Date(),
     changeFrequency: "monthly" as const,
     priority: path === "/" ? 1 : 0.8,

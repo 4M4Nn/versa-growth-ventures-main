@@ -1,44 +1,50 @@
 import type { Metadata } from "next"
 import Image from "next/image"
-import { FOUNDERS, VENTURES, ABOUT, MISSION_VISION, SITE } from "@/lib/data"
-import { CheckCircle2 } from "lucide-react"
+import Link from "next/link"
+import { ArrowRight, Target, Eye, Heart } from "lucide-react"
+import { FOUNDERS, STATS, MILESTONES, SITE } from "@/lib/data"
 
 export const metadata: Metadata = {
-  title: "About — Our Story & Founders",
-  description: "Meet the three founders and five ventures behind Versa Growth Ventures, Kerala's most ambitious diversified business group.",
+  title: "About Us — Kerala's Diversified Business Group",
+  description: "The story of Versa Growth Ventures — three founders, five ventures, one mission to power Kerala's growth.",
 }
 
 export default function AboutPage() {
-  const waUrl = `https://wa.me/91${SITE.phone.replace(/\D/g, "").slice(-10)}`
-
   return (
-    <div className="bg-white">
+    <div className="pt-16 md:pt-20">
       {/* Hero */}
-      <section className="bg-[#F8F9FA] py-20 px-4">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+      <section className="bg-[#0F1F15] text-white py-24 px-4">
+        <div className="max-w-4xl mx-auto text-center">
+          <p className="text-[#C9A84C] text-xs font-semibold tracking-widest uppercase mb-5">Our Story</p>
+          <h1 className="font-playfair text-4xl md:text-6xl font-bold mb-6">
+            Building Kerala&apos;s Most<br />
+            <span className="text-[#C9A84C]">Ambitious Business Group</span>
+          </h1>
+          <p className="text-white/70 text-lg max-w-2xl mx-auto">
+            Versa Growth Ventures was born from a belief that Kerala — with its educated population, entrepreneurial energy, and global diaspora — deserves a business group as ambitious as its people.
+          </p>
+        </div>
+      </section>
+
+      {/* Story */}
+      <section className="py-20 px-4 bg-white">
+        <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <p className="text-[#4A7C59] text-xs font-semibold tracking-widest uppercase mb-4">{ABOUT.eyebrow}</p>
-            <h1 className="font-playfair text-4xl md:text-5xl font-bold text-[#1B2A4A] leading-tight mb-6">
-              {ABOUT.heading}
-            </h1>
-            {ABOUT.paragraphs.map((para, i) => (
-              <p key={i} className="text-[#6B7280] leading-relaxed mb-4">
-                {para}
-              </p>
-            ))}
-            <ul className="space-y-3 mt-6">
-              {ABOUT.checkpoints.map((point) => (
-                <li key={point} className="flex items-center gap-3 text-sm text-[#1B2A4A]">
-                  <CheckCircle2 size={18} className="text-[#4A7C59] shrink-0" />
-                  {point}
-                </li>
-              ))}
-            </ul>
+            <h2 className="font-playfair text-3xl font-bold text-[#1A1A1A] mb-5">The Origin Story</h2>
+            <p className="text-[#6B7280] leading-relaxed mb-4">
+              In 2024, three professionals sat across from each other in Kochi with a shared frustration: Kerala had extraordinary talent but lacked the institutional infrastructure to help that talent thrive. Students struggled to find quality banking education. Families paid 3x for study abroad consultancy than needed. Small businesses had no access to AI-powered marketing. Families were parking savings in FDs while inflation eroded their wealth.
+            </p>
+            <p className="text-[#6B7280] leading-relaxed mb-4">
+              The insight was simple but powerful: these problems were connected. A student who does an IPB banking course might also want to study abroad. A business owner who needs digital marketing also needs financial planning. A family with a student abroad needs NRI investment services. One platform, built right, could serve the whole ecosystem.
+            </p>
+            <p className="text-[#6B7280] leading-relaxed">
+              Versa Growth Ventures was founded on that thesis. Not as a holding company of random businesses, but as a deliberately designed ecosystem where each venture strengthens the others and where the client at the centre benefits from the whole.
+            </p>
           </div>
-          <div className="relative h-80 lg:h-96 rounded-2xl overflow-hidden shadow-xl">
+          <div className="relative h-[450px] rounded-2xl overflow-hidden shadow-xl">
             <Image
-              src={ABOUT.image}
-              alt="Versa Growth Ventures team"
+              src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=700&q=80&auto=format&fit=crop"
+              alt="Versa founding team"
               fill
               className="object-cover"
             />
@@ -46,85 +52,102 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Mission & Vision */}
-      <section className="py-16 px-4">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8">
-          <div className="bg-[#EBF5EE] rounded-2xl p-8">
-            <p className="text-[#4A7C59] text-xs font-semibold tracking-widest uppercase mb-3">
-              {MISSION_VISION.mission.heading}
-            </p>
-            <p className="text-[#1B2A4A] leading-relaxed">{MISSION_VISION.mission.text}</p>
-          </div>
-          <div className="bg-[#FBF5E6] rounded-2xl p-8">
-            <p className="text-[#C9A84C] text-xs font-semibold tracking-widest uppercase mb-3">
-              {MISSION_VISION.vision.heading}
-            </p>
-            <p className="text-[#1B2A4A] leading-relaxed">{MISSION_VISION.vision.text}</p>
-          </div>
+      {/* Stats */}
+      <section className="py-16 px-4 bg-[#F0F7F2]">
+        <div className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6">
+          {STATS.map((s) => (
+            <div key={s.label} className="bg-white rounded-2xl p-6 text-center shadow-sm">
+              <p className="font-playfair text-4xl font-bold text-[#C9A84C]">{s.value.toLocaleString("en-IN")}{s.suffix}</p>
+              <p className="text-[#6B7280] text-sm mt-1">{s.label}</p>
+            </div>
+          ))}
         </div>
       </section>
 
-      {/* Founders */}
-      <section className="py-20 px-4 bg-[#F8F9FA]">
-        <div className="max-w-7xl mx-auto">
+      {/* Mission Vision Values */}
+      <section className="py-20 px-4 bg-white">
+        <div className="max-w-5xl mx-auto">
           <div className="text-center mb-14">
-            <p className="text-[#4A7C59] text-xs font-semibold tracking-widest uppercase mb-3">The Founders</p>
-            <h2 className="font-playfair text-3xl md:text-4xl font-bold text-[#1B2A4A]">Three Builders. One Mission.</h2>
+            <h2 className="font-playfair text-3xl font-bold text-[#1A1A1A]">What Drives Us</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
-            {FOUNDERS.map((founder) => (
-              <div
-                key={founder.name}
-                className="bg-white rounded-2xl p-8 text-center shadow-sm border border-gray-100 hover:shadow-md transition-all"
-              >
-                <div
-                  className="w-24 h-24 rounded-full flex items-center justify-center text-3xl font-bold text-white font-playfair mx-auto mb-5 shadow-lg"
-                  style={{ background: `linear-gradient(135deg, ${founder.color}, ${founder.color}88)` }}
-                >
-                  {founder.monogram}
+            {[
+              {
+                icon: Target,
+                title: "Our Mission",
+                color: "#4A7C59",
+                text: "To build Kerala's most trusted and impactful business group — empowering students, families, and businesses with the education, capital, reach, and tools they need to achieve extraordinary outcomes.",
+              },
+              {
+                icon: Eye,
+                title: "Our Vision",
+                color: "#C9A84C",
+                text: "By 2030, to be recognised as the defining business group of Kerala's growth era — known for ethical practices, measurable client outcomes, and ventures that collectively touch 100,000 lives.",
+              },
+              {
+                icon: Heart,
+                title: "Our Values",
+                color: "#1B2A4A",
+                text: "Transparency in every interaction. Expertise before advice. Long-term thinking over short-term gain. Client outcomes over revenue. Kerala-first, world-class always.",
+              },
+            ].map(({ icon: Icon, title, color, text }) => (
+              <div key={title} className="text-center p-8 bg-[#F8FAF9] rounded-2xl border border-gray-100">
+                <div className="w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-5" style={{ backgroundColor: color + "20" }}>
+                  <Icon size={24} style={{ color }} />
                 </div>
-                <h3 className="font-playfair text-xl font-bold text-[#1B2A4A] mb-1">{founder.name}</h3>
-                <p className="text-xs font-semibold tracking-widest uppercase mb-4" style={{ color: founder.color }}>
-                  {founder.role}
-                </p>
-                <p className="text-[#6B7280] text-sm leading-relaxed">{founder.bio}</p>
+                <h3 className="font-playfair text-xl font-bold text-[#1A1A1A] mb-3">{title}</h3>
+                <p className="text-[#6B7280] text-sm leading-relaxed">{text}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Ventures overview */}
-      <section className="py-16 px-4">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-10">
-            <h2 className="font-playfair text-3xl font-bold text-[#1B2A4A]">The Five Ventures</h2>
+      {/* Founders */}
+      <section className="py-20 px-4 bg-[#0F1F15]">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-14">
+            <p className="text-[#C9A84C] text-xs font-semibold tracking-widest uppercase mb-3">Leadership</p>
+            <h2 className="font-playfair text-3xl font-bold text-white">The Founders</h2>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
-            {VENTURES.map((v) => (
-              <div
-                key={v.id}
-                className="bg-[#F8F9FA] rounded-xl p-5 text-center border border-gray-100 hover:border-[#4A7C59]/30 hover:shadow-sm transition-all"
-              >
-                <div
-                  className="w-2 h-2 rounded-full mx-auto mb-3"
-                  style={{ backgroundColor: v.color }}
-                />
-                <p className="font-playfair text-base font-bold text-[#1B2A4A] mb-1">{v.name}</p>
-                <p className="text-xs text-[#6B7280] mb-3">{v.tagline}</p>
-                {v.href !== "#" ? (
-                  <a
-                    href={v.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-xs font-semibold"
-                    style={{ color: v.color }}
-                  >
-                    Visit →
-                  </a>
-                ) : (
-                  <span className="text-xs text-[#C9A84C]">Coming Soon</span>
-                )}
+          <div className="grid md:grid-cols-3 gap-8">
+            {FOUNDERS.map((f) => (
+              <div key={f.name} className="bg-white/5 border border-white/10 rounded-2xl p-8 hover:border-[#C9A84C]/30 transition-all">
+                <div className="w-20 h-20 rounded-2xl flex items-center justify-center text-2xl font-bold text-white mx-auto mb-5 shadow-lg" style={{ backgroundColor: f.color }}>
+                  {f.monogram}
+                </div>
+                <div className="text-center mb-5">
+                  <h3 className="font-playfair text-lg font-bold text-white mb-1">{f.name}</h3>
+                  <p className="text-[#C9A84C] text-xs font-semibold tracking-wide uppercase">{f.role}</p>
+                </div>
+                <p className="text-white/60 text-sm leading-relaxed mb-5">{f.bio}</p>
+                <div className="flex flex-wrap gap-1.5 justify-center">
+                  {f.expertise.map((e) => (
+                    <span key={e} className="bg-white/10 text-white/70 text-[10px] px-2.5 py-1 rounded-full">{e}</span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Milestones */}
+      <section className="py-20 px-4 bg-[#F0F7F2]">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-14">
+            <h2 className="font-playfair text-3xl font-bold text-[#1A1A1A]">Our Journey</h2>
+          </div>
+          <div className="space-y-6">
+            {MILESTONES.map((m) => (
+              <div key={m.year} className="flex gap-6 bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+                <div className="w-24 shrink-0">
+                  <span className="text-xs font-bold text-[#C9A84C] uppercase tracking-wider">{m.year}</span>
+                </div>
+                <div>
+                  <h3 className="font-playfair font-bold text-[#1A1A1A] mb-1">{m.title}</h3>
+                  <p className="text-[#6B7280] text-sm">{m.description}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -132,19 +155,19 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 px-4 bg-[#4A7C59] text-center">
-        <h2 className="font-playfair text-3xl font-bold text-white mb-4">Grow With Versa</h2>
-        <p className="text-green-100 max-w-xl mx-auto mb-8">
-          Whether you&apos;re a student, business owner, or investor — there is a Versa venture built for you.
-        </p>
-        <a
-          href={waUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block bg-[#C9A84C] text-[#1B2A4A] font-bold px-8 py-4 rounded-lg hover:bg-[#E8C96A] transition-colors"
-        >
-          Book Free Consultation
-        </a>
+      <section className="py-16 px-4 bg-[#4A7C59]">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="font-playfair text-3xl font-bold text-white mb-4">Join the Versa Story</h2>
+          <p className="text-white/80 mb-8">Your growth is our mission. Book a free consultation to find out how Versa can help you.</p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link href="/contact" className="bg-white text-[#4A7C59] font-bold px-8 py-3.5 rounded-xl hover:bg-[#F0F7F2] transition-colors flex items-center gap-2">
+              Book Free Consultation <ArrowRight size={18} />
+            </Link>
+            <a href={`tel:${SITE.phone}`} className="border-2 border-white text-white font-bold px-8 py-3.5 rounded-xl hover:bg-white/10 transition-colors">
+              {SITE.phone}
+            </a>
+          </div>
+        </div>
       </section>
     </div>
   )
