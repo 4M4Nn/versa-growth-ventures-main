@@ -2,29 +2,34 @@ import { FOUNDERS } from "@/lib/data"
 
 export default function FoundersSection() {
   return (
-    <section className="py-24 bg-[#050A05]">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <p className="text-[#C9A84C] text-xs tracking-[0.4em] uppercase mb-4">THE BUILDERS</p>
-          <h2 className="font-playfair text-4xl md:text-5xl text-[#F0EDE6] mb-4">Our Founders</h2>
-          <p className="text-[#A8B89A] max-w-xl mx-auto">Three founders. Three disciplines. One shared mission — to build Kerala&apos;s most impactful business group.</p>
+    <section id="about" className="py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="text-center mb-14">
+          <p className="text-[#4A7C59] text-xs font-semibold tracking-widest uppercase mb-3">The Team</p>
+          <h2 className="font-playfair text-3xl md:text-4xl font-bold text-[#1B2A4A]">Three Founders. One Mission.</h2>
+          <p className="text-[#6B7280] mt-4 max-w-xl mx-auto">
+            Versa Growth Ventures was built by three passionate entrepreneurs who believe Kerala deserves world-class business services.
+          </p>
         </div>
+
         <div className="grid md:grid-cols-3 gap-8">
-          {FOUNDERS.map((f) => (
-            <div key={f.name} className="glass-card rounded-2xl p-8 flex flex-col gap-6 hover:border-[#C9A84C]/30 transition-all duration-500 border border-transparent">
-              <div className="flex items-center gap-4">
-                <div className="w-16 h-16 rounded-full flex items-center justify-center text-xl font-bold text-white font-playfair flex-shrink-0" style={{ background: `linear-gradient(135deg, ${f.color}, ${f.color}88)` }}>
-                  {f.monogram}
-                </div>
-                <div>
-                  <p className="font-playfair text-xl font-bold text-[#F0EDE6]">{f.name}</p>
-                  <p className="text-xs tracking-widest uppercase mt-1" style={{ color: f.color }}>{f.role}</p>
-                </div>
+          {FOUNDERS.map((founder) => (
+            <div
+              key={founder.name}
+              className="group bg-[#F8F9FA] rounded-2xl p-8 text-center border border-gray-100 hover:border-[#4A7C59]/30 hover:shadow-md transition-all"
+            >
+              {/* Monogram avatar */}
+              <div
+                className="w-20 h-20 rounded-full flex items-center justify-center text-2xl font-bold text-white font-playfair mx-auto mb-5 shadow-md"
+                style={{ background: `linear-gradient(135deg, ${founder.color}, ${founder.color}bb)` }}
+              >
+                {founder.monogram}
               </div>
-              <p className="text-[#A8B89A] text-sm leading-relaxed">{f.bio}</p>
-              <blockquote className="border-l-2 pl-4 italic text-sm text-[#C9A84C]" style={{ borderColor: f.color }}>
-                &ldquo;{f.quote}&rdquo;
-              </blockquote>
+              <h3 className="font-playfair text-xl font-bold text-[#1B2A4A] mb-1">{founder.name}</h3>
+              <p className="text-xs font-semibold tracking-widest uppercase mb-4" style={{ color: founder.color }}>
+                {founder.role}
+              </p>
+              <p className="text-[#6B7280] text-sm leading-relaxed">{founder.bio}</p>
             </div>
           ))}
         </div>

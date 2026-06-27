@@ -5,7 +5,6 @@ import Navbar from "@/components/layout/Navbar"
 import Footer from "@/components/layout/Footer"
 import FloatingWhatsApp from "@/components/layout/FloatingWhatsApp"
 import MobileStickyBar from "@/components/ui/MobileStickyBar"
-import LenisProvider from "@/components/providers/LenisProvider"
 
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair", display: "swap" })
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" })
@@ -21,14 +20,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
-      <body className="bg-[#080E08] font-inter antialiased">
-        <LenisProvider>
-          <Navbar />
-          <main>{children}</main>
-          <Footer />
-          <FloatingWhatsApp />
-          <MobileStickyBar />
-        </LenisProvider>
+      <body className="bg-white font-inter antialiased">
+        <Navbar />
+        <main>{children}</main>
+        <Footer />
+        <FloatingWhatsApp />
+        <MobileStickyBar />
       </body>
     </html>
   )

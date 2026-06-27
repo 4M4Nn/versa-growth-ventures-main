@@ -1,43 +1,54 @@
 "use client"
-import { useEffect, useRef, useState } from "react"
-import { NUMBERS } from "@/lib/data"
 
-function CountUp({ end, suffix = "" }: { end: number; suffix?: string }) {
+import { useEffect, useRef, useState } from "react"
+import { STATS } from "@/lib/data"
+
+function Counter({ end, suffix }: { end: number; suffix: string }) {
   const [count, setCount] = useState(0)
-  const ref = useRef<HTMLDivElement>(null)
+  const ref = useRef<HTMLSpanElement>(null)
   const started = useRef(false)
+
   useEffect(() => {
-    const obs = new IntersectionObserver(([e]) => {
-      if (e.isIntersecting && !started.current) {
-        started.current = true
-        const dur = 1800, step = 20
-        const total = Math.ceil(dur / step)
-        let i = 0
-        const t = setInterval(() => {
-          i++
-          setCount(Math.round(end * (i / total)))
-          if (i >= total) { clearInterval(t); setCount(end) }
-        }, step)
-      }
-    }, { threshold: 0.3 })
-    if (ref.current) obs.observe(ref.current)
-    return () => obs.disconnect()
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !started.current) {
+          started.current = true
+          const duration = 1800
+          const start = performance.now()
+          const tick = (now: number) => {
+            const progress = Math.min((now - start) / duration, 1)
+            const eased = 1 - Math.pow(1 - progress, 3)
+            setCount(Math.floor(eased * end))
+            if (progress < 1) requestAnimationFrame(tick)
+          }
+          requestAnimationFrame(tick)
+        }
+      },
+      { threshold: 0.5 }
+    )
+    if (ref.current) observer.observe(ref.current)
+    return () => observer.disconnect()
   }, [end])
-  return <div ref={ref} className="font-playfair text-5xl md:text-6xl font-bold">{count.toLocaleString()}{suffix}</div>
+
+  return (
+    <span ref={ref}>
+      {count.toLocaleString("en-IN")}
+      {suffix}
+    </span>
+  )
 }
 
 export default function NumbersSection() {
   return (
-    <section className="py-24 bg-[#080E08] border-y border-[#C9A84C]/10">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-          {NUMBERS.map((n) => (
-            <div key={n.label} className="group">
-              <div className="text-[#C9A84C] mb-3">
-                <CountUp end={parseInt(n.value) || 0} suffix={n.suffix} />
-              </div>
-              <p className="text-[#A8B89A] text-sm tracking-widest uppercase">{n.label}</p>
-              <div className="h-px bg-gradient-to-r from-transparent via-[#C9A84C]/40 to-transparent mt-4" />
+    <section className="py-16 bg-[#4A7C59]">
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          {STATS.map((stat) => (
+            <div key={stat.label} className="text-center">
+              <p className="font-playfair text-4xl md:text-5xl font-bold text-white mb-2">
+                <Counter end={stat.value} suffix={stat.suffix} />
+              </p>
+              <p className="text-green-200 text-sm tracking-wide">{stat.label}</p>
             </div>
           ))}
         </div>

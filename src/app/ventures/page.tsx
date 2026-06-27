@@ -1,60 +1,95 @@
 import type { Metadata } from "next"
-import { VENTURES, WA_URL } from "@/lib/data"
-import { ExternalLink } from "lucide-react"
+import Image from "next/image"
+import { ArrowUpRight } from "lucide-react"
+import { VENTURES, SITE } from "@/lib/data"
 
 export const metadata: Metadata = {
-  title: "Our Ventures — Five Businesses, One Vision",
-  description: "Explore all five Versa Growth Ventures: IPB Kochi, Versa Digital, Versa Global, Versa Finance, and Versa Exports.",
+  title: "Our Ventures",
+  description: "Explore all five ventures under Versa Growth Ventures — banking education, digital marketing, study abroad, investment advisory, and global trade.",
 }
 
 export default function VenturesPage() {
+  const waUrl = `https://wa.me/91${SITE.phone.replace(/\D/g, "").slice(-10)}`
+
   return (
-    <div className="pt-24 bg-[#080E08] min-h-screen">
-      <section className="py-20 px-6 text-center max-w-4xl mx-auto">
-        <p className="text-[#C9A84C] text-xs tracking-[0.4em] uppercase mb-4">OUR PORTFOLIO</p>
-        <h1 className="font-playfair text-5xl md:text-6xl text-[#F0EDE6] font-bold mb-4">Five Ventures</h1>
-        <p className="text-[#A8B89A] text-lg">Each solving a distinct challenge. Together building Kerala&apos;s growth engine.</p>
+    <div className="bg-white">
+      {/* Hero */}
+      <section className="bg-[#F8F9FA] py-20 px-4 text-center">
+        <p className="text-[#4A7C59] text-xs font-semibold tracking-widest uppercase mb-4">Our Portfolio</p>
+        <h1 className="font-playfair text-4xl md:text-5xl font-bold text-[#1B2A4A] mb-4">
+          Five Ventures. One Vision.
+        </h1>
+        <p className="text-[#6B7280] max-w-xl mx-auto text-lg">
+          Each venture under Versa Growth is an independent business solving a distinct challenge for people in Kerala and beyond.
+        </p>
       </section>
-      <section className="pb-24 px-6">
-        <div className="max-w-7xl mx-auto space-y-6">
-          {VENTURES.map((v, i) => (
-            <div key={v.id} className="grid md:grid-cols-5 gap-0 rounded-2xl overflow-hidden border border-[#2A3A2A] hover:border-[#C9A84C]/30 transition-all duration-500" style={{ background: v.bg }}>
-              <div className="md:col-span-1 flex items-center justify-center p-8" style={{ background: `${v.accent}10` }}>
-                <div className="text-center">
-                  <p className="font-playfair text-6xl font-bold opacity-30" style={{ color: v.accent }}>{v.num}</p>
-                  <p className="text-xs tracking-widest uppercase mt-2" style={{ color: v.accent }}>{v.label}</p>
-                </div>
+
+      {/* Ventures list */}
+      <section className="py-20 px-4">
+        <div className="max-w-7xl mx-auto space-y-16">
+          {VENTURES.map((venture, i) => (
+            <div
+              key={venture.id}
+              className={`grid lg:grid-cols-2 gap-12 items-center ${i % 2 === 1 ? "lg:grid-flow-col-dense" : ""}`}
+            >
+              <div className={`relative h-72 rounded-2xl overflow-hidden shadow-lg ${i % 2 === 1 ? "lg:col-start-2" : ""}`}>
+                <Image
+                  src={venture.image}
+                  alt={venture.name}
+                  fill
+                  className="object-cover"
+                />
+                {venture.badge && (
+                  <span className="absolute top-4 left-4 bg-[#C9A84C] text-white text-xs font-bold px-3 py-1.5 rounded-full">
+                    {venture.badge}
+                  </span>
+                )}
               </div>
-              <div className="md:col-span-3 p-8">
-                <h2 className="font-playfair text-3xl text-[#F0EDE6] font-bold mb-2">{v.name}</h2>
-                <p className="text-[#A8B89A] mb-4">{v.sub}</p>
-                <p className="text-[#A8B89A] text-sm leading-relaxed mb-6">{v.story}</p>
-                <div className="grid grid-cols-3 gap-3">
-                  {v.stats.map(s => (
-                    <div key={s.label} className="text-center p-3 rounded-xl" style={{ background: `${v.accent}15` }}>
-                      <p className="font-bold text-lg" style={{ color: v.accent }}>{s.value}</p>
-                      <p className="text-[#A8B89A] text-xs">{s.label}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-              <div className="md:col-span-1 flex items-center justify-center p-8">
-                {v.comingSoon ? (
-                  <span className="px-5 py-2 border text-sm tracking-widest" style={{ borderColor: v.accent, color: v.accent }}>COMING SOON</span>
-                ) : (
-                  <a href={v.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-5 py-3 text-sm font-bold tracking-widest" style={{ background: v.accent, color: "#080E08" }}>
-                    VISIT <ExternalLink size={14} />
+
+              <div className={i % 2 === 1 ? "lg:col-start-1 lg:row-start-1" : ""}>
+                <div
+                  className="inline-block w-10 h-1 rounded-full mb-4"
+                  style={{ backgroundColor: venture.color }}
+                />
+                <p className="text-xs font-semibold tracking-widest uppercase mb-2" style={{ color: venture.color }}>
+                  {venture.tagline}
+                </p>
+                <h2 className="font-playfair text-3xl font-bold text-[#1B2A4A] mb-4">{venture.name}</h2>
+                <p className="text-[#6B7280] leading-relaxed mb-6">{venture.description}</p>
+
+                {venture.href !== "#" ? (
+                  <a
+                    href={venture.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 font-semibold px-6 py-3 rounded-lg transition-colors text-white"
+                    style={{ backgroundColor: venture.color }}
+                  >
+                    Visit {venture.name} <ArrowUpRight size={18} />
                   </a>
+                ) : (
+                  <span className="inline-block bg-[#FBF5E6] text-[#C9A84C] font-semibold px-6 py-3 rounded-lg text-sm">
+                    Launching Soon
+                  </span>
                 )}
               </div>
             </div>
           ))}
         </div>
       </section>
-      <section className="py-16 bg-[#050A05] px-6 text-center">
-        <h2 className="font-playfair text-3xl text-[#F0EDE6] mb-4">Which Venture is Right for You?</h2>
-        <p className="text-[#A8B89A] mb-8 max-w-xl mx-auto">Talk to us — we&apos;ll help you find the right Versa solution for your specific goal.</p>
-        <a href={WA_URL} target="_blank" rel="noopener noreferrer" className="inline-block px-10 py-4 bg-[#C9A84C] text-[#080E08] font-bold text-sm tracking-widest uppercase">Book Free Consultation</a>
+
+      {/* CTA */}
+      <section className="py-16 px-4 bg-[#1B2A4A] text-center">
+        <h2 className="font-playfair text-3xl font-bold text-white mb-4">Not sure which venture is right for you?</h2>
+        <p className="text-blue-200 mb-8 max-w-lg mx-auto">Our team will guide you to the perfect solution based on your goals.</p>
+        <a
+          href={waUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-[#C9A84C] text-[#1B2A4A] font-bold px-8 py-4 rounded-lg hover:bg-[#E8C96A] transition-colors"
+        >
+          Talk to an Expert
+        </a>
       </section>
     </div>
   )

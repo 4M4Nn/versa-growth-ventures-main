@@ -5,10 +5,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        bg: "#080E08", "bg-alt": "#0C1A0E",
-        olive: "#4A7C59", "olive-light": "#8FBC5A",
-        gold: "#C9A84C", "gold-light": "#E8C96A",
-        "off-white": "#F0EDE6", gray: "#A8B89A", "gray-muted": "#5A6B5C",
+        olive: "#4A7C59", "olive-dark": "#3A6249", "olive-light": "#EBF5EE",
+        gold: "#C9A84C", "gold-light": "#FBF5E6",
+        navy: "#1B2A4A", muted: "#6B7280", light: "#F8F9FA",
       },
       fontFamily: {
         playfair: ["var(--font-playfair)", "serif"],
