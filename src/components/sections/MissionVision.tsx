@@ -1,4 +1,4 @@
-﻿import Image from "next/image"
+import Image from "next/image"
 import { Target, Eye } from "lucide-react"
 
 export default function MissionVision() {
@@ -27,7 +27,7 @@ export default function MissionVision() {
                 <h3 className="font-playfair text-xl font-bold text-[#C9A84C]">Our Mission</h3>
               </div>
               <p className="text-white/80 leading-relaxed text-sm">
-                To build Kerala&apos;s most trusted and impactful business group â€” one that empowers students, families, and businesses with the education, capital, reach, and tools they need to achieve extraordinary outcomes.
+                To build Kerala&apos;s most trusted and impactful business group — one that empowers students, families, and businesses with the education, capital, reach, and tools they need to achieve extraordinary outcomes.
               </p>
             </div>
           </div>
@@ -48,7 +48,7 @@ export default function MissionVision() {
                 <h3 className="font-playfair text-xl font-bold text-[#C9A84C]">Our Vision</h3>
               </div>
               <p className="text-white/80 leading-relaxed text-sm">
-                By 2030, to be recognised as the defining business group of Kerala&apos;s growth era â€” known for ethical practices, measurable client outcomes, and ventures that collectively touch 100,000 lives.
+                By 2030, to be recognised as the defining business group of Kerala&apos;s growth era — known for ethical practices, measurable client outcomes, and ventures that collectively touch 100,000 lives.
               </p>
             </div>
           </div>

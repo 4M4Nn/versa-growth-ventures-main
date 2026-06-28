@@ -1,4 +1,4 @@
-﻿"use client"
+"use client"
 
 import { useState } from "react"
 import { Phone, Mail, MapPin, Send } from "lucide-react"
@@ -69,8 +69,8 @@ export default function ContactSection() {
 
             <div className="bg-[#F0F7F2] rounded-2xl p-6 border border-[#4A7C59]/10">
               <p className="font-semibold text-[#1A1A1A] mb-3">Business Hours</p>
-              <p className="text-sm text-[#6B7280]">Monday â€“ Saturday: 9:00 AM â€“ 7:00 PM</p>
-              <p className="text-sm text-[#6B7280]">Sunday: 10:00 AM â€“ 2:00 PM</p>
+              <p className="text-sm text-[#6B7280]">Monday &mdash; Saturday: 9:00 AM &mdash; 7:00 PM</p>
+              <p className="text-sm text-[#6B7280]">Sunday: 10:00 AM &mdash; 2:00 PM</p>
               <p className="text-sm text-[#4A7C59] font-medium mt-2">WhatsApp available 24/7</p>
             </div>
           </div>
@@ -112,10 +112,10 @@ export default function ContactSection() {
                     className="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-[#4A7C59]"
                   >
                     <option value="">Select a venture</option>
-                    <option>IPB Kochi â€” Banking Education</option>
-                    <option>Versa Digital â€” Marketing</option>
-                    <option>Versa Global â€” Study Abroad</option>
-                    <option>Versa Finance â€” Investment</option>
+                    <option>IPB Kochi &mdash; Banking Education</option>
+                    <option>Versa Digital &mdash; Marketing</option>
+                    <option>Versa Global &mdash; Study Abroad</option>
+                    <option>Versa Finance &mdash; Investment</option>
                     <option>General Enquiry</option>
                   </select>
                 </div>
@@ -134,7 +134,7 @@ export default function ContactSection() {
                   disabled={loading}
                   className="w-full bg-[#4A7C59] text-white font-bold py-3.5 rounded-lg hover:bg-[#2D4E37] transition-colors disabled:opacity-60"
                 >
-                  {loading ? "Sendingâ€¦" : "Book Free Consultation"}
+                  {loading ? "Sending..." : "Book Free Consultation"}
                 </button>
               </form>
             )}
@@ -144,4 +144,3 @@ export default function ContactSection() {
     </section>
   )
 }
-

@@ -1,8 +1,8 @@
-﻿const STEPS = [
+const STEPS = [
   {
     number: "01",
     title: "Discovery Consultation",
-    description: "A 30-minute free consultation to understand your specific needs â€” whether you are a student, professional, business owner, or investor. We identify which Versa venture or combination of ventures serves you best.",
+    description: "A 30-minute free consultation to understand your specific needs — whether you are a student, professional, business owner, or investor. We identify which Versa venture or combination of ventures serves you best.",
   },
   {
     number: "02",
@@ -43,4 +43,3 @@ export default function ApproachSection() {
     </section>
   )
 }
-
