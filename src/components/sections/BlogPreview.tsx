@@ -29,7 +29,7 @@ export default function BlogPreview() {
               <div className="p-6">
                 <div className="flex items-center gap-2 text-xs text-[#94A3B8] mb-3">
                   <span>{post.date}</span>
-                  <span>Â·</span>
+                  <span>·</span>
                   <span>{post.readTime}</span>
                 </div>
                 <h3 className="font-playfair font-bold text-[#1A1A1A] mb-2 group-hover:text-[#4A7C59] transition-colors leading-snug">{post.title}</h3>

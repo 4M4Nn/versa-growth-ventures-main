@@ -26,7 +26,7 @@ export default function TestimonialsSection() {
                 </div>
                 <div>
                   <p className="font-semibold text-[#1A1A1A] text-sm">{t.name}</p>
-                  <p className="text-[#6B7280] text-xs">{t.role} Â· {t.location}</p>
+                  <p className="text-[#6B7280] text-xs">{t.role} · {t.location}</p>
                   <span className="text-[10px] font-bold text-[#4A7C59] uppercase tracking-wider">{t.venture}</span>
                 </div>
               </div>

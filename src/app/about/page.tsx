@@ -32,7 +32,7 @@ export default function AboutPage() {
           <div>
             <h2 className="font-playfair text-3xl font-bold text-[#1A1A1A] mb-5">The Origin Story</h2>
             <p className="text-[#6B7280] leading-relaxed mb-4">
-              In 2024, three professionals sat across from each other in Kochi with a shared frustration: Kerala had extraordinary talent but lacked the institutional infrastructure to help that talent thrive. Students struggled to find quality banking education. Families paid 3x for study abroad consultancy than needed. Small businesses had no access to AI-powered marketing. Families were parking savings in FDs while inflation eroded their wealth.
+              In 2025, three professionals sat across from each other in Kochi with a shared frustration: Kerala had extraordinary talent but lacked the institutional infrastructure to help that talent thrive. Students struggled to find quality banking education. Families paid 3x for study abroad consultancy than needed. Small businesses had no access to AI-powered marketing. Families were parking savings in FDs while inflation eroded their wealth.
             </p>
             <p className="text-[#6B7280] leading-relaxed mb-4">
               The insight was simple but powerful: these problems were connected. A student who does an IPB banking course might also want to study abroad. A business owner who needs digital marketing also needs financial planning. A family with a student abroad needs NRI investment services. One platform, built right, could serve the whole ecosystem.

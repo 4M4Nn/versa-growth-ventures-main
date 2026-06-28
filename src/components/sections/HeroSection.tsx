@@ -22,7 +22,7 @@ export default function HeroSection() {
         <div className="max-w-2xl">
           <div className="inline-flex items-center gap-2 bg-[#4A7C59]/20 border border-[#4A7C59]/30 text-[#C9A84C] text-[11px] font-semibold tracking-widest uppercase px-4 py-2 rounded-full mb-6">
             <span className="w-1.5 h-1.5 rounded-full bg-[#C9A84C] animate-pulse" />
-            Kerala&apos;s Diversified Business Group · Est. 2024
+            Kerala&apos;s Diversified Business Group · Est. 2025
           </div>
 
           <h1 className="font-playfair text-[clamp(2rem,6vw,4.5rem)] font-bold text-white leading-tight mb-5">

@@ -6,7 +6,7 @@ export const SITE = {
   phone: "+91 7907215816",
   email: "hello@versagrowthventures.com",
   address: "Kochi, Kerala, India",
-  founded: "2024",
+  founded: "2025",
 }
 
 export const NAV_LINKS = [
@@ -187,7 +187,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "June 20, 2026",
     readTime: "7 min read",
     excerpt: "Artificial intelligence is no longer a distant concept for Kerala businesses — it is the competitive differentiator that separates growing brands from struggling ones.",
-    image: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=600&q=80&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
     body: `Artificial intelligence is no longer a distant concept for Kerala businesses — it is the competitive differentiator that separates growing brands from struggling ones. From AI-powered SEO that answers conversational search queries to chatbots that handle customer inquiries at 3 AM, Kerala SMEs are discovering that AI adoption is not optional if you want to compete in 2026.
 
 The most immediate impact of AI on Kerala businesses is in search engine optimisation. Google's AI-powered search experience means traditional keyword stuffing no longer works. What works now is Answer Engine Optimisation (AEO) — structuring your content to directly answer the questions your customers are asking in natural language. Versa Digital's AI-SEO team has helped Kochi-based businesses achieve page 1 rankings for 40+ high-intent search queries using this approach.
@@ -204,7 +204,7 @@ The businesses that will dominate Kerala's economy in 2030 are making their AI i
     date: "June 15, 2026",
     readTime: "5 min read",
     excerpt: "Choosing your study abroad consultant may be the most important decision in your academic journey. Here is why Kerala students consistently choose Versa Global.",
-    image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&q=80&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&q=80",
     body: `Choosing your study abroad consultant may be the most important decision in your academic journey — more important than the country you choose or even the university. A great consultant opens doors. A poor one wastes years. Here is why Kerala students consistently choose Versa Global over other consultancies.
 
 First, our 95% visa success rate is not a marketing claim — it is a track record built one student at a time. We achieve this by doing something many consultancies skip: a thorough pre-assessment of your profile before recommending any destination. We identify potential visa rejection risks early and build your documentation strategy to neutralise them before submission.
@@ -223,7 +223,7 @@ Fourth, we handle complexity that other consultancies avoid. NRI students, stude
     date: "June 10, 2026",
     readTime: "6 min read",
     excerpt: "India's banking sector is undergoing its most significant transformation in decades. What does this mean for students pursuing banking careers?",
-    image: "https://images.unsplash.com/photo-1541354329998-f4d9a9f9297f?w=600&q=80&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80",
     body: `India's banking sector is undergoing its most significant transformation in decades. The convergence of digital payments, AI-driven credit assessment, UPI's explosive growth, and the RBI's aggressive digital banking framework means the banker of 2030 will look fundamentally different from the banker of 2020. For students choosing banking education today, understanding this transformation is critical to picking the right program.
 
 The traditional banking exam preparation model — memorising JAIIB syllabi and hoping for a clerical vacancy — is being supplemented by a new demand. Banks are urgently hiring professionals who understand digital credit underwriting, cybersecurity compliance, wealth management, and customer experience design. HDFC Bank, ICICI, Kotak, and SFBs are building entire teams around these new competencies.
@@ -240,7 +240,7 @@ The opportunity for Kerala students is particularly significant. Kerala has the 
     date: "June 5, 2026",
     readTime: "5 min read",
     excerpt: "Consumer attention has permanently migrated online. If your business is not present where your customers are looking, you are invisible.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
     body: `Consumer attention has permanently migrated online. If your business is not present where your customers are looking, you are invisible. This is not a Kerala-specific phenomenon — it is global. But Kerala's unique digital landscape, driven by extremely high smartphone penetration, multi-platform social media usage, and a population that researches extensively before purchasing, makes digital marketing not just useful but essential for any business with growth ambitions.
 
 Consider the buyer's journey for any significant purchase in Kerala today. Whether someone is choosing a banking institute for their child, looking for a study abroad consultant, selecting a financial advisor, or finding a digital agency — they begin with a Google search, check Instagram pages, read Google reviews, and often engage on WhatsApp before making a decision. Each of these touchpoints is a digital marketing opportunity.
@@ -257,7 +257,7 @@ The ROI of digital marketing, when done correctly, is measurable in a way that t
     date: "May 28, 2026",
     readTime: "8 min read",
     excerpt: "Most Kerala families save diligently but invest poorly. Fixed deposits, gold, and real estate dominate — despite these delivering inflation-adjusted returns close to zero.",
-    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&q=80&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80",
     body: `Most Kerala families save diligently but invest poorly. Fixed deposits, gold, and real estate dominate the household balance sheet — despite these delivering inflation-adjusted returns close to zero or negative over the last decade. The gap between what Keralites save and what they actually build as wealth is the problem Versa Finance was founded to solve.
 
 The starting point for any investment journey is understanding risk tolerance. Not in the abstract sense of "are you comfortable with volatility?" but in the practical sense of "what is the minimum you need available in 3 months if an emergency arises?" That minimum stays in a liquid fund or savings account. Everything above that threshold is your investment principal, and it should be working for you across a mix of asset classes.
@@ -274,7 +274,7 @@ The single most valuable habit we teach our clients is the step-up SIP — incre
     date: "May 20, 2026",
     readTime: "6 min read",
     excerpt: "With dozens of banking institutes in Kerala making similar claims, choosing the right one is genuinely difficult. Here is the framework that matters.",
-    image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&q=80&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80",
     body: `With dozens of banking institutes in Kerala making similar claims — "100% placement," "NABARD endorsed," "expert faculty" — choosing the right one is genuinely difficult without knowing what to look for. Here is the framework that actually matters when evaluating a banking education program.
 
 First, verify the placements claim independently. Any institute worth joining should be able to give you the names and contact information of recently placed students. Call them. Ask about their experience, what the institute actually delivered, and whether they would join again. The institutes that panic at this request have something to hide. IPB Kochi actively introduces prospective students to our alumni — because we have nothing to hide.
@@ -293,7 +293,7 @@ Fourth, consider the physical environment and infrastructure. Banking careers re
     date: "May 15, 2026",
     readTime: "7 min read",
     excerpt: "The study abroad landscape in 2026 has shifted significantly. Some traditional favourites have become harder; new opportunities have opened elsewhere.",
-    image: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=600&q=80&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&q=80",
     body: `The study abroad landscape in 2026 has shifted significantly. UK's international student policy tightened. Canada's study permit processing times improved but competition intensified. Germany's English-taught programs expanded dramatically. Australia opened more post-study work pathways. For Kerala students making decisions now, here is the updated picture.
 
 United Kingdom remains the most prestigious destination for professional programs. The 2-year Graduate Route visa is intact, and universities like Manchester, Nottingham, and Birmingham offer strong Kerala alumni networks. Budget minimum ₹45-55 lakhs for a 1-year master's, including living costs. The ROI is highest in finance, law, and engineering.
@@ -312,7 +312,7 @@ Australia's revamped international student framework offers 2-6 year post-study 
     date: "May 8, 2026",
     readTime: "9 min read",
     excerpt: "Mutual funds have delivered life-changing wealth for Indian investors over the past 20 years. Here is how to participate effectively.",
-    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&q=80&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80",
     body: `Mutual funds have delivered life-changing wealth for Indian investors over the past 20 years. The Sensex has grown from 5,000 in 2004 to over 75,000 in 2024 — a 15x increase. Equity mutual funds tracking this growth have made ordinary SIP investors into crorepatis without requiring stock market expertise, daily monitoring, or even large monthly commitments.
 
 The SIP mechanism — investing a fixed amount monthly regardless of market conditions — is particularly powerful because it removes the biggest enemy of wealth creation: emotional decision-making. When markets fall, a SIP automatically buys more units at lower prices. When markets rise, your existing units grow in value. Over time, this mathematical process (called rupee cost averaging) consistently outperforms lump sum investments by timing-nervous individual investors.
@@ -329,7 +329,7 @@ The practical steps to begin: open a KYC-compliant investment account through an
     date: "May 1, 2026",
     readTime: "6 min read",
     excerpt: "AI-powered marketing tools have gone from experimental to essential in 18 months. Kerala businesses ignoring this shift are already falling behind.",
-    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&q=80&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
     body: `AI-powered marketing tools have gone from experimental to essential in 18 months. Kerala businesses that adopted AI marketing tools early — automated content generation, AI-optimised ad bidding, predictive audience targeting — have seen measurable gains while competitors using traditional approaches are watching their cost-per-acquisition rise and their organic reach fall. This is not hype. The data from our own client campaigns makes the gap impossible to ignore.
 
 The most impactful AI application for Kerala SMEs is not the headline-grabbing generative AI for content — it is AI-powered advertising optimisation. Meta's Advantage+ and Google's Performance Max campaigns use AI to continuously test thousands of ad combinations and allocate budget to the highest-performing variations in real time. When managed correctly by experienced marketers who understand how to train these AI systems, they consistently outperform manually-managed campaigns by 30-60% on cost per conversion.
@@ -343,7 +343,7 @@ The businesses that will dominate Kerala's digital landscape in 2027 are making 
 export const FAQS: FAQItem[] = [
   {
     question: "What is Versa Growth Ventures?",
-    answer: "Versa Growth Ventures is a Kerala-based diversified business group founded in 2024, operating five distinct ventures: IPB Kochi (banking education), Versa Digital (AI-powered marketing), Versa Global (study abroad consultancy), Versa Finance (investment advisory), and Versa Exports (global trade). Each venture is independently managed by domain experts while sharing the group's infrastructure, values, and client network.",
+    answer: "Versa Growth Ventures is a Kerala-based diversified business group founded in 2025, operating five distinct ventures: IPB Kochi (banking education), Versa Digital (AI-powered marketing), Versa Global (study abroad consultancy), Versa Finance (investment advisory), and Versa Exports (global trade). Each venture is independently managed by domain experts while sharing the group's infrastructure, values, and client network.",
     category: "General",
   },
   {
@@ -536,34 +536,34 @@ export const SCHEMES: Scheme[] = [
 
 export const MILESTONES: Milestone[] = [
   {
-    year: "2024 Q1",
+    year: "2025 Q1",
     title: "Versa Growth Ventures Founded",
     description: "Three founders unite in Kochi with a vision to build Kerala's most ambitious multi-venture business group.",
   },
   {
-    year: "2024 Q2",
-    title: "IPB Kochi Launched",
-    description: "Institute of Professional Banking Kochi opens with its flagship banking certification programs. First batch: 120 students.",
+    year: "2025 Q2",
+    title: "Versa Digital Launched",
+    description: "Kerala's first AI-powered marketing agency opens its doors, onboarding its first clients within weeks of launch.",
   },
   {
-    year: "2024 Q3",
-    title: "Versa Digital & Versa Global Launch",
-    description: "AI-powered marketing agency and study abroad consultancy go live simultaneously, serving the first clients within weeks.",
-  },
-  {
-    year: "2025 Q1",
+    year: "2025 Q3",
     title: "Versa Finance Established",
     description: "SEBI registration secured. Versa Finance launches with stocks, mutual funds, and insurance advisory services.",
   },
   {
-    year: "2025 Q3",
-    title: "13,200+ Placements Milestone",
-    description: "IPB Kochi surpasses 13,200 career placements — cementing its position as Kerala's leading banking institute.",
+    year: "2026 Q1",
+    title: "IPB Kochi Launched",
+    description: "Institute of Professional Banking Kochi opens with its flagship banking certification programs. First batch: 120 students.",
+  },
+  {
+    year: "2026 Q2",
+    title: "Versa Global Launched",
+    description: "Study abroad consultancy goes live, guiding Kerala students to universities in 60+ countries with a 95% visa success rate.",
   },
   {
     year: "2026",
-    title: "Versa Exports & Global Expansion",
-    description: "Versa Exports in development. International partnerships expanding. Group ventures now serving clients in 60+ countries.",
+    title: "13,200+ Placements & Versa Exports",
+    description: "IPB Kochi surpasses 13,200 career placements. Versa Exports enters development as the group expands globally.",
   },
 ]
 

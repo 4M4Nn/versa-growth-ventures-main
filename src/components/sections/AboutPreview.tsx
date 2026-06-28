@@ -23,7 +23,7 @@ export default function AboutPreview() {
             />
           </div>
           <div className="absolute -bottom-6 -right-6 bg-[#4A7C59] text-white rounded-2xl p-6 shadow-lg max-w-[220px]">
-            <p className="font-playfair text-3xl font-bold text-[#C9A84C]">2024</p>
+            <p className="font-playfair text-3xl font-bold text-[#C9A84C]">2025</p>
             <p className="text-sm text-white/80 mt-1">Founded in Kochi with a mission to power Kerala&apos;s next generation of growth</p>
           </div>
         </div>
