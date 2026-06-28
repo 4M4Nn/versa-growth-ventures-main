@@ -1,17 +1,17 @@
-import Link from "next/link"
+﻿import Link from "next/link"
 import Image from "next/image"
 import { ArrowRight, CheckCircle2 } from "lucide-react"
 
 const CHECKPOINTS = [
   "Founded by three Kerala professionals with domain expertise across banking, finance, and marketing",
-  "Deliberately diversified — each venture solves a different Kerala growth problem",
+  "Deliberately diversified â€” each venture solves a different Kerala growth problem",
   "Shared infrastructure, values, and client network create a competitive moat no single-venture firm can match",
   "Long-term thinking: Versa Exports launches next, with more ventures in planning",
 ]
 
 export default function AboutPreview() {
   return (
-    <section className="py-20 px-4 bg-white">
+    <section className="py-14 md:py-20 px-5 bg-white">
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
         <div className="relative">
           <div className="relative h-[500px] rounded-3xl overflow-hidden shadow-xl">
@@ -37,7 +37,7 @@ export default function AboutPreview() {
             Versa Growth Ventures was founded with a thesis: Kerala has extraordinary human talent and entrepreneurial energy, but lacks a diversified business group that can serve multiple dimensions of individual and business growth under one trusted umbrella.
           </p>
           <p className="text-[#6B7280] leading-relaxed mb-8">
-            Our five ventures — spanning banking education, study abroad, AI marketing, investment advisory, and exports — are not random. Each one addresses a specific unmet need in Kerala&apos;s economic landscape, and together they create a network effect where clients of one venture naturally benefit from another.
+            Our five ventures â€” spanning banking education, study abroad, AI marketing, investment advisory, and exports â€” are not random. Each one addresses a specific unmet need in Kerala&apos;s economic landscape, and together they create a network effect where clients of one venture naturally benefit from another.
           </p>
 
           <ul className="space-y-3 mb-10">
@@ -57,3 +57,4 @@ export default function AboutPreview() {
     </section>
   )
 }
+

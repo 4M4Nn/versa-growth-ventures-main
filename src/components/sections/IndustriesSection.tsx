@@ -1,4 +1,4 @@
-import { GraduationCap, TrendingUp, BarChart3, Globe, Cpu, Briefcase } from "lucide-react"
+﻿import { GraduationCap, TrendingUp, BarChart3, Globe, Cpu, Briefcase } from "lucide-react"
 import { INDUSTRIES } from "@/lib/data"
 
 const ICONS: Record<string, React.ComponentType<{ size?: number; className?: string }>> = {
@@ -7,7 +7,7 @@ const ICONS: Record<string, React.ComponentType<{ size?: number; className?: str
 
 export default function IndustriesSection() {
   return (
-    <section className="py-20 px-4 bg-white">
+    <section className="py-14 md:py-20 px-5 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-14">
           <p className="text-[#4A7C59] text-xs font-semibold tracking-widest uppercase mb-3">Sectors</p>
@@ -32,3 +32,4 @@ export default function IndustriesSection() {
     </section>
   )
 }
+

@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 
 import { useEffect, useRef, useState } from "react"
 import { Building2, GraduationCap, Globe, Users } from "lucide-react"
@@ -37,13 +37,13 @@ function Counter({ target, suffix }: { target: number; suffix: string }) {
 
 export default function StatsSection() {
   return (
-    <section className="py-20 px-4 bg-[#F0F7F2]">
+    <section className="py-14 md:py-20 px-5 bg-[#F0F7F2]">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-12">
           <p className="text-[#4A7C59] text-xs font-semibold tracking-widest uppercase mb-3">By The Numbers</p>
           <h2 className="font-playfair text-3xl md:text-4xl font-bold text-[#1A1A1A]">A Track Record That Speaks</h2>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {STATS.map((stat) => {
             const Icon = ICONS[stat.icon]
             return (
@@ -61,3 +61,4 @@ export default function StatsSection() {
     </section>
   )
 }
+

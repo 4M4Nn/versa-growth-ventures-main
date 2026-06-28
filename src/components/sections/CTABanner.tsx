@@ -1,10 +1,10 @@
-import Link from "next/link"
+﻿import Link from "next/link"
 import { ArrowRight, Phone } from "lucide-react"
 import { SITE } from "@/lib/data"
 
 export default function CTABanner() {
   return (
-    <section className="py-24 px-4 bg-[#4A7C59] relative overflow-hidden">
+    <section className="py-16 md:py-24 px-5 bg-[#4A7C59] relative overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 right-0 w-96 h-96 bg-[#C9A84C]/10 rounded-full blur-3xl" />
         <div className="absolute bottom-0 left-0 w-72 h-72 bg-white/5 rounded-full blur-3xl" />
@@ -16,7 +16,7 @@ export default function CTABanner() {
           Ready to Grow<br />With Versa?
         </h2>
         <p className="text-white/70 text-lg mb-10">
-          Whether you are a student choosing a career path, a business owner wanting growth, or a family building wealth — your Versa journey starts with a free consultation.
+          Whether you are a student choosing a career path, a business owner wanting growth, or a family building wealth â€” your Versa journey starts with a free consultation.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <Link
@@ -36,3 +36,4 @@ export default function CTABanner() {
     </section>
   )
 }
+

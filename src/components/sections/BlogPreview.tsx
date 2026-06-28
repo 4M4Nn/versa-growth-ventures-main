@@ -1,4 +1,4 @@
-import Link from "next/link"
+﻿import Link from "next/link"
 import Image from "next/image"
 import { ArrowRight } from "lucide-react"
 import { BLOG_POSTS } from "@/lib/data"
@@ -7,7 +7,7 @@ export default function BlogPreview() {
   const posts = BLOG_POSTS.slice(0, 3)
 
   return (
-    <section className="py-20 px-4 bg-[#F8FAF9]">
+    <section className="py-14 md:py-20 px-5 bg-[#F8FAF9]">
       <div className="max-w-7xl mx-auto">
         <div className="flex items-end justify-between mb-12">
           <div>
@@ -29,7 +29,7 @@ export default function BlogPreview() {
               <div className="p-6">
                 <div className="flex items-center gap-2 text-xs text-[#94A3B8] mb-3">
                   <span>{post.date}</span>
-                  <span>·</span>
+                  <span>Â·</span>
                   <span>{post.readTime}</span>
                 </div>
                 <h3 className="font-playfair font-bold text-[#1A1A1A] mb-2 group-hover:text-[#4A7C59] transition-colors leading-snug">{post.title}</h3>
@@ -45,3 +45,4 @@ export default function BlogPreview() {
     </section>
   )
 }
+

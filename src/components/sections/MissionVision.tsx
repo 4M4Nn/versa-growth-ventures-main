@@ -1,9 +1,9 @@
-import Image from "next/image"
+﻿import Image from "next/image"
 import { Target, Eye } from "lucide-react"
 
 export default function MissionVision() {
   return (
-    <section className="py-20 px-4 bg-[#0F1F15] text-white">
+    <section className="py-14 md:py-20 px-5 bg-[#0F1F15] text-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-14">
           <p className="text-[#C9A84C] text-xs font-semibold tracking-widest uppercase mb-3">Purpose</p>
@@ -27,7 +27,7 @@ export default function MissionVision() {
                 <h3 className="font-playfair text-xl font-bold text-[#C9A84C]">Our Mission</h3>
               </div>
               <p className="text-white/80 leading-relaxed text-sm">
-                To build Kerala&apos;s most trusted and impactful business group — one that empowers students, families, and businesses with the education, capital, reach, and tools they need to achieve extraordinary outcomes.
+                To build Kerala&apos;s most trusted and impactful business group â€” one that empowers students, families, and businesses with the education, capital, reach, and tools they need to achieve extraordinary outcomes.
               </p>
             </div>
           </div>
@@ -48,7 +48,7 @@ export default function MissionVision() {
                 <h3 className="font-playfair text-xl font-bold text-[#C9A84C]">Our Vision</h3>
               </div>
               <p className="text-white/80 leading-relaxed text-sm">
-                By 2030, to be recognised as the defining business group of Kerala&apos;s growth era — known for ethical practices, measurable client outcomes, and ventures that collectively touch 100,000 lives.
+                By 2030, to be recognised as the defining business group of Kerala&apos;s growth era â€” known for ethical practices, measurable client outcomes, and ventures that collectively touch 100,000 lives.
               </p>
             </div>
           </div>
@@ -57,3 +57,4 @@ export default function MissionVision() {
     </section>
   )
 }
+

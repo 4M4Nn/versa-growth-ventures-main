@@ -21,9 +21,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
-      <body className="bg-white font-inter antialiased">
+      <body className="bg-white font-inter antialiased overflow-x-hidden">
         <Navbar />
-        <main>{children}</main>
+        <main className="overflow-x-hidden pb-16 md:pb-0">{children}</main>
         <Footer />
         <FloatingWhatsApp />
         <MobileStickyBar />

@@ -1,8 +1,8 @@
-const STEPS = [
+﻿const STEPS = [
   {
     number: "01",
     title: "Discovery Consultation",
-    description: "A 30-minute free consultation to understand your specific needs — whether you are a student, professional, business owner, or investor. We identify which Versa venture or combination of ventures serves you best.",
+    description: "A 30-minute free consultation to understand your specific needs â€” whether you are a student, professional, business owner, or investor. We identify which Versa venture or combination of ventures serves you best.",
   },
   {
     number: "02",
@@ -23,7 +23,7 @@ const STEPS = [
 
 export default function ApproachSection() {
   return (
-    <section className="py-20 px-4 bg-[#F0F7F2]">
+    <section className="py-14 md:py-20 px-5 bg-[#F0F7F2]">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-14">
           <p className="text-[#4A7C59] text-xs font-semibold tracking-widest uppercase mb-3">Our Approach</p>
@@ -43,3 +43,4 @@ export default function ApproachSection() {
     </section>
   )
 }
+

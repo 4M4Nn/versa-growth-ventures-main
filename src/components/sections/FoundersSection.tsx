@@ -1,9 +1,9 @@
-import Link from "next/link"
+﻿import Link from "next/link"
 import { FOUNDERS } from "@/lib/data"
 
 export default function FoundersSection() {
   return (
-    <section className="py-20 px-4 bg-white">
+    <section className="py-14 md:py-20 px-5 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-14">
           <p className="text-[#4A7C59] text-xs font-semibold tracking-widest uppercase mb-3">Leadership</p>
@@ -37,10 +37,11 @@ export default function FoundersSection() {
 
         <div className="text-center mt-12">
           <Link href="/about" className="inline-flex items-center gap-2 text-sm font-bold text-[#4A7C59] hover:text-[#C9A84C] transition-colors">
-            Read Full Founder Stories →
+            Read Full Founder Stories â†’
           </Link>
         </div>
       </div>
     </section>
   )
 }
+

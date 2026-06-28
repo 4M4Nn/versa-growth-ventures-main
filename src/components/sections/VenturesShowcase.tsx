@@ -1,11 +1,11 @@
-import Link from "next/link"
+﻿import Link from "next/link"
 import Image from "next/image"
 import { ArrowUpRight, CheckCircle2 } from "lucide-react"
 import { VENTURES } from "@/lib/data"
 
 export default function VenturesShowcase() {
   return (
-    <section id="ventures" className="py-20 px-4 bg-[#F8FAF9]">
+    <section id="ventures" className="py-14 md:py-20 px-5 bg-[#F8FAF9]">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-14">
           <p className="text-[#4A7C59] text-xs font-semibold tracking-widest uppercase mb-3">Portfolio</p>
@@ -35,7 +35,7 @@ export default function VenturesShowcase() {
               <div className="p-6">
                 <h3 className="font-playfair text-xl font-bold text-[#1A1A1A] mb-1">{v.name}</h3>
                 <p className="text-[#4A7C59] text-xs font-semibold mb-3">{v.tagline}</p>
-                <p className="text-[#6B7280] text-sm leading-relaxed mb-4">{v.description.slice(0, 120)}…</p>
+                <p className="text-[#6B7280] text-sm leading-relaxed mb-4">{v.description.slice(0, 120)}â€¦</p>
 
                 <ul className="space-y-1.5 mb-5">
                   {v.features.slice(0, 3).map((f) => (
@@ -67,3 +67,4 @@ export default function VenturesShowcase() {
     </section>
   )
 }
+

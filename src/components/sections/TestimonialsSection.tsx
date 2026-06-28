@@ -1,9 +1,9 @@
-import { Star } from "lucide-react"
+﻿import { Star } from "lucide-react"
 import { TESTIMONIALS } from "@/lib/data"
 
 export default function TestimonialsSection() {
   return (
-    <section className="py-20 px-4 bg-[#F8FAF9]">
+    <section className="py-14 md:py-20 px-5 bg-[#F8FAF9]">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-14">
           <p className="text-[#4A7C59] text-xs font-semibold tracking-widest uppercase mb-3">Testimonials</p>
@@ -26,7 +26,7 @@ export default function TestimonialsSection() {
                 </div>
                 <div>
                   <p className="font-semibold text-[#1A1A1A] text-sm">{t.name}</p>
-                  <p className="text-[#6B7280] text-xs">{t.role} · {t.location}</p>
+                  <p className="text-[#6B7280] text-xs">{t.role} Â· {t.location}</p>
                   <span className="text-[10px] font-bold text-[#4A7C59] uppercase tracking-wider">{t.venture}</span>
                 </div>
               </div>
@@ -37,3 +37,4 @@ export default function TestimonialsSection() {
     </section>
   )
 }
+

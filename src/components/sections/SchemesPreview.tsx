@@ -1,4 +1,4 @@
-import Link from "next/link"
+﻿import Link from "next/link"
 import { ArrowRight, CheckCircle2 } from "lucide-react"
 import { SCHEMES } from "@/lib/data"
 
@@ -6,7 +6,7 @@ export default function SchemesPreview() {
   const preview = SCHEMES.slice(0, 3)
 
   return (
-    <section className="py-20 px-4 bg-white">
+    <section className="py-14 md:py-20 px-5 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="flex items-end justify-between mb-12">
           <div>
@@ -47,3 +47,4 @@ export default function SchemesPreview() {
     </section>
   )
 }
+
