@@ -1,4 +1,4 @@
-﻿import { GraduationCap, TrendingUp, BarChart3, Globe, Cpu, Briefcase } from "lucide-react"
+import { GraduationCap, TrendingUp, BarChart3, Globe, Cpu, Briefcase } from "lucide-react"
 import { INDUSTRIES } from "@/lib/data"
 
 const ICONS: Record<string, React.ComponentType<{ size?: number; className?: string }>> = {

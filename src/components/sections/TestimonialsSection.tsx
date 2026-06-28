@@ -1,4 +1,4 @@
-﻿import { Star } from "lucide-react"
+import { Star } from "lucide-react"
 import { TESTIMONIALS } from "@/lib/data"
 
 export default function TestimonialsSection() {

@@ -1,4 +1,4 @@
-﻿"use client"
+"use client"
 
 import { useEffect, useRef, useState } from "react"
 import { Building2, GraduationCap, Globe, Users } from "lucide-react"

@@ -16,7 +16,7 @@ export default function CTABanner() {
           Ready to Grow<br />With Versa?
         </h2>
         <p className="text-white/70 text-lg mb-10">
-          Whether you are a student choosing a career path, a business owner wanting growth, or a family building wealth — your Versa journey starts with a free consultation.
+          Whether you are a student choosing a career path, a business owner wanting growth, or a family building wealth &mdash; your Versa journey starts with a free consultation.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <Link

@@ -17,7 +17,7 @@ export default function Footer() {
             </div>
           </div>
           <p className="text-sm text-white/60 leading-relaxed mb-5">
-            Kerala&apos;s most ambitious diversified business group — five ventures, one mission.
+            Kerala&apos;s most ambitious diversified business group &mdash; five ventures, one mission.
           </p>
           <div className="flex gap-2">
             {[{ l: "f", h: "https://facebook.com" }, { l: "in", h: "https://instagram.com" }, { l: "li", h: "https://linkedin.com" }].map((s) => (

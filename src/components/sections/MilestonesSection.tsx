@@ -1,4 +1,4 @@
-﻿import { MILESTONES } from "@/lib/data"
+import { MILESTONES } from "@/lib/data"
 
 export default function MilestonesSection() {
   return (

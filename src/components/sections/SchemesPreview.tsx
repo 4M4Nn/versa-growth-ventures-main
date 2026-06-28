@@ -1,4 +1,4 @@
-﻿import Link from "next/link"
+import Link from "next/link"
 import { ArrowRight, CheckCircle2 } from "lucide-react"
 import { SCHEMES } from "@/lib/data"
 

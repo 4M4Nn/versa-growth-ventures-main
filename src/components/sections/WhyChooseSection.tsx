@@ -1,4 +1,4 @@
-﻿import { Building2, Users, Trophy, Zap, MapPin, Globe } from "lucide-react"
+import { Building2, Users, Trophy, Zap, MapPin, Globe } from "lucide-react"
 import { WHY_CHOOSE } from "@/lib/data"
 
 const ICONS: Record<string, React.ComponentType<{ size?: number; className?: string }>> = {

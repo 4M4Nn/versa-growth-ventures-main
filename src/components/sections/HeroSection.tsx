@@ -32,7 +32,7 @@ export default function HeroSection() {
           </h1>
 
           <p className="text-white/70 text-base md:text-lg leading-relaxed mb-8 max-w-xl">
-            From banking education and study abroad to AI marketing, investment advisory and exports — Versa Growth Ventures is building Kerala&apos;s most ambitious business group.
+            From banking education and study abroad to AI marketing, investment advisory and exports &mdash; Versa Growth Ventures is building Kerala&apos;s most ambitious business group.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3">

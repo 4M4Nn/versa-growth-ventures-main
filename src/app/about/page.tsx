@@ -21,7 +21,7 @@ export default function AboutPage() {
             <span className="text-[#C9A84C]">Ambitious Business Group</span>
           </h1>
           <p className="text-white/70 text-lg max-w-2xl mx-auto">
-            Versa Growth Ventures was born from a belief that Kerala — with its educated population, entrepreneurial energy, and global diaspora — deserves a business group as ambitious as its people.
+            Versa Growth Ventures was born from a belief that Kerala &mdash; with its educated population, entrepreneurial energy, and global diaspora &mdash; deserves a business group as ambitious as its people.
           </p>
         </div>
       </section>
