@@ -23,7 +23,7 @@ export default function BlogPreview() {
           {posts.map((post) => (
             <Link key={post.slug} href={`/blog/${post.slug}`} className="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl hover:border-[#4A7C59]/20 transition-all duration-300">
               <div className="relative h-52 overflow-hidden">
-                <Image src={post.image} alt={post.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                <Image src={post.image} alt={post.title} fill unoptimized className="object-cover group-hover:scale-105 transition-transform duration-500" />
                 <span className="absolute top-3 left-3 bg-[#4A7C59] text-white text-xs font-bold px-3 py-1 rounded-full">{post.category}</span>
               </div>
               <div className="p-6">

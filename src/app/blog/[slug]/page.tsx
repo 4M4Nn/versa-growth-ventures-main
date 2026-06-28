@@ -31,7 +31,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   return (
     <div className="pt-16 md:pt-20">
       <div className="relative h-[55vh] min-h-[350px]">
-        <Image src={post.image} alt={post.title} fill className="object-cover" priority />
+        <Image src={post.image} alt={post.title} fill unoptimized className="object-cover" priority />
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/80" />
         <div className="absolute bottom-10 left-0 right-0 px-4">
           <div className="max-w-4xl mx-auto">
@@ -79,7 +79,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               {related.map((rp) => (
                 <Link key={rp.slug} href={`/blog/${rp.slug}`} className="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition-all">
                   <div className="relative h-40">
-                    <Image src={rp.image} alt={rp.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                    <Image src={rp.image} alt={rp.title} fill unoptimized className="object-cover group-hover:scale-105 transition-transform duration-500" />
                   </div>
                   <div className="p-4">
                     <p className="font-semibold text-[#1A1A1A] text-sm group-hover:text-[#4A7C59] transition-colors line-clamp-2">{rp.title}</p>

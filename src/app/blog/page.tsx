@@ -38,7 +38,7 @@ export default function BlogPage() {
           <div className="mb-12">
             <Link href={`/blog/${BLOG_POSTS[0].slug}`} className="group grid md:grid-cols-2 gap-0 bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-md hover:shadow-xl transition-all">
               <div className="relative h-72 md:h-auto overflow-hidden">
-                <Image src={BLOG_POSTS[0].image} alt={BLOG_POSTS[0].title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                <Image src={BLOG_POSTS[0].image} alt={BLOG_POSTS[0].title} fill unoptimized className="object-cover group-hover:scale-105 transition-transform duration-500" />
                 <span className="absolute top-4 left-4 bg-[#4A7C59] text-white text-xs font-bold px-3 py-1 rounded-full">{BLOG_POSTS[0].category}</span>
               </div>
               <div className="p-10 flex flex-col justify-center">
@@ -55,7 +55,7 @@ export default function BlogPage() {
             {BLOG_POSTS.slice(1).map((post) => (
               <Link key={post.slug} href={`/blog/${post.slug}`} className="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg hover:border-[#4A7C59]/20 transition-all">
                 <div className="relative h-44 overflow-hidden">
-                  <Image src={post.image} alt={post.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <Image src={post.image} alt={post.title} fill unoptimized className="object-cover group-hover:scale-105 transition-transform duration-500" />
                   <span className="absolute top-2 left-2 bg-[#4A7C59] text-white text-[10px] font-bold px-2 py-0.5 rounded-full">{post.category}</span>
                 </div>
                 <div className="p-5">

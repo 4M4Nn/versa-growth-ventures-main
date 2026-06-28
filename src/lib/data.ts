@@ -204,7 +204,7 @@ The businesses that will dominate Kerala's economy in 2030 are making their AI i
     date: "June 15, 2026",
     readTime: "5 min read",
     excerpt: "Choosing your study abroad consultant may be the most important decision in your academic journey. Here is why Kerala students consistently choose Versa Global.",
-    image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&q=80",
     body: `Choosing your study abroad consultant may be the most important decision in your academic journey — more important than the country you choose or even the university. A great consultant opens doors. A poor one wastes years. Here is why Kerala students consistently choose Versa Global over other consultancies.
 
 First, our 95% visa success rate is not a marketing claim — it is a track record built one student at a time. We achieve this by doing something many consultancies skip: a thorough pre-assessment of your profile before recommending any destination. We identify potential visa rejection risks early and build your documentation strategy to neutralise them before submission.
