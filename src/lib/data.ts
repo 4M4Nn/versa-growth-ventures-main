@@ -60,7 +60,7 @@ export const VENTURES: Venture[] = [
     description: "Kerala's most trusted study abroad consultancy. We guide students to universities in 60+ countries with expert counselling, complete visa support, and a 95% visa success rate that speaks for itself.",
     metric: "95%",
     metricLabel: "Visa Success Rate",
-    image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&q=80",
     url: "https://versa-global-education.vercel.app",
     color: "#1B2A4A",
     features: ["60+ Countries", "Free Profile Evaluation", "Visa Preparation", "Pre-Departure Support"],
