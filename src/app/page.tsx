@@ -26,11 +26,13 @@ export default function HomePage() {
   const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
-    setMounted(true)
-    const seen = sessionStorage.getItem("versa-intro-seen")
-    if (!seen) {
-      setShowIntro(true)
-    }
+    queueMicrotask(() => {
+      setMounted(true)
+      const seen = sessionStorage.getItem("versa-intro-seen")
+      if (!seen) {
+        setShowIntro(true)
+      }
+    })
   }, [])
 
   const handleIntroComplete = () => {

@@ -1,7 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
 import { ArrowRight } from "lucide-react"
-import { SITE } from "@/lib/data"
 
 export default function HeroSection() {
   return (

@@ -4,6 +4,7 @@ import "./globals.css"
 import Navbar from "@/components/layout/Navbar"
 import Footer from "@/components/layout/Footer"
 import FloatingWhatsApp from "@/components/layout/FloatingWhatsApp"
+import ChatWidget from "@/components/layout/ChatWidget"
 import MobileStickyBar from "@/components/ui/MobileStickyBar"
 import { SITE } from "@/lib/data"
 
@@ -26,6 +27,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="overflow-x-hidden pb-16 md:pb-0">{children}</main>
         <Footer />
         <FloatingWhatsApp />
+        <ChatWidget />
         <MobileStickyBar />
       </body>
     </html>
