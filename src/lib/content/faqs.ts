@@ -39,8 +39,46 @@ export const GROUP_FAQS: FAQ[] = [
   },
 ]
 
+export const TRADE_TERMS_FAQS: FAQ[] = [
+  {
+    question: "What is the difference between FOB, CFR and CIF?",
+    answer:
+      "Under FOB the seller loads the goods on the vessel and the buyer pays freight and insurance. Under CFR the seller also pays freight to the destination port; under CIF the seller pays freight and insurance. In all three, risk passes to the buyer once goods are loaded at origin.",
+  },
+  {
+    question: "What documents are needed to export coffee or spices from India?",
+    answer:
+      "Typically a commercial invoice, packing list, shipping bill, bill of lading, certificate of origin and phytosanitary certificate, plus a quality report and any fumigation or product certificates the buyer requires.",
+  },
+  {
+    question: "What is a preferential certificate of origin under India–UAE CEPA?",
+    answer:
+      "It is a certificate that lets eligible Indian-origin goods enter the UAE at reduced or zero duty under the India–UAE Comprehensive Economic Partnership Agreement. It must be issued for the specific consignment.",
+  },
+  {
+    question: "Which payment terms are common for bulk coffee and spice orders?",
+    answer:
+      "A partial advance with the balance against shipping documents, cash against documents through banks, or a letter of credit for larger orders.",
+  },
+  {
+    question: "What is a telex release?",
+    answer:
+      "A telex release lets the consignee collect cargo at the destination without surrendering paper original bills of lading, once the shipper authorises release — usually after payment.",
+  },
+  {
+    question: "What is VGM?",
+    answer:
+      "VGM (verified gross mass) is the declared weight of a packed container, which must be submitted to the carrier before the container can be loaded on a vessel.",
+  },
+  {
+    question: "Where can I find definitions of shipping and spice trade terms?",
+    answer: "Our glossary explains terms such as FCL, LCL, bill of lading, CEPA, AGEB, MG1, TGEB and Robusta Parchment in plain English.",
+  },
+]
+
 export const FAQ_GROUPS: FAQGroup[] = [
   { id: "group", title: "About the group", items: GROUP_FAQS },
   { id: "logistics", title: "Versa Logistics — freight & transportation", items: LOGISTICS_FAQS },
   { id: "traders", title: "Versa Traders — coffee & spices", items: TRADERS_FAQS },
+  { id: "trade-terms", title: "Documents, payments & trade terms", items: TRADE_TERMS_FAQS },
 ]

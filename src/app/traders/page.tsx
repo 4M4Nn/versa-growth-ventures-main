@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { IMAGES, SITE, TRADERS_FAQS, TRADERS_HUB } from "@/lib/data"
+import { IMAGES, SITE, TRADERS_FAQS, TRADERS_HUB, TRADERS_MARKETS } from "@/lib/data"
 import { Container } from "@/components/shared/Container"
 import { PageHero } from "@/components/shared/PageHero"
 import { ArrowLink } from "@/components/shared/ArrowLink"
@@ -83,6 +83,21 @@ export default function TradersPage() {
               </li>
             ))}
           </ol>
+        </Container>
+      </section>
+
+      <section className="border-y border-ink bg-paper-2 py-16 md:py-24">
+        <Container>
+          <Eyebrow tone="spice">{c.marketsEyebrow}</Eyebrow>
+          <h2 className="mt-5 max-w-3xl font-serif text-4xl leading-tight md:text-5xl">{c.marketsH2}</h2>
+          <ul className="mt-12 grid gap-px border border-ink bg-ink sm:grid-cols-2 lg:grid-cols-4">
+            {TRADERS_MARKETS.map((item) => (
+              <li key={item.title} className="bg-paper p-7">
+                <h3 className="font-serif text-2xl leading-tight">{item.title}</h3>
+                <p className="mt-2 text-[15px] leading-relaxed text-ink-soft">{item.body}</p>
+              </li>
+            ))}
+          </ul>
         </Container>
       </section>
 

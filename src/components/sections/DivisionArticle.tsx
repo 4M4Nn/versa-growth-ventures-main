@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { ArrowUpRight, Phone } from "lucide-react"
 import type { DivisionPage } from "@/types"
-import { DIVISION_COPY, PHONES, SITE, whatsappLink } from "@/lib/data"
+import { BLOG_POSTS, DIVISION_COPY, PHONES, SITE, whatsappLink } from "@/lib/data"
 import { Container } from "@/components/shared/Container"
 import { PageHero } from "@/components/shared/PageHero"
 import { SpecTable } from "@/components/shared/SpecTable"
@@ -16,6 +16,9 @@ export function DivisionArticle({ page, siblings }: { page: DivisionPage; siblin
   const related = page.related
     .map((slug) => siblings.find((s) => s.slug === slug))
     .filter((p): p is DivisionPage => Boolean(p))
+
+  const pagePath = `${d.hub}/${page.slug}`
+  const insights = BLOG_POSTS.filter((p) => p.relatedLinks.some((l) => l.href === pagePath)).slice(0, 4)
 
   const schema =
     page.division === "logistics"
@@ -125,6 +128,27 @@ export function DivisionArticle({ page, siblings }: { page: DivisionPage; siblin
             </h2>
             <FAQList items={page.faqs} />
           </section>
+
+          {insights.length > 0 && (
+            <section className="mt-16" aria-labelledby="insights-heading">
+              <h2 id="insights-heading" className="font-serif text-3xl leading-tight">
+                Guides on {page.navLabel.toLowerCase()}
+              </h2>
+              <ul className="mt-5 border-t border-ink">
+                {insights.map((p) => (
+                  <li key={p.slug} className="border-b border-rule">
+                    <Link href={`/blog/${p.slug}`} className="group flex items-start justify-between gap-6 py-4 hover:text-spice">
+                      <span>
+                        <span className="block font-semibold leading-snug">{p.title}</span>
+                        <span className="mt-1 block text-sm text-ink-soft">{p.excerpt}</span>
+                      </span>
+                      <ArrowUpRight className="mt-1 size-4 shrink-0 transition-transform group-hover:rotate-45" aria-hidden />
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
 
           {related.length > 0 && (
             <section className="mt-16" aria-labelledby="related-heading">

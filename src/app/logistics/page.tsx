@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import { ArrowUpRight } from "lucide-react"
-import { IMAGES, LOGISTICS_FAQS, LOGISTICS_HUB, NEWS, SITE } from "@/lib/data"
+import { IMAGES, LOGISTICS_FAQS, LOGISTICS_HUB, LOGISTICS_INDUSTRIES, NEWS, SITE } from "@/lib/data"
 import { Container } from "@/components/shared/Container"
 import { PageHero } from "@/components/shared/PageHero"
 import { ArrowLink } from "@/components/shared/ArrowLink"
@@ -58,6 +58,21 @@ export default function LogisticsPage() {
                   </span>
                   <ArrowUpRight className="size-5 self-end transition-transform group-hover:rotate-45" aria-hidden />
                 </Link>
+              </li>
+            ))}
+          </ul>
+        </Container>
+      </section>
+
+      <section className="border-y border-ink bg-paper-2 py-16 md:py-24">
+        <Container>
+          <Eyebrow tone="ocean">{c.industriesEyebrow}</Eyebrow>
+          <h2 className="mt-5 max-w-3xl font-serif text-4xl leading-tight md:text-5xl">{c.industriesH2}</h2>
+          <ul className="mt-12 grid gap-px border border-ink bg-ink sm:grid-cols-2 lg:grid-cols-3">
+            {LOGISTICS_INDUSTRIES.map((item) => (
+              <li key={item.title} className="bg-paper p-7">
+                <h3 className="font-serif text-2xl leading-tight">{item.title}</h3>
+                <p className="mt-2 text-[15px] leading-relaxed text-ink-soft">{item.body}</p>
               </li>
             ))}
           </ul>

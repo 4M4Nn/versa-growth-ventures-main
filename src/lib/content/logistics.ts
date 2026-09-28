@@ -1,5 +1,6 @@
 import type { DivisionPage, FAQ } from "@/types"
 import { IMAGES } from "./site"
+import { LOGISTICS_EXTRA_PAGES, LOGISTICS_EXTRA_SECTIONS } from "./logistics-extra"
 
 export const LOGISTICS_HUB = {
   metaTitle: "Versa Logistics — Freight Forwarding, Sea Freight & Transportation, Kochi",
@@ -79,6 +80,8 @@ export const LOGISTICS_HUB = {
     logH2: "Recent Versa Logistics shipments",
     faqEyebrow: "FAQ",
     faqH2: "Versa Logistics FAQs",
+    industriesEyebrow: "Who we ship for",
+    industriesH2: "Industries and shippers we serve",
     ctaTitle: "Move your next container with Versa Logistics.",
     ctaBody: "Tell us the commodity, volume, origin and destination port. We will reply with an itemised quote and a dated plan.",
     ctaSecondary: { label: "Shipping to Jebel Ali", href: "/logistics/india-to-jebel-ali-shipping" },
@@ -135,7 +138,7 @@ export const LOGISTICS_FAQS: FAQ[] = [
   },
 ]
 
-export const LOGISTICS_PAGES: DivisionPage[] = [
+const LOGISTICS_CORE_PAGES: DivisionPage[] = [
   {
     slug: "sea-freight",
     division: "logistics",
@@ -558,4 +561,9 @@ export const LOGISTICS_PAGES: DivisionPage[] = [
     ],
     related: ["india-to-jebel-ali-shipping", "sea-freight", "transportation"],
   },
+]
+
+export const LOGISTICS_PAGES: DivisionPage[] = [
+  ...LOGISTICS_CORE_PAGES.map((p) => (LOGISTICS_EXTRA_SECTIONS[p.slug] ? { ...p, sections: [...p.sections, LOGISTICS_EXTRA_SECTIONS[p.slug]] } : p)),
+  ...LOGISTICS_EXTRA_PAGES,
 ]

@@ -37,6 +37,12 @@ export const SITE = {
   ],
 }
 
+export const BRAND = {
+  mark: { src: "/brand/versa-mark.png", alt: "Versa Growth Ventures logo mark", width: 280, height: 267 },
+  logo: { src: "/brand/versa-growth-ventures-logo.png", alt: "Versa Growth Ventures logo", width: 486, height: 408 },
+  og: { src: "/brand/og-versa-growth-ventures.jpg", width: 1200, height: 630 },
+}
+
 export const PHONES: Phone[] = [
   { display: "+91 97464 33133", href: "+919746433133" },
   { display: "+91 97467 33133", href: "+919746733133" },
@@ -460,6 +466,13 @@ export const PAGE_COPY = {
     phonesH2: "Call or WhatsApp",
     officeH2: "Visit the office",
     formH2: "Send an enquiry",
+  },
+  siteMap: {
+    metaTitle: "Site Map — All Pages",
+    metaDescription: "Every page on the Versa Growth Ventures website: Versa Logistics services and routes, Versa Traders products, news, insights, glossary and company pages.",
+    eyebrow: "Site map",
+    h1: "Site map: every page on Versa Growth Ventures",
+    lede: "Browse all services, products, routes, news, guides and company pages in one place.",
   },
   credits: {
     metaTitle: "Image Credits",

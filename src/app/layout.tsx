@@ -8,7 +8,7 @@ import { Footer } from "@/components/layout/Footer"
 import { FloatingWhatsApp } from "@/components/layout/FloatingWhatsApp"
 import { SmoothFlow } from "@/components/layout/SmoothFlow"
 import { JsonLd } from "@/components/shared/JsonLd"
-import { EXTERNAL, FOUNDERS, PHONES, SITE } from "@/lib/data"
+import { BRAND, EXTERNAL, FOUNDERS, PHONES, SITE } from "@/lib/data"
 
 const manrope = Manrope({ subsets: ["latin"], variable: "--font-manrope", display: "swap" })
 const instrument = Instrument_Serif({ subsets: ["latin"], weight: "400", style: ["normal", "italic"], variable: "--font-instrument", display: "swap" })
@@ -33,13 +33,13 @@ export const metadata: Metadata = {
     url: SITE.url,
     title: "Versa Growth Ventures — Logistics, Coffee & Spice Trading Group, Kochi",
     description: SITE.description,
-    images: [{ url: "/images/container-ship-aerial.jpg", width: 1920, height: 877, alt: "Container ship — Versa Logistics" }],
+    images: [{ url: BRAND.og.src, width: BRAND.og.width, height: BRAND.og.height, alt: "Versa Growth Ventures" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Versa Growth Ventures",
     description: SITE.description,
-    images: ["/images/container-ship-aerial.jpg"],
+    images: [BRAND.og.src],
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large" } },
   category: "business",
@@ -56,6 +56,8 @@ const organizationSchema = {
   name: SITE.name,
   alternateName: "Versa Group",
   url: SITE.url,
+  logo: `${SITE.url}${BRAND.logo.src}`,
+  image: `${SITE.url}${BRAND.og.src}`,
   description: SITE.description,
   foundingDate: SITE.founded,
   founder: FOUNDERS.map((f) => ({ "@type": "Person", name: f.name, jobTitle: f.role })),

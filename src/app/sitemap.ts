@@ -25,6 +25,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entry("/about", 0.7, "monthly"),
     entry("/leadership", 0.7, "monthly"),
     entry("/faq", 0.8, "monthly"),
+    entry("/glossary", 0.7, "monthly"),
+    entry("/site-map", 0.4, "monthly"),
     entry("/contact", 0.8, "yearly"),
     entry("/image-credits", 0.2, "yearly"),
   ]

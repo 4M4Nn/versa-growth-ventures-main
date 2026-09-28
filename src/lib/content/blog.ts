@@ -1,7 +1,8 @@
 import type { BlogPost } from "@/types"
 import { IMAGES } from "./site"
+import { BLOG_EXTRA_POSTS } from "./blog-extra"
 
-export const BLOG_POSTS: BlogPost[] = [
+const BLOG_CORE_POSTS: BlogPost[] = [
   {
     slug: "how-to-ship-coffee-beans-from-india-to-uae-40ft-container",
     title: "How to Ship Coffee Beans from India to the UAE in a 40ft Container",
@@ -671,3 +672,5 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
   },
 ]
+
+export const BLOG_POSTS: BlogPost[] = [...BLOG_CORE_POSTS, ...BLOG_EXTRA_POSTS]

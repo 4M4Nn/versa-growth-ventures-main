@@ -1,5 +1,6 @@
 import type { DivisionPage, FAQ } from "@/types"
 import { IMAGES } from "./site"
+import { TRADERS_EXTRA_PAGES, TRADERS_EXTRA_SECTIONS } from "./traders-extra"
 
 export const TRADERS_HUB = {
   metaTitle: "Versa Traders — Green Coffee Beans, Cardamom & Black Pepper Exporter, India",
@@ -62,6 +63,8 @@ export const TRADERS_HUB = {
     freightCta: "About Versa Logistics",
     faqEyebrow: "FAQ",
     faqH2: "Versa Traders FAQs",
+    marketsEyebrow: "Where we sell",
+    marketsH2: "Markets we supply with Indian coffee and spices",
     ctaTitle: "Start with a sample.",
     ctaBody: "Tell us the product, grade, quantity and destination port. We send a sample from the lot and a quote backed by our quality report.",
     ctaSecondary: { label: "Green coffee beans", href: "/traders/green-coffee-beans" },
@@ -126,7 +129,7 @@ export const TRADERS_FAQS: FAQ[] = [
   },
 ]
 
-export const TRADERS_PAGES: DivisionPage[] = [
+const TRADERS_CORE_PAGES: DivisionPage[] = [
   {
     slug: "green-coffee-beans",
     division: "traders",
@@ -527,4 +530,9 @@ export const TRADERS_PAGES: DivisionPage[] = [
     ],
     related: ["quality-certification", "green-coffee-beans", "cardamom"],
   },
+]
+
+export const TRADERS_PAGES: DivisionPage[] = [
+  ...TRADERS_CORE_PAGES.map((p) => (TRADERS_EXTRA_SECTIONS[p.slug] ? { ...p, sections: [...p.sections, TRADERS_EXTRA_SECTIONS[p.slug]] } : p)),
+  ...TRADERS_EXTRA_PAGES,
 ]

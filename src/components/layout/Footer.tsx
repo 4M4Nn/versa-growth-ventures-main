@@ -1,6 +1,7 @@
+import Image from "next/image"
 import Link from "next/link"
 import { ArrowUpRight } from "lucide-react"
-import { EXTERNAL, LOGISTICS_PAGES, PHONES, SITE, TRADERS_PAGES } from "@/lib/data"
+import { BRAND, EXTERNAL, LOGISTICS_PAGES, PHONES, SITE, TRADERS_PAGES } from "@/lib/data"
 
 const GROUP_LINKS = [
   { label: "About the group", href: "/about" },
@@ -9,6 +10,8 @@ const GROUP_LINKS = [
   { label: "News & shipments", href: "/news" },
   { label: "Insights", href: "/blog" },
   { label: "FAQ", href: "/faq" },
+  { label: "Glossary", href: "/glossary" },
+  { label: "Site map", href: "/site-map" },
   { label: "Contact", href: "/contact" },
   { label: "Image credits", href: "/image-credits" },
 ]
@@ -20,7 +23,9 @@ export function Footer() {
       <div className="mx-auto w-full max-w-[1320px] px-5 md:px-10">
         <div className="grid gap-12 border-b border-paper/15 py-16 lg:grid-cols-12">
           <div className="lg:col-span-4">
-            <p className="font-serif text-4xl leading-none">Versa Growth Ventures</p>
+            <Link href="/" className="inline-block bg-paper p-5" aria-label={`${SITE.name} — home`}>
+              <Image src={BRAND.logo.src} alt={BRAND.logo.alt} width={BRAND.logo.width} height={BRAND.logo.height} className="h-28 w-auto" />
+            </Link>
             <p className="mt-5 max-w-sm text-paper/65">{SITE.tagline}</p>
             <address className="mt-8 not-italic leading-relaxed text-paper/80">
               {SITE.address.line1}

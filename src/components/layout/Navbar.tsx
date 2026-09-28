@@ -1,19 +1,35 @@
 "use client"
 
+import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useState } from "react"
 import { ArrowUpRight, ChevronDown, Menu, Phone } from "lucide-react"
-import { NAV_LINKS, PHONES, SITE } from "@/lib/data"
+import { BRAND, LOGISTICS_PAGES, NAV_LINKS, PHONES, SITE, TRADERS_PAGES } from "@/lib/data"
+import type { NavLink } from "@/types"
 import { cn } from "@/lib/utils"
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
+
+// Division menus are built from the page data so new service/product pages appear automatically.
+const MENU: NavLink[] = NAV_LINKS.map((link) => {
+  if (link.href === "/logistics")
+    return { ...link, children: [{ label: "Versa Logistics overview", href: "/logistics" }, ...LOGISTICS_PAGES.map((p) => ({ label: p.navLabel, href: `/logistics/${p.slug}` }))] }
+  if (link.href === "/traders")
+    return { ...link, children: [{ label: "Versa Traders overview", href: "/traders" }, ...TRADERS_PAGES.map((p) => ({ label: p.navLabel, href: `/traders/${p.slug}` }))] }
+  return link
+})
 
 function Wordmark() {
   return (
     <Link href="/" className="group flex shrink-0 items-center gap-3" aria-label={`${SITE.name} — home`}>
-      <span className="grid size-9 place-items-center border border-ink bg-ink font-serif text-2xl leading-none text-paper transition-colors group-hover:border-spice group-hover:bg-spice sm:size-10">
-        V
-      </span>
+      <Image
+        src={BRAND.mark.src}
+        alt={BRAND.mark.alt}
+        width={BRAND.mark.width}
+        height={BRAND.mark.height}
+        priority
+        className="h-10 w-auto transition-transform duration-500 group-hover:-translate-y-0.5 sm:h-11"
+      />
       <span className="leading-none">
         <span className="block whitespace-nowrap font-serif text-[18px] tracking-tight text-ink sm:text-[22px]">Versa Growth Ventures</span>
         <span className="mt-1 block font-mono text-[9.5px] uppercase tracking-[0.22em] text-ink-soft">Est. {SITE.founded} · Kochi</span>
@@ -34,7 +50,7 @@ export function Navbar() {
 
         <nav aria-label="Main" className="hidden items-center xl:flex">
           <ul className="flex items-center">
-            {NAV_LINKS.map((link) =>
+            {MENU.map((link) =>
               link.children ? (
                 <li key={link.label} className="group relative">
                   <Link
@@ -47,18 +63,18 @@ export function Navbar() {
                     {link.label}
                     <ChevronDown className="size-3.5 transition-transform group-hover:rotate-180 group-focus-within:rotate-180" aria-hidden />
                   </Link>
-                  <div className="invisible absolute left-0 top-full w-[380px] translate-y-2 pt-3 opacity-0 transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100">
-                    <ul className="border border-ink bg-paper">
+                  <div className={cn("invisible absolute left-0 top-full translate-y-2 pt-3 opacity-0 transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100", link.children.length > 6 ? "w-[600px]" : "w-[380px]")}>
+                    <ul className={cn("border border-ink bg-paper", link.children.length > 6 && "grid grid-cols-2")}>
                       {link.children.map((c) => (
-                        <li key={c.href} className="border-b border-rule last:border-b-0">
+                        <li key={c.href} className={cn("border-b border-rule", link.children!.length > 6 ? "odd:border-r" : "last:border-b-0")}>
                           <a
                             href={c.href}
                             {...(c.external ? { target: "_blank", rel: "noopener" } : {})}
-                            className="group/item flex items-start justify-between gap-4 px-5 py-4 transition-colors hover:bg-ink hover:text-paper"
+                            className={cn("group/item flex items-start justify-between gap-4 px-5 transition-colors hover:bg-ink hover:text-paper", c.description ? "py-4" : "py-3")}
                           >
                             <span>
                               <span className="block text-[15px] font-semibold">{c.label}</span>
-                              <span className="mt-1 block text-[13px] text-ink-soft group-hover/item:text-paper/70">{c.description}</span>
+                              {c.description && <span className="mt-1 block text-[13px] text-ink-soft group-hover/item:text-paper/70">{c.description}</span>}
                             </span>
                             <ArrowUpRight className="mt-1 size-4 shrink-0" aria-hidden />
                           </a>
@@ -105,11 +121,14 @@ export function Navbar() {
             </SheetTrigger>
             <SheetContent side="right" className="w-full max-w-sm overflow-y-auto border-l border-ink bg-paper p-0 sm:max-w-sm">
               <SheetHeader className="border-b border-ink px-6 py-5 text-left">
-                <SheetTitle className="font-serif text-2xl font-normal">Versa Growth Ventures</SheetTitle>
+                <SheetTitle className="flex items-center gap-3 font-serif text-2xl font-normal">
+                  <Image src={BRAND.mark.src} alt="" width={BRAND.mark.width} height={BRAND.mark.height} className="h-9 w-auto" />
+                  Versa Growth Ventures
+                </SheetTitle>
               </SheetHeader>
               <nav aria-label="Mobile" className="px-6 py-4">
                 <ul>
-                  {NAV_LINKS.map((link) => (
+                  {MENU.map((link) => (
                     <li key={link.label} className="border-b border-rule">
                       <Link
                         href={link.href}

@@ -1,7 +1,7 @@
 export interface NavChild {
   label: string
   href: string
-  description: string
+  description?: string
   external?: boolean
 }
 
