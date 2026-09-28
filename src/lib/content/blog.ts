@@ -1,6 +1,7 @@
 import type { BlogPost } from "@/types"
 import { IMAGES } from "./site"
 import { BLOG_EXTRA_POSTS } from "./blog-extra"
+import { BLOG_LOGISTICS_POSTS } from "./blog-logistics"
 
 const BLOG_CORE_POSTS: BlogPost[] = [
   {
@@ -673,4 +674,4 @@ const BLOG_CORE_POSTS: BlogPost[] = [
   },
 ]
 
-export const BLOG_POSTS: BlogPost[] = [...BLOG_CORE_POSTS, ...BLOG_EXTRA_POSTS]
+export const BLOG_POSTS: BlogPost[] = [...BLOG_CORE_POSTS, ...BLOG_EXTRA_POSTS, ...BLOG_LOGISTICS_POSTS]

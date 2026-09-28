@@ -1,6 +1,7 @@
 import type { FAQ, FAQGroup } from "@/types"
 import { LOGISTICS_FAQS } from "./logistics"
 import { TRADERS_FAQS } from "./traders"
+import { FREIGHT_QUOTE_FAQS } from "./logistics-seo"
 
 export const GROUP_FAQS: FAQ[] = [
   {
@@ -98,6 +99,7 @@ export const TRADE_TERMS_FAQS: FAQ[] = [
 export const FAQ_GROUPS: FAQGroup[] = [
   { id: "group", title: "About the group", items: GROUP_FAQS },
   { id: "logistics", title: "Versa Logistics — freight & transportation", items: LOGISTICS_FAQS },
+  { id: "freight-quotes", title: "Freight quotes & rates", items: FREIGHT_QUOTE_FAQS },
   { id: "traders", title: "Versa Traders — coffee & spices", items: TRADERS_FAQS },
   { id: "trade-terms", title: "Documents, payments & trade terms", items: TRADE_TERMS_FAQS },
 ]

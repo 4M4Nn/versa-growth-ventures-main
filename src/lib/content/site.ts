@@ -426,7 +426,7 @@ export const DIVISION_COPY = {
     hub: "/logistics",
     accent: "ocean" as const,
     specTitle: "Service at a glance",
-    cta: { label: "Request a freight quote", href: "/contact?enquiry=logistics" },
+    cta: { label: "Request a freight quote", href: "/logistics/freight-quote" },
     ctaTitle: "Ready to book a container?",
     ctaBody: "Send us the cargo, volume, origin and destination port. We reply with an itemised quote and a dated sailing plan.",
     whatsapp: "Hello Versa Logistics, I need a freight quote for ",

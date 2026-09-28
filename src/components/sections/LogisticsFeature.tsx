@@ -25,9 +25,14 @@ export function LogisticsFeature() {
               <RouteMap />
             </div>
             <div className="mt-6">
-              <ArrowLink href="/logistics" variant="paper">
-                {HOME_SECTIONS.labels.exploreLogistics}
-              </ArrowLink>
+              <div className="flex flex-wrap gap-3">
+                <ArrowLink href="/logistics/freight-quote" variant="spice">
+                  Get a freight quote
+                </ArrowLink>
+                <ArrowLink href="/logistics" variant="ghost">
+                  {HOME_SECTIONS.labels.exploreLogistics}
+                </ArrowLink>
+              </div>
             </div>
           </div>
           <div className="lg:col-span-7">

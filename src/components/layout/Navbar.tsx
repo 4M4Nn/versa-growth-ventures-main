@@ -13,7 +13,7 @@ import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/co
 // Division menus are built from the page data so new service/product pages appear automatically.
 const MENU: NavLink[] = NAV_LINKS.map((link) => {
   if (link.href === "/logistics")
-    return { ...link, children: [{ label: "Versa Logistics overview", href: "/logistics" }, ...LOGISTICS_PAGES.map((p) => ({ label: p.navLabel, href: `/logistics/${p.slug}` }))] }
+    return { ...link, children: [{ label: "Versa Logistics overview", href: "/logistics" }, { label: "Get a freight quote", href: "/logistics/freight-quote" }, ...LOGISTICS_PAGES.map((p) => ({ label: p.navLabel, href: `/logistics/${p.slug}` }))] }
   if (link.href === "/traders")
     return { ...link, children: [{ label: "Versa Traders overview", href: "/traders" }, ...TRADERS_PAGES.map((p) => ({ label: p.navLabel, href: `/traders/${p.slug}` }))] }
   if (link.href === "/ventures" && link.children)
@@ -149,7 +149,7 @@ export function Navbar() {
 
         <div className="flex items-center gap-2">
           <Link
-            href="/contact"
+            href="/logistics/freight-quote"
             onClick={closeMenus}
             className="hidden min-h-11 items-center gap-2 border border-ink bg-ink px-5 text-sm font-semibold text-paper transition-colors hover:border-spice hover:bg-spice sm:inline-flex"
           >

@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     entry("/", 1, "weekly"),
     entry("/logistics", 0.95, "weekly"),
+    entry("/logistics/freight-quote", 0.95, "weekly"),
     entry("/traders", 0.95, "weekly"),
     ...LOGISTICS_PAGES.map((p) => entry(`/logistics/${p.slug}`, 0.9, "monthly")),
     ...TRADERS_PAGES.map((p) => entry(`/traders/${p.slug}`, 0.9, "monthly")),

@@ -1,9 +1,10 @@
 import type { DivisionPage, FAQ } from "@/types"
 import { IMAGES } from "./site"
 import { LOGISTICS_EXTRA_PAGES, LOGISTICS_EXTRA_SECTIONS } from "./logistics-extra"
+import { LOGISTICS_KEYWORD_FAQS, LOGISTICS_SEO_PAGES } from "./logistics-seo"
 
 export const LOGISTICS_HUB = {
-  metaTitle: "Versa Logistics — Freight Forwarding, Sea Freight & Transportation, Kochi",
+  metaTitle: "Versa Logistics — Best Logistics & Freight Forwarding Company in Kochi, Kerala | Freight Quotes",
   metaDescription:
     "Versa Logistics is a Kochi freight forwarder offering FCL/LCL sea freight, freight forwarding, export documentation and road transportation from India to Jebel Ali, Khorfakkan and worldwide. Call +91 97464 33133.",
   keywords: [
@@ -17,9 +18,14 @@ export const LOGISTICS_HUB = {
     "40ft container shipping",
     "cargo transportation Kerala",
     "logistics company Kochi",
+    "best logistics company in Kochi",
+    "best logistics service in Kerala",
+    "cheapest logistics service India",
+    "freight quotation Kochi",
+    "best freight rates India to UAE",
   ],
   eyebrow: "Venture 01 — Versa Logistics",
-  h1: "Versa Logistics: freight forwarding, sea freight and transportation from India to the UAE",
+  h1: "Versa Logistics: freight forwarding, sea freight and transportation from Kochi, Kerala to the UAE and worldwide — with transparent freight quotes",
   lede:
     "We move containers. Full-load and part-load sea freight out of Kochi and India's west-coast gateways, road haulage from your warehouse to the terminal, and the documents that clear the cargo — delivered as one service with one accountable contact.",
   answer:
@@ -96,6 +102,7 @@ export const LOGISTICS_HUB = {
 }
 
 export const LOGISTICS_FAQS: FAQ[] = [
+  ...LOGISTICS_KEYWORD_FAQS,
   {
     question: "What does Versa Logistics do?",
     answer:
@@ -566,4 +573,5 @@ const LOGISTICS_CORE_PAGES: DivisionPage[] = [
 export const LOGISTICS_PAGES: DivisionPage[] = [
   ...LOGISTICS_CORE_PAGES.map((p) => (LOGISTICS_EXTRA_SECTIONS[p.slug] ? { ...p, sections: [...p.sections, LOGISTICS_EXTRA_SECTIONS[p.slug]] } : p)),
   ...LOGISTICS_EXTRA_PAGES,
+  ...LOGISTICS_SEO_PAGES,
 ]

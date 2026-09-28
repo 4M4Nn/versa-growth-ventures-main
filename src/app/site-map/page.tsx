@@ -16,7 +16,7 @@ export default function SiteMapPage() {
   const groups = [
     {
       title: "Versa Logistics",
-      links: [{ label: "Versa Logistics overview", href: "/logistics" }, ...LOGISTICS_PAGES.map((p) => ({ label: p.navLabel, href: `/logistics/${p.slug}` }))],
+      links: [{ label: "Versa Logistics overview", href: "/logistics" }, { label: "Get a freight quote", href: "/logistics/freight-quote" }, ...LOGISTICS_PAGES.map((p) => ({ label: p.navLabel, href: `/logistics/${p.slug}` }))],
     },
     {
       title: "Versa Traders",

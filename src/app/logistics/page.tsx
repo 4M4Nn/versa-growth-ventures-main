@@ -1,7 +1,8 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import { ArrowUpRight } from "lucide-react"
-import { IMAGES, LOGISTICS_FAQS, LOGISTICS_HUB, LOGISTICS_INDUSTRIES, NEWS, SITE } from "@/lib/data"
+import { IMAGES, LOGISTICS_FAQS, LOGISTICS_HUB, LOGISTICS_HUB_EXTRA, LOGISTICS_INDUSTRIES, LOGISTICS_PAGES, NEWS, SITE } from "@/lib/data"
+import { Check } from "lucide-react"
 import { Container } from "@/components/shared/Container"
 import { PageHero } from "@/components/shared/PageHero"
 import { ArrowLink } from "@/components/shared/ArrowLink"
@@ -35,11 +36,34 @@ export default function LogisticsPage() {
         answer={LOGISTICS_HUB.answer}
         accent="ocean"
       >
-        <ArrowLink href="/contact?enquiry=logistics">{c.heroCta}</ArrowLink>
+        <ArrowLink href="/logistics/freight-quote">{c.heroCta}</ArrowLink>
         <ArrowLink href="/news" variant="outline">
           {c.heroSecondary}
         </ArrowLink>
       </PageHero>
+
+      <section className="border-b border-ink bg-ink text-paper">
+        <Container className="grid items-center gap-10 py-14 md:py-16 lg:grid-cols-12">
+          <div className="lg:col-span-7">
+            <Eyebrow tone="paper">{LOGISTICS_HUB_EXTRA.quoteEyebrow}</Eyebrow>
+            <h2 className="mt-5 font-serif text-4xl leading-tight md:text-5xl">{LOGISTICS_HUB_EXTRA.quoteH2}</h2>
+            <p className="mt-5 max-w-2xl leading-relaxed text-paper/70">{LOGISTICS_HUB_EXTRA.quoteBody}</p>
+          </div>
+          <div className="lg:col-span-4 lg:col-start-9">
+            <ul className="space-y-3">
+              {LOGISTICS_HUB_EXTRA.quotePoints.map((p) => (
+                <li key={p} className="flex items-center gap-3 text-[15px]">
+                  <Check className="size-4 text-[#e9a27f]" aria-hidden />
+                  {p}
+                </li>
+              ))}
+            </ul>
+            <ArrowLink href="/logistics/freight-quote" variant="spice" className="mt-7 w-full">
+              {LOGISTICS_HUB_EXTRA.quoteCta}
+            </ArrowLink>
+          </div>
+        </Container>
+      </section>
 
       <section className="py-16 md:py-24">
         <Container>
@@ -73,6 +97,28 @@ export default function LogisticsPage() {
               <li key={item.title} className="bg-paper p-7">
                 <h3 className="font-serif text-2xl leading-tight">{item.title}</h3>
                 <p className="mt-2 text-[15px] leading-relaxed text-ink-soft">{item.body}</p>
+              </li>
+            ))}
+          </ul>
+        </Container>
+      </section>
+
+      <section className="py-16 md:py-24">
+        <Container>
+          <Eyebrow tone="ocean">{LOGISTICS_HUB_EXTRA.locationsEyebrow}</Eyebrow>
+          <h2 className="mt-5 max-w-3xl font-serif text-4xl leading-tight md:text-5xl">{LOGISTICS_HUB_EXTRA.locationsH2}</h2>
+          <ul className="mt-10 grid gap-px border border-ink bg-ink sm:grid-cols-2 lg:grid-cols-4">
+            {LOGISTICS_PAGES.filter((p) =>
+              ["logistics-company-kochi", "logistics-company-kerala", "logistics-services-india", "affordable-freight-india-to-uae"].includes(p.slug)
+            ).map((p) => (
+              <li key={p.slug} className="bg-paper">
+                <Link href={`/logistics/${p.slug}`} className="group flex h-full flex-col justify-between gap-6 p-6 transition-colors hover:bg-ocean-deep hover:text-paper">
+                  <span>
+                    <span className="block font-serif text-2xl leading-tight">{p.navLabel}</span>
+                    <span className="mt-2 block text-sm leading-relaxed text-ink-soft group-hover:text-paper/70">{p.lede}</span>
+                  </span>
+                  <ArrowUpRight className="size-4 self-end transition-transform group-hover:rotate-45" aria-hidden />
+                </Link>
               </li>
             ))}
           </ul>
@@ -156,7 +202,7 @@ export default function LogisticsPage() {
       <CTABand
         title={c.ctaTitle}
         body={c.ctaBody}
-        primary={{ label: c.heroCta, href: "/contact?enquiry=logistics" }}
+        primary={{ label: c.heroCta, href: "/logistics/freight-quote" }}
         secondary={c.ctaSecondary}
       />
       <JsonLd
