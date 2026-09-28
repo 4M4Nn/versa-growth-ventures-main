@@ -5,15 +5,13 @@ import { Container } from "@/components/shared/Container"
 import { SectionHeading } from "@/components/shared/SectionHeading"
 import { Headline } from "@/components/shared/Headline"
 import { ArrowLink } from "@/components/shared/ArrowLink"
-import { Reveal } from "@/components/shared/Reveal"
 
 export function ProductCards({ headingLevel = "h3" }: { headingLevel?: "h2" | "h3" }) {
   const Title = headingLevel
   return (
     <ul className="grid gap-6 md:grid-cols-3">
-      {TRADERS_HUB.products.map((p, i) => (
+      {TRADERS_HUB.products.map((p) => (
         <li key={p.href}>
-          <Reveal delay={i * 80} className="h-full">
             <Link href={p.href} className="group flex h-full flex-col border border-ink bg-paper transition-shadow duration-300 hover:shadow-[8px_8px_0_0_#a8431f]">
               <div className="relative aspect-[4/3] overflow-hidden border-b border-ink bg-paper-2">
                 <Image
@@ -33,7 +31,6 @@ export function ProductCards({ headingLevel = "h3" }: { headingLevel?: "h2" | "h
                 </span>
               </div>
             </Link>
-          </Reveal>
         </li>
       ))}
     </ul>

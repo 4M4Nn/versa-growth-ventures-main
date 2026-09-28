@@ -5,7 +5,6 @@ import { Container } from "@/components/shared/Container"
 import { SectionHeading } from "@/components/shared/SectionHeading"
 import { Headline } from "@/components/shared/Headline"
 import { ArrowLink } from "@/components/shared/ArrowLink"
-import { Reveal } from "@/components/shared/Reveal"
 import { RouteMap } from "./RouteMap"
 
 export function LogisticsFeature() {
@@ -21,7 +20,7 @@ export function LogisticsFeature() {
           body={copy.body}
         />
         <div className="mt-14 grid gap-10 lg:grid-cols-12">
-          <Reveal className="lg:col-span-5">
+          <div className="lg:col-span-5">
             <div className="border border-paper/25 p-5">
               <RouteMap />
             </div>
@@ -30,7 +29,7 @@ export function LogisticsFeature() {
                 {HOME_SECTIONS.labels.exploreLogistics}
               </ArrowLink>
             </div>
-          </Reveal>
+          </div>
           <div className="lg:col-span-7">
             <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-paper/55">{HOME_SECTIONS.labels.logisticsServices}</p>
             <ul className="mt-4 grid border-l border-t border-paper/25 sm:grid-cols-2">

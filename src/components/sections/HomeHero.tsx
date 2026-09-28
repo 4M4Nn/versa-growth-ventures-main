@@ -28,7 +28,7 @@ export function HomeHero() {
         </div>
 
         <div className="relative lg:col-span-5">
-          <div className="relative aspect-[4/5] w-full overflow-hidden border border-ink bg-paper-2 sm:aspect-[4/3] lg:aspect-[4/5]">
+          <div data-parallax className="relative aspect-[4/5] w-full overflow-hidden border border-ink bg-paper-2 sm:aspect-[4/3] lg:aspect-[4/5]">
             <Image
               src={IMAGES.kochiTerminal.src}
               alt={IMAGES.kochiTerminal.alt}

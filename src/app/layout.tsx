@@ -1,10 +1,12 @@
 import type { Metadata, Viewport } from "next"
 import { Instrument_Serif, JetBrains_Mono, Manrope } from "next/font/google"
+import "lenis/dist/lenis.css"
 import "./globals.css"
 import { TopBar } from "@/components/layout/TopBar"
 import { Navbar } from "@/components/layout/Navbar"
 import { Footer } from "@/components/layout/Footer"
 import { FloatingWhatsApp } from "@/components/layout/FloatingWhatsApp"
+import { SmoothFlow } from "@/components/layout/SmoothFlow"
 import { JsonLd } from "@/components/shared/JsonLd"
 import { EXTERNAL, FOUNDERS, PHONES, SITE } from "@/lib/data"
 
@@ -93,6 +95,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <main id="main">{children}</main>
         <Footer />
         <FloatingWhatsApp />
+        <SmoothFlow />
         <JsonLd data={organizationSchema} />
       </body>
     </html>

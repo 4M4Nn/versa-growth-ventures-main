@@ -9,6 +9,7 @@ export function Figure({
   priority = false,
   sizes = "(min-width: 1024px) 50vw, 100vw",
   showCaption = true,
+  parallax = true,
 }: {
   image: ImageAsset
   className?: string
@@ -16,10 +17,11 @@ export function Figure({
   priority?: boolean
   sizes?: string
   showCaption?: boolean
+  parallax?: boolean
 }) {
   return (
     <figure className={cn("w-full", className)}>
-      <div className={cn("relative w-full overflow-hidden border border-ink bg-paper-2", aspect)}>
+      <div data-parallax={parallax ? "" : undefined} className={cn("relative w-full overflow-hidden border border-ink bg-paper-2", aspect)}>
         <Image src={image.src} alt={image.alt} fill priority={priority} sizes={sizes} className="object-cover" />
       </div>
       {showCaption && (

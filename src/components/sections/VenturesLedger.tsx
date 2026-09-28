@@ -4,7 +4,6 @@ import { HOME_SECTIONS, VENTURES } from "@/lib/data"
 import { Container } from "@/components/shared/Container"
 import { Headline } from "@/components/shared/Headline"
 import { SectionHeading } from "@/components/shared/SectionHeading"
-import { Reveal } from "@/components/shared/Reveal"
 
 export function VenturesLedger({ showHeading = true }: { showHeading?: boolean }) {
   const Title = showHeading ? "h3" : "h2"
@@ -22,7 +21,6 @@ export function VenturesLedger({ showHeading = true }: { showHeading?: boolean }
         <ol className={showHeading ? "mt-14 border-t border-ink" : "border-t border-ink"}>
           {VENTURES.map((v, i) => (
             <li key={v.slug} className="group relative border-b border-ink transition-colors duration-300 hover:bg-ink hover:text-paper">
-              <Reveal delay={i * 60}>
                   <Link href={v.href} className="grid gap-4 px-2 py-8 md:grid-cols-12 md:items-center md:gap-6 md:px-4">
                     <span className="font-mono text-sm text-spice md:col-span-1">{String(i + 1).padStart(2, "0")}</span>
                     <span className="md:col-span-4">
@@ -41,7 +39,6 @@ export function VenturesLedger({ showHeading = true }: { showHeading?: boolean }
                       </span>
                     </span>
                   </Link>
-              </Reveal>
             </li>
           ))}
         </ol>
