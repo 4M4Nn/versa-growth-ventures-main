@@ -7,6 +7,13 @@ const nextConfig: NextConfig = {
   async redirects() {
     // Routes from the previous version of the site
     return [
+      // One canonical host: www → apex
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.versagrowthventures.in" }],
+        destination: "https://versagrowthventures.in/:path*",
+        permanent: true,
+      },
       { source: "/schemes", destination: "/ventures", permanent: true },
       { source: "/schemes/:path*", destination: "/ventures", permanent: true },
     ]
