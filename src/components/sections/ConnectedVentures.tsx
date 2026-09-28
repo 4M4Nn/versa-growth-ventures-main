@@ -29,6 +29,16 @@ export function ConnectedVentures({ headingLevel = "h3" }: { headingLevel?: "h2"
           </div>
           <Title className="mt-10 font-serif text-4xl leading-none md:text-5xl">{v.name}</Title>
           <p className={cn("mt-5 flex-1 leading-relaxed", v.accent === "brass" ? "text-ink-2" : "text-paper/75")}>{v.summary}</p>
+          {v.stats && (
+            <dl className="mt-6 grid grid-cols-2 gap-px border border-current/30">
+              {v.stats.map((st) => (
+                <div key={st.label} className={cn("p-4", v.accent === "brass" ? "bg-[#e8d9b4]" : "bg-paper/5")}>
+                  <dd className="font-serif text-4xl leading-none">{st.value}</dd>
+                  <dt className={cn("mt-2 font-mono text-[10.5px] uppercase tracking-[0.12em]", v.accent === "brass" ? "text-ink-soft" : "text-paper/60")}>{st.label}</dt>
+                </div>
+              ))}
+            </dl>
+          )}
           <ul className="mt-6 flex flex-wrap gap-2">
             {v.highlights.map((h) => (
               <li

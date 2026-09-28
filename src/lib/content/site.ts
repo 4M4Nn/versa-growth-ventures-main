@@ -6,10 +6,11 @@ export const SITE = {
   legalName: "Versa Growth Ventures",
   tagline: "Trade, logistics and technology — built from Kochi, shipped to the world.",
   description:
-    "Versa Growth Ventures is a Kochi, Kerala business group operating Versa Logistics (sea freight, freight forwarding and transportation to Jebel Ali and Khorfakkan), Versa Traders (export-quality green coffee beans, cardamom and black pepper in bulk), Versa Digital & IT Solutions and Versa Global.",
+    "Versa Growth Ventures is a diversified venture group in Kochi, Kerala: Versa Digital & IT Solutions (custom ERP, AI agents, automation and digital marketing), Versa Logistics (sea freight to Jebel Ali and Khorfakkan), Versa Traders (cardamom, black pepper and green coffee trading and sourcing), Versa BPO, Versa Financial (portfolio management, trading, insurance, SIPs and mutual funds) and Versa Global (study abroad).",
   url: "https://versagrowthventures.in",
   founded: "2025",
   whatsapp: "917907215816",
+  email: "info@versagrowthventures.com",
   address: {
     line1: "3rd Floor, Jogeo Building",
     line2: "Chembumukku, Kakkanad",
@@ -23,6 +24,11 @@ export const SITE = {
   },
   keywords: [
     "Versa Growth Ventures",
+    "diversified venture group Kochi",
+    "business group Kerala",
+    "Versa Digital & IT Solutions",
+    "Versa BPO",
+    "Versa Financial",
     "Versa Logistics",
     "Versa Traders",
     "freight forwarder Kochi",
@@ -67,9 +73,11 @@ export const NAV_LINKS: NavLink[] = [
       {
         label: "Versa Digital & IT Solutions",
         href: EXTERNAL.digital.url,
-        description: "Digital marketing, AEO & custom software",
+        description: "ERP, AI agents, automation & digital marketing",
         external: true,
       },
+      { label: "Versa BPO", href: "/bpo", description: "Customer support, telecalling & back office" },
+      { label: "Versa Financial", href: "/financial", description: "Portfolio, trading, insurance, SIPs & mutual funds" },
       { label: "Versa Global", href: EXTERNAL.global.url, description: "Study abroad & career pathways", external: true },
     ],
   },
@@ -156,6 +164,29 @@ export const IMAGES = {
 
 export const VENTURES: Venture[] = [
   {
+    slug: "versa-digital-it-solutions",
+    code: "VD",
+    name: "Versa Digital & IT Solutions",
+    sector: "IT Solutions · AI Agents · Digital Marketing",
+    summary:
+      "Custom ERP, AI agents and business automation, plus SEO, AEO and performance marketing — 20+ ERP and custom agent builds, 30+ AI agents, 20+ automations and 20+ active marketing clients.",
+    description:
+      "Versa Digital & IT Solutions helps businesses get found on Google and recommended by AI assistants, and builds the software they run on — from high-performance websites to custom ERP, CRM and agentic AI workflows.",
+    href: "/ventures/versa-digital-it-solutions",
+    external: true,
+    liveUrl: EXTERNAL.digital.url,
+    liveLabel: EXTERNAL.digital.label,
+    image: IMAGES.kochiSunset,
+    highlights: ["Custom ERP & CRM", "AI agents & automation", "SEO, AEO & performance marketing", "Web & app development"],
+    stats: [
+      { value: "20+", label: "ERP & custom agent builds" },
+      { value: "30+", label: "AI agents built" },
+      { value: "20+", label: "Automations delivered" },
+      { value: "20+", label: "Active marketing clients" },
+    ],
+    accent: "ink",
+  },
+  {
     slug: "versa-logistics",
     code: "VL",
     name: "Versa Logistics",
@@ -167,6 +198,7 @@ export const VENTURES: Venture[] = [
     href: "/logistics",
     external: false,
     image: IMAGES.shipAerial,
+    stats: [{ value: "17", label: "× 40ft containers to the UAE" }],
     highlights: ["FCL & LCL sea freight", "Freight forwarding & documentation", "Road transportation to port", "India → Jebel Ali & Khorfakkan"],
     accent: "ocean",
   },
@@ -174,33 +206,50 @@ export const VENTURES: Venture[] = [
     slug: "versa-traders",
     code: "VT",
     name: "Versa Traders",
-    sector: "Coffee · Cardamom · Black Pepper",
+    sector: "Spices Trading · Sourcing Agent · Coffee",
     summary:
-      "Global trading of export-quality unroasted green coffee beans, green cardamom and black pepper — in bulk quantities, with samples and quality documents on request.",
+      "Trading and sourcing-agent services for export-quality cardamom, black pepper and unroasted green coffee — in bulk, with samples, quality documents and certification.",
     description:
       "Versa Traders sources high-quality coffee and spices from India's growing regions and supplies importers, roasters, wholesalers and processors worldwide. Every order is backed by samples before commitment, a quality report and full export certification.",
     href: "/traders",
     external: false,
     image: IMAGES.coffeeSack,
-    highlights: ["Unroasted green coffee beans", "Green cardamom, graded", "Black pepper, graded", "Samples & quality documents"],
+    highlights: ["Cardamom & black pepper", "Unroasted green coffee", "Sourcing & buying agent", "Samples & certification"],
     accent: "spice",
   },
   {
-    slug: "versa-digital-it-solutions",
-    code: "VD",
-    name: "Versa Digital & IT Solutions",
-    sector: "Digital Marketing · AEO · Software",
+    slug: "versa-bpo",
+    code: "VB",
+    name: "Versa BPO",
+    sector: "BPO · Customer Support · Back Office",
     summary:
-      "Kerala's AEO-first digital agency and IT company — SEO, answer-engine optimisation, performance marketing, websites, custom ERP/CRM and AI automation.",
+      "Business process outsourcing from Kochi — customer support, telecalling and lead generation, back-office and data processing — for clients including Future Optima IT Solutions, IPB Kochi, Astrum Study Abroad and Macob IT Solutions.",
     description:
-      "Versa Digital & IT Solutions helps businesses get found on Google and recommended by AI assistants, and builds the software they run on — from high-performance websites to custom ERP, CRM and agentic AI workflows.",
-    href: "/ventures/versa-digital-it-solutions",
-    external: true,
-    liveUrl: EXTERNAL.digital.url,
-    liveLabel: EXTERNAL.digital.label,
-    image: IMAGES.kochiSunset,
-    highlights: ["SEO & AEO", "Performance marketing", "Web & app development", "Custom ERP, CRM & AI automation"],
-    accent: "ink",
+      "Versa BPO handles the calls, enquiries and back-office work businesses need done well every day, from customer support and lead follow-up to CRM management and data processing.",
+    href: "/bpo",
+    external: false,
+    image: { src: "/images/kakkanad-infopark.jpg", alt: "Kakkanad IT corridor, Kochi", caption: "Fig. — Kakkanad, Kochi" },
+    highlights: ["Customer support", "Telecalling & lead generation", "Back-office & data processing", "CRM & appointments"],
+    accent: "green",
+  },
+  {
+    slug: "versa-financial",
+    code: "VF",
+    name: "Versa Financial",
+    sector: "Portfolio · Trading · Insurance · SIPs",
+    summary:
+      "Portfolio management, trading and money management for 50+ clients, life, health and term insurance with 500+ policies completed, and SIPs and mutual funds.",
+    description:
+      "Versa Financial helps families and business owners grow, protect and plan their money — portfolios, trading, insurance, SIPs and mutual funds, and loan assistance.",
+    href: "/financial",
+    external: false,
+    image: { src: "/images/kochi-ictt-vallarpadam.jpg", alt: "Kochi", caption: "Fig. — Kochi" },
+    highlights: ["Portfolio management", "Trading & money management", "Life, health & term insurance", "SIPs & mutual funds"],
+    stats: [
+      { value: "50+", label: "Trading clients managed" },
+      { value: "500+", label: "Insurance policies completed" },
+    ],
+    accent: "brass",
   },
   {
     slug: "versa-global",
@@ -217,7 +266,7 @@ export const VENTURES: Venture[] = [
     liveLabel: EXTERNAL.global.label,
     image: IMAGES.jebelAli,
     highlights: ["University admissions", "Education loans & visas", "Career academy programmes", "10+ study destinations"],
-    accent: "brass",
+    accent: "ocean",
   },
 ]
 
@@ -255,41 +304,47 @@ export const FOUNDERS: Founder[] = [
 ]
 
 export const STATS: Stat[] = [
-  { value: "04", label: "Ventures", note: "Logistics, trade, technology and education under one group" },
-  { value: "17", label: "× 40ft containers", note: "Coffee beans moved to Jebel Ali and Khorfakkan" },
-  { value: "02", label: "UAE ports served", note: "Jebel Ali (Dubai) and Khorfakkan (Sharjah)" },
-  { value: "03", label: "Export commodities", note: "Green coffee, green cardamom and black pepper" },
+  { value: "06", label: "Ventures", note: "IT, marketing, logistics, trading, BPO & finance" },
+  { value: "30+", label: "AI agents built", note: "Plus 20+ ERP & custom builds and 20+ automations" },
+  { value: "20+", label: "Marketing clients", note: "Active digital marketing clients" },
+  { value: "500+", label: "Insurance policies", note: "Completed across life, health & term schemes" },
+  { value: "50+", label: "Trading clients", note: "Portfolios and trading managed" },
+  { value: "17", label: "× 40ft containers", note: "Coffee beans shipped to Jebel Ali & Khorfakkan" },
 ]
 
 export const TICKER = [
-  "Kochi → Jebel Ali",
-  "Kochi → Khorfakkan",
-  "40ft FCL",
-  "Green coffee beans",
-  "Green cardamom",
-  "Black pepper",
-  "Samples on request",
-  "Bulk quantities",
-  "Export documentation",
-  "Freight forwarding",
+  "Custom ERP",
+  "AI agents",
+  "Business automation",
+  "Digital marketing",
+  "SEO & AEO",
+  "Sea freight to the UAE",
+  "Cardamom & black pepper",
+  "Green coffee",
+  "Spice sourcing agent",
+  "BPO & customer support",
+  "Portfolio management",
+  "Insurance & SIPs",
+  "Study abroad",
 ]
 
 export const HOME = {
-  eyebrow: "Versa Growth Ventures — Kochi, Kerala",
+  eyebrow: "Versa Growth Ventures — a diversified venture group, Kochi",
   // Each line is [plain text, emphasised text?]
-  h1: [["A Kochi business group"], ["moving ", "coffee, spice"], ["and cargo to the world."]] as [string, string?][],
+  h1: [["A diversified venture group,"], ["from ", "IT and marketing"], ["to spices, freight and finance."]] as [string, string?][],
   lede:
-    "Versa Growth Ventures runs four businesses from one office in Kakkanad: Versa Logistics for sea freight and transportation, Versa Traders for export-quality coffee and spices, Versa Digital & IT Solutions, and Versa Global.",
-  primaryCta: { label: "Request a freight quote", href: "/contact?enquiry=logistics" },
-  secondaryCta: { label: "Ask for product samples", href: "/contact?enquiry=samples" },
+    "Versa Growth Ventures is a Kochi business group with six ventures under one roof in Kakkanad. We build custom ERP systems, AI agents and automation and run SEO, AEO and digital marketing through Versa Digital & IT Solutions; ship containers from India to Jebel Ali and Khorfakkan with Versa Logistics; trade and source export-quality cardamom, black pepper and green coffee through Versa Traders; run customer support and back-office work at Versa BPO; manage portfolios, trading, insurance, SIPs and mutual funds at Versa Financial; and guide students abroad with Versa Global.",
+  primaryCta: { label: "Explore our ventures", href: "/ventures" },
+  secondaryCta: { label: "Talk to the group", href: "/contact" },
+  gridLabel: "Our ventures",
 }
 
 export const HOME_SECTIONS = {
   ventures: {
     index: "01",
     eyebrow: "The ventures",
-    title: { pre: "Four ventures. ", em: "One desk", post: " in Kakkanad." },
-    body: "Two ventures built for global trade, two that serve clients under their own brands — all run by the same founders from the same office.",
+    title: { pre: "Six ventures. ", em: "One standard", post: " of service." },
+    body: "Technology, marketing, freight, commodity trading, outsourcing and financial services — each run by specialists, all led by the same founders from one office in Kakkanad.",
   },
   logistics: {
     index: "02",
@@ -303,38 +358,49 @@ export const HOME_SECTIONS = {
     title: { pre: "Coffee and spice — ", em: "sampled first", post: ", shipped in bulk." },
     body: "Export-quality unroasted coffee beans, green cardamom and black pepper for importers, roasters and processors worldwide. Samples before orders; quality documents and certification with every shipment.",
   },
-  news: {
+  services: {
     index: "04",
+    eyebrow: "Business & financial services",
+    title: { pre: "Outsourcing and money, ", em: "handled well", post: "." },
+    body: "Versa BPO takes care of your customers' calls and your back office; Versa Financial helps you grow, protect and plan your money.",
+  },
+  clients: {
+    index: "",
+    eyebrow: "Clients across our ventures",
+    title: { pre: "Trusted by ", em: "growing businesses", post: "." },
+  },
+  news: {
+    index: "05",
     eyebrow: "Shipment log",
     title: { pre: "Recent ", em: "movements", post: "." },
     body: "What left Kochi, where it landed and how much of it there was.",
   },
   connected: {
-    index: "05",
+    index: "06",
     eyebrow: "Also from Versa",
-    title: { pre: "Technology and education, ", em: "under their own names", post: "." },
-    body: "Our digital and study-abroad ventures run their own live websites. Visit them directly.",
+    title: { pre: "Technology, marketing and education, ", em: "under their own names", post: "." },
+    body: "Versa Digital & IT Solutions and Versa Global run their own live websites. Their track record, at a glance.",
   },
   founders: {
-    index: "06",
+    index: "07",
     eyebrow: "Leadership",
     title: { pre: "Three founders. ", em: "One standard", post: "." },
     body: "Versa Growth Ventures is led by its founders, who stay close to every venture's customers.",
   },
   insights: {
-    index: "07",
+    index: "08",
     eyebrow: "Insights",
-    title: { pre: "Field notes on ", em: "freight and trade", post: "." },
+    title: { pre: "Field notes on ", em: "business growth", post: "." },
     body: "Practical guides for exporters, importers and buyers of coffee and spices.",
   },
   faq: {
-    index: "08",
+    index: "09",
     eyebrow: "Questions",
     title: { pre: "Straight ", em: "answers", post: "." },
   },
   cta: {
-    title: "Have cargo to move or a product to source?",
-    body: "Tell us what, how much and where. You will hear back from a person — with a price, a plan and a date.",
+    title: "Whatever you are building, one of our ventures can help.",
+    body: "Software, marketing, freight, spices, outsourcing or finance — tell us what you need and we will connect you with the right team.",
   },
   labels: {
     logisticsServices: "What we move and how",
@@ -349,6 +415,8 @@ export const HOME_SECTIONS = {
     requestSamples: "Request samples",
     visitSite: "Visit",
     meetLeadership: "Meet the leadership",
+    exploreBpo: "Explore Versa BPO",
+    exploreFinancial: "Explore Versa Financial",
   },
 } satisfies Record<string, unknown>
 
@@ -378,11 +446,11 @@ export const DIVISION_COPY = {
 export const ABOUT = {
   h1: "About Versa Growth Ventures — a multi-venture group from Kochi, Kerala",
   lede:
-    "We started Versa Growth Ventures in 2025 with a simple idea: the businesses Kerala is best at — spices, coffee, trade and talent — deserve modern, accountable operators.",
+    "We started Versa Growth Ventures in 2025 with a simple idea: the businesses Kerala is best at — technology, talent, spices, trade and trusted service — deserve modern, accountable operators.",
   story: [
-    "Versa Growth Ventures is a privately held business group headquartered in Kakkanad, Kochi. We operate four ventures that share one leadership team, one office and one standard of accountability: Versa Logistics, Versa Traders, Versa Digital & IT Solutions and Versa Global.",
+    "Versa Growth Ventures is a privately held, diversified venture group headquartered in Kakkanad, Kochi. We operate six ventures that share one leadership team, one office and one standard of accountability: Versa Digital & IT Solutions, Versa Logistics, Versa Traders, Versa BPO, Versa Financial and Versa Global.",
     "The two trade-facing ventures were built to work together. Versa Traders sources export-quality green coffee beans, cardamom and black pepper; Versa Logistics moves them — and other shippers' cargo — by container from India to the UAE and onward markets. A buyer who sources through Versa Traders can have the same group handle the freight, the documents and the delivery schedule.",
-    "Our technology and education ventures, Versa Digital & IT Solutions and Versa Global, serve their own clients under their own brands, and give the whole group in-house strength in digital systems, marketing and international networks.",
+    "Versa Digital & IT Solutions has delivered 20+ ERP and custom agent builds, 30+ AI agents and 20+ automations, and serves 20+ active marketing clients. Versa BPO handles customer support and back-office work for clients including Future Optima IT Solutions, IPB Kochi, Astrum Study Abroad and Macob IT Solutions. Versa Financial manages portfolios and trading for 50+ clients and has completed 500+ insurance policies, while Versa Global guides students abroad.",
   ],
   principles: [
     { title: "Samples before commitments", body: "No buyer should commit to a bulk order on a photograph. We send representative samples and a quality report first." },
@@ -394,26 +462,26 @@ export const ABOUT = {
 
 export const PAGE_COPY = {
   ventures: {
-    metaTitle: "Our Ventures — Versa Logistics, Versa Traders, Versa Digital & Versa Global",
+    metaTitle: "Our Ventures — IT, Marketing, Logistics, Spices Trading, BPO & Financial | Versa Growth Ventures",
     metaDescription:
-      "The four ventures of Versa Growth Ventures, Kochi: Versa Logistics (freight), Versa Traders (coffee & spice export), Versa Digital & IT Solutions and Versa Global.",
+      "The six ventures of Versa Growth Ventures, Kochi: Versa Digital & IT Solutions, Versa Logistics, Versa Traders, Versa BPO, Versa Financial and Versa Global.",
     eyebrow: "Portfolio",
-    h1: "The ventures of Versa Growth Ventures: logistics, trade, technology and education",
-    lede: "Four businesses run by one leadership team from one office in Kakkanad, Kochi. Two built for global trade; two serving clients under their own brands.",
+    h1: "The ventures of Versa Growth Ventures: IT, marketing, logistics, spices trading, BPO, finance and education",
+    lede: "Six businesses run by one leadership team from one office in Kakkanad, Kochi — a diversified venture group built for growth.",
     answer:
-      "Versa Growth Ventures operates four ventures: Versa Logistics (sea freight, freight forwarding and transportation), Versa Traders (export of green coffee beans, cardamom and black pepper), Versa Digital & IT Solutions (versadigital.in) and Versa Global (versaglobal.in).",
+      "Versa Growth Ventures operates six ventures: Versa Digital & IT Solutions (custom ERP, AI agents, automation and digital marketing), Versa Logistics (sea freight and transportation), Versa Traders (spices and coffee trading and sourcing agent), Versa BPO (business process outsourcing), Versa Financial (portfolio management, trading, insurance, SIPs and mutual funds) and Versa Global (study abroad).",
     ctaTitle: "Which venture can help you?",
     ctaBody: "Not sure where your enquiry belongs? Call any of our numbers and we will connect you with the right team.",
     externalLead: "Visit the live website",
     externalAbout: "What does it do?",
     externalGroup: "How does it fit the group?",
     externalGroupBody:
-      "It is one of four ventures of Versa Growth Ventures and operates from the group office in Kakkanad, Kochi, under the same founders — Sandeep Neelamana, Aman Faisal S and Sreenivasa Prabhu.",
+      "It is one of six ventures of Versa Growth Ventures and operates from the group office in Kakkanad, Kochi, under the same founders — Sandeep Neelamana, Aman Faisal S and Sreenivasa Prabhu.",
   },
   about: {
     metaTitle: "About Versa Growth Ventures — Kochi Business Group Since 2025",
     metaDescription:
-      "Versa Growth Ventures is a Kochi, Kerala business group founded in 2025, running Versa Logistics, Versa Traders, Versa Digital & IT Solutions and Versa Global from Kakkanad.",
+      "Versa Growth Ventures is a diversified venture group in Kochi, Kerala, founded in 2025 — running Versa Digital & IT Solutions, Versa Logistics, Versa Traders, Versa BPO, Versa Financial and Versa Global from Kakkanad.",
     eyebrow: "About the group",
     storyH2: "How is Versa Growth Ventures structured?",
     principlesH2: "What principles does the group work by?",
@@ -422,7 +490,7 @@ export const PAGE_COPY = {
   leadership: {
     metaTitle: "Leadership — Founders of Versa Growth Ventures",
     metaDescription:
-      "Meet the founders of Versa Growth Ventures: Sandeep Neelamana, Aman Faisal S and Sreenivasa Prabhu — the team behind Versa Logistics, Versa Traders, Versa Digital and Versa Global.",
+      "Meet the founders of Versa Growth Ventures: Sandeep Neelamana, Aman Faisal S and Sreenivasa Prabhu — the team behind Versa Digital & IT Solutions, Versa Logistics, Versa Traders, Versa BPO, Versa Financial and Versa Global.",
     eyebrow: "Leadership",
     h1: "The founders of Versa Growth Ventures: Sandeep Neelamana, Aman Faisal S and Sreenivasa Prabhu",
     lede: "Finance and compliance, digital growth and international strategy — three founders who stay close to every venture's customers.",
@@ -436,7 +504,7 @@ export const PAGE_COPY = {
     lede: "Container movements, new services and milestones from Versa Logistics and Versa Traders.",
   },
   blog: {
-    metaTitle: "Insights — Freight, Coffee & Spice Trade Guides | Versa Growth Ventures",
+    metaTitle: "Insights — Business, Freight, Trade & Finance Guides | Versa Growth Ventures",
     metaDescription:
       "Guides on shipping from India to the UAE, container sizes, export documents, green coffee grades, cardamom and black pepper grading, and buying bulk spices from India.",
     eyebrow: "Insights",
@@ -459,11 +527,11 @@ export const PAGE_COPY = {
   contact: {
     metaTitle: "Contact Versa Growth Ventures — Freight Quotes, Samples & Enquiries",
     metaDescription:
-      "Contact Versa Growth Ventures in Kakkanad, Kochi. Call +91 97464 33133, +91 97467 33133 or +91 79072 15816 for freight quotes, coffee and spice samples and bulk orders.",
+      "Contact Versa Growth Ventures in Kakkanad, Kochi. Call +91 97464 33133, +91 97467 33133 or +91 79072 15816, or email info@versagrowthventures.com — IT and marketing, freight, spices, BPO and financial services.",
     eyebrow: "Contact",
-    h1: "Contact Versa Growth Ventures for freight quotes, samples and bulk orders",
+    h1: "Contact Versa Growth Ventures — IT, marketing, logistics, trading, BPO and financial services",
     lede: "Tell us what you need to move or source. A person — not a bot — will reply with a price, a plan and a date.",
-    phonesH2: "Call or WhatsApp",
+    phonesH2: "Call, WhatsApp or email",
     officeH2: "Visit the office",
     formH2: "Send an enquiry",
   },
@@ -489,7 +557,9 @@ export const ENQUIRY_TYPES = [
   { value: "coffee", label: "Bulk order — Green coffee beans" },
   { value: "cardamom", label: "Bulk order — Cardamom" },
   { value: "pepper", label: "Bulk order — Black pepper" },
-  { value: "digital", label: "Versa Digital & IT Solutions" },
+  { value: "digital", label: "IT, ERP, AI agents or marketing — Versa Digital & IT Solutions" },
+  { value: "bpo", label: "Outsourcing — Versa BPO" },
+  { value: "financial", label: "Portfolio, trading, insurance or SIP — Versa Financial" },
   { value: "global", label: "Versa Global" },
   { value: "general", label: "General enquiry" },
 ]

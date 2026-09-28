@@ -35,7 +35,8 @@ export interface Venture {
   liveLabel?: string
   image: ImageAsset
   highlights: string[]
-  accent: "spice" | "ocean" | "ink" | "brass"
+  stats?: { value: string; label: string }[]
+  accent: "spice" | "ocean" | "ink" | "brass" | "green"
 }
 
 export interface Founder {

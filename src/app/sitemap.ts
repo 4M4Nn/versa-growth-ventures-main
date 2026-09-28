@@ -17,6 +17,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...LOGISTICS_PAGES.map((p) => entry(`/logistics/${p.slug}`, 0.9, "monthly")),
     ...TRADERS_PAGES.map((p) => entry(`/traders/${p.slug}`, 0.9, "monthly")),
     entry("/ventures", 0.8, "monthly"),
+    entry("/bpo", 0.9, "monthly"),
+    entry("/financial", 0.9, "monthly"),
     ...VENTURES.filter((v) => v.external).map((v) => entry(`/ventures/${v.slug}`, 0.6, "monthly")),
     entry("/news", 0.8, "weekly"),
     ...NEWS.map((n) => entry(`/news/${n.slug}`, 0.75, "monthly", new Date(n.date))),

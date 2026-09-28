@@ -7,6 +7,8 @@ const GROUP_LINKS = [
   { label: "About the group", href: "/about" },
   { label: "Leadership", href: "/leadership" },
   { label: "All ventures", href: "/ventures" },
+  { label: "Versa BPO", href: "/bpo" },
+  { label: "Versa Financial", href: "/financial" },
   { label: "News & shipments", href: "/news" },
   { label: "Insights", href: "/blog" },
   { label: "FAQ", href: "/faq" },
@@ -42,6 +44,11 @@ export function Footer() {
                   </a>
                 </li>
               ))}
+              <li className="pt-2">
+                <a href={`mailto:${SITE.email}`} className="hover:text-spice">
+                  {SITE.email}
+                </a>
+              </li>
             </ul>
           </div>
 

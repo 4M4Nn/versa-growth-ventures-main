@@ -17,7 +17,7 @@ const jetbrains = JetBrains_Mono({ subsets: ["latin"], variable: "--font-jetbrai
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: "Versa Growth Ventures — Logistics, Coffee & Spice Trading Group, Kochi",
+    default: "Versa Growth Ventures — Diversified Venture Group in Kochi, Kerala",
     template: "%s | Versa Growth Ventures",
   },
   description: SITE.description,
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     locale: "en_IN",
     siteName: SITE.name,
     url: SITE.url,
-    title: "Versa Growth Ventures — Logistics, Coffee & Spice Trading Group, Kochi",
+    title: "Versa Growth Ventures — Diversified Venture Group in Kochi, Kerala",
     description: SITE.description,
     images: [{ url: BRAND.og.src, width: BRAND.og.width, height: BRAND.og.height, alt: "Versa Growth Ventures" }],
   },
@@ -60,6 +60,7 @@ const organizationSchema = {
   image: `${SITE.url}${BRAND.og.src}`,
   description: SITE.description,
   foundingDate: SITE.founded,
+  email: SITE.email,
   founder: FOUNDERS.map((f) => ({ "@type": "Person", name: f.name, jobTitle: f.role })),
   address: {
     "@type": "PostalAddress",
@@ -79,6 +80,8 @@ const organizationSchema = {
   subOrganization: [
     { "@type": "Organization", name: "Versa Logistics", url: `${SITE.url}/logistics` },
     { "@type": "Organization", name: "Versa Traders", url: `${SITE.url}/traders` },
+    { "@type": "Organization", name: "Versa BPO", url: `${SITE.url}/bpo` },
+    { "@type": "Organization", name: "Versa Financial", url: `${SITE.url}/financial` },
     { "@type": "Organization", name: EXTERNAL.digital.name, url: EXTERNAL.digital.url },
     { "@type": "Organization", name: EXTERNAL.global.name, url: EXTERNAL.global.url },
   ],

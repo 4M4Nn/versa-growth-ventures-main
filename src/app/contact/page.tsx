@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { MapPin, MessageCircle, Phone } from "lucide-react"
+import { Mail, MapPin, MessageCircle, Phone } from "lucide-react"
 import { PAGE_COPY, PHONES, SITE, whatsappLink } from "@/lib/data"
 import { Container } from "@/components/shared/Container"
 import { PageHero } from "@/components/shared/PageHero"
@@ -48,6 +48,12 @@ export default async function ContactPage({ searchParams }: Props) {
                 </li>
               ))}
               <li className="border-b border-rule">
+                <a href={`mailto:${SITE.email}`} className="flex items-center justify-between py-4 font-semibold hover:text-spice">
+                  {SITE.email}
+                  <Mail className="size-4" aria-hidden />
+                </a>
+              </li>
+              <li className="border-b border-rule">
                 <a
                   href={whatsappLink("Hello Versa Growth Ventures, I have an enquiry about ")}
                   target="_blank"
@@ -87,6 +93,7 @@ export default async function ContactPage({ searchParams }: Props) {
           name: SITE.name,
           url: SITE.url,
           telephone: PHONES.map((p) => p.href),
+          email: SITE.email,
           address: {
             "@type": "PostalAddress",
             streetAddress: `${SITE.address.line1}, ${SITE.address.line2}`,

@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { BLOG_POSTS, GROUP_FAQS, HOME, HOME_SECTIONS, NEWS, SITE } from "@/lib/data"
+import { BLOG_POSTS, CLIENTS, GROUP_FAQS, HOME, HOME_SECTIONS, NEWS, SITE, VENTURES } from "@/lib/data"
 import { Container } from "@/components/shared/Container"
 import { SectionHeading } from "@/components/shared/SectionHeading"
 import { Headline } from "@/components/shared/Headline"
@@ -16,6 +16,7 @@ import { ShipmentLog } from "@/components/sections/ShipmentLog"
 import { ConnectedVentures } from "@/components/sections/ConnectedVentures"
 import { FounderCards } from "@/components/sections/FounderCards"
 import { PostCard } from "@/components/sections/PostCard"
+import { VentureCard } from "@/components/sections/VentureCard"
 
 export const metadata: Metadata = {
   title: { absolute: "Versa Growth Ventures — Freight, Coffee & Spice Export Group in Kochi, Kerala" },
@@ -36,6 +37,40 @@ export default function HomePage() {
       <VenturesLedger />
       <LogisticsFeature />
       <TradersFeature />
+
+      <section className="border-b border-ink bg-paper-2 py-20 md:py-28">
+        <Container>
+          <SectionHeading
+            index={s.services.index}
+            eyebrow={s.services.eyebrow}
+            title={<Headline value={s.services.title} />}
+            body={s.services.body}
+          />
+          <div className="mt-12 grid gap-6 md:grid-cols-2">
+            {VENTURES.filter((v) => v.href === "/bpo" || v.href === "/financial").map((v) => (
+              <VentureCard key={v.slug} venture={v} />
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      <section className="border-b border-ink py-14">
+        <Container className="grid items-center gap-8 lg:grid-cols-12">
+          <div className="lg:col-span-4">
+            <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-ink-soft">{s.clients.eyebrow}</p>
+            <h2 className="mt-3 font-serif text-4xl leading-tight">
+              <Headline value={s.clients.title} emClassName="text-leaf" />
+            </h2>
+          </div>
+          <ul className="grid grid-cols-2 gap-px border border-ink bg-ink lg:col-span-8 lg:grid-cols-4">
+            {CLIENTS.map((c) => (
+              <li key={c} className="flex min-h-24 items-center justify-center bg-paper px-4 py-5 text-center font-serif text-xl leading-tight md:text-2xl">
+                {c}
+              </li>
+            ))}
+          </ul>
+        </Container>
+      </section>
 
       <section className="py-20 md:py-28">
         <Container>

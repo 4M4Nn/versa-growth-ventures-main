@@ -15,6 +15,11 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       { source: "/schemes", destination: "/ventures", permanent: true },
+      {
+        source: "/blog/versa-growth-ventures-one-group-four-ventures",
+        destination: "/blog/versa-growth-ventures-diversified-venture-group",
+        permanent: true,
+      },
       { source: "/schemes/:path*", destination: "/ventures", permanent: true },
     ]
   },

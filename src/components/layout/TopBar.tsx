@@ -10,6 +10,11 @@ export function TopBar() {
           {SITE.address.line2}, {SITE.address.city} {SITE.address.postalCode}
         </p>
         <ul className="flex items-center gap-5">
+          <li className="hidden lg:block">
+            <a href={`mailto:${SITE.email}`} className="normal-case tracking-[0.06em] transition-colors hover:text-spice">
+              {SITE.email}
+            </a>
+          </li>
           {PHONES.map((p) => (
             <li key={p.href}>
               <a href={`tel:${p.href}`} className="transition-colors hover:text-spice">

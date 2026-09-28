@@ -29,6 +29,8 @@ export default function SiteMapPage() {
         { label: "About Versa Growth Ventures", href: "/about" },
         { label: "Leadership", href: "/leadership" },
         { label: "All ventures", href: "/ventures" },
+        { label: "Versa BPO", href: "/bpo" },
+        { label: "Versa Financial", href: "/financial" },
         ...VENTURES.filter((v) => v.external).map((v) => ({ label: v.name, href: `/ventures/${v.slug}` })),
         { label: "FAQ", href: "/faq" },
         { label: "Glossary", href: "/glossary" },

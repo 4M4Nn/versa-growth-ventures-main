@@ -3,6 +3,78 @@ import { IMAGES } from "./site"
 
 export const TRADERS_EXTRA_PAGES: DivisionPage[] = [
   {
+    slug: "spice-sourcing-agent",
+    division: "traders",
+    navLabel: "Spice Sourcing Agent",
+    h1: "Spice and coffee sourcing agent in India: we find, inspect and ship on your behalf",
+    metaTitle: "Spice & Coffee Sourcing Agent India — Buying Agent for Importers | Versa Traders",
+    metaDescription:
+      "Versa Traders acts as a sourcing and buying agent for importers of Indian cardamom, black pepper, green coffee and other spices: supplier search, sampling, inspection, negotiation and shipment coordination from Kochi.",
+    keywords: [
+      "spice sourcing agent India",
+      "buying agent spices Kerala",
+      "coffee sourcing agent India",
+      "cardamom buying agent Kochi",
+      "spice procurement agent",
+      "import agent Indian spices",
+    ],
+    eyebrow: "Versa Traders — Sourcing Agent",
+    lede:
+      "Some buyers want to buy from a particular estate, auction or processor rather than from our own stock. As your agent in Kerala, we become your eyes, hands and voice at origin.",
+    image: IMAGES.cardamomBowl,
+    summary:
+      "Versa Traders works as a sourcing and buying agent for importers of Indian spices and coffee — finding suppliers, collecting samples, inspecting lots, negotiating terms and coordinating documents and shipment from Kochi on the buyer's behalf.",
+    intro: [
+      "Alongside trading on our own account, Versa Traders acts as an agent for importers who want to buy directly from Indian growers, auctions and processors. You stay the buyer; we manage everything that needs someone on the ground in India.",
+    ],
+    specs: [
+      { label: "Products", value: "Cardamom, black pepper, green coffee & other spices" },
+      { label: "Role", value: "Sourcing & buying agent at origin" },
+      { label: "Includes", value: "Supplier search, samples, inspection, follow-up" },
+      { label: "Freight", value: "Optional, via Versa Logistics" },
+    ],
+    sections: [
+      {
+        heading: "What does a spice sourcing agent do?",
+        body: ["As your agent we can:"],
+        bullets: [
+          "Shortlist growers, processors and exporters that match your grade and volume",
+          "Collect and courier samples, and compare them against your specification",
+          "Inspect lots and supervise packing and container stuffing",
+          "Negotiate price, payment and shipment terms on your instructions",
+          "Coordinate documents, certificates and freight through to sailing",
+        ],
+      },
+      {
+        heading: "When should an importer use an agent instead of buying from a trader?",
+        body: [
+          "Use an agent when you want a specific origin, estate or processor, want to see the supplier's own price, or plan to build a long-term direct relationship. Buy from Versa Traders' own stock when you want one contract, one invoice and one party responsible for quality.",
+        ],
+      },
+      {
+        heading: "How are agency services charged?",
+        body: [
+          "Agency work is usually charged as a commission on the order value or as a fixed fee per shipment, agreed in writing before sourcing begins.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Does Versa Traders act as a buying agent?",
+        answer: "Yes. Besides trading on our own account, we act as a sourcing and buying agent for importers of Indian spices and coffee.",
+      },
+      {
+        question: "Can you inspect a supplier's lot before I pay?",
+        answer: "Yes. We can inspect and sample lots at the supplier's premises and supervise packing and stuffing on your behalf.",
+      },
+      {
+        question: "Can you also arrange the freight?",
+        answer: "Yes. Our sister venture Versa Logistics can ship the order to Jebel Ali, Khorfakkan or any other port.",
+      },
+    ],
+    related: ["samples-and-bulk-orders", "quality-certification", "coffee-and-spice-supplier-uae"],
+  },
+  {
     slug: "robusta-green-coffee-beans",
     division: "traders",
     navLabel: "Robusta Green Coffee",

@@ -6,7 +6,7 @@ export const GROUP_FAQS: FAQ[] = [
   {
     question: "What is Versa Growth Ventures?",
     answer:
-      "Versa Growth Ventures is a business group headquartered in Kakkanad, Kochi, Kerala. It runs four ventures: Versa Logistics (sea freight, freight forwarding and transportation), Versa Traders (export of green coffee beans, cardamom and black pepper), Versa Digital & IT Solutions (digital marketing, AEO and software) and Versa Global (study abroad and careers).",
+      "Versa Growth Ventures is a diversified venture group headquartered in Kakkanad, Kochi, Kerala. It runs six ventures: Versa Digital & IT Solutions (custom ERP, AI agents, automation and digital marketing), Versa Logistics (sea freight and transportation), Versa Traders (spices and coffee trading and sourcing agent), Versa BPO (business process outsourcing), Versa Financial (portfolio management, trading, insurance, SIPs and mutual funds) and Versa Global (study abroad).",
   },
   {
     question: "Who are the founders of Versa Growth Ventures?",
@@ -21,7 +21,7 @@ export const GROUP_FAQS: FAQ[] = [
   {
     question: "How can I contact Versa Growth Ventures?",
     answer:
-      "Call +91 97464 33133, +91 97467 33133 or +91 79072 15816, message us on WhatsApp at +91 79072 15816, or send an enquiry through the contact form on this website.",
+      "Call +91 97464 33133, +91 97467 33133 or +91 79072 15816, message us on WhatsApp at +91 79072 15816, email info@versagrowthventures.com, or send an enquiry through the contact form on this website.",
   },
   {
     question: "Are Versa Logistics and Versa Traders the same company?",
@@ -32,6 +32,25 @@ export const GROUP_FAQS: FAQ[] = [
     question: "Where can I find Versa Digital & IT Solutions and Versa Global?",
     answer:
       "Versa Digital & IT Solutions is online at versadigital.in and Versa Global at versaglobal.in. Both are ventures of Versa Growth Ventures.",
+  },
+  {
+    question: "What has Versa Digital & IT Solutions delivered?",
+    answer:
+      "Versa Digital & IT Solutions has completed 20+ ERP and custom agent builds, 30+ AI agent builds and 20+ business automations, and serves 20+ active digital marketing clients.",
+  },
+  {
+    question: "What does Versa BPO do?",
+    answer:
+      "Versa BPO provides business process outsourcing from Kochi — customer support, telecalling and lead generation, back-office and data processing, and CRM management — for clients including Future Optima IT Solutions, IPB Kochi, Astrum Study Abroad and Macob IT Solutions.",
+  },
+  {
+    question: "What does Versa Financial offer?",
+    answer:
+      "Versa Financial offers portfolio management, trading and money management for 50+ clients, life, health and term insurance with 500+ policies completed, and SIPs and mutual funds.",
+  },
+  {
+    question: "Who are some of Versa Growth Ventures' clients?",
+    answer: "Clients across our ventures include Future Optima IT Solutions, IPB Kochi, Astrum Study Abroad and Macob IT Solutions.",
   },
   {
     question: "When was Versa Growth Ventures founded?",

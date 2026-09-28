@@ -1,5 +1,5 @@
-import { Phone } from "lucide-react"
-import { PHONES } from "@/lib/data"
+import { Mail, Phone } from "lucide-react"
+import { PHONES, SITE } from "@/lib/data"
 import { Container } from "./Container"
 import { ArrowLink } from "./ArrowLink"
 
@@ -42,6 +42,12 @@ export function CTABand({
                 </a>
               </li>
             ))}
+            <li>
+              <a href={`mailto:${SITE.email}`} className="flex items-center justify-between py-4 font-mono text-[15px] transition-colors hover:text-spice">
+                {SITE.email}
+                <Mail className="size-4" aria-hidden />
+              </a>
+            </li>
           </ul>
         </div>
       </Container>

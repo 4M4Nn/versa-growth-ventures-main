@@ -11,6 +11,7 @@ export const IMAGE_CREDITS: ImageCredit[] = [
   { file: "green-coffee-jute-sack.jpg", subject: "Green coffee beans in a jute sack", author: "DeaPeaJay", license: "CC BY-SA 2.0", source: "https://commons.wikimedia.org/wiki/File:Green_Bean_Coffee.jpg" },
   { file: "green-coffee-beans.jpg", subject: "Unroasted coffee beans", author: "Fernando Rebêlo", license: "CC BY-SA 3.0", source: "https://commons.wikimedia.org/wiki/File:Unroasted_coffee.jpg" },
   { file: "coffee-plants-wayanad.jpg", subject: "Coffee plants, Wayanad", author: "Rainer Halama", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Wayanad-WUS06247.jpg" },
+  { file: "kakkanad-infopark.jpg", subject: "Infopark Kochi, Kakkanad", author: "Ranjithsiji", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Infopark_Kochi_in_2023_5.jpg" },
   { file: "cardamom-green-pods.jpg", subject: "Green cardamom pods", author: "Prathyush Thomas", license: "GFDL 1.2", source: "https://commons.wikimedia.org/wiki/File:Cardamom_pods_-_Green_BNC.jpg" },
   { file: "cardamom-brass-bowl.jpg", subject: "Green cardamom pods in a brass bowl", author: "Misterneedlemouse", license: "CC0", source: "https://commons.wikimedia.org/wiki/File:Green_Cardamom_Pods.jpg" },
   { file: "black-pepper-macro.jpg", subject: "Black pepper, close-up", author: "R. Boroujerdi", license: "Public domain", source: "https://commons.wikimedia.org/wiki/File:Black_pepper_(By_R.Boroujerdi).JPG" },

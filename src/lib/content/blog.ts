@@ -627,18 +627,18 @@ const BLOG_CORE_POSTS: BlogPost[] = [
     ],
   },
   {
-    slug: "versa-growth-ventures-one-group-four-ventures",
-    title: "Inside Versa Growth Ventures: One Kochi Group, Four Ventures",
+    slug: "versa-growth-ventures-diversified-venture-group",
+    title: "Inside Versa Growth Ventures: A Diversified Venture Group from Kochi",
     metaDescription:
-      "How Versa Growth Ventures brings together Versa Logistics, Versa Traders, Versa Digital & IT Solutions and Versa Global — and why a group structure helps customers.",
+      "How Versa Growth Ventures brings together Versa Digital & IT Solutions, Versa Logistics, Versa Traders, Versa BPO, Versa Financial and Versa Global — and why a diversified group helps customers.",
     category: "Group",
     date: "2026-09-26",
     readTime: "4 min read",
-    keywords: ["Versa Growth Ventures", "Kochi business group", "Versa Logistics Versa Traders", "Versa Digital Versa Global"],
+    keywords: ["Versa Growth Ventures", "diversified venture group Kochi", "Kochi business group", "Versa BPO", "Versa Financial", "Versa Digital & IT Solutions"],
     image: IMAGES.kochiSunset,
-    excerpt: "Four businesses, one office in Kakkanad, and one idea about accountability.",
+    excerpt: "Six businesses, one office in Kakkanad, and one idea about accountability.",
     answer:
-      "Versa Growth Ventures is a Kochi business group founded in 2025 by Sandeep Neelamana, Aman Faisal S and Sreenivasa Prabhu. It runs Versa Logistics (freight and transportation), Versa Traders (coffee and spice exports), Versa Digital & IT Solutions (digital marketing and software) and Versa Global (study abroad and careers).",
+      "Versa Growth Ventures is a diversified venture group in Kochi founded in 2025 by Sandeep Neelamana, Aman Faisal S and Sreenivasa Prabhu. It runs Versa Digital & IT Solutions (ERP, AI agents, automation and marketing), Versa Logistics (freight), Versa Traders (spices and coffee trading and sourcing), Versa BPO (outsourcing), Versa Financial (portfolio, trading, insurance, SIPs and mutual funds) and Versa Global (study abroad).",
     sections: [
       {
         heading: "Why build a group rather than a single company?",
@@ -653,9 +653,9 @@ const BLOG_CORE_POSTS: BlogPost[] = [
         ],
       },
       {
-        heading: "Where do the digital and education ventures fit?",
+        heading: "Where do technology, outsourcing and finance fit?",
         body: [
-          "Versa Digital & IT Solutions (versadigital.in) builds websites, marketing and software for businesses across Kerala; Versa Global (versaglobal.in) guides students abroad. Both operate under their own brands from the same Kakkanad office.",
+          "Versa Digital & IT Solutions (versadigital.in) has delivered 20+ ERP and custom agent builds, 30+ AI agents and 20+ automations, and serves 20+ active marketing clients. Versa BPO runs customer support and back-office work for clients including Future Optima IT Solutions, IPB Kochi, Astrum Study Abroad and Macob IT Solutions. Versa Financial manages portfolios and trading for 50+ clients and has completed 500+ insurance policies. Versa Global (versaglobal.in) guides students abroad.",
         ],
       },
     ],
