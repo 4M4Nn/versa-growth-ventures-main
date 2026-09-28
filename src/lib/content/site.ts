@@ -10,7 +10,7 @@ export const SITE = {
   url: "https://versagrowthventures.in",
   founded: "2025",
   whatsapp: "917907215816",
-  email: "info@versagrowthventures.com",
+  email: "info@versagrowthventures.in",
   address: {
     line1: "3rd Floor, Jogeo Building",
     line2: "Chembumukku, Kakkanad",
@@ -527,7 +527,7 @@ export const PAGE_COPY = {
   contact: {
     metaTitle: "Contact Versa Growth Ventures — Freight Quotes, Samples & Enquiries",
     metaDescription:
-      "Contact Versa Growth Ventures in Kakkanad, Kochi. Call +91 97464 33133, +91 97467 33133 or +91 79072 15816, or email info@versagrowthventures.com — IT and marketing, freight, spices, BPO and financial services.",
+      "Contact Versa Growth Ventures in Kakkanad, Kochi. Call +91 97464 33133, +91 97467 33133 or +91 79072 15816, or email info@versagrowthventures.in — IT and marketing, freight, spices, BPO and financial services.",
     eyebrow: "Contact",
     h1: "Contact Versa Growth Ventures — IT, marketing, logistics, trading, BPO and financial services",
     lede: "Tell us what you need to move or source. A person — not a bot — will reply with a price, a plan and a date.",

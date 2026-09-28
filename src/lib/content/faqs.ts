@@ -21,7 +21,7 @@ export const GROUP_FAQS: FAQ[] = [
   {
     question: "How can I contact Versa Growth Ventures?",
     answer:
-      "Call +91 97464 33133, +91 97467 33133 or +91 79072 15816, message us on WhatsApp at +91 79072 15816, email info@versagrowthventures.com, or send an enquiry through the contact form on this website.",
+      "Call +91 97464 33133, +91 97467 33133 or +91 79072 15816, message us on WhatsApp at +91 79072 15816, email info@versagrowthventures.in, or send an enquiry through the contact form on this website.",
   },
   {
     question: "Are Versa Logistics and Versa Traders the same company?",
