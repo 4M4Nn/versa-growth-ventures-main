@@ -7,7 +7,7 @@ export const SITE = {
   tagline: "Trade, logistics and technology — built from Kochi, shipped to the world.",
   description:
     "Versa Growth Ventures is a Kochi, Kerala business group operating Versa Logistics (sea freight, freight forwarding and transportation to Jebel Ali and Khorfakkan), Versa Traders (export-quality green coffee beans, cardamom and black pepper in bulk), Versa Digital & IT Solutions and Versa Global.",
-  url: "https://main-topaz-nine.vercel.app",
+  url: "https://versagrowthventures.in",
   founded: "2025",
   whatsapp: "917907215816",
   address: {
