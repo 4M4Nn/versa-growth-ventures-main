@@ -1,15 +1,16 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from "next"
 
 const nextConfig: NextConfig = {
   images: {
-    unoptimized: true,
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "images.unsplash.com",
-      },
-    ],
+    formats: ["image/avif", "image/webp"],
   },
-};
+  async redirects() {
+    // Routes from the previous version of the site
+    return [
+      { source: "/schemes", destination: "/ventures", permanent: true },
+      { source: "/schemes/:path*", destination: "/ventures", permanent: true },
+    ]
+  },
+}
 
-export default nextConfig;
+export default nextConfig

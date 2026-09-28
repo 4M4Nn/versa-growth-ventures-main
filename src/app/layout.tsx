@@ -1,34 +1,99 @@
-import type { Metadata } from "next"
-import { Playfair_Display, Inter } from "next/font/google"
+import type { Metadata, Viewport } from "next"
+import { Instrument_Serif, JetBrains_Mono, Manrope } from "next/font/google"
 import "./globals.css"
-import Navbar from "@/components/layout/Navbar"
-import Footer from "@/components/layout/Footer"
-import FloatingWhatsApp from "@/components/layout/FloatingWhatsApp"
-import ChatWidget from "@/components/layout/ChatWidget"
-import MobileStickyBar from "@/components/ui/MobileStickyBar"
-import { SITE } from "@/lib/data"
+import { TopBar } from "@/components/layout/TopBar"
+import { Navbar } from "@/components/layout/Navbar"
+import { Footer } from "@/components/layout/Footer"
+import { FloatingWhatsApp } from "@/components/layout/FloatingWhatsApp"
+import { JsonLd } from "@/components/shared/JsonLd"
+import { EXTERNAL, FOUNDERS, PHONES, SITE } from "@/lib/data"
 
-const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair", display: "swap" })
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" })
+const manrope = Manrope({ subsets: ["latin"], variable: "--font-manrope", display: "swap" })
+const instrument = Instrument_Serif({ subsets: ["latin"], weight: "400", style: ["normal", "italic"], variable: "--font-instrument", display: "swap" })
+const jetbrains = JetBrains_Mono({ subsets: ["latin"], variable: "--font-jetbrains", display: "swap" })
 
 export const metadata: Metadata = {
-  title: { default: `${SITE.name} — Kerala's Diversified Business Group`, template: `%s | ${SITE.name}` },
-  description: "Versa Growth Ventures — Kerala's most ambitious diversified business group. Five ventures: IPB Kochi, Versa Digital, Versa Global, Versa Finance, Versa Exports.",
-  keywords: ["Versa Growth Ventures", "Kerala business group", "IPB Kochi", "Versa Digital", "Versa Global", "Versa Finance", "study abroad Kerala"],
-  openGraph: { type: "website", locale: "en_IN", siteName: SITE.name },
-  robots: { index: true, follow: true },
+  metadataBase: new URL(SITE.url),
+  title: {
+    default: "Versa Growth Ventures — Logistics, Coffee & Spice Trading Group, Kochi",
+    template: "%s | Versa Growth Ventures",
+  },
+  description: SITE.description,
+  keywords: SITE.keywords,
+  applicationName: SITE.name,
+  authors: [{ name: SITE.name }],
+  creator: SITE.name,
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    locale: "en_IN",
+    siteName: SITE.name,
+    url: SITE.url,
+    title: "Versa Growth Ventures — Logistics, Coffee & Spice Trading Group, Kochi",
+    description: SITE.description,
+    images: [{ url: "/images/container-ship-aerial.jpg", width: 1920, height: 877, alt: "Container ship — Versa Logistics" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Versa Growth Ventures",
+    description: SITE.description,
+    images: ["/images/container-ship-aerial.jpg"],
+  },
+  robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large" } },
+  category: "business",
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export const viewport: Viewport = {
+  themeColor: "#15130f",
+}
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": `${SITE.url}/#organization`,
+  name: SITE.name,
+  alternateName: "Versa Group",
+  url: SITE.url,
+  description: SITE.description,
+  foundingDate: SITE.founded,
+  founder: FOUNDERS.map((f) => ({ "@type": "Person", name: f.name, jobTitle: f.role })),
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: `${SITE.address.line1}, ${SITE.address.line2}`,
+    addressLocality: SITE.address.city,
+    addressRegion: SITE.address.region,
+    postalCode: SITE.address.postalCode,
+    addressCountry: SITE.address.countryCode,
+  },
+  contactPoint: PHONES.map((p) => ({
+    "@type": "ContactPoint",
+    telephone: p.href,
+    contactType: "sales",
+    areaServed: ["IN", "AE", "Worldwide"],
+    availableLanguage: ["English", "Malayalam", "Hindi"],
+  })),
+  subOrganization: [
+    { "@type": "Organization", name: "Versa Logistics", url: `${SITE.url}/logistics` },
+    { "@type": "Organization", name: "Versa Traders", url: `${SITE.url}/traders` },
+    { "@type": "Organization", name: EXTERNAL.digital.name, url: EXTERNAL.digital.url },
+    { "@type": "Organization", name: EXTERNAL.global.name, url: EXTERNAL.global.url },
+  ],
+  sameAs: [EXTERNAL.digital.url, EXTERNAL.global.url],
+}
+
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
-      <body className="bg-white font-inter antialiased overflow-x-hidden">
+    <html lang="en-IN" className={`${manrope.variable} ${instrument.variable} ${jetbrains.variable}`}>
+      <body className="min-h-screen bg-paper font-sans text-ink">
+        <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:bg-ink focus:px-4 focus:py-2 focus:text-paper">
+          Skip to content
+        </a>
+        <TopBar />
         <Navbar />
-        <main className="overflow-x-hidden pb-16 md:pb-0">{children}</main>
+        <main id="main">{children}</main>
         <Footer />
         <FloatingWhatsApp />
-        <ChatWidget />
-        <MobileStickyBar />
+        <JsonLd data={organizationSchema} />
       </body>
     </html>
   )

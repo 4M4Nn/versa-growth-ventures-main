@@ -1,96 +1,136 @@
 import type { Metadata } from "next"
-import { notFound } from "next/navigation"
-import Image from "next/image"
 import Link from "next/link"
-import { ArrowLeft, Clock, User, Tag } from "lucide-react"
-import { BLOG_POSTS } from "@/lib/data"
+import { notFound } from "next/navigation"
+import { ArrowUpRight } from "lucide-react"
+import { BLOG_POSTS, HOME, PAGE_COPY, SITE } from "@/lib/data"
+import { formatDate } from "@/lib/utils"
+import { Container } from "@/components/shared/Container"
+import { Breadcrumbs } from "@/components/shared/Breadcrumbs"
+import { Eyebrow } from "@/components/shared/Eyebrow"
+import { Figure } from "@/components/shared/Figure"
+import { ArticleSections } from "@/components/shared/ArticleSections"
+import { FAQList } from "@/components/shared/FAQList"
+import { CTABand } from "@/components/shared/CTABand"
+import { JsonLd } from "@/components/shared/JsonLd"
+import { PostCard } from "@/components/sections/PostCard"
 
-export async function generateStaticParams() {
+type Props = { params: Promise<{ slug: string }> }
+
+export function generateStaticParams() {
   return BLOG_POSTS.map((p) => ({ slug: p.slug }))
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+export const dynamicParams = false
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const post = BLOG_POSTS.find((p) => p.slug === slug)
-  if (!post) return { title: "Article Not Found" }
+  if (!post) return {}
   return {
     title: post.title,
-    description: post.excerpt,
-    openGraph: { images: [post.image] },
+    description: post.metaDescription,
+    keywords: post.keywords,
+    alternates: { canonical: `/blog/${post.slug}` },
+    openGraph: { type: "article", title: post.title, description: post.metaDescription, images: [post.image.src], publishedTime: post.date },
   }
 }
 
-export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
+export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params
   const post = BLOG_POSTS.find((p) => p.slug === slug)
   if (!post) notFound()
-
-  const related = BLOG_POSTS.filter((p) => p.category === post.category && p.slug !== post.slug).slice(0, 3)
-  const paragraphs = post.body.split("\n\n").filter(Boolean)
+  const more = BLOG_POSTS.filter((p) => p.slug !== post.slug && p.category === post.category).slice(0, 3)
 
   return (
-    <div className="pt-16 md:pt-20">
-      <div className="relative h-[55vh] min-h-[350px]">
-        <Image src={post.image} alt={post.title} fill unoptimized className="object-cover" priority />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/80" />
-        <div className="absolute bottom-10 left-0 right-0 px-4">
-          <div className="max-w-4xl mx-auto">
-            <span className="bg-[#4A7C59] text-white text-xs font-bold px-3 py-1 rounded-full">{post.category}</span>
-            <h1 className="font-playfair text-3xl md:text-5xl font-bold text-white mt-4 leading-tight">{post.title}</h1>
-          </div>
-        </div>
-      </div>
-
-      <div className="bg-white border-b border-gray-100 py-4 px-4">
-        <div className="max-w-4xl mx-auto flex flex-wrap items-center gap-5 text-sm text-[#6B7280]">
-          <span className="flex items-center gap-1.5"><User size={14} /> {post.author}</span>
-          <span className="flex items-center gap-1.5"><Tag size={14} /> {post.date}</span>
-          <span className="flex items-center gap-1.5"><Clock size={14} /> {post.readTime}</span>
-          <Link href="/blog" className="ml-auto flex items-center gap-1.5 text-[#4A7C59] font-semibold hover:underline"><ArrowLeft size={14} /> All Articles</Link>
-        </div>
-      </div>
-
-      <div className="py-16 px-4 bg-white">
-        <div className="max-w-4xl mx-auto">
-          <p className="text-lg text-[#374151] leading-relaxed mb-6 font-medium border-l-4 border-[#4A7C59] pl-5 italic">{post.excerpt}</p>
-          <div className="prose prose-gray max-w-none">
-            {paragraphs.map((p, i) => (
-              <p key={i} className="text-[#374151] leading-relaxed mb-5">{p.replace(/&apos;/g, "'")}</p>
-            ))}
-          </div>
-
-          <div className="mt-12 pt-8 border-t border-gray-100 flex items-center gap-4">
-            <div className="w-14 h-14 rounded-2xl bg-[#4A7C59] text-white text-lg font-bold flex items-center justify-center shrink-0">
-              {post.author.split(" ").map((n) => n[0]).join("")}
+    <>
+      <article>
+        <header className="paper-grain border-b border-ink">
+          <Container className="pb-12 pt-8 md:pt-10">
+            <Breadcrumbs
+              items={[
+                { label: "Insights", href: "/blog" },
+                { label: post.category, href: `/blog/${post.slug}` },
+              ]}
+            />
+            <div className="mx-auto mt-12 max-w-4xl">
+              <Eyebrow index={post.category}>
+                <time dateTime={post.date}>{formatDate(post.date)}</time> · {post.readTime}
+              </Eyebrow>
+              <h1 className="mt-6 font-serif text-[2.5rem] leading-[1.03] sm:text-5xl md:text-[4rem]">{post.title}</h1>
+              <p className="mt-6 text-lg leading-relaxed text-ink-soft md:text-xl">{post.excerpt}</p>
             </div>
-            <div>
-              <p className="font-bold text-[#1A1A1A]">{post.author}</p>
-              <p className="text-[#6B7280] text-sm">Expert, Versa Growth Ventures</p>
-            </div>
-          </div>
-        </div>
-      </div>
+          </Container>
+        </header>
 
-      {related.length > 0 && (
-        <section className="py-16 px-4 bg-[#F8FAF9]">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="font-playfair text-2xl font-bold text-[#1A1A1A] mb-8">Related Articles</h2>
-            <div className="grid sm:grid-cols-3 gap-6">
-              {related.map((rp) => (
-                <Link key={rp.slug} href={`/blog/${rp.slug}`} className="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition-all">
-                  <div className="relative h-40">
-                    <Image src={rp.image} alt={rp.title} fill unoptimized className="object-cover group-hover:scale-105 transition-transform duration-500" />
-                  </div>
-                  <div className="p-4">
-                    <p className="font-semibold text-[#1A1A1A] text-sm group-hover:text-[#4A7C59] transition-colors line-clamp-2">{rp.title}</p>
-                    <p className="text-[#94A3B8] text-xs mt-1">{rp.readTime}</p>
-                  </div>
-                </Link>
+        <Container className="py-12 md:py-16">
+          <div className="mx-auto max-w-4xl">
+            <Figure image={post.image} aspect="aspect-[16/9]" priority sizes="(min-width: 1024px) 900px, 100vw" />
+            <div className="mt-12 grid gap-4 border-l-2 border-spice bg-paper-2/70 p-6 md:grid-cols-[160px_1fr] md:p-8">
+              <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-ink-soft">Quick answer</p>
+              <p className="text-[17px] leading-relaxed">{post.answer}</p>
+            </div>
+            <div className="prose-ledger mx-auto mt-4 max-w-3xl text-[17px]">
+              <ArticleSections sections={post.sections} />
+            </div>
+
+            {post.faqs.length > 0 && (
+              <section className="mx-auto mt-16 max-w-3xl" aria-labelledby="post-faq">
+                <h2 id="post-faq" className="mb-6 font-serif text-4xl leading-tight">
+                  Frequently asked questions
+                </h2>
+                <FAQList items={post.faqs} />
+              </section>
+            )}
+
+            <nav aria-label="Related pages" className="mx-auto mt-16 max-w-3xl border border-ink">
+              <p className="border-b border-ink px-5 py-3 font-mono text-[11px] uppercase tracking-[0.2em] text-ink-soft">Related from Versa</p>
+              <ul>
+                {post.relatedLinks.map((l) => (
+                  <li key={l.href} className="border-b border-rule last:border-b-0">
+                    <Link href={l.href} className="flex items-center justify-between px-5 py-4 font-semibold hover:bg-paper-2">
+                      {l.label}
+                      <ArrowUpRight className="size-4" aria-hidden />
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          </div>
+        </Container>
+      </article>
+
+      {more.length > 0 && (
+        <section className="border-t border-ink py-16 md:py-20">
+          <Container>
+            <h2 className="font-serif text-4xl">More {post.category.toLowerCase()} insights</h2>
+            <ul className="mt-10 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+              {more.map((p) => (
+                <li key={p.slug}>
+                  <PostCard post={p} />
+                </li>
               ))}
-            </div>
-          </div>
+            </ul>
+          </Container>
         </section>
       )}
-    </div>
+
+      <CTABand title={PAGE_COPY.ventures.ctaTitle} body={PAGE_COPY.ventures.ctaBody} primary={HOME.primaryCta} secondary={HOME.secondaryCta} />
+
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          headline: post.title,
+          description: post.metaDescription,
+          image: [`${SITE.url}${post.image.src}`],
+          datePublished: post.date,
+          dateModified: post.date,
+          keywords: post.keywords.join(", "),
+          author: { "@type": "Organization", name: SITE.name, url: SITE.url },
+          publisher: { "@id": `${SITE.url}/#organization` },
+          mainEntityOfPage: `${SITE.url}/blog/${post.slug}`,
+        }}
+      />
+    </>
   )
 }

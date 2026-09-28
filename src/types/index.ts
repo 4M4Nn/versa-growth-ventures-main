@@ -1,82 +1,148 @@
-export interface Venture {
-  id: string
-  name: string
-  tagline: string
+export interface NavChild {
+  label: string
+  href: string
   description: string
-  metric: string
-  metricLabel: string
-  image: string
-  url: string
-  color: string
-  features: string[]
-  status: "live" | "coming-soon"
+  external?: boolean
+}
+
+export interface NavLink {
+  label: string
+  href: string
+  children?: NavChild[]
+}
+
+export interface Phone {
+  display: string
+  href: string
+}
+
+export interface ImageAsset {
+  src: string
+  alt: string
+  caption: string
+}
+
+export interface Venture {
+  slug: string
+  code: string
+  name: string
+  sector: string
+  summary: string
+  description: string
+  href: string
+  external: boolean
+  liveUrl?: string
+  liveLabel?: string
+  image: ImageAsset
+  highlights: string[]
+  accent: "spice" | "ocean" | "ink" | "brass"
 }
 
 export interface Founder {
   name: string
   role: string
+  focus: string
   monogram: string
-  color: string
-  bio: string
-  expertise: string[]
+  bio: string[]
 }
 
-export interface Testimonial {
-  name: string
-  role: string
-  location: string
-  venture: string
-  quote: string
-  rating: number
-  image: string
+export interface FAQ {
+  question: string
+  answer: string
+}
+
+export interface FAQGroup {
+  id: string
+  title: string
+  items: FAQ[]
+}
+
+export interface ContentSection {
+  heading: string
+  body: string[]
+  bullets?: string[]
+}
+
+export interface Spec {
+  label: string
+  value: string
+}
+
+export type Division = "logistics" | "traders"
+
+export interface DivisionPage {
+  slug: string
+  division: Division
+  navLabel: string
+  h1: string
+  metaTitle: string
+  metaDescription: string
+  keywords: string[]
+  eyebrow: string
+  lede: string
+  image: ImageAsset
+  summary: string
+  intro: string[]
+  specs?: Spec[]
+  sections: ContentSection[]
+  faqs: FAQ[]
+  related: string[]
+}
+
+export interface NewsItem {
+  slug: string
+  title: string
+  metaDescription: string
+  date: string
+  dateLabel: string
+  division: Division
+  kicker: string
+  manifest: Spec[]
+  image: ImageAsset
+  lede: string
+  body: ContentSection[]
+  keywords: string[]
 }
 
 export interface BlogPost {
   slug: string
   title: string
-  category: string
-  author: string
+  metaDescription: string
+  category: "Logistics" | "Trade" | "Group"
   date: string
   readTime: string
+  keywords: string[]
+  image: ImageAsset
   excerpt: string
-  image: string
-  body: string
+  answer: string
+  sections: ContentSection[]
+  faqs: FAQ[]
+  relatedLinks: { label: string; href: string }[]
+}
+
+export interface ImageCredit {
+  file: string
+  subject: string
+  author: string
+  license: string
+  source: string
+}
+
+export interface Headline {
+  pre: string
+  em?: string
+  post?: string
+}
+
+export interface SectionCopy {
+  index: string
+  eyebrow: string
+  title: Headline
+  body?: string
 }
 
 export interface Stat {
-  value: number
-  suffix: string
+  value: string
   label: string
-  icon: string
-}
-
-export interface FAQItem {
-  question: string
-  answer: string
-  category: string
-}
-
-export interface Scheme {
-  id: string
-  name: string
-  badge: string
-  price: string
-  description: string
-  includes: string[]
-  terms: string
-  cta: string
-  highlight: boolean
-  color: string
-}
-
-export interface Milestone {
-  year: string
-  title: string
-  description: string
-}
-
-export interface Industry {
-  name: string
-  icon: string
-  description: string
+  note: string
 }

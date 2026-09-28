@@ -1,100 +1,169 @@
 "use client"
 
-import { useState, useEffect } from "react"
 import Link from "next/link"
-import { Menu, X, Phone } from "lucide-react"
-import { NAV_LINKS, SITE } from "@/lib/data"
+import { usePathname } from "next/navigation"
+import { useState } from "react"
+import { ArrowUpRight, ChevronDown, Menu, Phone } from "lucide-react"
+import { NAV_LINKS, PHONES, SITE } from "@/lib/data"
+import { cn } from "@/lib/utils"
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
 
-export default function Navbar() {
+function Wordmark() {
+  return (
+    <Link href="/" className="group flex shrink-0 items-center gap-3" aria-label={`${SITE.name} — home`}>
+      <span className="grid size-9 place-items-center border border-ink bg-ink font-serif text-2xl leading-none text-paper transition-colors group-hover:border-spice group-hover:bg-spice sm:size-10">
+        V
+      </span>
+      <span className="leading-none">
+        <span className="block whitespace-nowrap font-serif text-[18px] tracking-tight text-ink sm:text-[22px]">Versa Growth Ventures</span>
+        <span className="mt-1 block font-mono text-[9.5px] uppercase tracking-[0.22em] text-ink-soft">Est. {SITE.founded} · Kochi</span>
+      </span>
+    </Link>
+  )
+}
+
+export function Navbar() {
+  const pathname = usePathname()
   const [open, setOpen] = useState(false)
-  const [scrolled, setScrolled] = useState(false)
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40)
-    window.addEventListener("scroll", onScroll)
-    return () => window.removeEventListener("scroll", onScroll)
-  }, [])
-
-  useEffect(() => {
-    document.body.style.overflow = open ? "hidden" : ""
-    return () => { document.body.style.overflow = "" }
-  }, [open])
+  const isActive = (href: string) => (href === "/" ? pathname === "/" : pathname.startsWith(href))
 
   return (
-    <>
-      <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-white shadow-md" : "bg-white/95 backdrop-blur-sm shadow-sm"}`}>
-        <div className="max-w-7xl mx-auto px-5 lg:px-8">
-          <div className="flex items-center justify-between h-16 md:h-20">
-            <Link href="/" onClick={() => setOpen(false)} className="flex items-center gap-2.5">
-              <div className="w-9 h-9 rounded-xl bg-[#4A7C59] flex items-center justify-center shrink-0">
-                <span className="text-white font-bold text-sm">V</span>
-              </div>
-              <div>
-                <p className="font-playfair font-bold text-[#1A1A1A] leading-tight text-base">{SITE.name}</p>
-                <p className="text-[10px] text-[#6B7280] tracking-widest uppercase hidden sm:block">{SITE.tagline}</p>
-              </div>
-            </Link>
+    <header className="sticky top-0 z-50 border-b border-ink bg-paper/95 backdrop-blur supports-[backdrop-filter]:bg-paper/85">
+      <div className="mx-auto flex h-[72px] w-full max-w-[1320px] items-center justify-between gap-6 px-5 md:px-10">
+        <Wordmark />
 
-            <nav className="hidden lg:flex items-center gap-1">
-              {NAV_LINKS.map((link) => (
-                <Link key={link.href} href={link.href} className="px-3 py-2 text-sm font-medium text-[#374151] hover:text-[#4A7C59] hover:bg-[#F0F7F2] rounded-lg transition-all">
-                  {link.label}
-                </Link>
-              ))}
-            </nav>
-
-            <div className="hidden lg:flex items-center gap-3">
-              <a href={`tel:${SITE.phone}`} className="text-sm text-[#6B7280] hover:text-[#4A7C59] transition-colors">{SITE.phone}</a>
-              <Link href="/contact" className="bg-[#4A7C59] text-white text-sm font-semibold px-5 py-2.5 rounded-lg hover:bg-[#2D4E37] transition-colors">
-                Get Started
-              </Link>
-            </div>
-
-            <button className="lg:hidden p-2.5 rounded-lg text-[#374151] hover:bg-gray-100 transition-colors" onClick={() => setOpen(!open)} aria-label="Toggle menu">
-              {open ? <X size={24} /> : <Menu size={24} />}
-            </button>
-          </div>
-        </div>
-      </header>
-
-      {/* Full-screen mobile overlay */}
-      <div
-        className={`fixed inset-0 z-40 bg-white lg:hidden flex flex-col transition-all duration-300 ${open ? "opacity-100 pointer-events-auto translate-x-0" : "opacity-0 pointer-events-none translate-x-full"}`}
-      >
-        <div className="flex items-center justify-between px-5 h-16 border-b border-gray-100 shrink-0">
-          <Link href="/" onClick={() => setOpen(false)} className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-xl bg-[#4A7C59] flex items-center justify-center">
-              <span className="text-white font-bold text-sm">V</span>
-            </div>
-            <p className="font-playfair font-bold text-[#1A1A1A] text-base">{SITE.name}</p>
-          </Link>
-          <button className="p-2.5 rounded-lg text-[#374151] hover:bg-gray-100" onClick={() => setOpen(false)} aria-label="Close menu">
-            <X size={24} />
-          </button>
-        </div>
-
-        <nav className="flex-1 overflow-y-auto px-5 py-6 space-y-1">
-          {NAV_LINKS.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              onClick={() => setOpen(false)}
-              className="flex items-center px-4 py-4 text-lg font-semibold text-[#1A1A1A] hover:text-[#4A7C59] hover:bg-[#F0F7F2] rounded-xl transition-all min-h-[56px]"
-            >
-              {link.label}
-            </Link>
-          ))}
+        <nav aria-label="Main" className="hidden items-center xl:flex">
+          <ul className="flex items-center">
+            {NAV_LINKS.map((link) =>
+              link.children ? (
+                <li key={link.label} className="group relative">
+                  <Link
+                    href={link.href}
+                    className={cn(
+                      "flex items-center gap-1 px-3 py-2 text-[14px] font-semibold text-ink transition-colors hover:text-spice",
+                      isActive(link.href) && "text-spice"
+                    )}
+                  >
+                    {link.label}
+                    <ChevronDown className="size-3.5 transition-transform group-hover:rotate-180 group-focus-within:rotate-180" aria-hidden />
+                  </Link>
+                  <div className="invisible absolute left-0 top-full w-[380px] translate-y-2 pt-3 opacity-0 transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100">
+                    <ul className="border border-ink bg-paper">
+                      {link.children.map((c) => (
+                        <li key={c.href} className="border-b border-rule last:border-b-0">
+                          <a
+                            href={c.href}
+                            {...(c.external ? { target: "_blank", rel: "noopener" } : {})}
+                            className="group/item flex items-start justify-between gap-4 px-5 py-4 transition-colors hover:bg-ink hover:text-paper"
+                          >
+                            <span>
+                              <span className="block text-[15px] font-semibold">{c.label}</span>
+                              <span className="mt-1 block text-[13px] text-ink-soft group-hover/item:text-paper/70">{c.description}</span>
+                            </span>
+                            <ArrowUpRight className="mt-1 size-4 shrink-0" aria-hidden />
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </li>
+              ) : (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className={cn(
+                      "px-3 py-2 text-[14px] font-semibold text-ink transition-colors hover:text-spice",
+                      isActive(link.href) && "text-spice"
+                    )}
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              )
+            )}
+          </ul>
         </nav>
 
-        <div className="px-5 py-6 border-t border-gray-100 space-y-3 shrink-0">
-          <Link href="/contact" onClick={() => setOpen(false)} className="flex items-center justify-center w-full bg-[#4A7C59] text-white font-bold py-4 rounded-xl text-base hover:bg-[#2D4E37] transition-colors min-h-[56px]">
-            Book Free Consultation
+        <div className="flex items-center gap-2">
+          <Link
+            href="/contact"
+            className="hidden min-h-11 items-center gap-2 border border-ink bg-ink px-5 text-sm font-semibold text-paper transition-colors hover:border-spice hover:bg-spice sm:inline-flex"
+          >
+            Get a quote
+            <ArrowUpRight className="size-4" aria-hidden />
           </Link>
-          <a href={`tel:${SITE.phone}`} className="flex items-center justify-center gap-2 w-full border-2 border-[#4A7C59] text-[#4A7C59] font-bold py-4 rounded-xl text-base hover:bg-[#F0F7F2] transition-colors min-h-[56px]">
-            <Phone size={18} /> {SITE.phone}
-          </a>
+
+          <Sheet open={open} onOpenChange={setOpen}>
+            <SheetTrigger asChild>
+              <button
+                type="button"
+                className="grid size-11 place-items-center border border-ink text-ink transition-colors hover:bg-ink hover:text-paper xl:hidden"
+                aria-label="Open menu"
+              >
+                <Menu className="size-5" />
+              </button>
+            </SheetTrigger>
+            <SheetContent side="right" className="w-full max-w-sm overflow-y-auto border-l border-ink bg-paper p-0 sm:max-w-sm">
+              <SheetHeader className="border-b border-ink px-6 py-5 text-left">
+                <SheetTitle className="font-serif text-2xl font-normal">Versa Growth Ventures</SheetTitle>
+              </SheetHeader>
+              <nav aria-label="Mobile" className="px-6 py-4">
+                <ul>
+                  {NAV_LINKS.map((link) => (
+                    <li key={link.label} className="border-b border-rule">
+                      <Link
+                        href={link.href}
+                        onClick={() => setOpen(false)}
+                        className={cn("block py-4 font-serif text-2xl", isActive(link.href) ? "text-spice" : "text-ink")}
+                      >
+                        {link.label}
+                      </Link>
+                      {link.children && (
+                        <ul className="pb-4">
+                          {link.children.map((c) => (
+                            <li key={c.href}>
+                              <a
+                                href={c.href}
+                                onClick={() => setOpen(false)}
+                                {...(c.external ? { target: "_blank", rel: "noopener" } : {})}
+                                className="flex items-center justify-between py-2 text-[15px] font-medium text-ink-soft hover:text-spice"
+                              >
+                                {c.label}
+                                {c.external && <ArrowUpRight className="size-4" aria-hidden />}
+                              </a>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </li>
+                  ))}
+                  <li className="border-b border-rule">
+                    <Link href="/contact" onClick={() => setOpen(false)} className="block py-4 font-serif text-2xl text-ink">
+                      Contact
+                    </Link>
+                  </li>
+                </ul>
+                <div className="mt-6 space-y-2">
+                  {PHONES.map((p) => (
+                    <a key={p.href} href={`tel:${p.href}`} className="flex items-center gap-3 font-mono text-sm text-ink hover:text-spice">
+                      <Phone className="size-4" aria-hidden />
+                      {p.display}
+                    </a>
+                  ))}
+                </div>
+                <Link
+                  href="/contact"
+                  onClick={() => setOpen(false)}
+                  className="mt-6 flex min-h-12 items-center justify-between bg-spice px-5 text-sm font-semibold text-paper"
+                >
+                  Request a quote
+                  <ArrowUpRight className="size-4" aria-hidden />
+                </Link>
+              </nav>
+            </SheetContent>
+          </Sheet>
         </div>
       </div>
-    </>
+    </header>
   )
 }

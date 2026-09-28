@@ -1,19 +1,25 @@
 import type { Config } from "tailwindcss"
-export default {
-  darkMode: "class",
-  content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
+
+// Tailwind v4 reads design tokens from the @theme block in src/app/globals.css.
+// This file documents the brand palette and fonts for tooling that expects a config.
+const config: Config = {
+  content: ["./src/**/*.{ts,tsx}"],
   theme: {
     extend: {
       colors: {
-        olive: "#4A7C59", "olive-dark": "#3A6249", "olive-light": "#EBF5EE",
-        gold: "#C9A84C", "gold-light": "#FBF5E6",
-        navy: "#1B2A4A", muted: "#6B7280", light: "#F8F9FA",
+        paper: "#f3eee4",
+        ink: "#15130f",
+        spice: "#a8431f",
+        ocean: "#0f4c5c",
+        brass: "#b08a3e",
       },
       fontFamily: {
-        playfair: ["var(--font-playfair)", "serif"],
-        inter: ["var(--font-inter)", "sans-serif"],
+        sans: ["var(--font-manrope)"],
+        serif: ["var(--font-instrument)"],
+        mono: ["var(--font-jetbrains)"],
       },
     },
   },
-  plugins: [],
-} satisfies Config
+}
+
+export default config
