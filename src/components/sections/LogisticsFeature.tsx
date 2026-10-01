@@ -6,6 +6,7 @@ import { SectionHeading } from "@/components/shared/SectionHeading"
 import { Headline } from "@/components/shared/Headline"
 import { ArrowLink } from "@/components/shared/ArrowLink"
 import { RouteMap } from "./RouteMap"
+import { PortToPortBlock } from "./PortToPortBlock"
 
 export function LogisticsFeature() {
   const copy = HOME_SECTIONS.logistics
@@ -52,6 +53,9 @@ export function LogisticsFeature() {
               ))}
             </ul>
           </div>
+        </div>
+        <div className="mt-16 border-t border-paper/25 pt-14">
+          <PortToPortBlock tone="paper" headingLevel="h3" />
         </div>
       </Container>
     </section>

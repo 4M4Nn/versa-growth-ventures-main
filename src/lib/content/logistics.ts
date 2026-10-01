@@ -2,11 +2,12 @@ import type { DivisionPage, FAQ } from "@/types"
 import { IMAGES } from "./site"
 import { LOGISTICS_EXTRA_PAGES, LOGISTICS_EXTRA_SECTIONS } from "./logistics-extra"
 import { LOGISTICS_KEYWORD_FAQS, LOGISTICS_SEO_PAGES } from "./logistics-seo"
+import { LOGISTICS_PORT_PAGES, PORT_TO_PORT_FAQS } from "./logistics-port"
 
 export const LOGISTICS_HUB = {
-  metaTitle: "Versa Logistics — Best Logistics & Freight Forwarding Company in Kochi, Kerala | Freight Quotes",
+  metaTitle: "Versa Logistics — Port-to-Port Freight at the Best Price, Freight Forwarding & Sea Freight from Kochi",
   metaDescription:
-    "Versa Logistics is a Kochi freight forwarder offering FCL/LCL sea freight, freight forwarding, export documentation and road transportation from India to Jebel Ali, Khorfakkan and worldwide. Call +91 97464 33133.",
+    "Versa Logistics is a Kochi freight forwarder offering port-to-port sea freight at the best price it can find, FCL/LCL, freight forwarding, export documentation and road transportation from India to Jebel Ali, Khorfakkan and the Gulf. Call +91 97464 33133.",
   keywords: [
     "Versa Logistics",
     "freight forwarder Kochi",
@@ -23,13 +24,17 @@ export const LOGISTICS_HUB = {
     "cheapest logistics service India",
     "freight quotation Kochi",
     "best freight rates India to UAE",
+    "port to port shipping India",
+    "port to port freight best price",
+    "Kochi to Jebel Ali port to port",
+    "Kochi to Khorfakkan port to port",
   ],
   eyebrow: "Venture 01 — Versa Logistics",
   h1: "Versa Logistics: freight forwarding, sea freight and transportation from Kochi, Kerala to the UAE and worldwide — with transparent freight quotes",
   lede:
     "We move containers. Full-load and part-load sea freight out of Kochi and India's west-coast gateways, road haulage from your warehouse to the terminal, and the documents that clear the cargo — delivered as one service with one accountable contact.",
   answer:
-    "Versa Logistics is the freight and transportation venture of Versa Growth Ventures, based in Kakkanad, Kochi. It provides FCL and LCL sea freight, freight forwarding, export documentation support and road transportation, with regular container movements from India to Jebel Ali (Dubai) and Khorfakkan (Sharjah). Recent work includes 15 × 40ft containers of coffee beans to Jebel Ali and 2 × 40ft containers of coffee beans to Khorfakkan.",
+    "Versa Logistics is the freight and transportation venture of Versa Growth Ventures, based in Kakkanad, Kochi. It provides port-to-port and door-to-port FCL and LCL sea freight at competitive, itemised prices, freight forwarding, export documentation support and road transportation, with regular container movements from India to Jebel Ali (Dubai) and Khorfakkan (Sharjah). Recent work includes 15 × 40ft containers of coffee beans to Jebel Ali and 2 × 40ft containers of coffee beans to Khorfakkan.",
   services: [
     {
       title: "Sea freight — FCL & LCL",
@@ -102,6 +107,7 @@ export const LOGISTICS_HUB = {
 }
 
 export const LOGISTICS_FAQS: FAQ[] = [
+  ...PORT_TO_PORT_FAQS.slice(0, 3),
   ...LOGISTICS_KEYWORD_FAQS,
   {
     question: "What does Versa Logistics do?",
@@ -574,4 +580,5 @@ export const LOGISTICS_PAGES: DivisionPage[] = [
   ...LOGISTICS_CORE_PAGES.map((p) => (LOGISTICS_EXTRA_SECTIONS[p.slug] ? { ...p, sections: [...p.sections, LOGISTICS_EXTRA_SECTIONS[p.slug]] } : p)),
   ...LOGISTICS_EXTRA_PAGES,
   ...LOGISTICS_SEO_PAGES,
+  ...LOGISTICS_PORT_PAGES,
 ]

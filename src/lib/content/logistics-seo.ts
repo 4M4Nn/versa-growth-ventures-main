@@ -10,6 +10,8 @@ export const FREIGHT_QUOTE_PAGE = {
     "Request an itemised freight quotation from Versa Logistics, Kochi: sea freight FCL/LCL to Jebel Ali, Khorfakkan, the GCC and worldwide, with transport, documentation and stuffing. Competitive rates, every charge shown.",
   keywords: [
     "freight quote Kochi",
+    "port to port freight quote",
+    "best price sea freight India to UAE",
     "freight quotation India",
     "best freight rates Kerala",
     "sea freight quote India to UAE",
@@ -61,7 +63,7 @@ export const FREIGHT_QUOTE_PAGE = {
     "Other / worldwide",
   ],
   containers: ["20ft FCL", "40ft FCL", "40ft High Cube", "LCL (part load)", "Not sure — advise me"],
-  extras: ["Road transport to port", "Export documentation", "Stuffing supervision", "Marine insurance", "Fumigation / certificates"],
+  extras: ["Port to port only", "Road transport to port", "Export documentation", "Stuffing supervision", "Marine insurance", "Fumigation / certificates"],
 }
 
 export const FREIGHT_QUOTE_FAQS: FAQ[] = [
@@ -428,7 +430,7 @@ export const LOGISTICS_HUB_EXTRA = {
   quoteBody:
     "Tell us what you are shipping and where. We compare carriers, ports and container sizes and send an itemised quote with every charge listed and validity stated.",
   quoteCta: "Get a freight quote",
-  quotePoints: ["Free & no obligation", "Every charge itemised", "Routes & ports compared", "Validity stated upfront"],
+  quotePoints: ["Free & no obligation", "Port to port or door to door", "Every charge itemised", "Routes & ports compared", "Validity stated upfront"],
   locationsEyebrow: "Where we serve",
   locationsH2: "Logistics services in Kochi, across Kerala and India",
 }

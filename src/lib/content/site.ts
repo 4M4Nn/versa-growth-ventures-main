@@ -33,6 +33,8 @@ export const SITE = {
     "Versa Traders",
     "freight forwarder Kochi",
     "sea freight India to UAE",
+    "port to port shipping India",
+    "port to port freight best price",
     "container shipping to Jebel Ali",
     "Khorfakkan shipping from India",
     "green coffee bean exporter India",
@@ -324,6 +326,7 @@ export const TICKER = [
   "Digital marketing",
   "SEO & AEO",
   "Sea freight to the UAE",
+  "Port-to-port freight, best price",
   "Cardamom & black pepper",
   "Green coffee",
   "Spice sourcing agent",
@@ -338,10 +341,10 @@ export const HOME = {
   // Each line is [plain text, emphasised text?]
   h1: [["A diversified venture group,"], ["from ", "IT and marketing"], ["to spices, freight and finance."]] as [string, string?][],
   lede:
-    "Versa Growth Ventures is a Kochi business group with six ventures under one roof in Kakkanad. We build custom ERP systems, AI agents and automation and run SEO, AEO and digital marketing through Versa Digital & IT Solutions; ship containers from India to Jebel Ali and Khorfakkan with Versa Logistics; trade and source export-quality cardamom, black pepper and green coffee through Versa Traders; run customer support and back-office work at Versa BPO; manage portfolios, trading, insurance, SIPs and mutual funds at Versa Financial; and guide students abroad with Versa Global.",
+    "Versa Growth Ventures is a Kochi business group with six ventures under one roof in Kakkanad. We build custom ERP systems, AI agents and automation and run SEO, AEO and digital marketing through Versa Digital & IT Solutions; ship containers port to port from India to Jebel Ali and Khorfakkan at competitive prices with Versa Logistics; trade and source export-quality cardamom, black pepper and green coffee through Versa Traders; run customer support and back-office work at Versa BPO; manage portfolios, trading, insurance, SIPs and mutual funds at Versa Financial; and guide students abroad with Versa Global.",
   metaTitle: "Versa Growth Ventures — IT, SEO & AEO, Freight, Spices, BPO & Finance Group in Kochi, Kerala",
   metaDescription:
-    "Versa Growth Ventures, Kochi — a diversified venture group: SEO, AEO, custom ERP, CRM and AI automation with Versa Digital & IT Solutions; sea freight to Jebel Ali and Khorfakkan with Versa Logistics; cardamom, black pepper and green coffee with Versa Traders; plus Versa BPO, Versa Financial and Versa Global.",
+    "Versa Growth Ventures, Kochi — a diversified venture group: SEO, AEO, custom ERP, CRM and AI automation with Versa Digital & IT Solutions; port-to-port sea freight at the best price to Jebel Ali and Khorfakkan with Versa Logistics; cardamom, black pepper and green coffee with Versa Traders; plus Versa BPO, Versa Financial and Versa Global.",
   primaryCta: { label: "Explore our ventures", href: "/ventures" },
   secondaryCta: { label: "Talk to the group", href: "/contact" },
   gridLabel: "Our ventures",
@@ -358,7 +361,7 @@ export const HOME_SECTIONS = {
     index: "02",
     eyebrow: "Versa Logistics",
     title: { pre: "Containers out of Kochi, ", em: "on time", post: " into the Gulf." },
-    body: "Sea freight, freight forwarding and transportation with a regular India–UAE service. Seventeen 40ft containers of coffee beans delivered into Jebel Ali and Khorfakkan — and counting.",
+    body: "Port-to-port sea freight, freight forwarding and transportation with a regular India–UAE service, quoted at the best price we can find. Seventeen 40ft containers of coffee beans delivered into Jebel Ali and Khorfakkan — and counting.",
   },
   traders: {
     index: "03",
@@ -515,7 +518,7 @@ export const PAGE_COPY = {
   blog: {
     metaTitle: "Insights — Business, Freight, Trade & Finance Guides | Versa Growth Ventures",
     metaDescription:
-      "Guides on SEO, AEO and organic reach, ERP, CRM and AI automation, shipping from India to the UAE, export documents, green coffee grades, and cardamom and black pepper grading.",
+      "Guides on SEO, AEO and organic reach, ERP, CRM and AI automation, port-to-port freight and getting the best price, shipping from India to the UAE, export documents, green coffee grades, and cardamom and black pepper grading.",
     eyebrow: "Insights",
     h1: "Insights on organic reach, business systems, freight and the coffee and spice trade",
     lede: "Practical, plain-English guides for business owners, exporters, importers and spice buyers — written by the people who do the work.",
@@ -529,7 +532,7 @@ export const PAGE_COPY = {
   faq: {
     metaTitle: "FAQ — SEO, AEO, ERP & AI Automation, Freight, Coffee & Spices | Versa Growth Ventures",
     metaDescription:
-      "Answers about Versa Growth Ventures: SEO, AEO, ERP, CRM and AI automation with Versa Digital & IT Solutions, freight to Jebel Ali and Khorfakkan with Versa Logistics, and green coffee, cardamom and black pepper from Versa Traders.",
+      "Answers about Versa Growth Ventures: SEO, AEO, ERP, CRM and AI automation with Versa Digital & IT Solutions, port-to-port freight at the best price to Jebel Ali and Khorfakkan with Versa Logistics, and green coffee, cardamom and black pepper from Versa Traders.",
     eyebrow: "Frequently asked questions",
     h1: "Frequently asked questions about Versa Growth Ventures and its ventures",
     lede: "SEO and AEO, software projects, shipping, samples, certification and how to reach us — answered directly.",

@@ -13,6 +13,7 @@ import { CTABand } from "@/components/shared/CTABand"
 import { JsonLd } from "@/components/shared/JsonLd"
 import { ShipmentLog } from "@/components/sections/ShipmentLog"
 import { RouteMap } from "@/components/sections/RouteMap"
+import { PortToPortBlock } from "@/components/sections/PortToPortBlock"
 
 export const metadata: Metadata = {
   title: { absolute: LOGISTICS_HUB.metaTitle },
@@ -62,6 +63,12 @@ export default function LogisticsPage() {
               {LOGISTICS_HUB_EXTRA.quoteCta}
             </ArrowLink>
           </div>
+        </Container>
+      </section>
+
+      <section className="border-b border-ink py-16 md:py-24">
+        <Container>
+          <PortToPortBlock />
         </Container>
       </section>
 

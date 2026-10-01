@@ -3,6 +3,7 @@ import { LOGISTICS_FAQS } from "./logistics"
 import { TRADERS_FAQS } from "./traders"
 import { FREIGHT_QUOTE_FAQS } from "./logistics-seo"
 import { DIGITAL_FAQS } from "./digital"
+import { PORT_TO_PORT_FAQS } from "./logistics-port"
 
 export const GROUP_FAQS: FAQ[] = [
   {
@@ -29,6 +30,11 @@ export const GROUP_FAQS: FAQ[] = [
     question: "Are Versa Logistics and Versa Traders the same company?",
     answer:
       "They are two ventures of the same group. Versa Traders buys and sells coffee and spices; Versa Logistics provides freight and transportation. Buyers can use them together — product and freight in one conversation — or separately.",
+  },
+  {
+    question: "Does Versa Logistics offer port-to-port shipping at the best price?",
+    answer:
+      "Yes. Versa Logistics quotes port-to-port sea freight from Kochi and other Indian ports to Jebel Ali, Khorfakkan and Gulf ports. It compares carriers and sailings on your port pair and sends the best price it can find, with every charge itemised and the validity stated.",
   },
   {
     question: "Where can I find Versa Digital & IT Solutions and Versa Global?",
@@ -100,7 +106,12 @@ export const TRADE_TERMS_FAQS: FAQ[] = [
 export const FAQ_GROUPS: FAQGroup[] = [
   { id: "group", title: "About the group", items: GROUP_FAQS },
   { id: "digital", title: "Versa Digital & IT Solutions — SEO, AEO, ERP & AI", items: DIGITAL_FAQS },
-  { id: "logistics", title: "Versa Logistics — freight & transportation", items: LOGISTICS_FAQS },
+  {
+    id: "logistics",
+    title: "Versa Logistics — freight & transportation",
+    items: LOGISTICS_FAQS.filter((f) => !PORT_TO_PORT_FAQS.some((p) => p.question === f.question)),
+  },
+  { id: "port-to-port", title: "Port-to-port freight & best price", items: PORT_TO_PORT_FAQS },
   { id: "freight-quotes", title: "Freight quotes & rates", items: FREIGHT_QUOTE_FAQS },
   { id: "traders", title: "Versa Traders — coffee & spices", items: TRADERS_FAQS },
   { id: "trade-terms", title: "Documents, payments & trade terms", items: TRADE_TERMS_FAQS },
