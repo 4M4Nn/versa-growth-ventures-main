@@ -7,8 +7,8 @@ export function ShipmentLog({ items, headingLevel = "h3" }: { items: NewsItem[];
   return (
     <ol className="border-t border-ink">
       {items.map((n) => {
-        const equipment = n.manifest.find((m) => m.label === "Equipment")?.value
-        const destination = n.manifest.find((m) => m.label === "Destination" || m.label === "UAE ports")?.value
+        const primary = n.tag?.primary ?? n.manifest.find((m) => m.label === "Equipment")?.value
+        const secondary = n.tag?.secondary ?? n.manifest.find((m) => m.label === "Destination" || m.label === "UAE ports")?.value
         return (
           <li key={n.slug} className="border-b border-ink">
             <Link href={`/news/${n.slug}`} className="group grid gap-3 py-7 transition-colors hover:bg-paper-2 md:grid-cols-12 md:items-center md:gap-6 md:px-3">
@@ -20,8 +20,8 @@ export function ShipmentLog({ items, headingLevel = "h3" }: { items: NewsItem[];
                 <Title className="mt-1 font-serif text-2xl leading-tight md:text-[1.9rem]">{n.title}</Title>
               </span>
               <span className="font-mono text-[12px] uppercase leading-relaxed tracking-[0.1em] text-ink md:col-span-2">
-                {equipment}
-                <span className="block text-ink-soft">{destination}</span>
+                {primary}
+                <span className="block text-ink-soft">{secondary}</span>
               </span>
               <span className="hidden justify-end md:col-span-1 md:flex">
                 <ArrowUpRight className="size-5 transition-transform group-hover:rotate-45" aria-hidden />

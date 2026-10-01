@@ -90,16 +90,28 @@ export interface DivisionPage {
   related: string[]
 }
 
+export type NewsDesk = Division | "digital" | "bpo" | "financial" | "global" | "group"
+
+// Typographic cover used where a photograph would not add information
+export interface Plate {
+  title: string
+  note: string
+}
+
 export interface NewsItem {
   slug: string
   title: string
   metaDescription: string
   date: string
   dateLabel: string
-  division: Division
+  division: NewsDesk
   kicker: string
   manifest: Spec[]
-  image: ImageAsset
+  manifestTitle?: string
+  // Two-line summary shown in the news log; falls back to the shipment equipment and destination
+  tag?: { primary: string; secondary: string }
+  image?: ImageAsset
+  plate?: Plate
   lede: string
   body: ContentSection[]
   keywords: string[]
@@ -109,11 +121,12 @@ export interface BlogPost {
   slug: string
   title: string
   metaDescription: string
-  category: "Logistics" | "Trade" | "Group"
+  category: "Logistics" | "Trade" | "Digital" | "Group"
   date: string
   readTime: string
   keywords: string[]
-  image: ImageAsset
+  image?: ImageAsset
+  plate?: Plate
   excerpt: string
   answer: string
   sections: ContentSection[]
@@ -146,4 +159,23 @@ export interface Stat {
   value: string
   label: string
   note: string
+}
+
+export interface NewsDeskCopy {
+  name: string
+  cta: { label: string; href: string; external?: boolean }
+  ctaTitle: string
+  ctaBody: string
+}
+
+export interface LiveWorkItem {
+  count: string
+  label: string
+  detail: string
+}
+
+export interface ServiceDetail {
+  title: string
+  body: string
+  points: string[]
 }

@@ -13,21 +13,21 @@ import { VenturesLedger } from "@/components/sections/VenturesLedger"
 import { LogisticsFeature } from "@/components/sections/LogisticsFeature"
 import { TradersFeature } from "@/components/sections/TradersFeature"
 import { ShipmentLog } from "@/components/sections/ShipmentLog"
+import { LiveWorkBoard } from "@/components/sections/LiveWorkBoard"
 import { ConnectedVentures } from "@/components/sections/ConnectedVentures"
 import { FounderCards } from "@/components/sections/FounderCards"
 import { PostCard } from "@/components/sections/PostCard"
 import { VentureCard } from "@/components/sections/VentureCard"
 
 export const metadata: Metadata = {
-  title: { absolute: "Versa Growth Ventures — Freight, Coffee & Spice Export Group in Kochi, Kerala" },
-  description:
-    "Versa Growth Ventures, Kochi: Versa Logistics for sea freight, freight forwarding and transportation to Jebel Ali and Khorfakkan; Versa Traders for bulk export-quality green coffee beans, cardamom and black pepper; plus Versa Digital & IT Solutions and Versa Global.",
+  title: { absolute: HOME.metaTitle },
+  description: HOME.metaDescription,
   alternates: { canonical: "/" },
 }
 
 export default function HomePage() {
   const latestPosts = [...BLOG_POSTS].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 3)
-  const news = [...NEWS].sort((a, b) => b.date.localeCompare(a.date))
+  const news = [...NEWS].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 6)
   const s = HOME_SECTIONS
 
   return (
@@ -76,6 +76,9 @@ export default function HomePage() {
         <Container>
           <SectionHeading index={s.news.index} eyebrow={s.news.eyebrow} title={<Headline value={s.news.title} />} body={s.news.body} />
           <div className="mt-12">
+            <LiveWorkBoard />
+          </div>
+          <div className="mt-10">
             <ShipmentLog items={news} />
           </div>
           <div className="mt-8">

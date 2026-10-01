@@ -2,6 +2,7 @@ import type { FAQ, FAQGroup } from "@/types"
 import { LOGISTICS_FAQS } from "./logistics"
 import { TRADERS_FAQS } from "./traders"
 import { FREIGHT_QUOTE_FAQS } from "./logistics-seo"
+import { DIGITAL_FAQS } from "./digital"
 
 export const GROUP_FAQS: FAQ[] = [
   {
@@ -37,7 +38,7 @@ export const GROUP_FAQS: FAQ[] = [
   {
     question: "What has Versa Digital & IT Solutions delivered?",
     answer:
-      "Versa Digital & IT Solutions has completed 20+ ERP and custom agent builds, 30+ AI agent builds and 20+ business automations, and serves 20+ active digital marketing clients.",
+      "Versa Digital & IT Solutions has completed 20+ ERP and custom agent builds, 30+ AI agent builds and 20+ business automations, and serves 20+ active digital marketing clients. As of October 2026 it has three ERP builds, one CRM and three AI automation projects in delivery.",
   },
   {
     question: "What does Versa BPO do?",
@@ -98,6 +99,7 @@ export const TRADE_TERMS_FAQS: FAQ[] = [
 
 export const FAQ_GROUPS: FAQGroup[] = [
   { id: "group", title: "About the group", items: GROUP_FAQS },
+  { id: "digital", title: "Versa Digital & IT Solutions — SEO, AEO, ERP & AI", items: DIGITAL_FAQS },
   { id: "logistics", title: "Versa Logistics — freight & transportation", items: LOGISTICS_FAQS },
   { id: "freight-quotes", title: "Freight quotes & rates", items: FREIGHT_QUOTE_FAQS },
   { id: "traders", title: "Versa Traders — coffee & spices", items: TRADERS_FAQS },

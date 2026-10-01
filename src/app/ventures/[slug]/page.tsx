@@ -1,10 +1,11 @@
 import type { Metadata } from "next"
 import { notFound } from "next/navigation"
-import { PAGE_COPY, SITE, VENTURES } from "@/lib/data"
+import { DIGITAL_PAGE, PAGE_COPY, SITE, VENTURES } from "@/lib/data"
 import { Container } from "@/components/shared/Container"
 import { PageHero } from "@/components/shared/PageHero"
 import { ArrowLink } from "@/components/shared/ArrowLink"
 import { JsonLd } from "@/components/shared/JsonLd"
+import { DigitalVenturePage } from "@/components/sections/DigitalVenturePage"
 
 type Props = { params: Promise<{ slug: string }> }
 
@@ -20,6 +21,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const v = externalVentures.find((x) => x.slug === slug)
   if (!v) return {}
+  if (v.slug === DIGITAL_PAGE.slug) {
+    return {
+      title: { absolute: DIGITAL_PAGE.metaTitle },
+      description: DIGITAL_PAGE.metaDescription,
+      keywords: DIGITAL_PAGE.keywords,
+      alternates: { canonical: `/ventures/${v.slug}` },
+    }
+  }
   const title = `${v.name} — ${v.sector} | A Versa Growth Ventures Company`
   return {
     title: { absolute: title },
@@ -32,6 +41,7 @@ export default async function ExternalVenturePage({ params }: Props) {
   const { slug } = await params
   const v = externalVentures.find((x) => x.slug === slug)
   if (!v || !v.liveUrl) notFound()
+  if (v.slug === DIGITAL_PAGE.slug) return <DigitalVenturePage venture={v} />
   const copy = PAGE_COPY.ventures
 
   return (

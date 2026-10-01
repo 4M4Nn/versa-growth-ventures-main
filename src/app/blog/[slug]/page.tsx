@@ -2,12 +2,13 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import { ArrowUpRight } from "lucide-react"
-import { BLOG_POSTS, HOME, PAGE_COPY, SITE } from "@/lib/data"
+import { BLOG_POSTS, BRAND, HOME, PAGE_COPY, SITE } from "@/lib/data"
 import { formatDate } from "@/lib/utils"
 import { Container } from "@/components/shared/Container"
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs"
 import { Eyebrow } from "@/components/shared/Eyebrow"
 import { Figure } from "@/components/shared/Figure"
+import { CoverPlate } from "@/components/shared/CoverPlate"
 import { ArticleSections } from "@/components/shared/ArticleSections"
 import { FAQList } from "@/components/shared/FAQList"
 import { CTABand } from "@/components/shared/CTABand"
@@ -31,7 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: post.metaDescription,
     keywords: post.keywords,
     alternates: { canonical: `/blog/${post.slug}` },
-    openGraph: { type: "article", title: post.title, description: post.metaDescription, images: [post.image.src], publishedTime: post.date },
+    openGraph: { type: "article", title: post.title, description: post.metaDescription, images: [post.image?.src ?? BRAND.og.src], publishedTime: post.date },
   }
 }
 
@@ -64,7 +65,11 @@ export default async function BlogPostPage({ params }: Props) {
 
         <Container className="py-12 md:py-16">
           <div className="mx-auto max-w-4xl">
-            <Figure image={post.image} aspect="aspect-[16/9]" priority sizes="(min-width: 1024px) 900px, 100vw" />
+            {post.image ? (
+              <Figure image={post.image} aspect="aspect-[16/9]" priority sizes="(min-width: 1024px) 900px, 100vw" />
+            ) : (
+              post.plate && <CoverPlate plate={post.plate} label={post.category} size="figure" aspect="aspect-[16/10] sm:aspect-[16/7]" />
+            )}
             <div className="mt-12 grid gap-4 border-l-2 border-spice bg-paper-2/70 p-6 md:grid-cols-[160px_1fr] md:p-8">
               <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-ink-soft">Quick answer</p>
               <p className="text-[17px] leading-relaxed">{post.answer}</p>
@@ -122,7 +127,7 @@ export default async function BlogPostPage({ params }: Props) {
           "@type": "BlogPosting",
           headline: post.title,
           description: post.metaDescription,
-          image: [`${SITE.url}${post.image.src}`],
+          image: [`${SITE.url}${post.image?.src ?? BRAND.og.src}`],
           datePublished: post.date,
           dateModified: post.date,
           keywords: post.keywords.join(", "),

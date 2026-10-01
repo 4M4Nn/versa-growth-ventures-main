@@ -40,6 +40,11 @@ export const SITE = {
     "black pepper exporter India",
     "bulk spices supplier",
     "Kochi business group",
+    "SEO company Kochi",
+    "AEO agency Kerala",
+    "custom ERP development Kochi",
+    "CRM development Kerala",
+    "AI automation Kochi",
   ],
 }
 
@@ -334,6 +339,9 @@ export const HOME = {
   h1: [["A diversified venture group,"], ["from ", "IT and marketing"], ["to spices, freight and finance."]] as [string, string?][],
   lede:
     "Versa Growth Ventures is a Kochi business group with six ventures under one roof in Kakkanad. We build custom ERP systems, AI agents and automation and run SEO, AEO and digital marketing through Versa Digital & IT Solutions; ship containers from India to Jebel Ali and Khorfakkan with Versa Logistics; trade and source export-quality cardamom, black pepper and green coffee through Versa Traders; run customer support and back-office work at Versa BPO; manage portfolios, trading, insurance, SIPs and mutual funds at Versa Financial; and guide students abroad with Versa Global.",
+  metaTitle: "Versa Growth Ventures — IT, SEO & AEO, Freight, Spices, BPO & Finance Group in Kochi, Kerala",
+  metaDescription:
+    "Versa Growth Ventures, Kochi — a diversified venture group: SEO, AEO, custom ERP, CRM and AI automation with Versa Digital & IT Solutions; sea freight to Jebel Ali and Khorfakkan with Versa Logistics; cardamom, black pepper and green coffee with Versa Traders; plus Versa BPO, Versa Financial and Versa Global.",
   primaryCta: { label: "Explore our ventures", href: "/ventures" },
   secondaryCta: { label: "Talk to the group", href: "/contact" },
   gridLabel: "Our ventures",
@@ -371,9 +379,9 @@ export const HOME_SECTIONS = {
   },
   news: {
     index: "05",
-    eyebrow: "Shipment log",
-    title: { pre: "Recent ", em: "movements", post: "." },
-    body: "What left Kochi, where it landed and how much of it there was.",
+    eyebrow: "Newsroom",
+    title: { pre: "Live work and ", em: "recent movements", post: "." },
+    body: "What the group is building, shipping and launching right now.",
   },
   connected: {
     index: "06",
@@ -391,7 +399,7 @@ export const HOME_SECTIONS = {
     index: "08",
     eyebrow: "Insights",
     title: { pre: "Field notes on ", em: "business growth", post: "." },
-    body: "Practical guides for exporters, importers and buyers of coffee and spices.",
+    body: "Practical guides on organic reach, business software, freight and the coffee and spice trade.",
   },
   faq: {
     index: "09",
@@ -407,7 +415,7 @@ export const HOME_SECTIONS = {
     routeFrom: "Origin",
     routeTo: "Destinations",
     tradersPromises: "Every order includes",
-    viewAllNews: "All news & shipments",
+    viewAllNews: "All news & updates",
     viewAllPosts: "All insights",
     viewAllFaqs: "All FAQs",
     exploreLogistics: "Explore Versa Logistics",
@@ -496,33 +504,35 @@ export const PAGE_COPY = {
     lede: "Finance and compliance, digital growth and international strategy — three founders who stay close to every venture's customers.",
   },
   news: {
-    metaTitle: "News & Shipments — Versa Logistics Container Movements to Jebel Ali & Khorfakkan",
+    metaTitle: "News — Live ERP, CRM & AI Automation Projects, SEO & AEO Work and Shipments | Versa Growth Ventures",
     metaDescription:
-      "Latest news from Versa Growth Ventures: 15 × 40ft containers of coffee beans to Jebel Ali, 2 × 40ft containers to Khorfakkan, and a regular India–UAE container service.",
+      "Latest from Versa Growth Ventures, Kochi: three ERP builds, one CRM and three AI automation projects in delivery, ongoing SEO and AEO work, and container shipments of coffee beans to Jebel Ali and Khorfakkan.",
     eyebrow: "Newsroom",
-    h1: "News and shipments from Versa Growth Ventures",
-    lede: "Container movements, new services and milestones from Versa Logistics and Versa Traders.",
+    h1: "News, live projects and shipments from Versa Growth Ventures",
+    lede: "Software builds in delivery, SEO and AEO work, container movements, new services and milestones from across the group.",
+    logH2: "All news and updates",
   },
   blog: {
     metaTitle: "Insights — Business, Freight, Trade & Finance Guides | Versa Growth Ventures",
     metaDescription:
-      "Guides on shipping from India to the UAE, container sizes, export documents, green coffee grades, cardamom and black pepper grading, and buying bulk spices from India.",
+      "Guides on SEO, AEO and organic reach, ERP, CRM and AI automation, shipping from India to the UAE, export documents, green coffee grades, and cardamom and black pepper grading.",
     eyebrow: "Insights",
-    h1: "Insights on freight, shipping and the coffee and spice trade",
-    lede: "Practical, plain-English guides for exporters, importers, roasters and spice buyers — written by the people who ship and trade.",
+    h1: "Insights on organic reach, business systems, freight and the coffee and spice trade",
+    lede: "Practical, plain-English guides for business owners, exporters, importers and spice buyers — written by the people who do the work.",
     categoryTitles: {
+      Digital: "SEO, AEO & business systems guides",
       Logistics: "Freight & shipping guides",
       Trade: "Coffee & spice trade guides",
       Group: "From the group",
     } as Record<string, string>,
   },
   faq: {
-    metaTitle: "FAQ — Versa Logistics, Versa Traders & Versa Growth Ventures",
+    metaTitle: "FAQ — SEO, AEO, ERP & AI Automation, Freight, Coffee & Spices | Versa Growth Ventures",
     metaDescription:
-      "Answers about Versa Growth Ventures, freight and shipping to Jebel Ali and Khorfakkan with Versa Logistics, and buying green coffee, cardamom and black pepper from Versa Traders.",
+      "Answers about Versa Growth Ventures: SEO, AEO, ERP, CRM and AI automation with Versa Digital & IT Solutions, freight to Jebel Ali and Khorfakkan with Versa Logistics, and green coffee, cardamom and black pepper from Versa Traders.",
     eyebrow: "Frequently asked questions",
-    h1: "Frequently asked questions about Versa Growth Ventures, Versa Logistics and Versa Traders",
-    lede: "Shipping, samples, certification, quantities and how to reach us — answered directly.",
+    h1: "Frequently asked questions about Versa Growth Ventures and its ventures",
+    lede: "SEO and AEO, software projects, shipping, samples, certification and how to reach us — answered directly.",
   },
   contact: {
     metaTitle: "Contact Versa Growth Ventures — Freight Quotes, Samples & Enquiries",

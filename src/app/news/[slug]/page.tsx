@@ -1,11 +1,12 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import { notFound } from "next/navigation"
-import { DIVISION_COPY, NEWS, SITE } from "@/lib/data"
+import { BRAND, NEWS, NEWS_DESKS, SITE } from "@/lib/data"
 import { Container } from "@/components/shared/Container"
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs"
 import { Eyebrow } from "@/components/shared/Eyebrow"
 import { Figure } from "@/components/shared/Figure"
+import { CoverPlate } from "@/components/shared/CoverPlate"
 import { SpecTable } from "@/components/shared/SpecTable"
 import { ArticleSections } from "@/components/shared/ArticleSections"
 import { ArrowLink } from "@/components/shared/ArrowLink"
@@ -28,7 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: n.metaDescription,
     keywords: n.keywords,
     alternates: { canonical: `/news/${n.slug}` },
-    openGraph: { type: "article", title: n.title, description: n.metaDescription, images: [n.image.src], publishedTime: n.date },
+    openGraph: { type: "article", title: n.title, description: n.metaDescription, images: [n.image?.src ?? BRAND.og.src], publishedTime: n.date },
   }
 }
 
@@ -36,8 +37,10 @@ export default async function NewsArticlePage({ params }: Props) {
   const { slug } = await params
   const n = NEWS.find((x) => x.slug === slug)
   if (!n) notFound()
-  const d = DIVISION_COPY[n.division]
-  const others = NEWS.filter((x) => x.slug !== n.slug)
+  const d = NEWS_DESKS[n.division]
+  const sorted = [...NEWS].sort((a, b) => b.date.localeCompare(a.date)).filter((x) => x.slug !== n.slug)
+  // Same-desk stories first, then the latest from the rest of the group
+  const others = [...sorted.filter((x) => x.division === n.division), ...sorted.filter((x) => x.division !== n.division)].slice(0, 6)
 
   return (
     <>
@@ -59,7 +62,7 @@ export default async function NewsArticlePage({ params }: Props) {
                 <p className="mt-6 max-w-2xl text-lg leading-relaxed text-ink-soft md:text-xl">{n.lede}</p>
               </div>
               <div className="lg:col-span-5">
-                <SpecTable specs={n.manifest} title="Shipment manifest" tone="ink" />
+                <SpecTable specs={n.manifest} title={n.manifestTitle ?? "Shipment manifest"} tone="ink" />
               </div>
             </div>
           </Container>
@@ -67,7 +70,11 @@ export default async function NewsArticlePage({ params }: Props) {
 
         <Container className="grid gap-12 py-16 md:py-24 lg:grid-cols-12">
           <div className="lg:col-span-7">
-            <Figure image={n.image} aspect="aspect-[16/10]" />
+            {n.image ? (
+              <Figure image={n.image} aspect="aspect-[16/10]" />
+            ) : (
+              n.plate && <CoverPlate plate={n.plate} label={d.name} size="figure" aspect="aspect-[16/10] sm:aspect-[16/8]" />
+            )}
             <div className="prose-ledger mt-6 text-[17px]">
               <ArticleSections sections={n.body} />
             </div>
@@ -77,7 +84,7 @@ export default async function NewsArticlePage({ params }: Props) {
               <div className="border border-ink p-6">
                 <p className="font-serif text-2xl leading-tight">{d.ctaTitle}</p>
                 <p className="mt-3 text-[15px] text-ink-soft">{d.ctaBody}</p>
-                <ArrowLink href={d.cta.href} className="mt-5 w-full">
+                <ArrowLink href={d.cta.href} external={d.cta.external} className="mt-5 w-full">
                   {d.cta.label}
                 </ArrowLink>
               </div>
@@ -104,7 +111,9 @@ export default async function NewsArticlePage({ params }: Props) {
           "@type": "NewsArticle",
           headline: n.title,
           description: n.metaDescription,
-          image: [`${SITE.url}${n.image.src}`],
+          image: [`${SITE.url}${n.image?.src ?? BRAND.og.src}`],
+          keywords: n.keywords.join(", "),
+          articleSection: d.name,
           datePublished: n.date,
           dateModified: n.date,
           author: { "@type": "Organization", name: SITE.name, url: SITE.url },

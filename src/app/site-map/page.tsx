@@ -38,7 +38,7 @@ export default function SiteMapPage() {
         { label: "Image credits", href: "/image-credits" },
       ],
     },
-    { title: "News & shipments", links: [{ label: "All news", href: "/news" }, ...NEWS.map((n) => ({ label: n.title, href: `/news/${n.slug}` }))] },
+    { title: "News & updates", links: [{ label: "All news", href: "/news" }, ...NEWS.map((n) => ({ label: n.title, href: `/news/${n.slug}` }))] },
     { title: "Insights", links: [{ label: "All insights", href: "/blog" }, ...BLOG_POSTS.map((p) => ({ label: p.title, href: `/blog/${p.slug}` }))] },
   ]
 

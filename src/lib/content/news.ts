@@ -1,7 +1,67 @@
-import type { NewsItem } from "@/types"
-import { IMAGES } from "./site"
+import type { LiveWorkItem, NewsDesk, NewsDeskCopy, NewsItem } from "@/types"
+import { DIVISION_COPY, EXTERNAL, IMAGES } from "./site"
+import { NEWS_GROUP } from "./news-group"
 
-export const NEWS: NewsItem[] = [
+const deskFromDivision = (d: (typeof DIVISION_COPY)[keyof typeof DIVISION_COPY]): NewsDeskCopy => ({
+  name: d.name,
+  cta: d.cta,
+  ctaTitle: d.ctaTitle,
+  ctaBody: d.ctaBody,
+})
+
+export const NEWS_DESKS: Record<NewsDesk, NewsDeskCopy> = {
+  logistics: deskFromDivision(DIVISION_COPY.logistics),
+  traders: deskFromDivision(DIVISION_COPY.traders),
+  digital: {
+    name: EXTERNAL.digital.name,
+    cta: { label: "Discuss your project", href: "/contact?enquiry=digital" },
+    ctaTitle: "Have a system to build or a market to reach?",
+    ctaBody: "Tell us the process you want to fix or the customers you want to reach. We reply with a plan, a scope and a timeline.",
+  },
+  bpo: {
+    name: "Versa BPO",
+    cta: { label: "Talk to Versa BPO", href: "/bpo" },
+    ctaTitle: "Hand us the calls. Keep the customers.",
+    ctaBody: "Tell us the process, volumes and hours you need covered. We will propose a team and a playbook.",
+  },
+  financial: {
+    name: "Versa Financial",
+    cta: { label: "Talk to Versa Financial", href: "/financial" },
+    ctaTitle: "Make your next money decision with a plan.",
+    ctaBody: "Portfolio, trading account, policy or SIP — tell us which and we will set up a conversation.",
+  },
+  global: {
+    name: EXTERNAL.global.name,
+    cta: { label: `Visit ${EXTERNAL.global.label}`, href: EXTERNAL.global.url, external: true },
+    ctaTitle: "Planning to study or work abroad?",
+    ctaBody: "Versa Global guides students through admissions, education finance, visas and job-focused career programmes.",
+  },
+  group: {
+    name: "Versa Growth Ventures",
+    cta: { label: "Explore our ventures", href: "/ventures" },
+    ctaTitle: "Which venture can help you?",
+    ctaBody: "Software, marketing, freight, spices, outsourcing or finance — tell us what you need and we will connect you with the right team.",
+  },
+}
+
+// Projects currently in delivery at Versa Digital & IT Solutions
+export const LIVE_WORK = {
+  eyebrow: "Live work — Versa Digital & IT Solutions",
+  title: { pre: "On the workbench ", em: "right now", post: "." },
+  body: "Seven software builds are live and in delivery in Kochi, alongside continuing SEO and AEO programmes.",
+  status: "Work ongoing",
+  asOf: "October 2026",
+  href: "/news/versa-digital-seven-live-projects-erp-crm-ai-automation",
+  linkLabel: "Read the update",
+  items: [
+    { count: "03", label: "ERP builds", detail: "Custom ERP systems in active delivery" },
+    { count: "01", label: "CRM build", detail: "Leads, follow-ups and customer records" },
+    { count: "03", label: "AI automations", detail: "AI agents taking over repeatable tasks" },
+    { count: "20+", label: "Marketing clients", detail: "Ongoing SEO, AEO and campaign programmes" },
+  ] satisfies LiveWorkItem[],
+}
+
+const NEWS_SHIPMENTS: NewsItem[] = [
   {
     slug: "15-forty-foot-containers-coffee-beans-jebel-ali-port",
     title: "Versa Logistics ships 15 × 40ft containers of coffee beans to Jebel Ali Port, Dubai",
@@ -118,3 +178,5 @@ export const NEWS: NewsItem[] = [
     keywords: ["India UAE container service", "regular shipping Kochi to Dubai", "freight forwarder India UAE", "Versa Logistics"],
   },
 ]
+
+export const NEWS: NewsItem[] = [...NEWS_GROUP, ...NEWS_SHIPMENTS]
