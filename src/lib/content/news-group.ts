@@ -1,5 +1,6 @@
 import type { NewsItem } from "@/types"
 import { IMAGES } from "./site"
+import { ONION_IMAGES } from "./traders-onion"
 
 const KAKKANAD = {
   src: "/images/kakkanad-infopark.jpg",
@@ -12,6 +13,53 @@ const UPDATE_SHEET = "Update at a glance"
 
 // Updates from Versa Digital & IT Solutions and the wider group
 export const NEWS_GROUP: NewsItem[] = [
+  {
+    slug: "versa-traders-adds-onion-export-and-trading",
+    title: "Versa Traders adds onion export and trading from India to buyers worldwide",
+    metaDescription:
+      "Versa Traders, Kochi, now trades and exports fresh Indian onions — Nashik red, Bangalore Rose, white and small onions — to importers in the Gulf, Asia, Africa and beyond.",
+    date: "2026-10-05",
+    dateLabel: "October 2026",
+    division: "traders",
+    kicker: "New product — Onions",
+    manifestTitle: UPDATE_SHEET,
+    manifest: [
+      { label: "Product", value: "Fresh onions" },
+      { label: "Varieties", value: "Nashik red, Bangalore Rose, white, small onion" },
+      { label: "Sizes", value: "25–65 mm+ (small onion 20–30 mm)" },
+      { label: "Markets", value: "Gulf, South & Southeast Asia, Africa, worldwide" },
+      { label: "Freight", value: "Reefer containers via Versa Logistics" },
+    ],
+    tag: { primary: "Onion export", secondary: "India → worldwide" },
+    image: ONION_IMAGES.redOnions,
+    lede:
+      "Versa Traders, the commodity trading venture of Versa Growth Ventures, has added fresh onions to its range alongside green coffee, cardamom and black pepper, and now trades onions from India to buyers worldwide.",
+    body: [
+      {
+        heading: "Which onions does Versa Traders supply?",
+        body: [],
+        bullets: [
+          "Nashik red onion from Maharashtra",
+          "Bangalore Rose onion from Karnataka",
+          "White onion",
+          "Small onion (shallot / sambar onion)",
+        ],
+      },
+      {
+        heading: "Where will the onions go?",
+        body: [
+          "To importers, wholesalers and distributors in the UAE and the wider Gulf, South and Southeast Asia, Africa and other markets — quoted FOB, CFR or CIF, with reefer container freight available through sister venture Versa Logistics.",
+        ],
+      },
+      {
+        heading: "How do buyers start?",
+        body: [
+          "Send the variety, size band, packing, quantity, destination port and shipment month to +91 97464 33133, WhatsApp +91 79072 15816 or the contact form. Samples and a size-grading report come before any order.",
+        ],
+      },
+    ],
+    keywords: ["onion exporter India", "Versa Traders onions", "onion trading India", "Indian onion supplier"],
+  },
   {
     slug: "versa-digital-seven-live-projects-erp-crm-ai-automation",
     title: "Versa Digital & IT Solutions has seven live projects in delivery: three ERP builds, one CRM and three AI automations",

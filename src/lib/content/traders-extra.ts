@@ -496,4 +496,6 @@ export const TRADERS_MARKETS = [
   { title: "Saudi Arabia", body: "Cardamom and pepper for one of the world's largest spice-consuming markets." },
   { title: "Oman, Qatar, Kuwait & Bahrain", body: "Delivered pricing across the GCC, direct or via UAE hubs." },
   { title: "Roasters worldwide", body: "Indian Robusta and Arabica green coffee for espresso, filter and instant." },
+  { title: "South & Southeast Asia", body: "Fresh Indian onions for Bangladesh, Sri Lanka, Nepal, Malaysia, Indonesia and Vietnam." },
+  { title: "Africa & beyond", body: "Onions, coffee and spices quoted FOB, CFR or CIF to any world port." },
 ]

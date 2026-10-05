@@ -4,6 +4,7 @@ import { TRADERS_FAQS } from "./traders"
 import { FREIGHT_QUOTE_FAQS } from "./logistics-seo"
 import { DIGITAL_FAQS } from "./digital"
 import { PORT_TO_PORT_FAQS } from "./logistics-port"
+import { ONION_FAQS } from "./traders-onion"
 
 export const GROUP_FAQS: FAQ[] = [
   {
@@ -35,6 +36,11 @@ export const GROUP_FAQS: FAQ[] = [
     question: "Does Versa Logistics offer port-to-port shipping at the best price?",
     answer:
       "Yes. Versa Logistics quotes port-to-port sea freight from Kochi and other Indian ports to Jebel Ali, Khorfakkan and Gulf ports. It compares carriers and sailings on your port pair and sends the best price it can find, with every charge itemised and the validity stated.",
+  },
+  {
+    question: "Does Versa Growth Ventures export onions?",
+    answer:
+      "Yes. Versa Traders, a Versa Growth Ventures company, trades and exports fresh Indian onions — Nashik red, Bangalore Rose, white and small onions — in bulk to buyers worldwide, with samples, size grading, phytosanitary certification and freight through Versa Logistics.",
   },
   {
     question: "Where can I find Versa Digital & IT Solutions and Versa Global?",
@@ -113,6 +119,15 @@ export const FAQ_GROUPS: FAQGroup[] = [
   },
   { id: "port-to-port", title: "Port-to-port freight & best price", items: PORT_TO_PORT_FAQS },
   { id: "freight-quotes", title: "Freight quotes & rates", items: FREIGHT_QUOTE_FAQS },
-  { id: "traders", title: "Versa Traders — coffee & spices", items: TRADERS_FAQS },
+  {
+    id: "traders",
+    title: "Versa Traders — onions, coffee & spices",
+    items: TRADERS_FAQS.filter((f) => !ONION_FAQS.some((o) => o.question === f.question)),
+  },
+  {
+    id: "onions",
+    title: "Onion export & trading",
+    items: ONION_FAQS,
+  },
   { id: "trade-terms", title: "Documents, payments & trade terms", items: TRADE_TERMS_FAQS },
 ]

@@ -15,5 +15,10 @@ export const IMAGE_CREDITS: ImageCredit[] = [
   { file: "cardamom-green-pods.jpg", subject: "Green cardamom pods", author: "Prathyush Thomas", license: "GFDL 1.2", source: "https://commons.wikimedia.org/wiki/File:Cardamom_pods_-_Green_BNC.jpg" },
   { file: "cardamom-brass-bowl.jpg", subject: "Green cardamom pods in a brass bowl", author: "Misterneedlemouse", license: "CC0", source: "https://commons.wikimedia.org/wiki/File:Green_Cardamom_Pods.jpg" },
   { file: "black-pepper-macro.jpg", subject: "Black pepper, close-up", author: "R. Boroujerdi", license: "Public domain", source: "https://commons.wikimedia.org/wiki/File:Black_pepper_(By_R.Boroujerdi).JPG" },
+  { file: "red-onions-koyambedu-market.jpg", subject: "Onions at Koyambedu Market, Chennai (cropped)", author: "McKay Savage", license: "CC BY 2.0", source: "https://commons.wikimedia.org/wiki/File:India_-_Koyambedu_Market_-_Onions_06_(3987043646).jpg" },
+  { file: "red-onions-mesh-bags.jpg", subject: "Packed onions", author: "Ssemmanda will", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Packed_Onions.jpg" },
+  { file: "onion-field-lasalgaon.jpg", subject: "Onion cultivation at Lasalgaon (cropped)", author: "Vivo78", license: "CC0", source: "https://commons.wikimedia.org/wiki/File:Landscape_view_of_onion_cultivation_at_Lasalgaon.jpg" },
+  { file: "small-onions-shallots.jpg", subject: "Shallot (sambar onion)", author: "Ask27", license: "CC BY-SA 3.0", source: "https://commons.wikimedia.org/wiki/File:Shallot_(Sambar_Onion)_(1).JPG" },
+  { file: "onion-sacks-mandi.jpg", subject: "Onion mandi (cropped)", author: "Balablitz", license: "CC BY-SA 3.0", source: "https://commons.wikimedia.org/wiki/File:Onion_Mandi.jpg" },
   { file: "black-pepper-whole.jpg", subject: "Whole black pepper", author: "Hubertl", license: "CC BY 4.0", source: "https://commons.wikimedia.org/wiki/File:Black_Pepper_IMG_4866_-_02.jpg" },
 ]

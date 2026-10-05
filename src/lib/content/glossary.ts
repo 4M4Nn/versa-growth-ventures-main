@@ -1,7 +1,7 @@
 export interface GlossaryTerm {
   term: string
   slug: string
-  category: "Shipping" | "Documents & trade" | "Coffee" | "Spices"
+  category: "Shipping" | "Documents & trade" | "Coffee" | "Spices" | "Onions"
   definition: string
   href?: string
 }
@@ -21,6 +21,7 @@ export const GLOSSARY: GlossaryTerm[] = [
   { term: "LCL (Less than Container Load)", slug: "lcl", category: "Shipping", definition: "A shipment that shares a container with other shippers' cargo and is charged by volume or weight. Suited to small or trial consignments.", href: "/blog/fcl-vs-lcl-shipping-explained" },
   { term: "Port-to-port (CY/CY)", slug: "port-to-port", category: "Shipping", definition: "Sea freight from the terminal at the loading port to the terminal at the discharge port only. Pickup, customs clearance and final delivery are arranged separately.", href: "/logistics/port-to-port-shipping" },
   { term: "THC (Terminal Handling Charges)", slug: "thc", category: "Shipping", definition: "Charges for handling a container inside the port terminal and loading or discharging it. Origin THC is paid at the loading port and destination THC at the discharge port.", href: "/blog/port-to-port-freight-charges-explained" },
+  { term: "Reefer container", slug: "reefer", category: "Shipping", definition: "A refrigerated container that holds a set temperature and fresh-air ventilation, used for perishable cargo such as fresh onions.", href: "/blog/shipping-onions-in-reefer-containers" },
   { term: "TEU and FEU", slug: "teu-feu", category: "Shipping", definition: "Twenty-foot Equivalent Unit and Forty-foot Equivalent Unit — standard measures of container capacity. One 40ft container equals two TEU.", href: "/blog/20ft-vs-40ft-container-guide" },
   { term: "40ft High Cube", slug: "high-cube", category: "Shipping", definition: "A 40ft container roughly 30 cm taller than a standard 40ft box, giving extra volume for lighter, bulkier cargo." },
   { term: "Freight forwarder", slug: "freight-forwarder", category: "Shipping", definition: "A company that organises the movement of goods for a shipper — booking carriers, arranging haulage, coordinating documents and tracking the shipment.", href: "/logistics/freight-forwarding" },
@@ -65,4 +66,11 @@ export const GLOSSARY: GlossaryTerm[] = [
   { term: "TGEB / TGSEB", slug: "tgeb", category: "Spices", definition: "Tellicherry Garbled Extra Bold (≈4.25 mm+) and Special Extra Bold (≈4.75 mm+) — the boldest grades of Indian black pepper.", href: "/traders/tellicherry-black-pepper" },
   { term: "Garbled", slug: "garbled", category: "Spices", definition: "Cleaned and sorted to remove stems, dust, pinheads and light berries." },
   { term: "Steam sterilisation", slug: "steam-sterilisation", category: "Spices", definition: "Treating spices with steam to reduce microbial load for markets with strict microbiological limits.", href: "/blog/black-pepper-steam-sterilisation-why-it-matters" },
+  // Onions
+  { term: "Nashik red onion", slug: "nashik-red-onion", category: "Onions", definition: "The large, pungent red onion grown in Nashik district, Maharashtra, and traded through markets such as Lasalgaon — India's best-known export onion.", href: "/traders/nashik-red-onion" },
+  { term: "Bangalore Rose onion", slug: "bangalore-rose-onion", category: "Onions", definition: "A small, rose-coloured onion grown around Bengaluru in Karnataka, with a geographical indication, used mainly for pickling and processing.", href: "/traders/onions" },
+  { term: "Rabi onion", slug: "rabi-onion", category: "Onions", definition: "Onions harvested in India from about March to May. Thick-skinned and long-storing, they supply much of the export trade.", href: "/blog/india-onion-harvest-seasons-kharif-rabi" },
+  { term: "Kharif onion", slug: "kharif-onion", category: "Onions", definition: "Onions harvested in India from about October to December after the monsoon. Fresher but shorter-storing than rabi onions.", href: "/blog/india-onion-harvest-seasons-kharif-rabi" },
+  { term: "MEP (Minimum Export Price)", slug: "mep", category: "Onions", definition: "A floor price set by the Government of India below which a product such as onions may not be exported.", href: "/blog/india-onion-export-policy-mep-duty-explained" },
+  { term: "Leno mesh bag", slug: "leno-mesh-bag", category: "Onions", definition: "An open-weave plastic bag that lets onions breathe; the standard export pack in 5 to 50 kg sizes.", href: "/blog/onion-sizes-and-grades-for-export" },
 ]

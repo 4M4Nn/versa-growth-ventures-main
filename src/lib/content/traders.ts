@@ -1,11 +1,12 @@
 import type { DivisionPage, FAQ } from "@/types"
 import { IMAGES } from "./site"
 import { TRADERS_EXTRA_PAGES, TRADERS_EXTRA_SECTIONS } from "./traders-extra"
+import { ONION_FAQS, ONION_IMAGES, TRADERS_ONION_PAGES } from "./traders-onion"
 
 export const TRADERS_HUB = {
-  metaTitle: "Versa Traders — Green Coffee Beans, Cardamom & Black Pepper Exporter, India",
+  metaTitle: "Versa Traders — Onion, Green Coffee, Cardamom & Black Pepper Exporter, India",
   metaDescription:
-    "Versa Traders is an Indian trader and exporter of export-quality unroasted green coffee beans, green cardamom and black pepper. Bulk quantities, samples on request, full quality documents and certification.",
+    "Versa Traders is an Indian trader and exporter of fresh onions, unroasted green coffee beans, green cardamom and black pepper, shipped from India to buyers worldwide. Bulk quantities, samples on request, full quality documents and certification.",
   keywords: [
     "Versa Traders",
     "green coffee bean exporter India",
@@ -17,13 +18,17 @@ export const TRADERS_HUB = {
     "spice trader Kochi",
     "coffee bean trader",
     "Malabar pepper exporter",
+    "onion exporter India",
+    "onion trading India",
+    "fresh onion supplier",
+    "Nashik red onion exporter",
   ],
   eyebrow: "Venture 02 — Versa Traders",
-  h1: "Versa Traders: export-quality green coffee beans, cardamom and black pepper, traded globally",
+  h1: "Versa Traders: export-quality onions, green coffee beans, cardamom and black pepper, traded from India to the world",
   lede:
-    "High-quality unroasted coffee and whole spices from India, supplied in bulk to importers, roasters, wholesalers and processors worldwide — with samples first, quality documents always and certification on every shipment.",
+    "Fresh onions, unroasted coffee and whole spices from India, supplied in bulk to importers, roasters, wholesalers and processors worldwide — with samples first, quality documents always and certification on every shipment.",
   answer:
-    "Versa Traders is the commodity trading venture of Versa Growth Ventures in Kochi, Kerala. It trades and exports unroasted green coffee beans, green cardamom and black pepper globally in bulk quantities. Samples are provided before orders, and every shipment is supported by quality documents and export certification such as a quality analysis report, phytosanitary certificate and certificate of origin.",
+    "Versa Traders is the commodity trading venture of Versa Growth Ventures in Kochi, Kerala. It trades and exports fresh onions (Nashik red, Bangalore Rose, white and small onions), unroasted green coffee beans, green cardamom and black pepper globally in bulk quantities. Samples are provided before orders, and every shipment is supported by quality documents and export certification such as a quality analysis report, phytosanitary certificate and certificate of origin.",
   products: [
     {
       name: "Green Coffee Beans",
@@ -46,12 +51,19 @@ export const TRADERS_HUB = {
       href: "/traders/black-pepper",
       image: IMAGES.pepperWhole,
     },
+    {
+      name: "Onions",
+      tag: "Fresh · Nashik red & small onion",
+      body: "Fresh Nashik red, Bangalore Rose, white and small onions, size-graded and mesh-bagged for importers worldwide.",
+      href: "/traders/onions",
+      image: ONION_IMAGES.meshBags,
+    },
   ],
   copy: {
     heroCta: "Request samples & price",
     heroSecondary: "Quality & certification",
     productsEyebrow: "Products",
-    productsH2: "Export-quality coffee and spices we trade",
+    productsH2: "Export-quality onions, coffee and spices we trade",
     promisesEyebrow: "The Versa Traders standard",
     promisesH2: "What comes with every Versa Traders order?",
     processEyebrow: "How buying works",
@@ -64,7 +76,7 @@ export const TRADERS_HUB = {
     faqEyebrow: "FAQ",
     faqH2: "Versa Traders FAQs",
     marketsEyebrow: "Where we sell",
-    marketsH2: "Markets we supply with Indian coffee and spices",
+    marketsH2: "Markets we supply with Indian onions, coffee and spices",
     ctaTitle: "Start with a sample.",
     ctaBody: "Tell us the product, grade, quantity and destination port. We send a sample from the lot and a quote backed by our quality report.",
     ctaSecondary: { label: "Green coffee beans", href: "/traders/green-coffee-beans" },
@@ -90,8 +102,10 @@ export const TRADERS_FAQS: FAQ[] = [
   {
     question: "What products does Versa Traders export?",
     answer:
-      "Versa Traders exports three core commodities: unroasted green coffee beans (Arabica and Robusta), green cardamom (small cardamom) and black pepper. All are export quality and available in bulk quantities.",
+      "Versa Traders exports four commodities from India: fresh onions (Nashik red, Bangalore Rose, white and small onions), unroasted green coffee beans (Arabica and Robusta), green cardamom (small cardamom) and black pepper. All are export quality and available in bulk quantities.",
   },
+  ONION_FAQS[0],
+  ONION_FAQS[2],
   {
     question: "Do you provide samples before a bulk order?",
     answer:
@@ -535,4 +549,5 @@ const TRADERS_CORE_PAGES: DivisionPage[] = [
 export const TRADERS_PAGES: DivisionPage[] = [
   ...TRADERS_CORE_PAGES.map((p) => (TRADERS_EXTRA_SECTIONS[p.slug] ? { ...p, sections: [...p.sections, TRADERS_EXTRA_SECTIONS[p.slug]] } : p)),
   ...TRADERS_EXTRA_PAGES,
+  ...TRADERS_ONION_PAGES,
 ]
