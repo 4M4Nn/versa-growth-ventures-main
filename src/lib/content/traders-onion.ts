@@ -76,15 +76,20 @@ export const ONION_FAQS: FAQ[] = [
   },
 ]
 
-const ONION_RELATED_PAGES = ["onions", "nashik-red-onion", "onion-supplier-uae-gulf", "onion-trading-worldwide"]
+const ONION_RELATED_PAGES = ["onions", "nashik-red-onion", "big-onion-exporter", "onion-wholesale-trading-india", "onion-supplier-uae-gulf", "onion-trading-worldwide"]
 
 export const TRADERS_ONION_PAGES: DivisionPage[] = [
   {
     slug: "onions",
     division: "traders",
     navLabel: "Onions — Export & Trading",
+    topic: "onion export from India",
     h1: "Onion exporter from India: fresh red, white and small onions traded to buyers worldwide",
-    metaTitle: "Onion Exporter India — Fresh Red Onions in Bulk, Export Worldwide | Versa Traders",
+    metaTitle: "Onion Exporter India — Bulk Onion Trading Worldwide | Versa Traders",
+    topicStats: [
+      { value: "4", label: "Onion types: Nashik red, Bangalore Rose, white, small" },
+      { value: "25–65 mm+", label: "Export size bands, big onions 55 mm+" },
+    ],
     metaDescription:
       "Versa Traders exports fresh Indian onions in bulk: Nashik red onion, Bangalore Rose, white onion and small onion. Size-graded 25–65 mm+, mesh-bag packing, phytosanitary certificate, reefer shipping. Samples and quotes on request.",
     keywords: [
@@ -167,12 +172,20 @@ export const TRADERS_ONION_PAGES: DivisionPage[] = [
   {
     slug: "nashik-red-onion",
     division: "traders",
-    navLabel: "Nashik Red Onion",
-    h1: "Nashik red onion export: India's best-known onion, graded and packed for overseas buyers",
-    metaTitle: "Nashik Red Onion Exporter — Size-Graded Red Onions from Maharashtra | Versa Traders",
+    navLabel: "Nashik Onion",
+    topic: "Nashik onion",
+    h1: "Nashik onion exporter and trader: big red onions from Lasalgaon and Nashik district, graded for overseas buyers",
+    metaTitle: "Nashik Onion Exporter — Big Red Onions from Lasalgaon | Versa Traders",
+    topicStats: [
+      { value: "Lasalgaon", label: "One of Asia's largest onion markets" },
+      { value: "55 mm+", label: "Big Nashik onion grade" },
+    ],
     metaDescription:
       "Buy Nashik red onions from India in bulk: Lasalgaon and Nashik-region red onion, graded 40–60 mm, 45–65 mm and 55 mm+, rabi crop for long storage, mesh-bag packing and reefer shipping. Samples and export quotes from Versa Traders.",
     keywords: [
+      "Nashik onion",
+      "Nashik onion exporter",
+      "Nashik big onion",
       "Nashik red onion exporter",
       "Nashik onion export",
       "Lasalgaon onion supplier",
@@ -238,8 +251,9 @@ export const TRADERS_ONION_PAGES: DivisionPage[] = [
     slug: "onion-supplier-uae-gulf",
     division: "traders",
     navLabel: "Onion Supplier — UAE & Gulf",
+    topic: "onions for the UAE and Gulf",
     h1: "Onion supplier for the UAE and the Gulf: Indian onions delivered to Dubai, Sharjah, Saudi Arabia, Oman and Qatar",
-    metaTitle: "Onion Supplier UAE & Gulf — Indian Red Onions to Dubai, Saudi, Oman | Versa Traders",
+    metaTitle: "Onion Supplier UAE & Gulf — Indian Onions to Dubai | Versa Traders",
     metaDescription:
       "Indian onion supplier for UAE and GCC importers: Nashik red onions and small onions delivered CFR/CIF Jebel Ali, Khorfakkan, Jeddah, Dammam, Sohar and Hamad, with reefer freight through Versa Logistics.",
     keywords: [
@@ -300,8 +314,9 @@ export const TRADERS_ONION_PAGES: DivisionPage[] = [
     slug: "onion-trading-worldwide",
     division: "traders",
     navLabel: "Onion Trading — Worldwide",
+    topic: "onion trading worldwide",
     h1: "Onion trading from India to global markets: Asia, the Gulf, Africa and beyond",
-    metaTitle: "Onion Trading from India to Global Markets — Bulk Onion Exports Worldwide | Versa Traders",
+    metaTitle: "Onion Trading from India to the World | Versa Traders",
     metaDescription:
       "Versa Traders trades Indian onions to buyers worldwide — Malaysia, Sri Lanka, Bangladesh, Nepal, Indonesia, Vietnam, the Gulf and Africa. Bulk volumes, size grading, FOB/CFR/CIF pricing and export certification.",
     keywords: [

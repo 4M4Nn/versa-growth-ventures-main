@@ -63,7 +63,7 @@ export function HomeHero() {
       </Container>
 
       <Container>
-        <dl className="grid grid-cols-2 border-l border-t border-ink md:grid-cols-3 xl:grid-cols-6">
+        <dl className="grid grid-cols-2 border-l border-t border-ink md:grid-cols-4">
           {STATS.map((s) => (
             <div key={s.label} className="border-b border-r border-ink p-5 md:p-6">
               <dt className="font-mono text-[10.5px] uppercase tracking-[0.16em] text-ink-soft">{s.label}</dt>

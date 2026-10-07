@@ -88,6 +88,10 @@ export interface DivisionPage {
   sections: ContentSection[]
   faqs: FAQ[]
   related: string[]
+  // Short keyword phrase used in section headings ("Guides on …", "FAQs about …")
+  topic?: string
+  // Headline figures shown under the page hero
+  topicStats?: { value: string; label: string }[]
 }
 
 export type NewsDesk = Division | "digital" | "bpo" | "financial" | "global" | "group"

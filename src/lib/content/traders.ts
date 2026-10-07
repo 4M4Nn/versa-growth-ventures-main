@@ -2,11 +2,13 @@ import type { DivisionPage, FAQ } from "@/types"
 import { IMAGES } from "./site"
 import { TRADERS_EXTRA_PAGES, TRADERS_EXTRA_SECTIONS } from "./traders-extra"
 import { ONION_FAQS, ONION_IMAGES, TRADERS_ONION_PAGES } from "./traders-onion"
+import { NASHIK_EXTRA_SECTIONS, ONION_TRADING_FAQS, TRADERS_ONION_TRADING_PAGES } from "./traders-onion-trading"
+import { COFFEE_TRADE, COFFEE_TRADING_FAQS, TRADERS_COFFEE_PAGES } from "./traders-coffee"
 
 export const TRADERS_HUB = {
-  metaTitle: "Versa Traders — Onion, Green Coffee, Cardamom & Black Pepper Exporter, India",
+  metaTitle: "Onion & Coffee Bean Trading from India — Versa Traders",
   metaDescription:
-    "Versa Traders is an Indian trader and exporter of fresh onions, unroasted green coffee beans, green cardamom and black pepper, shipped from India to buyers worldwide. Bulk quantities, samples on request, full quality documents and certification.",
+    "Versa Traders: onion trading and coffee bean trading from India — Nashik big onions and 160 MT of coffee beans recently traded to the UAE. Also an exporter of fresh onions, unroasted green coffee beans, green cardamom and black pepper, shipped from India to buyers worldwide. Bulk quantities, samples on request, full quality documents and certification.",
   keywords: [
     "Versa Traders",
     "green coffee bean exporter India",
@@ -20,16 +22,27 @@ export const TRADERS_HUB = {
     "Malabar pepper exporter",
     "onion exporter India",
     "onion trading India",
+    "coffee bean trading India",
+    "coffee beans to UAE",
+    "Nashik onion exporter",
+    "big onion exporter",
     "fresh onion supplier",
     "Nashik red onion exporter",
   ],
   eyebrow: "Venture 02 — Versa Traders",
-  h1: "Versa Traders: export-quality onions, green coffee beans, cardamom and black pepper, traded from India to the world",
+  h1: "Versa Traders: onion trading and coffee bean trading from India to the world — plus cardamom and black pepper",
   lede:
     "Fresh onions, unroasted coffee and whole spices from India, supplied in bulk to importers, roasters, wholesalers and processors worldwide — with samples first, quality documents always and certification on every shipment.",
   answer:
-    "Versa Traders is the commodity trading venture of Versa Growth Ventures in Kochi, Kerala. It trades and exports fresh onions (Nashik red, Bangalore Rose, white and small onions), unroasted green coffee beans, green cardamom and black pepper globally in bulk quantities. Samples are provided before orders, and every shipment is supported by quality documents and export certification such as a quality analysis report, phytosanitary certificate and certificate of origin.",
+    "Versa Traders is the commodity trading venture of Versa Growth Ventures in Kochi, Kerala. Its two main desks are onion trading — Nashik red and big onions, Bangalore Rose, white and small onions — and coffee bean trading, with 160 MT of coffee beans recently traded to the UAE. It also exports green cardamom and black pepper, all in bulk quantities. Samples are provided before orders, and every shipment is supported by quality documents and export certification such as a quality analysis report, phytosanitary certificate and certificate of origin.",
   products: [
+    {
+      name: "Onions",
+      tag: "Fresh · Nashik red & small onion",
+      body: "Fresh Nashik red, Bangalore Rose, white and small onions, size-graded and mesh-bagged for importers worldwide.",
+      href: "/traders/onions",
+      image: ONION_IMAGES.meshBags,
+    },
     {
       name: "Green Coffee Beans",
       tag: "Unroasted · Arabica & Robusta",
@@ -51,30 +64,25 @@ export const TRADERS_HUB = {
       href: "/traders/black-pepper",
       image: IMAGES.pepperWhole,
     },
-    {
-      name: "Onions",
-      tag: "Fresh · Nashik red & small onion",
-      body: "Fresh Nashik red, Bangalore Rose, white and small onions, size-graded and mesh-bagged for importers worldwide.",
-      href: "/traders/onions",
-      image: ONION_IMAGES.meshBags,
-    },
   ],
   copy: {
     heroCta: "Request samples & price",
     heroSecondary: "Quality & certification",
     productsEyebrow: "Products",
-    productsH2: "Export-quality onions, coffee and spices we trade",
+    productsH2: "Which onions, coffee beans and spices does Versa Traders trade?",
+    deskEyebrow: "Trading desks",
+    deskH2: "Onion trading and coffee bean trading — our two main desks",
     promisesEyebrow: "The Versa Traders standard",
-    promisesH2: "What comes with every Versa Traders order?",
+    promisesH2: "What comes with every Versa Traders onion, coffee and spice order?",
     processEyebrow: "How buying works",
-    processH2: "From sample to container in five steps",
+    processH2: "How does buying onions or coffee beans from Versa Traders work?",
     freightEyebrow: "Freight included, if you want it",
     freightH2: "Buy the product and the shipping from one group",
     freightBody:
       "Our sister venture Versa Logistics has delivered 15 × 40ft containers of coffee beans into Jebel Ali and 2 × 40ft into Khorfakkan. Buy FOB and use your own forwarder, or buy CFR/CIF and let us deliver to your port.",
     freightCta: "About Versa Logistics",
     faqEyebrow: "FAQ",
-    faqH2: "Versa Traders FAQs",
+    faqH2: "Versa Traders FAQs: onion trading, coffee bean trading and spices",
     marketsEyebrow: "Where we sell",
     marketsH2: "Markets we supply with Indian onions, coffee and spices",
     ctaTitle: "Start with a sample.",
@@ -105,6 +113,8 @@ export const TRADERS_FAQS: FAQ[] = [
       "Versa Traders exports four commodities from India: fresh onions (Nashik red, Bangalore Rose, white and small onions), unroasted green coffee beans (Arabica and Robusta), green cardamom (small cardamom) and black pepper. All are export quality and available in bulk quantities.",
   },
   ONION_FAQS[0],
+  COFFEE_TRADING_FAQS[0],
+  ONION_TRADING_FAQS[2],
   ONION_FAQS[2],
   {
     question: "Do you provide samples before a bulk order?",
@@ -178,6 +188,12 @@ const TRADERS_CORE_PAGES: DivisionPage[] = [
       { label: "Moisture", value: "Typically 12.5% max, per contract" },
       { label: "Packing", value: "60 kg jute bags; hermetic liners on request" },
       { label: "Load", value: "20ft ≈ 19.2 t (320 × 60 kg); 40ft by arrangement" },
+      { label: "Recent trade", value: "160 MT of coffee beans to the UAE" },
+    ],
+    topic: "green coffee beans",
+    topicStats: [
+      { value: "160 MT", label: "Coffee beans recently traded to the UAE" },
+      { value: "19.2 t", label: "Green coffee per 20ft container" },
     ],
     sections: [
       {
@@ -206,7 +222,7 @@ const TRADERS_CORE_PAGES: DivisionPage[] = [
       {
         heading: "Can you ship green coffee to Jebel Ali and Khorfakkan?",
         body: [
-          "Yes — it is exactly what our group has been doing. Our sister venture Versa Logistics has shipped 15 × 40ft containers of coffee beans to Jebel Ali and 2 × 40ft containers to Khorfakkan. Buy on FOB and use your own forwarder, or buy CFR/CIF and let us handle the freight.",
+          "Yes — it is exactly what our group has been doing. Versa Traders recently traded 160 MT of coffee beans to the UAE, and our sister venture Versa Logistics has shipped 15 × 40ft containers of coffee beans to Jebel Ali and 2 × 40ft containers to Khorfakkan. Buy on FOB and use your own forwarder, or buy CFR/CIF and let us handle the freight.",
         ],
       },
     ],
@@ -228,7 +244,7 @@ const TRADERS_CORE_PAGES: DivisionPage[] = [
         answer: "Stored cool and dry in jute with a hermetic liner, green coffee generally holds its quality for many months. Roast it within the period your quality team recommends for your blends.",
       },
     ],
-    related: ["samples-and-bulk-orders", "quality-certification", "black-pepper"],
+    related: ["coffee-bean-trading", "coffee-beans-supplier-uae-dubai", "samples-and-bulk-orders"],
   },
   {
     slug: "cardamom",
@@ -546,8 +562,50 @@ const TRADERS_CORE_PAGES: DivisionPage[] = [
   },
 ]
 
+const withNashikExtras = (p: DivisionPage): DivisionPage =>
+  p.slug === "nashik-red-onion" ? { ...p, sections: [...p.sections, ...NASHIK_EXTRA_SECTIONS] } : p
+
+const ONION_PAGE_ORDER = ["onions", "nashik-red-onion", "big-onion-exporter", "onion-wholesale-trading-india", "onion-supplier-sri-lanka-malaysia", "onion-supplier-uae-gulf", "onion-trading-worldwide"]
+const ALL_ONION_PAGES = [...TRADERS_ONION_PAGES.map(withNashikExtras), ...TRADERS_ONION_TRADING_PAGES]
+
+export const TRADING_DESK = [
+  {
+    kicker: "Desk 01 — Onion trading",
+    title: "Onion trading: Nashik and big onions, India to the world",
+    body: "Nashik red onions and big onions of 55 mm and above, plus Bangalore Rose, white and small onions — bought at India's onion markets, size-graded, mesh-bagged and shipped by the container to Asia, the Gulf and beyond.",
+    image: ONION_IMAGES.redOnions,
+    stats: [
+      { value: "55 mm+", label: "Big onion grade" },
+      { value: "Lasalgaon", label: "Nashik onion trading hub" },
+    ],
+    links: [
+      { label: "Nashik onion", href: "/traders/nashik-red-onion" },
+      { label: "Big onions", href: "/traders/big-onion-exporter" },
+      { label: "Onion wholesale trading", href: "/traders/onion-wholesale-trading-india" },
+    ],
+    cta: { label: "Get an onion price", href: "/contact?enquiry=onion" },
+  },
+  {
+    kicker: "Desk 02 — Coffee bean trading",
+    title: `Coffee bean trading: ${COFFEE_TRADE.volume} recently traded to the ${COFFEE_TRADE.destination}`,
+    body: "Unroasted Arabica and Robusta from India's coffee country, graded to contract and sampled first — traded to roasters and importers in the UAE and worldwide, FOB, CFR or CIF.",
+    image: IMAGES.coffeeSack,
+    stats: [
+      { value: COFFEE_TRADE.volume, label: "Coffee beans recently traded to the UAE" },
+      { value: "60 kg", label: "Standard export bag" },
+    ],
+    links: [
+      { label: "Coffee bean trading", href: "/traders/coffee-bean-trading" },
+      { label: "Coffee beans for the UAE", href: "/traders/coffee-beans-supplier-uae-dubai" },
+      { label: "Green coffee grades", href: "/traders/green-coffee-beans" },
+    ],
+    cta: { label: "Get a coffee price", href: "/contact?enquiry=coffee" },
+  },
+]
+
 export const TRADERS_PAGES: DivisionPage[] = [
+  ...ONION_PAGE_ORDER.map((slug) => ALL_ONION_PAGES.find((p) => p.slug === slug)).filter((p): p is DivisionPage => Boolean(p)),
+  ...TRADERS_COFFEE_PAGES,
   ...TRADERS_CORE_PAGES.map((p) => (TRADERS_EXTRA_SECTIONS[p.slug] ? { ...p, sections: [...p.sections, TRADERS_EXTRA_SECTIONS[p.slug]] } : p)),
   ...TRADERS_EXTRA_PAGES,
-  ...TRADERS_ONION_PAGES,
 ]

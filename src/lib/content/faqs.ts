@@ -5,6 +5,8 @@ import { FREIGHT_QUOTE_FAQS } from "./logistics-seo"
 import { DIGITAL_FAQS } from "./digital"
 import { PORT_TO_PORT_FAQS } from "./logistics-port"
 import { ONION_FAQS } from "./traders-onion"
+import { ONION_TRADING_FAQS } from "./traders-onion-trading"
+import { COFFEE_TRADING_FAQS } from "./traders-coffee"
 
 export const GROUP_FAQS: FAQ[] = [
   {
@@ -36,6 +38,11 @@ export const GROUP_FAQS: FAQ[] = [
     question: "Does Versa Logistics offer port-to-port shipping at the best price?",
     answer:
       "Yes. Versa Logistics quotes port-to-port sea freight from Kochi and other Indian ports to Jebel Ali, Khorfakkan and Gulf ports. It compares carriers and sailings on your port pair and sends the best price it can find, with every charge itemised and the validity stated.",
+  },
+  {
+    question: "Has Versa Growth Ventures traded coffee beans to the UAE?",
+    answer:
+      "Yes. Versa Traders, a Versa Growth Ventures company, recently traded 160 MT of coffee beans to the UAE. Separately, Versa Logistics has shipped 17 × 40ft containers of coffee beans to Jebel Ali and Khorfakkan.",
   },
   {
     question: "Does Versa Growth Ventures export onions?",
@@ -122,12 +129,17 @@ export const FAQ_GROUPS: FAQGroup[] = [
   {
     id: "traders",
     title: "Versa Traders — onions, coffee & spices",
-    items: TRADERS_FAQS.filter((f) => !ONION_FAQS.some((o) => o.question === f.question)),
+    items: TRADERS_FAQS.filter((f) => ![...ONION_FAQS, ...ONION_TRADING_FAQS, ...COFFEE_TRADING_FAQS].some((o) => o.question === f.question)),
   },
   {
     id: "onions",
-    title: "Onion export & trading",
-    items: ONION_FAQS,
+    title: "Onion trading & export — Nashik and big onions",
+    items: [...ONION_FAQS, ...ONION_TRADING_FAQS],
+  },
+  {
+    id: "coffee-trading",
+    title: "Coffee bean trading — India to the UAE and worldwide",
+    items: COFFEE_TRADING_FAQS,
   },
   { id: "trade-terms", title: "Documents, payments & trade terms", items: TRADE_TERMS_FAQS },
 ]

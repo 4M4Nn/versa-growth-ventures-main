@@ -18,7 +18,7 @@ export function CTABand({
     <section className="bg-ink text-paper">
       <Container className="grid gap-10 py-16 md:py-20 lg:grid-cols-12">
         <div className="lg:col-span-7">
-          <h2 className="font-serif text-4xl leading-[1.05] md:text-5xl">{title}</h2>
+          <p className="font-serif text-4xl leading-[1.05] md:text-5xl">{title}</p>
           <p className="mt-5 max-w-xl text-paper/70">{body}</p>
           <div className="mt-8 flex flex-wrap gap-3">
             <ArrowLink href={primary.href} variant="spice">

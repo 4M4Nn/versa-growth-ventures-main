@@ -18,6 +18,7 @@ export function DivisionArticle({ page, siblings }: { page: DivisionPage; siblin
     .filter((p): p is DivisionPage => Boolean(p))
 
   const pagePath = `${d.hub}/${page.slug}`
+  const topic = page.topic ?? page.navLabel
   const insights = BLOG_POSTS.filter((p) => p.relatedLinks.some((l) => l.href === pagePath)).slice(0, 4)
 
   const schema =
@@ -58,6 +59,21 @@ export function DivisionArticle({ page, siblings }: { page: DivisionPage; siblin
         answer={page.summary}
         accent={d.accent}
       />
+
+      {page.topicStats && (
+        <section aria-label={`${topic} in figures`} className="border-b border-ink">
+          <Container>
+            <dl className="grid grid-cols-2 border-l border-ink">
+              {page.topicStats.map((s) => (
+                <div key={s.label} className="flex flex-col-reverse justify-end gap-3 border-r border-ink p-6 md:p-8">
+                  <dt className="font-mono text-[11px] uppercase tracking-[0.16em] text-ink-soft">{s.label}</dt>
+                  <dd className="font-serif text-5xl leading-none text-spice md:text-6xl">{s.value}</dd>
+                </div>
+              ))}
+            </dl>
+          </Container>
+        </section>
+      )}
 
       <Container className="grid gap-14 py-16 md:py-24 lg:grid-cols-12">
         <aside className="order-2 lg:order-1 lg:col-span-4">
@@ -124,7 +140,7 @@ export function DivisionArticle({ page, siblings }: { page: DivisionPage; siblin
 
           <section className="mt-16" aria-labelledby="faq-heading">
             <h2 id="faq-heading" className="mb-6 font-serif text-4xl leading-tight">
-              {page.navLabel}: frequently asked questions
+              Frequently asked questions about {topic}
             </h2>
             <FAQList items={page.faqs} />
           </section>
@@ -132,7 +148,7 @@ export function DivisionArticle({ page, siblings }: { page: DivisionPage; siblin
           {insights.length > 0 && (
             <section className="mt-16" aria-labelledby="insights-heading">
               <h2 id="insights-heading" className="font-serif text-3xl leading-tight">
-                Guides on {page.navLabel.toLowerCase()}
+                Guides on {topic}
               </h2>
               <ul className="mt-5 border-t border-ink">
                 {insights.map((p) => (
@@ -153,7 +169,7 @@ export function DivisionArticle({ page, siblings }: { page: DivisionPage; siblin
           {related.length > 0 && (
             <section className="mt-16" aria-labelledby="related-heading">
               <h2 id="related-heading" className="font-mono text-[11px] uppercase tracking-[0.2em] text-ink-soft">
-                Related
+                Related {d.name} pages
               </h2>
               <ul className="mt-4 grid gap-4 sm:grid-cols-3">
                 {related.map((r) => (

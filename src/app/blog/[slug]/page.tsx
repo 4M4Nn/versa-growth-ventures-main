@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = BLOG_POSTS.find((p) => p.slug === slug)
   if (!post) return {}
   return {
-    title: post.title,
+    title: post.title.length > 40 ? { absolute: post.title } : post.title,
     description: post.metaDescription,
     keywords: post.keywords,
     alternates: { canonical: `/blog/${post.slug}` },

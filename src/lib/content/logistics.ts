@@ -5,7 +5,7 @@ import { LOGISTICS_KEYWORD_FAQS, LOGISTICS_SEO_PAGES } from "./logistics-seo"
 import { LOGISTICS_PORT_PAGES, PORT_TO_PORT_FAQS } from "./logistics-port"
 
 export const LOGISTICS_HUB = {
-  metaTitle: "Versa Logistics — Port-to-Port Freight at the Best Price, Freight Forwarding & Sea Freight from Kochi",
+  metaTitle: "Versa Logistics — Port-to-Port Freight, Best Price, Kochi",
   metaDescription:
     "Versa Logistics is a Kochi freight forwarder offering port-to-port sea freight at the best price it can find, FCL/LCL, freight forwarding, export documentation and road transportation from India to Jebel Ali, Khorfakkan and the Gulf. Call +91 97464 33133.",
   keywords: [

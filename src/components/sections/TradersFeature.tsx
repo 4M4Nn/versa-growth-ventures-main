@@ -5,6 +5,7 @@ import { Container } from "@/components/shared/Container"
 import { SectionHeading } from "@/components/shared/SectionHeading"
 import { Headline } from "@/components/shared/Headline"
 import { ArrowLink } from "@/components/shared/ArrowLink"
+import { TradingDesk } from "./TradingDesk"
 
 export function ProductCards({ headingLevel = "h3" }: { headingLevel?: "h2" | "h3" }) {
   const Title = headingLevel
@@ -44,6 +45,9 @@ export function TradersFeature() {
       <Container>
         <SectionHeading index={copy.index} eyebrow={copy.eyebrow} title={<Headline value={copy.title} />} body={copy.body} />
         <div className="mt-14">
+          <TradingDesk />
+        </div>
+        <div className="mt-10">
           <ProductCards />
         </div>
         <div className="mt-14 grid gap-8 border-t border-ink pt-10 lg:grid-cols-12">

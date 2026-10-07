@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const n = NEWS.find((x) => x.slug === slug)
   if (!n) return {}
   return {
-    title: n.title,
+    title: n.title.length > 40 ? { absolute: n.title } : n.title,
     description: n.metaDescription,
     keywords: n.keywords,
     alternates: { canonical: `/news/${n.slug}` },

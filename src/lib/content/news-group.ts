@@ -14,6 +14,50 @@ const UPDATE_SHEET = "Update at a glance"
 // Updates from Versa Digital & IT Solutions and the wider group
 export const NEWS_GROUP: NewsItem[] = [
   {
+    slug: "versa-traders-160-mt-coffee-beans-traded-to-uae",
+    title: "Versa Traders trades 160 MT of coffee beans to the UAE",
+    metaDescription:
+      "Versa Traders, the trading venture of Versa Growth Ventures in Kochi, has recently traded 160 metric tonnes of coffee beans to the UAE — about 2,670 bags of 60 kg.",
+    date: "2026-10-07",
+    dateLabel: "October 2026",
+    division: "traders",
+    kicker: "Trade — Coffee beans to the UAE",
+    manifestTitle: "Trade sheet",
+    manifest: [
+      { label: "Commodity", value: "Coffee beans" },
+      { label: "Quantity", value: "160 MT" },
+      { label: "Equivalent", value: "≈ 2,670 bags of 60 kg" },
+      { label: "Origin", value: "India" },
+      { label: "Destination", value: "United Arab Emirates" },
+      { label: "Trader", value: "Versa Traders, Kochi" },
+    ],
+    tag: { primary: "160 MT", secondary: "Coffee beans → UAE" },
+    image: IMAGES.coffeeSack,
+    lede:
+      "Versa Traders, the commodity trading venture of Kochi-based Versa Growth Ventures, has recently traded 160 metric tonnes of coffee beans from India to the UAE.",
+    body: [
+      {
+        heading: "How big is a 160 MT coffee trade?",
+        body: [
+          "160 metric tonnes is 160,000 kg of coffee — about 2,670 bags of 60 kg, the standard export bag for green coffee. A trade of that size is prepared lot by lot, with each lot checked for moisture, screen size and defects against the contract specification.",
+        ],
+      },
+      {
+        heading: "Why the UAE?",
+        body: [
+          "The UAE is one of the region's largest coffee hubs, with a fast-growing roasting and café scene and a re-export trade through Jebel Ali. Indian coffee reaches it on short, frequent sailings and can qualify for preferential origin under India–UAE CEPA.",
+        ],
+      },
+      {
+        heading: "What does this mean for coffee buyers?",
+        body: [
+          "Versa Traders is quoting further coffee bean trades to the UAE and worldwide — Robusta and Arabica, sampled before contract and shipped FOB, CFR or CIF. Call +91 97464 33133, WhatsApp +91 79072 15816 or use the contact form.",
+        ],
+      },
+    ],
+    keywords: ["coffee beans to UAE", "coffee bean trading India", "Versa Traders coffee", "160 MT coffee"],
+  },
+  {
     slug: "versa-traders-adds-onion-export-and-trading",
     title: "Versa Traders adds onion export and trading from India to buyers worldwide",
     metaDescription:

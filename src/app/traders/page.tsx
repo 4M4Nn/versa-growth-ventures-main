@@ -9,6 +9,7 @@ import { FAQList } from "@/components/shared/FAQList"
 import { CTABand } from "@/components/shared/CTABand"
 import { JsonLd } from "@/components/shared/JsonLd"
 import { ProductCards } from "@/components/sections/TradersFeature"
+import { TradingDesk } from "@/components/sections/TradingDesk"
 import { RouteMap } from "@/components/sections/RouteMap"
 
 export const metadata: Metadata = {
@@ -36,6 +37,14 @@ export default function TradersPage() {
           {c.heroSecondary}
         </ArrowLink>
       </PageHero>
+
+      <section className="border-b border-ink py-16 md:py-24">
+        <Container>
+          <Eyebrow tone="spice">{c.deskEyebrow}</Eyebrow>
+          <h2 className="mb-12 mt-5 max-w-3xl font-serif text-4xl leading-tight md:text-5xl">{c.deskH2}</h2>
+          <TradingDesk />
+        </Container>
+      </section>
 
       <section className="py-16 md:py-24">
         <Container>
