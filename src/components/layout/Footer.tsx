@@ -71,7 +71,7 @@ export function Footer() {
               </ul>
             </div>
             <div>
-              <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-paper/50">Versa Traders</p>
+              <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-paper/50">Versa International Traders</p>
               <ul className="mt-4 space-y-2.5 text-[15px]">
                 <li>
                   <Link href="/traders" className="hover:text-spice">

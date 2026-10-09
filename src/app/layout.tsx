@@ -79,7 +79,7 @@ const organizationSchema = {
   })),
   subOrganization: [
     { "@type": "Organization", name: "Versa Logistics", url: `${SITE.url}/logistics` },
-    { "@type": "Organization", name: "Versa Traders", url: `${SITE.url}/traders` },
+    { "@type": "Organization", name: "Versa International Traders", url: `${SITE.url}/traders` },
     { "@type": "Organization", name: "Versa BPO", url: `${SITE.url}/bpo` },
     { "@type": "Organization", name: "Versa Financial", url: `${SITE.url}/financial` },
     { "@type": "Organization", name: EXTERNAL.digital.name, url: EXTERNAL.digital.url },

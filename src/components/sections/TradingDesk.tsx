@@ -3,7 +3,7 @@ import Link from "next/link"
 import { ArrowUpRight } from "lucide-react"
 import { TRADING_DESK } from "@/lib/data"
 
-// Onion trading and coffee bean trading — the two headline Versa Traders desks
+// Onion trading and coffee bean trading — the two headline Versa International Traders desks
 export function TradingDesk({ headingLevel = "h3" }: { headingLevel?: "h2" | "h3" }) {
   const Title = headingLevel
   return (

@@ -14,7 +14,7 @@ export default function NotFound() {
             Versa Logistics
           </ArrowLink>
           <ArrowLink href="/traders" variant="outline">
-            Versa Traders
+            Versa International Traders
           </ArrowLink>
           <ArrowLink href="/contact" variant="outline">
             Contact

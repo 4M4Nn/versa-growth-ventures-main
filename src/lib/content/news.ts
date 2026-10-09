@@ -170,7 +170,7 @@ const NEWS_SHIPMENTS: NewsItem[] = [
       {
         heading: "Built for commodity shippers",
         body: [
-          "Because its sister venture Versa Traders exports green coffee, cardamom and black pepper, Versa Logistics applies commodity-grade handling — container inspection, moisture control and certificate coordination — as standard.",
+          "Because its sister venture Versa International Traders exports green coffee, cardamom and black pepper, Versa Logistics applies commodity-grade handling — container inspection, moisture control and certificate coordination — as standard.",
           "The service is equally open to general cargo shippers who need a dependable, communicative forwarder on the India–UAE lane.",
         ],
       },

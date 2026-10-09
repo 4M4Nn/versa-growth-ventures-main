@@ -19,8 +19,8 @@ export default function SiteMapPage() {
       links: [{ label: "Versa Logistics overview", href: "/logistics" }, { label: "Get a freight quote", href: "/logistics/freight-quote" }, ...LOGISTICS_PAGES.map((p) => ({ label: p.navLabel, href: `/logistics/${p.slug}` }))],
     },
     {
-      title: "Versa Traders",
-      links: [{ label: "Versa Traders overview", href: "/traders" }, ...TRADERS_PAGES.map((p) => ({ label: p.navLabel, href: `/traders/${p.slug}` }))],
+      title: "Versa International Traders",
+      links: [{ label: "Versa International Traders overview", href: "/traders" }, ...TRADERS_PAGES.map((p) => ({ label: p.navLabel, href: `/traders/${p.slug}` }))],
     },
     {
       title: "Company",

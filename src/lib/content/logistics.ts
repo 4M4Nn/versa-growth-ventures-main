@@ -3,6 +3,7 @@ import { IMAGES } from "./site"
 import { LOGISTICS_EXTRA_PAGES, LOGISTICS_EXTRA_SECTIONS } from "./logistics-extra"
 import { LOGISTICS_KEYWORD_FAQS, LOGISTICS_SEO_PAGES } from "./logistics-seo"
 import { LOGISTICS_PORT_PAGES, PORT_TO_PORT_FAQS } from "./logistics-port"
+import { CHA_PAGE } from "./traders-sourcing"
 
 export const LOGISTICS_HUB = {
   metaTitle: "Versa Logistics — Port-to-Port Freight, Best Price, Kochi",
@@ -28,13 +29,15 @@ export const LOGISTICS_HUB = {
     "port to port freight best price",
     "Kochi to Jebel Ali port to port",
     "Kochi to Khorfakkan port to port",
+    "CHA Kochi",
+    "customs clearance Kochi",
   ],
   eyebrow: "Venture 01 — Versa Logistics",
   h1: "Versa Logistics: freight forwarding, sea freight and transportation from Kochi, Kerala to the UAE and worldwide — with transparent freight quotes",
   lede:
     "We move containers. Full-load and part-load sea freight out of Kochi and India's west-coast gateways, road haulage from your warehouse to the terminal, and the documents that clear the cargo — delivered as one service with one accountable contact.",
   answer:
-    "Versa Logistics is the freight and transportation venture of Versa Growth Ventures, based in Kakkanad, Kochi. It provides port-to-port and door-to-port FCL and LCL sea freight at competitive, itemised prices, freight forwarding, export documentation support and road transportation, with regular container movements from India to Jebel Ali (Dubai) and Khorfakkan (Sharjah). Recent work includes 15 × 40ft containers of coffee beans to Jebel Ali and 2 × 40ft containers of coffee beans to Khorfakkan.",
+    "Versa Logistics is the freight and transportation venture of Versa Growth Ventures, based in Kakkanad, Kochi. It provides port-to-port and door-to-port FCL and LCL sea freight at competitive, itemised prices, freight forwarding, CHA (customs clearance), export documentation support and road transportation, with regular container movements from India to Jebel Ali (Dubai) and Khorfakkan (Sharjah). Recent work includes 15 × 40ft containers of coffee beans to Jebel Ali and 2 × 40ft containers of coffee beans to Khorfakkan.",
   services: [
     {
       title: "Sea freight — FCL & LCL",
@@ -100,7 +103,7 @@ export const LOGISTICS_HUB = {
   reasons: [
     "Proven on the India–UAE lane: 17 × 40ft containers of coffee beans delivered to Jebel Ali and Khorfakkan",
     "Experience with agri-commodities — coffee, spices and other cargo that must stay dry and uncontaminated",
-    "Trade and freight under one group: buyers sourcing through Versa Traders can book freight in the same conversation",
+    "Trade and freight under one group: buyers sourcing through Versa International Traders can book freight in the same conversation",
     "One named contact per shipment, reachable on phone and WhatsApp",
     "Based in Kakkanad, minutes from Kochi's ICTT Vallarpadam terminal",
   ],
@@ -137,7 +140,7 @@ export const LOGISTICS_FAQS: FAQ[] = [
   {
     question: "Do you handle export documentation?",
     answer:
-      "We prepare and coordinate the shipping documents — commercial invoice and packing list alignment, bill of lading instructions, certificate of origin and phytosanitary certificate applications where required — and work with licensed customs brokers for customs filing.",
+      "Yes. We prepare and coordinate the shipping documents — commercial invoice and packing list alignment, bill of lading instructions, certificate of origin and phytosanitary certificate applications where required — and provide CHA (customs house agent) services for export customs clearance.",
   },
   {
     question: "Do you only ship coffee and spices?",
@@ -524,7 +527,7 @@ const LOGISTICS_CORE_PAGES: DivisionPage[] = [
     summary:
       "Versa Logistics specialises in shipping green coffee, cardamom, black pepper and other agricultural commodities from India, with moisture control, fumigation and phytosanitary certificate coordination.",
     intro: [
-      "Our sister venture Versa Traders exports coffee and spices, so Versa Logistics was built to understand what that cargo needs. A container of green coffee can lose value to condensation; pepper and cardamom can pick up odours from the wrong neighbour in a warehouse.",
+      "Our sister venture Versa International Traders exports coffee and spices, so Versa Logistics was built to understand what that cargo needs. A container of green coffee can lose value to condensation; pepper and cardamom can pick up odours from the wrong neighbour in a warehouse.",
       "We apply the same care to other shippers' agri-cargo that we apply to our own.",
     ],
     specs: [
@@ -554,7 +557,7 @@ const LOGISTICS_CORE_PAGES: DivisionPage[] = [
       {
         heading: "Can you ship coffee and spices sourced from other suppliers?",
         body: [
-          "Yes. Versa Logistics is an independent freight service. Whether your coffee or spices come from Versa Traders or another supplier, the same handling standard applies.",
+          "Yes. Versa Logistics is an independent freight service. Whether your coffee or spices come from Versa International Traders or another supplier, the same handling standard applies.",
         ],
       },
     ],
@@ -568,7 +571,7 @@ const LOGISTICS_CORE_PAGES: DivisionPage[] = [
         answer: "A 20ft container is commonly loaded with about 19.2 tonnes — 320 bags of 60 kg. A 40ft container can take more, subject to carrier and road weight limits at origin and destination.",
       },
       {
-        question: "Can I buy coffee from Versa Traders and ship with Versa Logistics?",
+        question: "Can I buy coffee from Versa International Traders and ship with Versa Logistics?",
         answer: "Yes. That is the advantage of the group: one conversation covers product, samples, documents and freight.",
       },
     ],
@@ -581,4 +584,5 @@ export const LOGISTICS_PAGES: DivisionPage[] = [
   ...LOGISTICS_EXTRA_PAGES,
   ...LOGISTICS_SEO_PAGES,
   ...LOGISTICS_PORT_PAGES,
+  CHA_PAGE,
 ]

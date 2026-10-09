@@ -15,9 +15,9 @@ const MENU: NavLink[] = NAV_LINKS.map((link) => {
   if (link.href === "/logistics")
     return { ...link, children: [{ label: "Versa Logistics overview", href: "/logistics" }, { label: "Get a freight quote", href: "/logistics/freight-quote" }, ...LOGISTICS_PAGES.map((p) => ({ label: p.navLabel, href: `/logistics/${p.slug}` }))] }
   if (link.href === "/traders")
-    return { ...link, children: [{ label: "Versa Traders overview", href: "/traders" }, ...TRADERS_PAGES.map((p) => ({ label: p.navLabel, href: `/traders/${p.slug}` }))] }
+    return { ...link, children: [{ label: "Versa International Traders overview", href: "/traders" }, ...TRADERS_PAGES.map((p) => ({ label: p.navLabel, href: `/traders/${p.slug}` }))] }
   if (link.href === "/ventures" && link.children)
-    return { ...link, children: [{ label: "All ventures", href: "/ventures", description: "The four businesses of Versa Growth Ventures" }, ...link.children] }
+    return { ...link, children: [{ label: "All ventures", href: "/ventures", description: "The six businesses of Versa Growth Ventures" }, ...link.children] }
   return link
 })
 

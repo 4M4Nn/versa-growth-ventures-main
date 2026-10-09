@@ -7,12 +7,13 @@ import { PORT_TO_PORT_FAQS } from "./logistics-port"
 import { ONION_FAQS } from "./traders-onion"
 import { ONION_TRADING_FAQS } from "./traders-onion-trading"
 import { COFFEE_TRADING_FAQS } from "./traders-coffee"
+import { SOURCING_FAQS, SUPPLIER_FAQS } from "./traders-sourcing"
 
 export const GROUP_FAQS: FAQ[] = [
   {
     question: "What is Versa Growth Ventures?",
     answer:
-      "Versa Growth Ventures is a diversified venture group headquartered in Kakkanad, Kochi, Kerala. It runs six ventures: Versa Digital & IT Solutions (custom ERP, AI agents, automation and digital marketing), Versa Logistics (sea freight and transportation), Versa Traders (spices and coffee trading and sourcing agent), Versa BPO (business process outsourcing), Versa Financial (portfolio management, trading, insurance, SIPs and mutual funds) and Versa Global (study abroad).",
+      "Versa Growth Ventures is a diversified venture group headquartered in Kakkanad, Kochi, Kerala. It runs six ventures: Versa Digital & IT Solutions (custom ERP, AI agents, automation and digital marketing), Versa Logistics (sea freight and transportation), Versa International Traders (spices and coffee trading and sourcing agent), Versa BPO (business process outsourcing), Versa Financial (portfolio management, trading, insurance, SIPs and mutual funds) and Versa Global (study abroad).",
   },
   {
     question: "Who are the founders of Versa Growth Ventures?",
@@ -30,24 +31,25 @@ export const GROUP_FAQS: FAQ[] = [
       "Call +91 97464 33133, +91 97467 33133 or +91 79072 15816, message us on WhatsApp at +91 79072 15816, email info@versagrowthventures.in, or send an enquiry through the contact form on this website.",
   },
   {
-    question: "Are Versa Logistics and Versa Traders the same company?",
+    question: "Are Versa Logistics and Versa International Traders the same company?",
     answer:
-      "They are two ventures of the same group. Versa Traders buys and sells coffee and spices; Versa Logistics provides freight and transportation. Buyers can use them together — product and freight in one conversation — or separately.",
+      "They are two ventures of the same group. Versa International Traders buys and sells coffee and spices; Versa Logistics provides freight and transportation. Buyers can use them together — product and freight in one conversation — or separately.",
   },
   {
     question: "Does Versa Logistics offer port-to-port shipping at the best price?",
     answer:
       "Yes. Versa Logistics quotes port-to-port sea freight from Kochi and other Indian ports to Jebel Ali, Khorfakkan and Gulf ports. It compares carriers and sailings on your port pair and sends the best price it can find, with every charge itemised and the validity stated.",
   },
+  SOURCING_FAQS[0],
   {
     question: "Has Versa Growth Ventures traded coffee beans to the UAE?",
     answer:
-      "Yes. Versa Traders, a Versa Growth Ventures company, recently traded 160 MT of coffee beans to the UAE. Separately, Versa Logistics has shipped 17 × 40ft containers of coffee beans to Jebel Ali and Khorfakkan.",
+      "Yes. Versa International Traders, a Versa Growth Ventures company, recently traded 160 MT of coffee beans to the UAE. Separately, Versa Logistics has shipped 17 × 40ft containers of coffee beans to Jebel Ali and Khorfakkan.",
   },
   {
     question: "Does Versa Growth Ventures export onions?",
     answer:
-      "Yes. Versa Traders, a Versa Growth Ventures company, trades and exports fresh Indian onions — Nashik red, Bangalore Rose, white and small onions — in bulk to buyers worldwide, with samples, size grading, phytosanitary certification and freight through Versa Logistics.",
+      "Yes. Versa International Traders, a Versa Growth Ventures company, trades and exports fresh Indian onions — Nashik red, Bangalore Rose, white and small onions — in bulk to buyers worldwide, with samples, size grading, phytosanitary certification and freight through Versa Logistics.",
   },
   {
     question: "Where can I find Versa Digital & IT Solutions and Versa Global?",
@@ -128,8 +130,13 @@ export const FAQ_GROUPS: FAQGroup[] = [
   { id: "freight-quotes", title: "Freight quotes & rates", items: FREIGHT_QUOTE_FAQS },
   {
     id: "traders",
-    title: "Versa Traders — onions, coffee & spices",
-    items: TRADERS_FAQS.filter((f) => ![...ONION_FAQS, ...ONION_TRADING_FAQS, ...COFFEE_TRADING_FAQS].some((o) => o.question === f.question)),
+    title: "Versa International Traders — onions, coffee & spices",
+    items: TRADERS_FAQS.filter((f) => ![...ONION_FAQS, ...ONION_TRADING_FAQS, ...COFFEE_TRADING_FAQS, ...SOURCING_FAQS].some((o) => o.question === f.question)),
+  },
+  {
+    id: "international-traders",
+    title: "Versa International Traders — sourcing, quotations, logistics & CHA",
+    items: [...SOURCING_FAQS, ...SUPPLIER_FAQS],
   },
   {
     id: "onions",

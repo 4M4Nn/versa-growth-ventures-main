@@ -295,7 +295,7 @@ export const LOGISTICS_EXTRA_PAGES: DivisionPage[] = [
       },
       {
         question: "Do you ship coffee and spices to the GCC?",
-        answer: "Yes. Coffee and spices are among the most common cargoes we handle, whether sourced from Versa Traders or other suppliers.",
+        answer: "Yes. Coffee and spices are among the most common cargoes we handle, whether sourced from Versa International Traders or other suppliers.",
       },
     ],
     related: ["india-to-jebel-ali-shipping", "india-to-khorfakkan-shipping", "export-documentation"],

@@ -10,6 +10,7 @@ import { CTABand } from "@/components/shared/CTABand"
 import { JsonLd } from "@/components/shared/JsonLd"
 import { ProductCards } from "@/components/sections/TradersFeature"
 import { TradingDesk } from "@/components/sections/TradingDesk"
+import { BridgeSection } from "@/components/sections/BridgeSection"
 import { RouteMap } from "@/components/sections/RouteMap"
 
 export const metadata: Metadata = {
@@ -25,18 +26,20 @@ export default function TradersPage() {
   return (
     <>
       <PageHero
-        crumbs={[{ label: "Versa Traders", href: "/traders" }]}
+        crumbs={[{ label: "Versa International Traders", href: "/traders" }]}
         eyebrow={TRADERS_HUB.eyebrow}
         title={TRADERS_HUB.h1}
         lede={TRADERS_HUB.lede}
         image={IMAGES.coffeeSack}
         answer={TRADERS_HUB.answer}
       >
-        <ArrowLink href="/contact?enquiry=samples">{c.heroCta}</ArrowLink>
+        <ArrowLink href="/contact?enquiry=sourcing">{c.heroCta}</ArrowLink>
         <ArrowLink href="/traders/quality-certification" variant="outline">
           {c.heroSecondary}
         </ArrowLink>
       </PageHero>
+
+      <BridgeSection />
 
       <section className="border-b border-ink py-16 md:py-24">
         <Container>
@@ -149,7 +152,7 @@ export default function TradersPage() {
         data={{
           "@context": "https://schema.org",
           "@type": "Organization",
-          name: "Versa Traders",
+          name: "Versa International Traders",
           url: `${SITE.url}/traders`,
           description: TRADERS_HUB.answer,
           parentOrganization: { "@id": `${SITE.url}/#organization` },

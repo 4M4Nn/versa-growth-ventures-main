@@ -13,7 +13,7 @@ const COFFEE_PRICE = { label: "Request coffee samples & price", href: "/contact?
 const CEPA_FAQ = {
   question: "Can Indian coffee enter the UAE at reduced duty under CEPA?",
   answer:
-    "Eligible Indian-origin goods can claim preferential treatment under the India–UAE Comprehensive Economic Partnership Agreement with a preferential certificate of origin issued for the consignment. Versa Traders arranges the certificate where the product qualifies.",
+    "Eligible Indian-origin goods can claim preferential treatment under the India–UAE Comprehensive Economic Partnership Agreement with a preferential certificate of origin issued for the consignment. Versa International Traders arranges the certificate where the product qualifies.",
 }
 
 // Onion and coffee trading guides
@@ -186,7 +186,7 @@ export const BLOG_TRADING_POSTS: BlogPost[] = [
     image: IMAGES.coffeeSack,
     excerpt: "From a sample in Kochi to bags in a Dubai roastery — how a coffee trade is put together.",
     answer:
-      "A coffee bean trade from India to the UAE starts with choosing the species, processing and grade, approving a sample and agreeing price — outright or as a differential to ICE futures — then contracting moisture and defect limits, quantity, shipment period, Incoterm and payment. The coffee ships in 60 kg bags with a quality report, phytosanitary certificate and certificate of origin, often preferential under India–UAE CEPA, to Jebel Ali or Khorfakkan. Versa Traders recently traded 160 MT of coffee beans to the UAE this way.",
+      "A coffee bean trade from India to the UAE starts with choosing the species, processing and grade, approving a sample and agreeing price — outright or as a differential to ICE futures — then contracting moisture and defect limits, quantity, shipment period, Incoterm and payment. The coffee ships in 60 kg bags with a quality report, phytosanitary certificate and certificate of origin, often preferential under India–UAE CEPA, to Jebel Ali or Khorfakkan. Versa International Traders recently traded 160 MT of coffee beans to the UAE this way.",
     sections: [
       {
         heading: "Which Indian coffee do UAE buyers trade?",
@@ -208,7 +208,7 @@ export const BLOG_TRADING_POSTS: BlogPost[] = [
       },
       {
         heading: "What does 160 MT of coffee look like?",
-        body: ["About 2,670 bags of 60 kg. Versa Traders recently traded 160 MT of coffee beans to the UAE, prepared and checked lot by lot against one contract specification."],
+        body: ["About 2,670 bags of 60 kg. Versa International Traders recently traded 160 MT of coffee beans to the UAE, prepared and checked lot by lot against one contract specification."],
       },
     ],
     faqs: [CEPA_FAQ],

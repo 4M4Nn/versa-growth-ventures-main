@@ -20,5 +20,8 @@ export const IMAGE_CREDITS: ImageCredit[] = [
   { file: "onion-field-lasalgaon.jpg", subject: "Onion cultivation at Lasalgaon (cropped)", author: "Vivo78", license: "CC0", source: "https://commons.wikimedia.org/wiki/File:Landscape_view_of_onion_cultivation_at_Lasalgaon.jpg" },
   { file: "small-onions-shallots.jpg", subject: "Shallot (sambar onion)", author: "Ask27", license: "CC BY-SA 3.0", source: "https://commons.wikimedia.org/wiki/File:Shallot_(Sambar_Onion)_(1).JPG" },
   { file: "onion-sacks-mandi.jpg", subject: "Onion mandi (cropped)", author: "Balablitz", license: "CC BY-SA 3.0", source: "https://commons.wikimedia.org/wiki/File:Onion_Mandi.jpg" },
+  { file: "coconut-whole-and-cracked.jpg", subject: "Coconuts — single and cracked open", author: "Ivar Leidus", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Coconuts_-_single_and_cracked_open.jpg" },
+  { file: "banana-chips-frying-kerala.jpg", subject: "Banana chips in Palakkad", author: "Ravi Dwivedi", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Banana_Chips_in_Palakkad.jpg" },
+  { file: "indian-snacks-namkeen.jpg", subject: "Indian snacks (namkeen)", author: "Prashant Sahu", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Indian_Snacks_(Namkeen).jpg" },
   { file: "black-pepper-whole.jpg", subject: "Whole black pepper", author: "Hubertl", license: "CC BY 4.0", source: "https://commons.wikimedia.org/wiki/File:Black_Pepper_IMG_4866_-_02.jpg" },
 ]

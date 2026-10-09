@@ -7,9 +7,9 @@ export const TRADERS_EXTRA_PAGES: DivisionPage[] = [
     division: "traders",
     navLabel: "Spice Sourcing Agent",
     h1: "Spice and coffee sourcing agent in India: we find, inspect and ship on your behalf",
-    metaTitle: "Spice & Coffee Sourcing Agent India — Buying Agent for Importers | Versa Traders",
+    metaTitle: "Spice & Coffee Sourcing Agent India — Buying Agent for Importers | Versa International Traders",
     metaDescription:
-      "Versa Traders acts as a sourcing and buying agent for importers of Indian cardamom, black pepper, green coffee and other spices: supplier search, sampling, inspection, negotiation and shipment coordination from Kochi.",
+      "Versa International Traders acts as a sourcing and buying agent for importers of Indian cardamom, black pepper, green coffee and other spices: supplier search, sampling, inspection, negotiation and shipment coordination from Kochi.",
     keywords: [
       "spice sourcing agent India",
       "buying agent spices Kerala",
@@ -18,14 +18,14 @@ export const TRADERS_EXTRA_PAGES: DivisionPage[] = [
       "spice procurement agent",
       "import agent Indian spices",
     ],
-    eyebrow: "Versa Traders — Sourcing Agent",
+    eyebrow: "Versa International Traders — Sourcing Agent",
     lede:
       "Some buyers want to buy from a particular estate, auction or processor rather than from our own stock. As your agent in Kerala, we become your eyes, hands and voice at origin.",
     image: IMAGES.cardamomBowl,
     summary:
-      "Versa Traders works as a sourcing and buying agent for importers of Indian spices and coffee — finding suppliers, collecting samples, inspecting lots, negotiating terms and coordinating documents and shipment from Kochi on the buyer's behalf.",
+      "Versa International Traders works as a sourcing and buying agent for importers of Indian spices and coffee — finding suppliers, collecting samples, inspecting lots, negotiating terms and coordinating documents and shipment from Kochi on the buyer's behalf.",
     intro: [
-      "Alongside trading on our own account, Versa Traders acts as an agent for importers who want to buy directly from Indian growers, auctions and processors. You stay the buyer; we manage everything that needs someone on the ground in India.",
+      "Alongside trading on our own account, Versa International Traders acts as an agent for importers who want to buy directly from Indian growers, auctions and processors. You stay the buyer; we manage everything that needs someone on the ground in India.",
     ],
     specs: [
       { label: "Products", value: "Cardamom, black pepper, green coffee & other spices" },
@@ -48,7 +48,7 @@ export const TRADERS_EXTRA_PAGES: DivisionPage[] = [
       {
         heading: "When should an importer use an agent instead of buying from a trader?",
         body: [
-          "Use an agent when you want a specific origin, estate or processor, want to see the supplier's own price, or plan to build a long-term direct relationship. Buy from Versa Traders' own stock when you want one contract, one invoice and one party responsible for quality.",
+          "Use an agent when you want a specific origin, estate or processor, want to see the supplier's own price, or plan to build a long-term direct relationship. Buy from Versa International Traders' own stock when you want one contract, one invoice and one party responsible for quality.",
         ],
       },
       {
@@ -60,7 +60,7 @@ export const TRADERS_EXTRA_PAGES: DivisionPage[] = [
     ],
     faqs: [
       {
-        question: "Does Versa Traders act as a buying agent?",
+        question: "Does Versa International Traders act as a buying agent?",
         answer: "Yes. Besides trading on our own account, we act as a sourcing and buying agent for importers of Indian spices and coffee.",
       },
       {
@@ -79,9 +79,9 @@ export const TRADERS_EXTRA_PAGES: DivisionPage[] = [
     division: "traders",
     navLabel: "Robusta Green Coffee",
     h1: "Indian Robusta green coffee beans: Parchment and Cherry grades for espresso, blends and instant coffee",
-    metaTitle: "Indian Robusta Green Coffee Beans — Parchment & Cherry AB, PB in Bulk | Versa Traders",
+    metaTitle: "Indian Robusta Green Coffee Beans — Parchment & Cherry AB, PB in Bulk | Versa International Traders",
     metaDescription:
-      "Buy Indian Robusta green coffee beans in bulk: washed Robusta Parchment and natural Robusta Cherry, grades AA, AB and PB. Export quality, samples provided, quality report and certification. Versa Traders.",
+      "Buy Indian Robusta green coffee beans in bulk: washed Robusta Parchment and natural Robusta Cherry, grades AA, AB and PB. Export quality, samples provided, quality report and certification. Versa International Traders.",
     keywords: [
       "Indian Robusta green coffee",
       "Robusta Parchment AB",
@@ -90,12 +90,12 @@ export const TRADERS_EXTRA_PAGES: DivisionPage[] = [
       "unroasted Robusta coffee supplier",
       "Robusta for instant coffee",
     ],
-    eyebrow: "Versa Traders — Robusta",
+    eyebrow: "Versa International Traders — Robusta",
     lede:
       "India grows some of the world's most respected Robusta — full-bodied, low in acidity and clean in the cup. It is the backbone of espresso blends and instant coffee around the world.",
     image: IMAGES.coffeeBeans,
     summary:
-      "Versa Traders supplies Indian Robusta green coffee beans in bulk — washed Robusta Parchment and natural Robusta Cherry in grades such as AA, AB and PB — with samples before orders and a quality report and export certification with every shipment.",
+      "Versa International Traders supplies Indian Robusta green coffee beans in bulk — washed Robusta Parchment and natural Robusta Cherry in grades such as AA, AB and PB — with samples before orders and a quality report and export certification with every shipment.",
     intro: [
       "Robusta (Coffea canephora) is hardier than Arabica, higher in caffeine and heavier in body. Indian Robusta, grown under shade at elevation in the Western Ghats, is prized for a smoother, cleaner cup than many origins — especially the washed Parchment grades.",
     ],
@@ -150,9 +150,9 @@ export const TRADERS_EXTRA_PAGES: DivisionPage[] = [
     division: "traders",
     navLabel: "Arabica Green Coffee",
     h1: "Indian Arabica green coffee beans: Plantation and Arabica Cherry grades, shade-grown and export quality",
-    metaTitle: "Indian Arabica Green Coffee Beans — Plantation AA, A & Arabica Cherry | Versa Traders",
+    metaTitle: "Indian Arabica Green Coffee Beans — Plantation AA, A & Arabica Cherry | Versa International Traders",
     metaDescription:
-      "Shade-grown Indian Arabica green coffee beans in bulk: washed Plantation AA, A, PB and natural Arabica Cherry. Samples, quality report and export certification from Versa Traders, Kochi.",
+      "Shade-grown Indian Arabica green coffee beans in bulk: washed Plantation AA, A, PB and natural Arabica Cherry. Samples, quality report and export certification from Versa International Traders, Kochi.",
     keywords: [
       "Indian Arabica green coffee",
       "Arabica Plantation AA",
@@ -161,12 +161,12 @@ export const TRADERS_EXTRA_PAGES: DivisionPage[] = [
       "shade grown Arabica exporter",
       "specialty green coffee India",
     ],
-    eyebrow: "Versa Traders — Arabica",
+    eyebrow: "Versa International Traders — Arabica",
     lede:
       "Grown under a canopy of shade trees alongside pepper and cardamom, Indian Arabica offers a mild, balanced cup with gentle acidity — easy to love in filter, espresso and single-origin roasts.",
     image: IMAGES.coffeePlants,
     summary:
-      "Versa Traders supplies shade-grown Indian Arabica green coffee beans — washed Plantation grades such as AA, A and PB, and natural Arabica Cherry — in bulk, with samples before orders and a quality report and certification with every shipment.",
+      "Versa International Traders supplies shade-grown Indian Arabica green coffee beans — washed Plantation grades such as AA, A and PB, and natural Arabica Cherry — in bulk, with samples before orders and a quality report and certification with every shipment.",
     intro: [
       "Arabica (Coffea arabica) grows at higher elevations in the hills of Karnataka, Kerala and Tamil Nadu. Most Indian Arabica is shade-grown, which slows cherry ripening and builds sweetness and complexity.",
     ],
@@ -218,9 +218,9 @@ export const TRADERS_EXTRA_PAGES: DivisionPage[] = [
     division: "traders",
     navLabel: "Tellicherry Black Pepper",
     h1: "Tellicherry black pepper, TGEB and TGSEB: the boldest grades of Indian black pepper, in bulk",
-    metaTitle: "Tellicherry Black Pepper TGEB & TGSEB Exporter India — Bulk Supply | Versa Traders",
+    metaTitle: "Tellicherry Black Pepper TGEB & TGSEB Exporter India — Bulk Supply | Versa International Traders",
     metaDescription:
-      "Export-quality Tellicherry black pepper from Kerala: TGEB (4.25 mm+) and TGSEB (4.75 mm+) bold grades. Cleaned, graded, certified; samples and bulk quantities from Versa Traders.",
+      "Export-quality Tellicherry black pepper from Kerala: TGEB (4.25 mm+) and TGSEB (4.75 mm+) bold grades. Cleaned, graded, certified; samples and bulk quantities from Versa International Traders.",
     keywords: [
       "Tellicherry black pepper exporter",
       "TGEB pepper bulk",
@@ -229,12 +229,12 @@ export const TRADERS_EXTRA_PAGES: DivisionPage[] = [
       "bold black pepper India",
       "premium black pepper supplier",
     ],
-    eyebrow: "Versa Traders — Tellicherry Pepper",
+    eyebrow: "Versa International Traders — Tellicherry Pepper",
     lede:
       "Tellicherry is where the world's spice trade once weighed its finest pepper. Today the name still marks the largest, most aromatic berries of the Malabar crop.",
     image: IMAGES.pepperMacro,
     summary:
-      "Versa Traders exports Tellicherry black pepper — TGEB (Tellicherry Garbled Extra Bold, about 4.25 mm and above) and TGSEB (Special Extra Bold, about 4.75 mm and above) — cleaned, graded and certified, in bulk with samples on request.",
+      "Versa International Traders exports Tellicherry black pepper — TGEB (Tellicherry Garbled Extra Bold, about 4.25 mm and above) and TGSEB (Special Extra Bold, about 4.75 mm and above) — cleaned, graded and certified, in bulk with samples on request.",
     intro: [
       "Tellicherry grades are selected by size from the Malabar pepper crop of Kerala's Western Ghats. Bigger berries are more mature, with more complex aroma and fruit notes — which is why chefs, premium retail packers and gourmet spice brands specify them.",
     ],
@@ -276,9 +276,9 @@ export const TRADERS_EXTRA_PAGES: DivisionPage[] = [
     division: "traders",
     navLabel: "Malabar Black Pepper MG1",
     h1: "Malabar black pepper MG1 and density grades: 500 g/L and 550 g/L whole black pepper for processors",
-    metaTitle: "Malabar Black Pepper MG1, 500 & 550 g/L Bulk Exporter India | Versa Traders",
+    metaTitle: "Malabar Black Pepper MG1, 500 & 550 g/L Bulk Exporter India | Versa International Traders",
     metaDescription:
-      "Bulk Malabar black pepper for grinders and food processors: MG1 (Malabar Garbled Grade 1) and density grades 500 g/L and 550 g/L. Cleaned, graded, certified — samples from Versa Traders.",
+      "Bulk Malabar black pepper for grinders and food processors: MG1 (Malabar Garbled Grade 1) and density grades 500 g/L and 550 g/L. Cleaned, graded, certified — samples from Versa International Traders.",
     keywords: [
       "Malabar black pepper MG1",
       "MG1 pepper exporter",
@@ -287,12 +287,12 @@ export const TRADERS_EXTRA_PAGES: DivisionPage[] = [
       "black pepper for grinding bulk",
       "Kerala black pepper wholesale",
     ],
-    eyebrow: "Versa Traders — Malabar Pepper",
+    eyebrow: "Versa International Traders — Malabar Pepper",
     lede:
       "MG1 is the grade the world's spice grinders built their recipes on: consistent, pungent and reliable in yield.",
     image: IMAGES.pepperWhole,
     summary:
-      "Versa Traders supplies Malabar black pepper in bulk — MG1 (Malabar Garbled Grade 1) and bulk-density grades of 500 g/L and 550 g/L — cleaned and graded for spice grinders, seasoning makers and food processors, with samples and certification.",
+      "Versa International Traders supplies Malabar black pepper in bulk — MG1 (Malabar Garbled Grade 1) and bulk-density grades of 500 g/L and 550 g/L — cleaned and graded for spice grinders, seasoning makers and food processors, with samples and certification.",
     intro: [
       "Processors buy pepper for flavour and yield. Malabar MG1 and density-graded pepper give them both: good pungency from Indian pepper's high piperine content, and predictable grinding yield from a stated minimum bulk density.",
     ],
@@ -333,9 +333,9 @@ export const TRADERS_EXTRA_PAGES: DivisionPage[] = [
     division: "traders",
     navLabel: "Packaging & Private Label",
     h1: "Export packaging and private label for coffee and spices: jute, PP, liners, cartons and your brand",
-    metaTitle: "Coffee & Spice Export Packaging, Private Label Options | Versa Traders",
+    metaTitle: "Coffee & Spice Export Packaging, Private Label Options | Versa International Traders",
     metaDescription:
-      "Export packaging for green coffee, cardamom and black pepper: 60 kg jute, PP bags, hermetic liners, cartons and private-label options for regular buyers. Versa Traders, India.",
+      "Export packaging for green coffee, cardamom and black pepper: 60 kg jute, PP bags, hermetic liners, cartons and private-label options for regular buyers. Versa International Traders, India.",
     keywords: [
       "spice export packaging",
       "green coffee jute bags",
@@ -344,12 +344,12 @@ export const TRADERS_EXTRA_PAGES: DivisionPage[] = [
       "cardamom packaging export",
       "bulk spice bags",
     ],
-    eyebrow: "Versa Traders — Packaging",
+    eyebrow: "Versa International Traders — Packaging",
     lede:
       "Good product deserves packing that protects it across an ocean — and, for regular buyers, packing that carries their own name.",
     image: IMAGES.coffeeSack,
     summary:
-      "Versa Traders offers export packaging for green coffee, cardamom and black pepper — 60 kg jute, PP bags, hermetic liners and cartons — and private-label packing options for regular volume buyers.",
+      "Versa International Traders offers export packaging for green coffee, cardamom and black pepper — 60 kg jute, PP bags, hermetic liners and cartons — and private-label packing options for regular volume buyers.",
     intro: [
       "Packaging is part of quality. The right bag keeps moisture, pests and odours out; the right marking keeps customs and warehouses moving; and the right presentation helps your product sell when it arrives.",
     ],
@@ -395,7 +395,7 @@ export const TRADERS_EXTRA_PAGES: DivisionPage[] = [
     division: "traders",
     navLabel: "Supplier for UAE & GCC",
     h1: "Coffee and spice supplier for the UAE and GCC: green coffee, cardamom and black pepper delivered to Dubai and Sharjah",
-    metaTitle: "Coffee & Spice Supplier UAE — Cardamom, Black Pepper, Green Coffee to Dubai | Versa Traders",
+    metaTitle: "Coffee & Spice Supplier UAE — Cardamom, Black Pepper, Green Coffee to Dubai | Versa International Traders",
     metaDescription:
       "Indian coffee and spice supplier for UAE and GCC importers: green coffee beans, cardamom and black pepper delivered CIF Jebel Ali or Khorfakkan. Samples, certification and in-house freight.",
     keywords: [
@@ -407,12 +407,12 @@ export const TRADERS_EXTRA_PAGES: DivisionPage[] = [
       "coffee beans supplier Sharjah",
       "spices wholesale GCC",
     ],
-    eyebrow: "Versa Traders — UAE & GCC",
+    eyebrow: "Versa International Traders — UAE & GCC",
     lede:
       "The Gulf is one of the world's great cardamom, pepper and coffee markets. We supply it from Kerala — with the freight handled by our own logistics venture.",
     image: IMAGES.jebelAli,
     summary:
-      "Versa Traders supplies UAE and GCC importers, wholesalers and roasters with Indian green coffee beans, green cardamom and black pepper, delivered CFR/CIF Jebel Ali or Khorfakkan with Versa Logistics, backed by samples, quality reports and export certification.",
+      "Versa International Traders supplies UAE and GCC importers, wholesalers and roasters with Indian green coffee beans, green cardamom and black pepper, delivered CFR/CIF Jebel Ali or Khorfakkan with Versa Logistics, backed by samples, quality reports and export certification.",
     intro: [
       "Cardamom flavours Arabic coffee; black pepper is a staple of Gulf kitchens; and the UAE's roasting and café scene keeps growing. For GCC importers, India is the natural source: close by sea, familiar in trade, and producing the grades the region prefers.",
       "Our group has already delivered 17 × 40ft containers of coffee beans into Jebel Ali and Khorfakkan.",
@@ -425,7 +425,7 @@ export const TRADERS_EXTRA_PAGES: DivisionPage[] = [
     ],
     sections: [
       {
-        heading: "Why buy Indian coffee and spices through Versa Traders in the UAE?",
+        heading: "Why buy Indian coffee and spices through Versa International Traders in the UAE?",
         body: [],
         bullets: [
           "Samples from the actual lot before you commit",

@@ -1,6 +1,7 @@
 import type { NewsItem } from "@/types"
 import { IMAGES } from "./site"
 import { ONION_IMAGES } from "./traders-onion"
+import { SOURCING_IMAGES } from "./traders-sourcing"
 
 const KAKKANAD = {
   src: "/images/kakkanad-infopark.jpg",
@@ -14,10 +15,51 @@ const UPDATE_SHEET = "Update at a glance"
 // Updates from Versa Digital & IT Solutions and the wider group
 export const NEWS_GROUP: NewsItem[] = [
   {
-    slug: "versa-traders-160-mt-coffee-beans-traded-to-uae",
-    title: "Versa Traders trades 160 MT of coffee beans to the UAE",
+    slug: "versa-traders-becomes-versa-international-traders",
+    title: "Versa Traders becomes Versa International Traders, bridging international buyers and Indian suppliers",
     metaDescription:
-      "Versa Traders, the trading venture of Versa Growth Ventures in Kochi, has recently traded 160 metric tonnes of coffee beans to the UAE — about 2,670 bags of 60 kg.",
+      "Versa Traders is now Versa International Traders: a sourcing and trading venture that connects international buyers with Indian suppliers of agro products, snacks, coconut products, onions, coffee and spices — with quotations, logistics and CHA.",
+    date: "2026-10-09",
+    dateLabel: "October 2026",
+    division: "traders",
+    kicker: "Group — New name",
+    manifestTitle: "Update at a glance",
+    manifest: [
+      { label: "New name", value: "Versa International Traders" },
+      { label: "Formerly", value: "Versa Traders" },
+      { label: "Role", value: "Bridging international buyers and Indian suppliers" },
+      { label: "Products", value: "Agro products, snacks, coconut, onions, coffee, spices" },
+      { label: "Also provides", value: "Logistics and CHA via Versa Logistics" },
+    ],
+    tag: { primary: "New name", secondary: "Versa International Traders" },
+    image: SOURCING_IMAGES.snacks,
+    lede:
+      "Versa Traders, the trading venture of Versa Growth Ventures, is now Versa International Traders — and now one of the group's main ventures, bridging the gap between international buyers and Indian suppliers.",
+    body: [
+      {
+        heading: "What does Versa International Traders do?",
+        body: [
+          "It connects buyers abroad with suppliers in India. Buyers send any requirement — agro products, snacks, coconut products such as desiccated coconut, onions, coffee beans, spices and more — and receive a quotation. Versa International Traders then follows the deal through samples, contract, quality checks, documents and shipment until it is done.",
+        ],
+      },
+      {
+        heading: "Can buyers get logistics and CHA as well?",
+        body: [
+          "Yes. Sister venture Versa Logistics provides sea freight, transport and CHA (customs clearance), so a buyer can have product, freight and customs handled by one group.",
+        ],
+      },
+      {
+        heading: "How do buyers get a quotation?",
+        body: ["Call +91 97464 33133, WhatsApp +91 79072 15816, email info@versagrowthventures.in or use the contact form on versagrowthventures.in."],
+      },
+    ],
+    keywords: ["Versa International Traders", "export sourcing India", "Indian suppliers international buyers", "Versa Traders new name"],
+  },
+  {
+    slug: "versa-traders-160-mt-coffee-beans-traded-to-uae",
+    title: "Versa International Traders trades 160 MT of coffee beans to the UAE",
+    metaDescription:
+      "Versa International Traders, the trading venture of Versa Growth Ventures in Kochi, has recently traded 160 metric tonnes of coffee beans to the UAE — about 2,670 bags of 60 kg.",
     date: "2026-10-07",
     dateLabel: "October 2026",
     division: "traders",
@@ -29,12 +71,12 @@ export const NEWS_GROUP: NewsItem[] = [
       { label: "Equivalent", value: "≈ 2,670 bags of 60 kg" },
       { label: "Origin", value: "India" },
       { label: "Destination", value: "United Arab Emirates" },
-      { label: "Trader", value: "Versa Traders, Kochi" },
+      { label: "Trader", value: "Versa International Traders, Kochi" },
     ],
     tag: { primary: "160 MT", secondary: "Coffee beans → UAE" },
     image: IMAGES.coffeeSack,
     lede:
-      "Versa Traders, the commodity trading venture of Kochi-based Versa Growth Ventures, has recently traded 160 metric tonnes of coffee beans from India to the UAE.",
+      "Versa International Traders, the commodity trading venture of Kochi-based Versa Growth Ventures, has recently traded 160 metric tonnes of coffee beans from India to the UAE.",
     body: [
       {
         heading: "How big is a 160 MT coffee trade?",
@@ -51,17 +93,17 @@ export const NEWS_GROUP: NewsItem[] = [
       {
         heading: "What does this mean for coffee buyers?",
         body: [
-          "Versa Traders is quoting further coffee bean trades to the UAE and worldwide — Robusta and Arabica, sampled before contract and shipped FOB, CFR or CIF. Call +91 97464 33133, WhatsApp +91 79072 15816 or use the contact form.",
+          "Versa International Traders is quoting further coffee bean trades to the UAE and worldwide — Robusta and Arabica, sampled before contract and shipped FOB, CFR or CIF. Call +91 97464 33133, WhatsApp +91 79072 15816 or use the contact form.",
         ],
       },
     ],
-    keywords: ["coffee beans to UAE", "coffee bean trading India", "Versa Traders coffee", "160 MT coffee"],
+    keywords: ["coffee beans to UAE", "coffee bean trading India", "Versa International Traders coffee", "160 MT coffee"],
   },
   {
     slug: "versa-traders-adds-onion-export-and-trading",
-    title: "Versa Traders adds onion export and trading from India to buyers worldwide",
+    title: "Versa International Traders adds onion export and trading from India to buyers worldwide",
     metaDescription:
-      "Versa Traders, Kochi, now trades and exports fresh Indian onions — Nashik red, Bangalore Rose, white and small onions — to importers in the Gulf, Asia, Africa and beyond.",
+      "Versa International Traders, Kochi, now trades and exports fresh Indian onions — Nashik red, Bangalore Rose, white and small onions — to importers in the Gulf, Asia, Africa and beyond.",
     date: "2026-10-05",
     dateLabel: "October 2026",
     division: "traders",
@@ -77,10 +119,10 @@ export const NEWS_GROUP: NewsItem[] = [
     tag: { primary: "Onion export", secondary: "India → worldwide" },
     image: ONION_IMAGES.redOnions,
     lede:
-      "Versa Traders, the commodity trading venture of Versa Growth Ventures, has added fresh onions to its range alongside green coffee, cardamom and black pepper, and now trades onions from India to buyers worldwide.",
+      "Versa International Traders, the commodity trading venture of Versa Growth Ventures, has added fresh onions to its range alongside green coffee, cardamom and black pepper, and now trades onions from India to buyers worldwide.",
     body: [
       {
-        heading: "Which onions does Versa Traders supply?",
+        heading: "Which onions does Versa International Traders supply?",
         body: [],
         bullets: [
           "Nashik red onion from Maharashtra",
@@ -102,7 +144,7 @@ export const NEWS_GROUP: NewsItem[] = [
         ],
       },
     ],
-    keywords: ["onion exporter India", "Versa Traders onions", "onion trading India", "Indian onion supplier"],
+    keywords: ["onion exporter India", "Versa International Traders onions", "onion trading India", "Indian onion supplier"],
   },
   {
     slug: "versa-digital-seven-live-projects-erp-crm-ai-automation",
@@ -370,7 +412,7 @@ export const NEWS_GROUP: NewsItem[] = [
     slug: "versa-growth-ventures-new-website-versagrowthventures-in",
     title: "Versa Growth Ventures launches its new group website at versagrowthventures.in",
     metaDescription:
-      "Versa Growth Ventures has launched its new group website at versagrowthventures.in, with dedicated sections for Versa Logistics, Versa Traders, Versa BPO and Versa Financial.",
+      "Versa Growth Ventures has launched its new group website at versagrowthventures.in, with dedicated sections for Versa Logistics, Versa International Traders, Versa BPO and Versa Financial.",
     date: "2026-09-28",
     dateLabel: "September 2026",
     division: "group",
@@ -391,7 +433,7 @@ export const NEWS_GROUP: NewsItem[] = [
         heading: "What is on the new website?",
         body: [],
         bullets: [
-          "Dedicated sections for Versa Logistics and Versa Traders",
+          "Dedicated sections for Versa Logistics and Versa International Traders",
           "Pages for Versa BPO and Versa Financial",
           "Links to Versa Digital & IT Solutions and Versa Global",
           "News, shipment updates and practical guides",
@@ -411,7 +453,7 @@ export const NEWS_GROUP: NewsItem[] = [
     slug: "versa-growth-ventures-six-ventures-bpo-financial",
     title: "Versa Growth Ventures is now six ventures, with Versa BPO and Versa Financial alongside technology, freight, trade and education",
     metaDescription:
-      "Versa Growth Ventures, Kochi, now operates six ventures: Versa Digital & IT Solutions, Versa Logistics, Versa Traders, Versa BPO, Versa Financial and Versa Global.",
+      "Versa Growth Ventures, Kochi, now operates six ventures: Versa Digital & IT Solutions, Versa Logistics, Versa International Traders, Versa BPO, Versa Financial and Versa Global.",
     date: "2026-09-28",
     dateLabel: "September 2026",
     division: "group",
@@ -426,7 +468,7 @@ export const NEWS_GROUP: NewsItem[] = [
     tag: { primary: "6 ventures", secondary: "One office in Kakkanad" },
     plate: { title: "06", note: "Ventures under one roof in Kakkanad, Kochi" },
     lede:
-      "Versa Growth Ventures now operates six ventures from its office in Kakkanad, Kochi: Versa Digital & IT Solutions, Versa Logistics, Versa Traders, Versa BPO, Versa Financial and Versa Global.",
+      "Versa Growth Ventures now operates six ventures from its office in Kakkanad, Kochi: Versa Digital & IT Solutions, Versa Logistics, Versa International Traders, Versa BPO, Versa Financial and Versa Global.",
     body: [
       {
         heading: "What does each venture do?",
@@ -434,7 +476,7 @@ export const NEWS_GROUP: NewsItem[] = [
         bullets: [
           "Versa Digital & IT Solutions — custom ERP, CRM, AI agents, automation, SEO, AEO and digital marketing",
           "Versa Logistics — sea freight, freight forwarding and transportation",
-          "Versa Traders — cardamom, black pepper and green coffee trading and sourcing",
+          "Versa International Traders — cardamom, black pepper and green coffee trading and sourcing",
           "Versa BPO — customer support, telecalling and back-office work",
           "Versa Financial — portfolio management, trading, insurance, SIPs and mutual funds",
           "Versa Global — study abroad and career programmes",
@@ -451,9 +493,9 @@ export const NEWS_GROUP: NewsItem[] = [
   },
   {
     slug: "versa-traders-spice-sourcing-buying-agent-service",
-    title: "Versa Traders offers a spice sourcing and buying-agent service for overseas buyers",
+    title: "Versa International Traders offers a spice sourcing and buying-agent service for overseas buyers",
     metaDescription:
-      "Versa Traders, Kochi, acts as a sourcing and buying agent for overseas buyers of cardamom, black pepper and green coffee — samples, quality checks and export documents handled in India.",
+      "Versa International Traders, Kochi, acts as a sourcing and buying agent for overseas buyers of cardamom, black pepper and green coffee — samples, quality checks and export documents handled in India.",
     date: "2026-09-28",
     dateLabel: "September 2026",
     division: "traders",
@@ -468,7 +510,7 @@ export const NEWS_GROUP: NewsItem[] = [
     tag: { primary: "Sourcing agent", secondary: "Cardamom · pepper · coffee" },
     image: IMAGES.cardamomBowl,
     lede:
-      "Versa Traders now works as a sourcing and buying agent for overseas buyers who want export-quality cardamom, black pepper and green coffee from India without setting up their own buying office.",
+      "Versa International Traders now works as a sourcing and buying agent for overseas buyers who want export-quality cardamom, black pepper and green coffee from India without setting up their own buying office.",
     body: [
       {
         heading: "What does a sourcing agent do?",
@@ -483,7 +525,7 @@ export const NEWS_GROUP: NewsItem[] = [
         ],
       },
     ],
-    keywords: ["spice sourcing agent India", "buying agent Kerala spices", "cardamom sourcing agent", "Versa Traders"],
+    keywords: ["spice sourcing agent India", "buying agent Kerala spices", "cardamom sourcing agent", "Versa International Traders"],
   },
   {
     slug: "versa-financial-500-insurance-policies-50-trading-clients",

@@ -63,7 +63,7 @@ export const BLOG_ONION_POSTS: BlogPost[] = [
     ],
     faqs: [
       { question: "What is the minimum order for onions from India?", answer: "Most export orders are in full containers. A 40ft reefer carries around 28–29 tonnes of onions; some suppliers also load 20ft containers for trial orders." },
-      { question: "Can I get samples before ordering onions?", answer: "Yes. Versa Traders sends samples and a size-grading report from the offered lot before you commit." },
+      { question: "Can I get samples before ordering onions?", answer: "Yes. Versa International Traders sends samples and a size-grading report from the offered lot before you commit." },
     ],
     relatedLinks: [ONIONS, PRICE, { label: "Nashik red onion", href: "/traders/nashik-red-onion" }],
   },
@@ -155,7 +155,7 @@ export const BLOG_ONION_POSTS: BlogPost[] = [
       {
         heading: "Who arranges the container?",
         body: [
-          "Under CFR or CIF the exporter books it. Versa Traders ships onions with its sister venture Versa Logistics, which books reefers on India's west-coast lanes to the Gulf and beyond.",
+          "Under CFR or CIF the exporter books it. Versa International Traders ships onions with its sister venture Versa Logistics, which books reefers on India's west-coast lanes to the Gulf and beyond.",
         ],
       },
     ],

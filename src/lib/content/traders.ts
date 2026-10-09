@@ -4,13 +4,19 @@ import { TRADERS_EXTRA_PAGES, TRADERS_EXTRA_SECTIONS } from "./traders-extra"
 import { ONION_FAQS, ONION_IMAGES, TRADERS_ONION_PAGES } from "./traders-onion"
 import { NASHIK_EXTRA_SECTIONS, ONION_TRADING_FAQS, TRADERS_ONION_TRADING_PAGES } from "./traders-onion-trading"
 import { COFFEE_TRADE, COFFEE_TRADING_FAQS, TRADERS_COFFEE_PAGES } from "./traders-coffee"
+import { SOURCING_FAQS, TRADERS_SOURCING_PAGES } from "./traders-sourcing"
 
 export const TRADERS_HUB = {
-  metaTitle: "Onion & Coffee Bean Trading from India — Versa Traders",
+  metaTitle: "Versa International Traders — India Export Sourcing, Onions & Coffee",
   metaDescription:
-    "Versa Traders: onion trading and coffee bean trading from India — Nashik big onions and 160 MT of coffee beans recently traded to the UAE. Also an exporter of fresh onions, unroasted green coffee beans, green cardamom and black pepper, shipped from India to buyers worldwide. Bulk quantities, samples on request, full quality documents and certification.",
+    "Versa International Traders bridges international buyers and Indian suppliers — agro products, onions, coffee beans, spices, coconut products and snacks, with quotations, logistics and CHA until the deal is done. Onion trading and coffee bean trading from India — Nashik big onions and 160 MT of coffee beans recently traded to the UAE. Also an exporter of fresh onions, unroasted green coffee beans, green cardamom and black pepper, shipped from India to buyers worldwide. Bulk quantities, samples on request, full quality documents and certification.",
   keywords: [
-    "Versa Traders",
+    "Versa International Traders",
+    "export sourcing India",
+    "Indian suppliers for international buyers",
+    "agro products exporter India",
+    "desiccated coconut exporter",
+    "banana chips exporter",
     "green coffee bean exporter India",
     "unroasted coffee beans supplier",
     "cardamom exporter Kerala",
@@ -29,12 +35,12 @@ export const TRADERS_HUB = {
     "fresh onion supplier",
     "Nashik red onion exporter",
   ],
-  eyebrow: "Venture 02 — Versa Traders",
-  h1: "Versa Traders: onion trading and coffee bean trading from India to the world — plus cardamom and black pepper",
+  eyebrow: "Venture — Versa International Traders",
+  h1: "Versa International Traders: bridging international buyers and Indian suppliers — onions, coffee, spices, agro products, snacks and coconut products",
   lede:
-    "Fresh onions, unroasted coffee and whole spices from India, supplied in bulk to importers, roasters, wholesalers and processors worldwide — with samples first, quality documents always and certification on every shipment.",
+    "Whatever you need from India, we find the supplier, send the quotation and make sure the deal is done — with logistics and CHA if you need them. Fresh onions, unroasted coffee, whole spices, agro products, snacks and coconut products, supplied in bulk to importers, roasters, wholesalers and processors worldwide — with samples first, quality documents always and certification on every shipment.",
   answer:
-    "Versa Traders is the commodity trading venture of Versa Growth Ventures in Kochi, Kerala. Its two main desks are onion trading — Nashik red and big onions, Bangalore Rose, white and small onions — and coffee bean trading, with 160 MT of coffee beans recently traded to the UAE. It also exports green cardamom and black pepper, all in bulk quantities. Samples are provided before orders, and every shipment is supported by quality documents and export certification such as a quality analysis report, phytosanitary certificate and certificate of origin.",
+    "Versa International Traders (formerly Versa Traders) is the international trading venture of Versa Growth Ventures in Kochi, Kerala. It bridges the gap between international buyers and Indian suppliers: buyers send any requirement — agro products, snacks, coconut products such as desiccated coconut, and more — and receive a quotation, with the deal followed through to delivery and logistics and CHA provided by the group if needed. Its two main desks are onion trading — Nashik red and big onions, Bangalore Rose, white and small onions — and coffee bean trading, with 160 MT of coffee beans recently traded to the UAE. It also exports green cardamom and black pepper, all in bulk quantities. Samples are provided before orders, and every shipment is supported by quality documents and export certification such as a quality analysis report, phytosanitary certificate and certificate of origin.",
   products: [
     {
       name: "Onions",
@@ -66,23 +72,23 @@ export const TRADERS_HUB = {
     },
   ],
   copy: {
-    heroCta: "Request samples & price",
+    heroCta: "Get a quotation",
     heroSecondary: "Quality & certification",
     productsEyebrow: "Products",
-    productsH2: "Which onions, coffee beans and spices does Versa Traders trade?",
+    productsH2: "Which onions, coffee beans and spices does Versa International Traders trade?",
     deskEyebrow: "Trading desks",
     deskH2: "Onion trading and coffee bean trading — our two main desks",
-    promisesEyebrow: "The Versa Traders standard",
-    promisesH2: "What comes with every Versa Traders onion, coffee and spice order?",
+    promisesEyebrow: "The Versa International Traders standard",
+    promisesH2: "What comes with every Versa International Traders onion, coffee and spice order?",
     processEyebrow: "How buying works",
-    processH2: "How does buying onions or coffee beans from Versa Traders work?",
+    processH2: "How does buying onions or coffee beans from Versa International Traders work?",
     freightEyebrow: "Freight included, if you want it",
     freightH2: "Buy the product and the shipping from one group",
     freightBody:
       "Our sister venture Versa Logistics has delivered 15 × 40ft containers of coffee beans into Jebel Ali and 2 × 40ft into Khorfakkan. Buy FOB and use your own forwarder, or buy CFR/CIF and let us deliver to your port.",
     freightCta: "About Versa Logistics",
     faqEyebrow: "FAQ",
-    faqH2: "Versa Traders FAQs: onion trading, coffee bean trading and spices",
+    faqH2: "Versa International Traders FAQs: onion trading, coffee bean trading and spices",
     marketsEyebrow: "Where we sell",
     marketsH2: "Markets we supply with Indian onions, coffee and spices",
     ctaTitle: "Start with a sample.",
@@ -108,11 +114,13 @@ export const TRADERS_HUB = {
 
 export const TRADERS_FAQS: FAQ[] = [
   {
-    question: "What products does Versa Traders export?",
+    question: "What products does Versa International Traders export?",
     answer:
-      "Versa Traders exports four commodities from India: fresh onions (Nashik red, Bangalore Rose, white and small onions), unroasted green coffee beans (Arabica and Robusta), green cardamom (small cardamom) and black pepper. All are export quality and available in bulk quantities.",
+      "Versa International Traders exports four commodities from India: fresh onions (Nashik red, Bangalore Rose, white and small onions), unroasted green coffee beans (Arabica and Robusta), green cardamom (small cardamom) and black pepper. All are export quality and available in bulk quantities.",
   },
   ONION_FAQS[0],
+  SOURCING_FAQS[0],
+  SOURCING_FAQS[1],
   COFFEE_TRADING_FAQS[0],
   ONION_TRADING_FAQS[2],
   ONION_FAQS[2],
@@ -127,9 +135,9 @@ export const TRADERS_FAQS: FAQ[] = [
       "Each order is supported by a quality analysis report covering the agreed parameters, plus export documents including a phytosanitary certificate, certificate of origin, commercial invoice, packing list and bill of lading. Fumigation certificates, independent laboratory reports and third-party inspection can be arranged on request.",
   },
   {
-    question: "Is Versa Traders a certified exporter?",
+    question: "Is Versa International Traders a certified exporter?",
     answer:
-      "Yes. Versa Traders holds the registrations and certification required to export coffee and spices from India, and each shipment carries the certificates the destination market requires.",
+      "Yes. Versa International Traders holds the registrations and certification required to export coffee and spices from India, and each shipment carries the certificates the destination market requires.",
   },
   {
     question: "What quantities can I order?",
@@ -139,7 +147,7 @@ export const TRADERS_FAQS: FAQ[] = [
   {
     question: "Which countries do you export to?",
     answer:
-      "Versa Traders sells globally. The UAE is a key market — our group has shipped 17 × 40ft containers of coffee beans to Jebel Ali and Khorfakkan — and we supply buyers across the Middle East and other regions.",
+      "Versa International Traders sells globally. The UAE is a key market — our group has shipped 17 × 40ft containers of coffee beans to Jebel Ali and Khorfakkan — and we supply buyers across the Middle East and other regions.",
   },
   {
     question: "What Incoterms do you offer?",
@@ -159,7 +167,7 @@ const TRADERS_CORE_PAGES: DivisionPage[] = [
     division: "traders",
     navLabel: "Green Coffee Beans",
     h1: "Unroasted green coffee beans from India: Arabica and Robusta, export quality, in bulk",
-    metaTitle: "Green Coffee Beans Exporter India — Unroasted Arabica & Robusta in Bulk | Versa Traders",
+    metaTitle: "Green Coffee Beans Exporter India — Unroasted Arabica & Robusta in Bulk | Versa International Traders",
     metaDescription:
       "Buy export-quality unroasted green coffee beans from India in bulk. Arabica and Robusta, washed and natural, graded and bagged. Samples provided, quality report and certification with every order.",
     keywords: [
@@ -171,12 +179,12 @@ const TRADERS_CORE_PAGES: DivisionPage[] = [
       "green coffee beans wholesale",
       "coffee beans export to UAE",
     ],
-    eyebrow: "Versa Traders — Green Coffee",
+    eyebrow: "Versa International Traders — Green Coffee",
     lede:
       "India grows some of the world's most consistent shade-grown coffee. We source it, grade it and ship it green — ready for your roaster.",
     image: IMAGES.coffeeSack,
     summary:
-      "Versa Traders supplies export-quality unroasted green coffee beans from India — Arabica and Robusta, washed (plantation/parchment) and natural (cherry) — in bulk, with samples provided and a quality report and export certification on every order.",
+      "Versa International Traders supplies export-quality unroasted green coffee beans from India — Arabica and Robusta, washed (plantation/parchment) and natural (cherry) — in bulk, with samples provided and a quality report and export certification on every order.",
     intro: [
       "Indian coffee is grown under a canopy of shade trees in Karnataka, Kerala and Tamil Nadu, often alongside pepper and cardamom. The result is a clean, mild cup in Arabica and a full-bodied, low-acid Robusta that roasters around the world use in espresso blends and instant coffee.",
       "We trade green coffee only — unroasted — so the beans reach your roastery with their full shelf life and character intact.",
@@ -204,7 +212,7 @@ const TRADERS_CORE_PAGES: DivisionPage[] = [
         ],
       },
       {
-        heading: "Who buys green coffee beans from Versa Traders?",
+        heading: "Who buys green coffee beans from Versa International Traders?",
         body: ["Our customers include:"],
         bullets: [
           "Coffee roasters building espresso and filter blends",
@@ -222,14 +230,14 @@ const TRADERS_CORE_PAGES: DivisionPage[] = [
       {
         heading: "Can you ship green coffee to Jebel Ali and Khorfakkan?",
         body: [
-          "Yes — it is exactly what our group has been doing. Versa Traders recently traded 160 MT of coffee beans to the UAE, and our sister venture Versa Logistics has shipped 15 × 40ft containers of coffee beans to Jebel Ali and 2 × 40ft containers to Khorfakkan. Buy on FOB and use your own forwarder, or buy CFR/CIF and let us handle the freight.",
+          "Yes — it is exactly what our group has been doing. Versa International Traders recently traded 160 MT of coffee beans to the UAE, and our sister venture Versa Logistics has shipped 15 × 40ft containers of coffee beans to Jebel Ali and 2 × 40ft containers to Khorfakkan. Buy on FOB and use your own forwarder, or buy CFR/CIF and let us handle the freight.",
         ],
       },
     ],
     faqs: [
       {
         question: "Do you sell roasted coffee?",
-        answer: "No. Versa Traders supplies unroasted green coffee beans only, for roasters and importers who roast to their own profile.",
+        answer: "No. Versa International Traders supplies unroasted green coffee beans only, for roasters and importers who roast to their own profile.",
       },
       {
         question: "What is the minimum order for green coffee?",
@@ -251,9 +259,9 @@ const TRADERS_CORE_PAGES: DivisionPage[] = [
     division: "traders",
     navLabel: "Green Cardamom",
     h1: "Green cardamom exporter from Kerala: bold, aromatic small cardamom in bulk",
-    metaTitle: "Cardamom Exporter India — Green Cardamom 8mm, 7mm Bulk Supplier | Versa Traders",
+    metaTitle: "Cardamom Exporter India — Green Cardamom 8mm, 7mm Bulk Supplier | Versa International Traders",
     metaDescription:
-      "Export-quality green cardamom from Kerala's Idukki Cardamom Hills. 8mm, 7–8mm and 6–7mm grades, graded by colour and litre weight. Bulk supply, samples and certification. Versa Traders, Kochi.",
+      "Export-quality green cardamom from Kerala's Idukki Cardamom Hills. 8mm, 7–8mm and 6–7mm grades, graded by colour and litre weight. Bulk supply, samples and certification. Versa International Traders, Kochi.",
     keywords: [
       "cardamom exporter India",
       "green cardamom supplier Kerala",
@@ -263,12 +271,12 @@ const TRADERS_CORE_PAGES: DivisionPage[] = [
       "cardamom export to UAE",
       "Alleppey green cardamom",
     ],
-    eyebrow: "Versa Traders — Green Cardamom",
+    eyebrow: "Versa International Traders — Green Cardamom",
     lede:
       "The Queen of Spices grows on the hills above Kochi. We select it by size, colour and aroma, and deliver it in bulk to the markets that prize it most.",
     image: IMAGES.cardamomPods,
     summary:
-      "Versa Traders exports green (small) cardamom from Kerala's Idukki Cardamom Hills in bulk, graded by pod size (8mm+, 7–8mm, 6–7mm), colour and litre weight, with samples and certification.",
+      "Versa International Traders exports green (small) cardamom from Kerala's Idukki Cardamom Hills in bulk, graded by pod size (8mm+, 7–8mm, 6–7mm), colour and litre weight, with samples and certification.",
     intro: [
       "Small green cardamom (Elettaria cardamomum) from Kerala is valued for its deep green colour, bold pods and high essential-oil content. The Gulf is one of the world's largest cardamom markets — used in Arabic coffee, sweets, rice dishes and spice blends.",
       "We source from growing and auction centres in the Idukki region and grade every lot before it is offered.",
@@ -332,9 +340,9 @@ const TRADERS_CORE_PAGES: DivisionPage[] = [
     division: "traders",
     navLabel: "Black Pepper",
     h1: "Black pepper exporter from India: Malabar and Tellicherry grades, bulk supply",
-    metaTitle: "Black Pepper Exporter India — Malabar MG1 & Tellicherry TGEB in Bulk | Versa Traders",
+    metaTitle: "Black Pepper Exporter India — Malabar MG1 & Tellicherry TGEB in Bulk | Versa International Traders",
     metaDescription:
-      "Export-quality whole black pepper from Kerala and the Western Ghats. MG1, 500 and 550 g/L, TGEB and TGSEB grades. Cleaned, graded and certified. Bulk quantities and samples from Versa Traders.",
+      "Export-quality whole black pepper from Kerala and the Western Ghats. MG1, 500 and 550 g/L, TGEB and TGSEB grades. Cleaned, graded and certified. Bulk quantities and samples from Versa International Traders.",
     keywords: [
       "black pepper exporter India",
       "Malabar black pepper supplier",
@@ -344,12 +352,12 @@ const TRADERS_CORE_PAGES: DivisionPage[] = [
       "black pepper export to UAE",
       "Kerala pepper exporter",
     ],
-    eyebrow: "Versa Traders — Black Pepper",
+    eyebrow: "Versa International Traders — Black Pepper",
     lede:
       "Kerala's Malabar Coast made pepper the most traded spice in history. We carry that trade forward with graded, cleaned, certified whole black pepper in bulk.",
     image: IMAGES.pepperMacro,
     summary:
-      "Versa Traders exports whole black pepper from Kerala and India's Western Ghats in bulk — Malabar grades such as MG1 and density grades of 500–550 g/L, plus bold Tellicherry TGEB and TGSEB — cleaned, graded and certified.",
+      "Versa International Traders exports whole black pepper from Kerala and India's Western Ghats in bulk — Malabar grades such as MG1 and density grades of 500–550 g/L, plus bold Tellicherry TGEB and TGSEB — cleaned, graded and certified.",
     intro: [
       "Indian black pepper is known for its pungency and aroma, a result of high piperine and essential-oil content. Malabar pepper and the larger, bolder Tellicherry pepper remain benchmarks in the global spice trade.",
       "We supply whole black pepper to spice processors, grinders, packers and importers, cleaned and graded to the specification in your contract.",
@@ -382,7 +390,7 @@ const TRADERS_CORE_PAGES: DivisionPage[] = [
         ],
       },
       {
-        heading: "Who buys black pepper from Versa Traders?",
+        heading: "Who buys black pepper from Versa International Traders?",
         body: [
           "Spice grinders and packers, food manufacturers, seasoning makers, wholesalers and importers — particularly in the GCC, where Indian pepper is a staple of household and restaurant cooking.",
         ],
@@ -409,9 +417,9 @@ const TRADERS_CORE_PAGES: DivisionPage[] = [
     division: "traders",
     navLabel: "Quality & Certification",
     h1: "Quality documents and export certification for coffee and spices from India",
-    metaTitle: "Quality Documents & Export Certification — Coffee & Spices | Versa Traders",
+    metaTitle: "Quality Documents & Export Certification — Coffee & Spices | Versa International Traders",
     metaDescription:
-      "Every Versa Traders shipment of green coffee, cardamom and black pepper includes a quality analysis report, phytosanitary certificate and certificate of origin. Lab testing and inspection on request.",
+      "Every Versa International Traders shipment of green coffee, cardamom and black pepper includes a quality analysis report, phytosanitary certificate and certificate of origin. Lab testing and inspection on request.",
     keywords: [
       "spice export certification India",
       "phytosanitary certificate coffee",
@@ -420,12 +428,12 @@ const TRADERS_CORE_PAGES: DivisionPage[] = [
       "export documents coffee India",
       "certified spice exporter",
     ],
-    eyebrow: "Versa Traders — Quality & Certification",
+    eyebrow: "Versa International Traders — Quality & Certification",
     lede:
       "A good sample earns a first order. Correct documents earn the second. We treat both with the same seriousness.",
     image: IMAGES.cardamomBowl,
     summary:
-      "Versa Traders supplies quality documents and proper export certification with every order of green coffee, cardamom and black pepper, including a quality analysis report, phytosanitary certificate and certificate of origin, with laboratory testing and third-party inspection on request.",
+      "Versa International Traders supplies quality documents and proper export certification with every order of green coffee, cardamom and black pepper, including a quality analysis report, phytosanitary certificate and certificate of origin, with laboratory testing and third-party inspection on request.",
     intro: [
       "Importers need to know three things before accepting a container: that the product matches the contract, that it is safe and legal to import, and that the paperwork will clear customs without delay. Our documentation is designed to answer all three.",
     ],
@@ -437,7 +445,7 @@ const TRADERS_CORE_PAGES: DivisionPage[] = [
     ],
     sections: [
       {
-        heading: "Which documents come with every Versa Traders shipment?",
+        heading: "Which documents come with every Versa International Traders shipment?",
         body: ["Every order ships with a complete document set:"],
         bullets: [
           "Quality analysis report for the lot shipped",
@@ -459,9 +467,9 @@ const TRADERS_CORE_PAGES: DivisionPage[] = [
         ],
       },
       {
-        heading: "Is Versa Traders properly registered to export?",
+        heading: "Is Versa International Traders properly registered to export?",
         body: [
-          "Yes. Versa Traders holds the registrations and certification required to export coffee and spices from India. Copies of relevant registrations are shared with buyers during onboarding.",
+          "Yes. Versa International Traders holds the registrations and certification required to export coffee and spices from India. Copies of relevant registrations are shared with buyers during onboarding.",
         ],
       },
       {
@@ -491,10 +499,10 @@ const TRADERS_CORE_PAGES: DivisionPage[] = [
     slug: "samples-and-bulk-orders",
     division: "traders",
     navLabel: "Samples & Bulk Orders",
-    h1: "Request samples and order coffee and spices in bulk from Versa Traders",
-    metaTitle: "Coffee & Spice Samples, Bulk Orders and Pricing | Versa Traders",
+    h1: "Request samples and order coffee and spices in bulk from Versa International Traders",
+    metaTitle: "Coffee & Spice Samples, Bulk Orders and Pricing | Versa International Traders",
     metaDescription:
-      "Request samples of green coffee beans, cardamom and black pepper, then order in bulk — trial lots to multiple containers. How samples, pricing, payment and shipping work at Versa Traders.",
+      "Request samples of green coffee beans, cardamom and black pepper, then order in bulk — trial lots to multiple containers. How samples, pricing, payment and shipping work at Versa International Traders.",
     keywords: [
       "coffee bean samples",
       "spice samples for importers",
@@ -503,12 +511,12 @@ const TRADERS_CORE_PAGES: DivisionPage[] = [
       "green coffee bulk price",
       "spice supplier samples India",
     ],
-    eyebrow: "Versa Traders — Samples & Bulk Orders",
+    eyebrow: "Versa International Traders — Samples & Bulk Orders",
     lede:
       "Test before you trust. Our buying process starts with a sample from the actual lot, and scales to as many containers as your market can take.",
     image: IMAGES.coffeeBeans,
     summary:
-      "Versa Traders provides samples of green coffee beans, cardamom and black pepper before orders, and supplies in bulk — from trial lots to multiple full containers — with FOB, CFR and CIF pricing.",
+      "Versa International Traders provides samples of green coffee beans, cardamom and black pepper before orders, and supplies in bulk — from trial lots to multiple full containers — with FOB, CFR and CIF pricing.",
     intro: [
       "Buying commodities from a new supplier is a risk. We reduce it the traditional way: by sending you a sample of the actual lot, putting the agreed specification in writing and backing the shipment with documents.",
     ],
@@ -606,6 +614,7 @@ export const TRADING_DESK = [
 export const TRADERS_PAGES: DivisionPage[] = [
   ...ONION_PAGE_ORDER.map((slug) => ALL_ONION_PAGES.find((p) => p.slug === slug)).filter((p): p is DivisionPage => Boolean(p)),
   ...TRADERS_COFFEE_PAGES,
+  ...TRADERS_SOURCING_PAGES,
   ...TRADERS_CORE_PAGES.map((p) => (TRADERS_EXTRA_SECTIONS[p.slug] ? { ...p, sections: [...p.sections, TRADERS_EXTRA_SECTIONS[p.slug]] } : p)),
   ...TRADERS_EXTRA_PAGES,
 ]

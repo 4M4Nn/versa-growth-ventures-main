@@ -46,7 +46,7 @@ export const BLOG_EXTRA_POSTS: BlogPost[] = [
     ],
     faqs: [
       {
-        question: "Which Incoterms does Versa Traders offer?",
+        question: "Which Incoterms does Versa International Traders offer?",
         answer: "FOB Indian port as standard, and CFR or CIF to your destination port with freight handled by Versa Logistics.",
       },
       {
@@ -145,7 +145,7 @@ export const BLOG_EXTRA_POSTS: BlogPost[] = [
     ],
     faqs: [
       {
-        question: "Can Versa Traders issue a CEPA certificate of origin?",
+        question: "Can Versa International Traders issue a CEPA certificate of origin?",
         answer: "Where the product qualifies, we apply for the appropriate preferential certificate of origin for your shipment.",
       },
     ],
@@ -189,7 +189,7 @@ export const BLOG_EXTRA_POSTS: BlogPost[] = [
     ],
     faqs: [
       {
-        question: "What payment terms does Versa Traders accept?",
+        question: "What payment terms does Versa International Traders accept?",
         answer: "Terms are agreed per contract — for example an advance with the balance against documents, or a letter of credit for larger orders.",
       },
     ],
@@ -236,7 +236,7 @@ export const BLOG_EXTRA_POSTS: BlogPost[] = [
     ],
     faqs: [
       {
-        question: "Can Versa Traders supply steam-sterilised pepper?",
+        question: "Can Versa International Traders supply steam-sterilised pepper?",
         answer: "Yes, steam sterilisation can be arranged for buyers who require it, with laboratory testing on request.",
       },
     ],
@@ -379,7 +379,7 @@ export const BLOG_EXTRA_POSTS: BlogPost[] = [
       },
     ],
     relatedLinks: [
-      { label: "Green cardamom from Versa Traders", href: "/traders/cardamom" },
+      { label: "Green cardamom from Versa International Traders", href: "/traders/cardamom" },
       { label: "Cardamom grades explained", href: "/blog/cardamom-grades-8mm-7mm-buyers-guide" },
     ],
   },

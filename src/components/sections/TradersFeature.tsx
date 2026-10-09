@@ -6,6 +6,7 @@ import { SectionHeading } from "@/components/shared/SectionHeading"
 import { Headline } from "@/components/shared/Headline"
 import { ArrowLink } from "@/components/shared/ArrowLink"
 import { TradingDesk } from "./TradingDesk"
+import { SourcingCategories, SupplierInvite } from "./BridgeSection"
 
 export function ProductCards({ headingLevel = "h3" }: { headingLevel?: "h2" | "h3" }) {
   const Title = headingLevel
@@ -45,8 +46,12 @@ export function TradersFeature() {
       <Container>
         <SectionHeading index={copy.index} eyebrow={copy.eyebrow} title={<Headline value={copy.title} />} body={copy.body} />
         <div className="mt-14">
+          <SourcingCategories />
+        </div>
+        <div className="mt-10">
           <TradingDesk />
         </div>
+        <SupplierInvite headingLevel="h3" />
         <div className="mt-10">
           <ProductCards />
         </div>

@@ -357,7 +357,7 @@ const BLOG_CORE_POSTS: BlogPost[] = [
       },
     ],
     relatedLinks: [
-      { label: "Green coffee beans from Versa Traders", href: "/traders/green-coffee-beans" },
+      { label: "Green coffee beans from Versa International Traders", href: "/traders/green-coffee-beans" },
       { label: "Request samples", href: "/traders/samples-and-bulk-orders" },
     ],
   },
@@ -413,7 +413,7 @@ const BLOG_CORE_POSTS: BlogPost[] = [
       },
     ],
     relatedLinks: [
-      { label: "Green cardamom from Versa Traders", href: "/traders/cardamom" },
+      { label: "Green cardamom from Versa International Traders", href: "/traders/cardamom" },
       { label: "Quality documents", href: "/traders/quality-certification" },
     ],
   },
@@ -468,7 +468,7 @@ const BLOG_CORE_POSTS: BlogPost[] = [
       },
     ],
     relatedLinks: [
-      { label: "Black pepper from Versa Traders", href: "/traders/black-pepper" },
+      { label: "Black pepper from Versa International Traders", href: "/traders/black-pepper" },
       { label: "Samples & bulk orders", href: "/traders/samples-and-bulk-orders" },
     ],
   },
@@ -579,11 +579,11 @@ const BLOG_CORE_POSTS: BlogPost[] = [
     faqs: [
       {
         question: "Can one supplier provide both spices and freight?",
-        answer: "Yes. Versa Traders supplies the product and Versa Logistics, its sister venture, handles the freight to Jebel Ali, Khorfakkan or other ports.",
+        answer: "Yes. Versa International Traders supplies the product and Versa Logistics, its sister venture, handles the freight to Jebel Ali, Khorfakkan or other ports.",
       },
     ],
     relatedLinks: [
-      { label: "Versa Traders", href: "/traders" },
+      { label: "Versa International Traders", href: "/traders" },
       { label: "Versa Logistics", href: "/logistics" },
     ],
   },
@@ -635,7 +635,7 @@ const BLOG_CORE_POSTS: BlogPost[] = [
     slug: "versa-growth-ventures-diversified-venture-group",
     title: "Inside Versa Growth Ventures: A Diversified Venture Group from Kochi",
     metaDescription:
-      "How Versa Growth Ventures brings together Versa Digital & IT Solutions, Versa Logistics, Versa Traders, Versa BPO, Versa Financial and Versa Global — and why a diversified group helps customers.",
+      "How Versa Growth Ventures brings together Versa Digital & IT Solutions, Versa Logistics, Versa International Traders, Versa BPO, Versa Financial and Versa Global — and why a diversified group helps customers.",
     category: "Group",
     date: "2026-09-26",
     readTime: "4 min read",
@@ -643,18 +643,18 @@ const BLOG_CORE_POSTS: BlogPost[] = [
     image: IMAGES.kochiSunset,
     excerpt: "Six businesses, one office in Kakkanad, and one idea about accountability.",
     answer:
-      "Versa Growth Ventures is a diversified venture group in Kochi founded in 2025 by Sandeep Neelamana, Aman Faisal S and Sreenivasa Prabhu. It runs Versa Digital & IT Solutions (ERP, AI agents, automation and marketing), Versa Logistics (freight), Versa Traders (spices and coffee trading and sourcing), Versa BPO (outsourcing), Versa Financial (portfolio, trading, insurance, SIPs and mutual funds) and Versa Global (study abroad).",
+      "Versa Growth Ventures is a diversified venture group in Kochi founded in 2025 by Sandeep Neelamana, Aman Faisal S and Sreenivasa Prabhu. It runs Versa Digital & IT Solutions (ERP, AI agents, automation and marketing), Versa Logistics (freight), Versa International Traders (spices and coffee trading and sourcing), Versa BPO (outsourcing), Versa Financial (portfolio, trading, insurance, SIPs and mutual funds) and Versa Global (study abroad).",
     sections: [
       {
         heading: "Why build a group rather than a single company?",
         body: [
-          "Each venture serves a different customer, but they share leadership, systems and standards. Trade and freight in particular reinforce each other: a buyer of Versa Traders' coffee can have Versa Logistics ship it, with one team accountable end to end.",
+          "Each venture serves a different customer, but they share leadership, systems and standards. Trade and freight in particular reinforce each other: a buyer of Versa International Traders' coffee can have Versa Logistics ship it, with one team accountable end to end.",
         ],
       },
       {
         heading: "What have the trade ventures delivered so far?",
         body: [
-          "Versa Logistics has shipped 15 × 40ft containers of coffee beans to Jebel Ali and 2 × 40ft to Khorfakkan, and now runs a regular India–UAE service. Versa Traders supplies green coffee, cardamom and black pepper in bulk with samples and certification.",
+          "Versa Logistics has shipped 15 × 40ft containers of coffee beans to Jebel Ali and 2 × 40ft to Khorfakkan, and now runs a regular India–UAE service. Versa International Traders supplies green coffee, cardamom and black pepper in bulk with samples and certification.",
         ],
       },
       {

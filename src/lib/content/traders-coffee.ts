@@ -5,14 +5,14 @@ import { IMAGES } from "./site"
 export const COFFEE_TRADE = {
   volume: "160 MT",
   destination: "UAE",
-  record: "Versa Traders recently traded 160 MT of coffee beans to the UAE.",
+  record: "Versa International Traders recently traded 160 MT of coffee beans to the UAE.",
 }
 
 export const COFFEE_TRADING_FAQS: FAQ[] = [
   {
-    question: "Does Versa Traders trade coffee beans to the UAE?",
+    question: "Does Versa International Traders trade coffee beans to the UAE?",
     answer:
-      "Yes. Versa Traders recently traded 160 MT of coffee beans to the UAE, and supplies unroasted Arabica and Robusta green coffee to importers, roasters and wholesalers in Dubai, Sharjah and across the GCC.",
+      "Yes. Versa International Traders recently traded 160 MT of coffee beans to the UAE, and supplies unroasted Arabica and Robusta green coffee to importers, roasters and wholesalers in Dubai, Sharjah and across the GCC.",
   },
   {
     question: "How do I buy green coffee beans in bulk from India?",
@@ -39,9 +39,9 @@ export const COFFEE_TRADING_FAQS: FAQ[] = [
       "UAE roasters and importers buy both Robusta for espresso blends and Arabica for filter and specialty roasts. Robusta Cherry and Parchment in AB and PB, and Plantation and Arabica Cherry in A and AB, are common requests. We match the grade to your roast and price point.",
   },
   {
-    question: "Can Versa Traders deliver coffee beans CIF Jebel Ali?",
+    question: "Can Versa International Traders deliver coffee beans CIF Jebel Ali?",
     answer:
-      "Yes. Versa Traders quotes FOB Indian port, or CFR and CIF Jebel Ali or Khorfakkan with freight arranged by sister venture Versa Logistics.",
+      "Yes. Versa International Traders quotes FOB Indian port, or CFR and CIF Jebel Ali or Khorfakkan with freight arranged by sister venture Versa Logistics.",
   },
 ]
 
@@ -52,9 +52,9 @@ export const TRADERS_COFFEE_PAGES: DivisionPage[] = [
     navLabel: "Coffee Bean Trading",
     topic: "coffee bean trading",
     h1: "Coffee bean trading from India: 160 MT of coffee beans recently traded to the UAE, and green coffee supplied worldwide",
-    metaTitle: "Coffee Bean Trading India to UAE — 160 MT Traded | Versa Traders",
+    metaTitle: "Coffee Bean Trading India to UAE — 160 MT Traded | Versa International Traders",
     metaDescription:
-      "Versa Traders trades Indian coffee beans in bulk — 160 MT recently traded to the UAE. Unroasted Arabica and Robusta, graded to contract, sampled first, shipped FOB, CFR or CIF to Dubai and worldwide.",
+      "Versa International Traders trades Indian coffee beans in bulk — 160 MT recently traded to the UAE. Unroasted Arabica and Robusta, graded to contract, sampled first, shipped FOB, CFR or CIF to Dubai and worldwide.",
     keywords: [
       "coffee bean trading India",
       "coffee bean trader",
@@ -64,19 +64,19 @@ export const TRADERS_COFFEE_PAGES: DivisionPage[] = [
       "coffee beans exporter to Dubai",
       "coffee trading Kochi",
     ],
-    eyebrow: "Versa Traders — Coffee bean trading",
+    eyebrow: "Versa International Traders — Coffee bean trading",
     lede:
       "Coffee is a market that moves every day. We buy well at origin, grade to contract and deliver to the buyer's port — most recently 160 MT of coffee beans into the UAE.",
     image: IMAGES.coffeeBeans,
     summary:
-      "Versa Traders is a coffee bean trader based in Kochi, India. It recently traded 160 MT of coffee beans to the UAE and supplies unroasted Arabica and Robusta green coffee in bulk to importers, roasters and wholesalers worldwide — sampled before contract, graded to specification, documented with a quality report and phytosanitary certificate, and shipped FOB, CFR or CIF.",
+      "Versa International Traders is a coffee bean trader based in Kochi, India. It recently traded 160 MT of coffee beans to the UAE and supplies unroasted Arabica and Robusta green coffee in bulk to importers, roasters and wholesalers worldwide — sampled before contract, graded to specification, documented with a quality report and phytosanitary certificate, and shipped FOB, CFR or CIF.",
     topicStats: [
       { value: "160 MT", label: "Coffee beans recently traded to the UAE" },
       { value: "60 kg", label: "Standard green coffee export bag" },
     ],
     intro: [
       "Coffee bean trading sits between the curing works in India and the roastery abroad. The trader's job is to find the right lot, lock in the price and specification, and make sure what arrives matches what was agreed.",
-      "Versa Traders does that from Kochi, close to India's coffee country in Karnataka, Kerala and Tamil Nadu. Its most recent trade moved 160 MT of coffee beans to the UAE.",
+      "Versa International Traders does that from Kochi, close to India's coffee country in Karnataka, Kerala and Tamil Nadu. Its most recent trade moved 160 MT of coffee beans to the UAE.",
     ],
     specs: [
       { label: "Recent trade", value: "160 MT of coffee beans to the UAE" },
@@ -96,7 +96,7 @@ export const TRADERS_COFFEE_PAGES: DivisionPage[] = [
       {
         heading: "What did the 160 MT coffee trade to the UAE involve?",
         body: [
-          "Versa Traders traded 160 MT of coffee beans to a buyer in the UAE. For scale, that is about 2,670 bags of 60 kg. A trade of that size is prepared lot by lot: each lot is checked for moisture, screen size and defects, bagged, certified and shipped against a single contract specification.",
+          "Versa International Traders traded 160 MT of coffee beans to a buyer in the UAE. For scale, that is about 2,670 bags of 60 kg. A trade of that size is prepared lot by lot: each lot is checked for moisture, screen size and defects, bagged, certified and shipped against a single contract specification.",
         ],
       },
       {
@@ -115,7 +115,7 @@ export const TRADERS_COFFEE_PAGES: DivisionPage[] = [
         ],
       },
       {
-        heading: "How do I start trading coffee with Versa Traders?",
+        heading: "How do I start trading coffee with Versa International Traders?",
         body: [
           "Send the species, processing, grade, quantity, destination port and shipment month to +91 97464 33133, WhatsApp +91 79072 15816 or the contact form. We send a sample from the lot and a quote with its validity.",
         ],
@@ -130,7 +130,7 @@ export const TRADERS_COFFEE_PAGES: DivisionPage[] = [
     navLabel: "Coffee Beans Supplier — UAE",
     topic: "coffee beans for the UAE",
     h1: "Coffee beans supplier for the UAE: Indian green coffee delivered to Dubai, Sharjah and the GCC",
-    metaTitle: "Coffee Beans Supplier UAE & Dubai — Indian Green Coffee | Versa Traders",
+    metaTitle: "Coffee Beans Supplier UAE & Dubai — Indian Green Coffee | Versa International Traders",
     metaDescription:
       "Indian green coffee beans supplier for UAE roasters and importers: Robusta and Arabica delivered CFR/CIF Jebel Ali or Khorfakkan. 160 MT of coffee beans recently traded to the UAE. Samples first.",
     keywords: [
@@ -145,7 +145,7 @@ export const TRADERS_COFFEE_PAGES: DivisionPage[] = [
     lede: "The UAE roasts, re-exports and drinks a great deal of coffee, and India is a short voyage away. We supply its roasters and importers directly.",
     image: IMAGES.jebelAli,
     summary:
-      "Versa Traders supplies Indian unroasted green coffee beans — Robusta and Arabica — to roasters, importers and wholesalers in the UAE, delivered CFR or CIF to Jebel Ali or Khorfakkan. It recently traded 160 MT of coffee beans to the UAE, and its sister venture Versa Logistics has shipped 17 × 40ft containers of coffee beans into UAE ports.",
+      "Versa International Traders supplies Indian unroasted green coffee beans — Robusta and Arabica — to roasters, importers and wholesalers in the UAE, delivered CFR or CIF to Jebel Ali or Khorfakkan. It recently traded 160 MT of coffee beans to the UAE, and its sister venture Versa Logistics has shipped 17 × 40ft containers of coffee beans into UAE ports.",
     topicStats: [
       { value: "160 MT", label: "Coffee beans recently traded to the UAE" },
       { value: "17", label: "× 40ft coffee containers shipped to UAE ports by Versa Logistics" },
@@ -172,7 +172,7 @@ export const TRADERS_COFFEE_PAGES: DivisionPage[] = [
         ],
       },
       {
-        heading: "What does Versa Traders deliver to UAE buyers?",
+        heading: "What does Versa International Traders deliver to UAE buyers?",
         body: [
           "A sample from the lot before contract, a quality analysis report with the shipment, export certificates and a delivered price to your port. Versa Logistics, part of the same group, books the container so product and freight are handled by one team.",
         ],
@@ -180,7 +180,7 @@ export const TRADERS_COFFEE_PAGES: DivisionPage[] = [
       {
         heading: "What is the group's coffee record in the UAE?",
         body: [
-          "Versa Traders recently traded 160 MT of coffee beans to the UAE. Separately, Versa Logistics has shipped 15 × 40ft containers of coffee beans to Jebel Ali and 2 × 40ft containers to Khorfakkan.",
+          "Versa International Traders recently traded 160 MT of coffee beans to the UAE. Separately, Versa Logistics has shipped 15 × 40ft containers of coffee beans to Jebel Ali and 2 × 40ft containers to Khorfakkan.",
         ],
       },
     ],

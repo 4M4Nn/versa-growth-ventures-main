@@ -30,9 +30,9 @@ export const ONION_IMAGES = {
 
 export const ONION_FAQS: FAQ[] = [
   {
-    question: "Does Versa Traders export onions from India?",
+    question: "Does Versa International Traders export onions from India?",
     answer:
-      "Yes. Versa Traders trades and exports fresh Indian onions — Nashik red onions, Bangalore Rose onions, white onions and small onions (shallots) — in bulk to importers, wholesalers and distributors worldwide, with samples, size grading, mesh-bag packing and phytosanitary certification.",
+      "Yes. Versa International Traders trades and exports fresh Indian onions — Nashik red onions, Bangalore Rose onions, white onions and small onions (shallots) — in bulk to importers, wholesalers and distributors worldwide, with samples, size grading, mesh-bag packing and phytosanitary certification.",
   },
   {
     question: "Which onion varieties can I buy from India?",
@@ -62,15 +62,15 @@ export const ONION_FAQS: FAQ[] = [
   {
     question: "Can India stop onion exports?",
     answer:
-      "Yes. The Government of India adjusts onion export policy from time to time — through minimum export prices, export duties or temporary restrictions — to manage domestic supply. Versa Traders checks the current DGFT position before every contract and tells buyers if a policy change affects their order.",
+      "Yes. The Government of India adjusts onion export policy from time to time — through minimum export prices, export duties or temporary restrictions — to manage domestic supply. Versa International Traders checks the current DGFT position before every contract and tells buyers if a policy change affects their order.",
   },
   {
     question: "Which countries import onions from India?",
     answer:
-      "Indian onions are shipped to neighbouring South Asian countries, Southeast Asia — including Malaysia, Indonesia and Vietnam — and the Gulf, including the UAE, Saudi Arabia, Oman, Qatar, Kuwait and Bahrain. Versa Traders quotes to buyers worldwide.",
+      "Indian onions are shipped to neighbouring South Asian countries, Southeast Asia — including Malaysia, Indonesia and Vietnam — and the Gulf, including the UAE, Saudi Arabia, Oman, Qatar, Kuwait and Bahrain. Versa International Traders quotes to buyers worldwide.",
   },
   {
-    question: "How do I get a price for onions from Versa Traders?",
+    question: "How do I get a price for onions from Versa International Traders?",
     answer:
       "Share the variety, size band, packing, quantity, destination port and shipment month by phone (+91 97464 33133), WhatsApp (+91 79072 15816) or the contact form. Onion prices move with each harvest, so quotes carry a short validity.",
   },
@@ -85,13 +85,13 @@ export const TRADERS_ONION_PAGES: DivisionPage[] = [
     navLabel: "Onions — Export & Trading",
     topic: "onion export from India",
     h1: "Onion exporter from India: fresh red, white and small onions traded to buyers worldwide",
-    metaTitle: "Onion Exporter India — Bulk Onion Trading Worldwide | Versa Traders",
+    metaTitle: "Onion Exporter India — Bulk Onion Trading Worldwide | Versa International Traders",
     topicStats: [
       { value: "4", label: "Onion types: Nashik red, Bangalore Rose, white, small" },
       { value: "25–65 mm+", label: "Export size bands, big onions 55 mm+" },
     ],
     metaDescription:
-      "Versa Traders exports fresh Indian onions in bulk: Nashik red onion, Bangalore Rose, white onion and small onion. Size-graded 25–65 mm+, mesh-bag packing, phytosanitary certificate, reefer shipping. Samples and quotes on request.",
+      "Versa International Traders exports fresh Indian onions in bulk: Nashik red onion, Bangalore Rose, white onion and small onion. Size-graded 25–65 mm+, mesh-bag packing, phytosanitary certificate, reefer shipping. Samples and quotes on request.",
     keywords: [
       "onion exporter India",
       "onion exporters in India",
@@ -103,15 +103,15 @@ export const TRADERS_ONION_PAGES: DivisionPage[] = [
       "onion supplier worldwide",
       "Nashik onion exporter",
     ],
-    eyebrow: "Versa Traders — Onions",
+    eyebrow: "Versa International Traders — Onions",
     lede:
-      "India is one of the world's largest onion producers. Versa Traders sources fresh onions from India's main growing regions, grades them to your size band, packs them for the voyage and ships them to your port.",
+      "India is one of the world's largest onion producers. Versa International Traders sources fresh onions from India's main growing regions, grades them to your size band, packs them for the voyage and ships them to your port.",
     image: ONION_IMAGES.redOnions,
     summary:
-      "Versa Traders is an Indian onion trader and exporter. It supplies fresh Nashik red onions, Bangalore Rose onions, white onions and small onions (shallots) in bulk to importers, wholesalers and distributors worldwide — graded by size, packed in mesh or jute bags, certified with a phytosanitary certificate and shipped in ventilated or refrigerated containers, with freight available through Versa Logistics.",
+      "Versa International Traders is an Indian onion trader and exporter. It supplies fresh Nashik red onions, Bangalore Rose onions, white onions and small onions (shallots) in bulk to importers, wholesalers and distributors worldwide — graded by size, packed in mesh or jute bags, certified with a phytosanitary certificate and shipped in ventilated or refrigerated containers, with freight available through Versa Logistics.",
     intro: [
       "India grows onions on a vast scale across Maharashtra, Karnataka, Madhya Pradesh, Gujarat and other states, and harvests them in three seasons. That gives buyers a supply that runs through most of the year, at grades and sizes to suit both retail and processing.",
-      "Versa Traders handles the parts that decide whether onions arrive in good condition: choosing well-cured lots, grading and packing them, booking the right container and getting the certificates right.",
+      "Versa International Traders handles the parts that decide whether onions arrive in good condition: choosing well-cured lots, grading and packing them, booking the right container and getting the certificates right.",
     ],
     specs: [
       { label: "Varieties", value: "Nashik red, Bangalore Rose, white, small onion" },
@@ -123,7 +123,7 @@ export const TRADERS_ONION_PAGES: DivisionPage[] = [
     ],
     sections: [
       {
-        heading: "Which onions does Versa Traders export?",
+        heading: "Which onions does Versa International Traders export?",
         body: [],
         bullets: [
           "Nashik red onion — the large, pungent red onion from Maharashtra, India's main export type",
@@ -175,13 +175,13 @@ export const TRADERS_ONION_PAGES: DivisionPage[] = [
     navLabel: "Nashik Onion",
     topic: "Nashik onion",
     h1: "Nashik onion exporter and trader: big red onions from Lasalgaon and Nashik district, graded for overseas buyers",
-    metaTitle: "Nashik Onion Exporter — Big Red Onions from Lasalgaon | Versa Traders",
+    metaTitle: "Nashik Onion Exporter — Big Red Onions from Lasalgaon | Versa International Traders",
     topicStats: [
       { value: "Lasalgaon", label: "One of Asia's largest onion markets" },
       { value: "55 mm+", label: "Big Nashik onion grade" },
     ],
     metaDescription:
-      "Buy Nashik red onions from India in bulk: Lasalgaon and Nashik-region red onion, graded 40–60 mm, 45–65 mm and 55 mm+, rabi crop for long storage, mesh-bag packing and reefer shipping. Samples and export quotes from Versa Traders.",
+      "Buy Nashik red onions from India in bulk: Lasalgaon and Nashik-region red onion, graded 40–60 mm, 45–65 mm and 55 mm+, rabi crop for long storage, mesh-bag packing and reefer shipping. Samples and export quotes from Versa International Traders.",
     keywords: [
       "Nashik onion",
       "Nashik onion exporter",
@@ -198,7 +198,7 @@ export const TRADERS_ONION_PAGES: DivisionPage[] = [
       "Nashik district in Maharashtra is the heart of India's onion trade, and Lasalgaon is home to Asia's largest onion market. Its red onions are what most importers mean when they ask for Indian onions.",
     image: ONION_IMAGES.field,
     summary:
-      "Nashik red onion is the large, pungent red onion grown in the Nashik district of Maharashtra, traded through markets such as Lasalgaon. Versa Traders supplies Nashik red onions for export in bulk, graded to 40–60 mm, 45–65 mm or 55 mm and above, packed in mesh bags and shipped in refrigerated or ventilated containers.",
+      "Nashik red onion is the large, pungent red onion grown in the Nashik district of Maharashtra, traded through markets such as Lasalgaon. Versa International Traders supplies Nashik red onions for export in bulk, graded to 40–60 mm, 45–65 mm or 55 mm and above, packed in mesh bags and shipped in refrigerated or ventilated containers.",
     intro: [
       "Nashik red onions are known for their deep red to pink colour, firm flesh and strong flavour. The rabi crop, harvested in spring, has thicker skins and stores well, which makes it the backbone of India's onion exports for much of the year.",
     ],
@@ -253,7 +253,7 @@ export const TRADERS_ONION_PAGES: DivisionPage[] = [
     navLabel: "Onion Supplier — UAE & Gulf",
     topic: "onions for the UAE and Gulf",
     h1: "Onion supplier for the UAE and the Gulf: Indian onions delivered to Dubai, Sharjah, Saudi Arabia, Oman and Qatar",
-    metaTitle: "Onion Supplier UAE & Gulf — Indian Onions to Dubai | Versa Traders",
+    metaTitle: "Onion Supplier UAE & Gulf — Indian Onions to Dubai | Versa International Traders",
     metaDescription:
       "Indian onion supplier for UAE and GCC importers: Nashik red onions and small onions delivered CFR/CIF Jebel Ali, Khorfakkan, Jeddah, Dammam, Sohar and Hamad, with reefer freight through Versa Logistics.",
     keywords: [
@@ -268,7 +268,7 @@ export const TRADERS_ONION_PAGES: DivisionPage[] = [
     lede: "The Gulf is next door to India by sea, and Indian onions are a staple of its kitchens. We supply them with the freight handled by our own logistics venture.",
     image: ONION_IMAGES.meshBags,
     summary:
-      "Versa Traders supplies Indian onions — mainly Nashik red onions and small onions — to importers and wholesalers in the UAE, Saudi Arabia, Oman, Qatar, Kuwait and Bahrain, delivered CFR or CIF to Jebel Ali, Khorfakkan and other Gulf ports, with reefer container freight arranged through Versa Logistics.",
+      "Versa International Traders supplies Indian onions — mainly Nashik red onions and small onions — to importers and wholesalers in the UAE, Saudi Arabia, Oman, Qatar, Kuwait and Bahrain, delivered CFR or CIF to Jebel Ali, Khorfakkan and other Gulf ports, with reefer container freight arranged through Versa Logistics.",
     intro: [
       "Short sailing times from India's west coast to the Gulf help onions arrive firm and fresh. Our group already runs a regular India–UAE container service into Jebel Ali and Khorfakkan, which we use to quote delivered onion prices.",
     ],
@@ -281,7 +281,7 @@ export const TRADERS_ONION_PAGES: DivisionPage[] = [
     ],
     sections: [
       {
-        heading: "Why buy onions for the Gulf through Versa Traders?",
+        heading: "Why buy onions for the Gulf through Versa International Traders?",
         body: [],
         bullets: [
           "Size-graded lots packed in the bag sizes Gulf wholesalers use",
@@ -316,9 +316,9 @@ export const TRADERS_ONION_PAGES: DivisionPage[] = [
     navLabel: "Onion Trading — Worldwide",
     topic: "onion trading worldwide",
     h1: "Onion trading from India to global markets: Asia, the Gulf, Africa and beyond",
-    metaTitle: "Onion Trading from India to the World | Versa Traders",
+    metaTitle: "Onion Trading from India to the World | Versa International Traders",
     metaDescription:
-      "Versa Traders trades Indian onions to buyers worldwide — Malaysia, Sri Lanka, Bangladesh, Nepal, Indonesia, Vietnam, the Gulf and Africa. Bulk volumes, size grading, FOB/CFR/CIF pricing and export certification.",
+      "Versa International Traders trades Indian onions to buyers worldwide — Malaysia, Sri Lanka, Bangladesh, Nepal, Indonesia, Vietnam, the Gulf and Africa. Bulk volumes, size grading, FOB/CFR/CIF pricing and export certification.",
     keywords: [
       "onion trading India",
       "onion export to Malaysia",
@@ -328,13 +328,13 @@ export const TRADERS_ONION_PAGES: DivisionPage[] = [
       "bulk onion trader",
       "onion import from India",
     ],
-    eyebrow: "Versa Traders — Worldwide",
+    eyebrow: "Versa International Traders — Worldwide",
     lede: "Indian onions travel by sea to Southeast Asia, the Gulf and Africa, and by road to neighbouring countries. We trade them to wherever the buyer is.",
     image: ONION_IMAGES.sacks,
     summary:
-      "Versa Traders trades Indian onions to importers worldwide, including South Asia (Bangladesh, Sri Lanka, Nepal), Southeast Asia (Malaysia, Indonesia, Vietnam, Singapore), the Gulf and Africa. It supplies bulk volumes graded by size, quoted FOB, CFR or CIF, with phytosanitary certification and freight available through Versa Logistics.",
+      "Versa International Traders trades Indian onions to importers worldwide, including South Asia (Bangladesh, Sri Lanka, Nepal), Southeast Asia (Malaysia, Indonesia, Vietnam, Singapore), the Gulf and Africa. It supplies bulk volumes graded by size, quoted FOB, CFR or CIF, with phytosanitary certification and freight available through Versa Logistics.",
     intro: [
-      "India is one of the world's leading onion exporters, and its onions are a familiar staple across Asia and the Middle East. Versa Traders connects overseas buyers with that supply, managing grading, packing, certification and shipment from India.",
+      "India is one of the world's leading onion exporters, and its onions are a familiar staple across Asia and the Middle East. Versa International Traders connects overseas buyers with that supply, managing grading, packing, certification and shipment from India.",
     ],
     specs: [
       { label: "South Asia", value: "Bangladesh, Sri Lanka, Nepal" },
@@ -345,7 +345,7 @@ export const TRADERS_ONION_PAGES: DivisionPage[] = [
     ],
     sections: [
       {
-        heading: "How does onion trading with Versa Traders work?",
+        heading: "How does onion trading with Versa International Traders work?",
         body: [],
         bullets: [
           "Enquiry — variety, size band, packing, quantity, destination and shipment month",

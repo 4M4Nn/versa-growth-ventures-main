@@ -6,7 +6,7 @@ export const SITE = {
   legalName: "Versa Growth Ventures",
   tagline: "Trade, logistics and technology — built from Kochi, shipped to the world.",
   description:
-    "Versa Growth Ventures is a diversified venture group in Kochi, Kerala: Versa Digital & IT Solutions (custom ERP, AI agents, automation and digital marketing), Versa Logistics (sea freight to Jebel Ali and Khorfakkan), Versa Traders (onion, cardamom, black pepper and green coffee trading, export and sourcing), Versa BPO, Versa Financial (portfolio management, trading, insurance, SIPs and mutual funds) and Versa Global (study abroad).",
+    "Versa Growth Ventures is a diversified venture group in Kochi, Kerala, led by Versa International Traders — bridging international buyers and Indian suppliers — with Versa Digital & IT Solutions (custom ERP, AI agents, automation and digital marketing), Versa Logistics (sea freight to Jebel Ali and Khorfakkan), Versa International Traders (onion, cardamom, black pepper and green coffee trading, export and sourcing), Versa BPO, Versa Financial (portfolio management, trading, insurance, SIPs and mutual funds) and Versa Global (study abroad).",
   url: "https://versagrowthventures.in",
   founded: "2025",
   whatsapp: "917907215816",
@@ -30,7 +30,7 @@ export const SITE = {
     "Versa BPO",
     "Versa Financial",
     "Versa Logistics",
-    "Versa Traders",
+    "Versa International Traders",
     "freight forwarder Kochi",
     "sea freight India to UAE",
     "port to port shipping India",
@@ -78,7 +78,7 @@ export const NAV_LINKS: NavLink[] = [
     href: "/ventures",
     children: [
       { label: "Versa Logistics", href: "/logistics", description: "Sea freight, forwarding & transportation" },
-      { label: "Versa Traders", href: "/traders", description: "Onion & coffee bean trading, cardamom & pepper" },
+      { label: "Versa International Traders", href: "/traders", description: "Bridging international buyers & Indian suppliers" },
       {
         label: "Versa Digital & IT Solutions",
         href: EXTERNAL.digital.url,
@@ -90,8 +90,8 @@ export const NAV_LINKS: NavLink[] = [
       { label: "Versa Global", href: EXTERNAL.global.url, description: "Study abroad & career pathways", external: true },
     ],
   },
+  { label: "International Traders", href: "/traders" },
   { label: "Logistics", href: "/logistics" },
-  { label: "Traders", href: "/traders" },
   { label: "News", href: "/news" },
   { label: "Insights", href: "/blog" },
   { label: "About", href: "/about" },
@@ -214,16 +214,16 @@ export const VENTURES: Venture[] = [
   {
     slug: "versa-traders",
     code: "VT",
-    name: "Versa Traders",
-    sector: "Onions · Spices · Coffee · Sourcing Agent",
+    name: "Versa International Traders",
+    sector: "International Trading · Export Sourcing · Onions · Coffee",
     summary:
-      "Trading, export and sourcing-agent services for fresh onions, export-quality cardamom, black pepper and unroasted green coffee — from India to buyers worldwide, in bulk, with samples, quality documents and certification.",
+      "Bridging the gap between international buyers and Indian suppliers — onions, coffee beans, spices, agro products, snacks and coconut products. Free quotations, deals followed to delivery, a UK distribution partner for suppliers, and logistics and CHA when needed.",
     description:
-      "Versa Traders sources fresh onions and high-quality coffee and spices from India's growing regions and supplies importers, roasters, wholesalers and processors worldwide. Every order is backed by samples before commitment, a quality report and full export certification.",
+      "Versa International Traders sources fresh onions and high-quality coffee and spices from India's growing regions and supplies importers, roasters, wholesalers and processors worldwide. Every order is backed by samples before commitment, a quality report and full export certification.",
     href: "/traders",
     external: false,
     image: IMAGES.coffeeSack,
-    highlights: ["Onion trading — Nashik & big onions", "Coffee bean trading", "Cardamom & black pepper", "Sourcing & buying agent"],
+    highlights: ["Source any product from India", "Onion & coffee bean trading", "Agro products, snacks & coconut", "Logistics & CHA provided"],
     stats: [{ value: "160 MT", label: "Coffee beans recently traded to the UAE" }],
     accent: "spice",
   },
@@ -298,7 +298,7 @@ export const FOUNDERS: Founder[] = [
     monogram: "AF",
     bio: [
       "Aman is a digital marketing and outreach specialist with a record of building online communities and running high-performing campaigns.",
-      "He leads the group's digital, technology and growth work — from Versa Digital & IT Solutions' client programmes to the way Versa Logistics and Versa Traders reach importers and shippers online.",
+      "He leads the group's digital, technology and growth work — from Versa Digital & IT Solutions' client programmes to the way Versa Logistics and Versa International Traders reach importers and shippers online.",
     ],
   },
   {
@@ -320,7 +320,7 @@ export const STATS: Stat[] = [
   { value: "500+", label: "Insurance policies", note: "Completed across life, health & term schemes" },
   { value: "50+", label: "Trading clients", note: "Portfolios and trading managed" },
   { value: "17", label: "× 40ft containers", note: "Coffee beans shipped to Jebel Ali & Khorfakkan" },
-  { value: "160", label: "MT coffee beans", note: "Recently traded to the UAE by Versa Traders" },
+  { value: "160", label: "MT coffee beans", note: "Recently traded to the UAE by Versa International Traders" },
   { value: "55mm+", label: "Big onions", note: "Nashik onion trading, India to the world" },
 ]
 
@@ -334,6 +334,9 @@ export const TICKER = [
   "Port-to-port freight, best price",
   "Cardamom & black pepper",
   "Green coffee",
+  "Versa International Traders",
+  "Source anything from India",
+  "Logistics & CHA",
   "Onion trading — Nashik & big onions",
   "Coffee bean trading — 160 MT to the UAE",
   "Spice sourcing agent",
@@ -348,10 +351,10 @@ export const HOME = {
   // Each line is [plain text, emphasised text?]
   h1: [["A diversified venture group,"], ["from ", "IT and marketing"], ["to ", "onion & coffee trading,"], ["freight and finance."]] as [string, string?][],
   lede:
-    "Versa Growth Ventures is a Kochi business group with six ventures under one roof in Kakkanad. We build custom ERP systems, AI agents and automation and run SEO, AEO and digital marketing through Versa Digital & IT Solutions; ship containers port to port from India to Jebel Ali and Khorfakkan at competitive prices with Versa Logistics; trade onions — Nashik and big onions — and coffee beans worldwide through Versa Traders, which recently traded 160 MT of coffee beans to the UAE, alongside cardamom and black pepper; run customer support and back-office work at Versa BPO; manage portfolios, trading, insurance, SIPs and mutual funds at Versa Financial; and guide students abroad with Versa Global.",
+    "Versa Growth Ventures is a Kochi business group with six ventures under one roof in Kakkanad. We build custom ERP systems, AI agents and automation and run SEO, AEO and digital marketing through Versa Digital & IT Solutions; ship containers port to port from India to Jebel Ali and Khorfakkan at competitive prices with Versa Logistics; trade onions — Nashik and big onions — and coffee beans worldwide through Versa International Traders, which recently traded 160 MT of coffee beans to the UAE, alongside cardamom and black pepper; run customer support and back-office work at Versa BPO; manage portfolios, trading, insurance, SIPs and mutual funds at Versa Financial; and guide students abroad with Versa Global.",
   metaTitle: "Versa Growth Ventures — Onion & Coffee Trading, Freight, IT | Kochi",
   metaDescription:
-    "Versa Growth Ventures, Kochi — a diversified venture group: SEO, AEO, custom ERP, CRM and AI automation with Versa Digital & IT Solutions; port-to-port sea freight at the best price to Jebel Ali and Khorfakkan with Versa Logistics; onion trading and coffee bean trading (160 MT recently traded to the UAE) with Versa Traders; plus Versa BPO, Versa Financial and Versa Global.",
+    "Versa Growth Ventures, Kochi — a diversified venture group: SEO, AEO, custom ERP, CRM and AI automation with Versa Digital & IT Solutions; port-to-port sea freight at the best price to Jebel Ali and Khorfakkan with Versa Logistics; onion trading and coffee bean trading (160 MT recently traded to the UAE) with Versa International Traders; plus Versa BPO, Versa Financial and Versa Global.",
   primaryCta: { label: "Explore our ventures", href: "/ventures" },
   secondaryCta: { label: "Talk to the group", href: "/contact" },
   gridLabel: "Our ventures",
@@ -372,9 +375,9 @@ export const HOME_SECTIONS = {
   },
   traders: {
     index: "03",
-    eyebrow: "Versa Traders",
-    title: { pre: "Onion trading and coffee bean trading — ", em: "sampled first", post: ", shipped in bulk." },
-    body: "Fresh Indian onions, export-quality unroasted coffee beans, green cardamom and black pepper for importers, wholesalers, roasters and processors worldwide. Samples before orders; quality documents and certification with every shipment.",
+    eyebrow: "Versa International Traders",
+    title: { pre: "Versa International Traders: ", em: "bridging international buyers", post: " and Indian suppliers." },
+    body: "Onions, coffee beans, spices, agro products, snacks and coconut products — tell us your requirement, get a quotation, and we see the deal through to delivery, with logistics and CHA if you need them.",
   },
   services: {
     index: "04",
@@ -429,7 +432,7 @@ export const HOME_SECTIONS = {
     viewAllPosts: "All insights",
     viewAllFaqs: "All FAQs",
     exploreLogistics: "Explore Versa Logistics",
-    exploreTraders: "Explore Versa Traders",
+    exploreTraders: "Explore Versa International Traders",
     requestSamples: "Request samples",
     visitSite: "Visit",
     meetLeadership: "Meet the leadership",
@@ -450,14 +453,14 @@ export const DIVISION_COPY = {
     whatsapp: "Hello Versa Logistics, I need a freight quote for ",
   },
   traders: {
-    name: "Versa Traders",
+    name: "Versa International Traders",
     hub: "/traders",
     accent: "spice" as const,
     specTitle: "Product specification",
     cta: { label: "Request samples & price", href: "/contact?enquiry=samples" },
     ctaTitle: "Test a sample before you commit.",
     ctaBody: "Tell us the product, grade, quantity and destination. We send a sample from the lot and a quote with our quality report.",
-    whatsapp: "Hello Versa Traders, I would like samples and a price for ",
+    whatsapp: "Hello Versa International Traders, I would like samples and a price for ",
   },
 }
 
@@ -466,8 +469,8 @@ export const ABOUT = {
   lede:
     "We started Versa Growth Ventures in 2025 with a simple idea: the businesses Kerala is best at — technology, talent, spices, trade and trusted service — deserve modern, accountable operators.",
   story: [
-    "Versa Growth Ventures is a privately held, diversified venture group headquartered in Kakkanad, Kochi. We operate six ventures that share one leadership team, one office and one standard of accountability: Versa Digital & IT Solutions, Versa Logistics, Versa Traders, Versa BPO, Versa Financial and Versa Global.",
-    "The two trade-facing ventures were built to work together. Versa Traders sources and exports fresh onions, green coffee beans, cardamom and black pepper; Versa Logistics moves them — and other shippers' cargo — by container from India to the UAE and onward markets. A buyer who sources through Versa Traders can have the same group handle the freight, the documents and the delivery schedule.",
+    "Versa Growth Ventures is a privately held, diversified venture group headquartered in Kakkanad, Kochi. We operate six ventures that share one leadership team, one office and one standard of accountability: Versa Digital & IT Solutions, Versa Logistics, Versa International Traders, Versa BPO, Versa Financial and Versa Global.",
+    "The two trade-facing ventures were built to work together. Versa International Traders sources and exports fresh onions, green coffee beans, cardamom and black pepper; Versa Logistics moves them — and other shippers' cargo — by container from India to the UAE and onward markets. A buyer who sources through Versa International Traders can have the same group handle the freight, the documents and the delivery schedule.",
     "Versa Digital & IT Solutions has delivered 20+ ERP and custom agent builds, 30+ AI agents and 20+ automations, and serves 20+ active marketing clients. Versa BPO handles customer support and back-office work for clients including Future Optima IT Solutions, IPB Kochi, Astrum Study Abroad and Macob IT Solutions. Versa Financial manages portfolios and trading for 50+ clients and has completed 500+ insurance policies, while Versa Global guides students abroad.",
   ],
   principles: [
@@ -482,12 +485,12 @@ export const PAGE_COPY = {
   ventures: {
     metaTitle: "Our Ventures — Trading, Logistics, IT, BPO & Finance | Versa",
     metaDescription:
-      "The six ventures of Versa Growth Ventures, Kochi: Versa Digital & IT Solutions, Versa Logistics, Versa Traders, Versa BPO, Versa Financial and Versa Global.",
+      "The six ventures of Versa Growth Ventures, Kochi: Versa Digital & IT Solutions, Versa Logistics, Versa International Traders, Versa BPO, Versa Financial and Versa Global.",
     eyebrow: "Portfolio",
     h1: "The ventures of Versa Growth Ventures: IT, marketing, logistics, spices trading, BPO, finance and education",
     lede: "Six businesses run by one leadership team from one office in Kakkanad, Kochi — a diversified venture group built for growth.",
     answer:
-      "Versa Growth Ventures operates six ventures: Versa Digital & IT Solutions (custom ERP, AI agents, automation and digital marketing), Versa Logistics (sea freight and transportation), Versa Traders (onion, spice and coffee trading, export and sourcing agent), Versa BPO (business process outsourcing), Versa Financial (portfolio management, trading, insurance, SIPs and mutual funds) and Versa Global (study abroad).",
+      "Versa Growth Ventures operates six ventures: Versa Digital & IT Solutions (custom ERP, AI agents, automation and digital marketing), Versa Logistics (sea freight and transportation), Versa International Traders (onion, spice and coffee trading, export and sourcing agent), Versa BPO (business process outsourcing), Versa Financial (portfolio management, trading, insurance, SIPs and mutual funds) and Versa Global (study abroad).",
     ctaTitle: "Which venture can help you?",
     ctaBody: "Not sure where your enquiry belongs? Call any of our numbers and we will connect you with the right team.",
     externalLead: "Visit the live website",
@@ -499,7 +502,7 @@ export const PAGE_COPY = {
   about: {
     metaTitle: "About Versa Growth Ventures — Kochi Business Group Since 2025",
     metaDescription:
-      "Versa Growth Ventures is a diversified venture group in Kochi, Kerala, founded in 2025 — running Versa Digital & IT Solutions, Versa Logistics, Versa Traders, Versa BPO, Versa Financial and Versa Global from Kakkanad.",
+      "Versa Growth Ventures is a diversified venture group in Kochi, Kerala, founded in 2025 — running Versa Digital & IT Solutions, Versa Logistics, Versa International Traders, Versa BPO, Versa Financial and Versa Global from Kakkanad.",
     eyebrow: "About the group",
     storyH2: "How is Versa Growth Ventures structured?",
     principlesH2: "What principles does the group work by?",
@@ -508,7 +511,7 @@ export const PAGE_COPY = {
   leadership: {
     metaTitle: "Leadership — Founders of Versa Growth Ventures",
     metaDescription:
-      "Meet the founders of Versa Growth Ventures: Sandeep Neelamana, Aman Faisal S and Sreenivasa Prabhu — the team behind Versa Digital & IT Solutions, Versa Logistics, Versa Traders, Versa BPO, Versa Financial and Versa Global.",
+      "Meet the founders of Versa Growth Ventures: Sandeep Neelamana, Aman Faisal S and Sreenivasa Prabhu — the team behind Versa Digital & IT Solutions, Versa Logistics, Versa International Traders, Versa BPO, Versa Financial and Versa Global.",
     eyebrow: "Leadership",
     h1: "The founders of Versa Growth Ventures: Sandeep Neelamana, Aman Faisal S and Sreenivasa Prabhu",
     lede: "Finance and compliance, digital growth and international strategy — three founders who stay close to every venture's customers.",
@@ -539,7 +542,7 @@ export const PAGE_COPY = {
   faq: {
     metaTitle: "FAQ — Onion & Coffee Trading, Freight, SEO & AEO | Versa Growth Ventures",
     metaDescription:
-      "Answers about Versa Growth Ventures: SEO, AEO, ERP, CRM and AI automation with Versa Digital & IT Solutions, port-to-port freight at the best price to Jebel Ali and Khorfakkan with Versa Logistics, and onions, green coffee, cardamom and black pepper from Versa Traders.",
+      "Answers about Versa Growth Ventures: SEO, AEO, ERP, CRM and AI automation with Versa Digital & IT Solutions, port-to-port freight at the best price to Jebel Ali and Khorfakkan with Versa Logistics, and onions, green coffee, cardamom and black pepper from Versa International Traders.",
     eyebrow: "Frequently asked questions",
     h1: "Frequently asked questions about Versa Growth Ventures and its ventures",
     lede: "SEO and AEO, software projects, shipping, samples, certification and how to reach us — answered directly.",
@@ -557,7 +560,7 @@ export const PAGE_COPY = {
   },
   siteMap: {
     metaTitle: "Site Map — All Pages",
-    metaDescription: "Every page on the Versa Growth Ventures website: Versa Logistics services and routes, Versa Traders products, news, insights, glossary and company pages.",
+    metaDescription: "Every page on the Versa Growth Ventures website: Versa Logistics services and routes, Versa International Traders products, news, insights, glossary and company pages.",
     eyebrow: "Site map",
     h1: "Site map: every page on Versa Growth Ventures",
     lede: "Browse all services, products, routes, news, guides and company pages in one place.",
@@ -573,9 +576,11 @@ export const PAGE_COPY = {
 
 export const ENQUIRY_TYPES = [
   { value: "logistics", label: "Freight quote — Versa Logistics" },
-  { value: "samples", label: "Samples — Versa Traders" },
+  { value: "samples", label: "Samples — Versa International Traders" },
   { value: "coffee", label: "Bulk order — Green coffee beans" },
   { value: "cardamom", label: "Bulk order — Cardamom" },
+  { value: "sourcing", label: "Quotation — source any product from India (Versa International Traders)" },
+  { value: "supplier", label: "Supplier — export my products regularly (Versa International Traders)" },
   { value: "pepper", label: "Bulk order — Black pepper" },
   { value: "onion", label: "Bulk order — Onions (export & trading)" },
   { value: "digital", label: "IT, ERP, AI agents or marketing — Versa Digital & IT Solutions" },
