@@ -535,8 +535,8 @@ export const PAGE_COPY = {
     categoryTitles: {
       Digital: "SEO, AEO & business systems guides",
       Logistics: "Freight & shipping guides",
-      Trade: "Onion, coffee & spice trade guides",
-      Group: "From the group",
+      Trade: "International trade guides — sourcing, onions, coffee & more",
+      Group: "From the group — Versa Growth Ventures",
     } as Record<string, string>,
   },
   faq: {
