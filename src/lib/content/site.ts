@@ -6,7 +6,7 @@ export const SITE = {
   legalName: "Versa Growth Ventures",
   tagline: "Trade, logistics and technology — built from Kochi, shipped to the world.",
   description:
-    "Versa Growth Ventures is a diversified venture group in Kochi, Kerala, led by Versa International Traders — bridging international buyers and Indian suppliers — with Versa Digital & IT Solutions (custom ERP, AI agents, automation and digital marketing), Versa Logistics (sea freight to Jebel Ali and Khorfakkan), Versa International Traders (onion, cardamom, black pepper and green coffee trading, export and sourcing), Versa BPO, Versa Financial (portfolio management, trading, insurance, SIPs and mutual funds) and Versa Global (study abroad).",
+    "Versa Growth Ventures is a diversified venture group in Kochi, Kerala — with Versa Digital & IT Solutions (custom ERP, AI agents, automation and digital marketing), Versa Logistics (sea freight to Jebel Ali and Khorfakkan), Versa International Traders (Indian green coffee beans and cardamom exported to UK, USA, UAE, Middle East and Europe — EUDR compliant, Rainforest Alliance certified), Versa BPO, Versa Financial (portfolio management, trading, insurance, SIPs and mutual funds) and Versa Global (study abroad).",
   url: "https://versagrowthventures.in",
   founded: "2025",
   whatsapp: "917907215816",
@@ -41,8 +41,10 @@ export const SITE = {
     "cardamom exporter Kerala",
     "black pepper exporter India",
     "bulk spices supplier",
-    "onion exporter India",
-    "onion trading India to worldwide",
+    "EUDR compliant coffee India",
+    "Rainforest Alliance coffee India",
+    "Indian green coffee beans UK",
+    "Indian coffee beans Europe",
     "Kochi business group",
     "SEO company Kochi",
     "AEO agency Kerala",
@@ -215,15 +217,15 @@ export const VENTURES: Venture[] = [
     slug: "versa-traders",
     code: "VT",
     name: "Versa International Traders",
-    sector: "International Trading · Export Sourcing · Onions · Coffee",
+    sector: "Green Coffee Export · Cardamom · EUDR · Rainforest Alliance",
     summary:
-      "Bridging the gap between international buyers and Indian suppliers — onions, coffee beans, spices, agro products, snacks and coconut products. Free quotations, deals followed to delivery, a UK distribution partner for suppliers, and logistics and CHA when needed.",
+      "Indian green coffee beans and cardamom exported to UK, USA, UAE, Middle East and Europe — EUDR compliant documentation, Rainforest Alliance certified lots available, MOQ 1 FCL. Samples first, quality reports and full export certification on every order.",
     description:
-      "Versa International Traders sources fresh onions and high-quality coffee and spices from India's growing regions and supplies importers, roasters, wholesalers and processors worldwide. Every order is backed by samples before commitment, a quality report and full export certification.",
+      "Versa International Traders exports unroasted green coffee beans (Arabica and Robusta) and green cardamom from India to buyers in the UK, USA, UAE, Middle East and Europe. EUDR-compliant documentation and Rainforest Alliance certified lots are available. Recently traded 160 MT of coffee beans to the UAE.",
     href: "/traders",
     external: false,
     image: IMAGES.coffeeSack,
-    highlights: ["Source any product from India", "Onion & coffee bean trading", "Agro products, snacks & coconut", "Logistics & CHA provided"],
+    highlights: ["EUDR compliant documentation", "Rainforest Alliance certified lots", "Coffee to UK, USA, UAE, Europe", "MOQ 1 FCL — samples first"],
     stats: [{ value: "160 MT", label: "Coffee beans recently traded to the UAE" }],
     accent: "spice",
   },
@@ -321,7 +323,7 @@ export const STATS: Stat[] = [
   { value: "50+", label: "Trading clients", note: "Portfolios and trading managed" },
   { value: "17", label: "× 40ft containers", note: "Coffee beans shipped to Jebel Ali & Khorfakkan" },
   { value: "160", label: "MT coffee beans", note: "Recently traded to the UAE by Versa International Traders" },
-  { value: "55mm+", label: "Big onions", note: "Nashik onion trading, India to the world" },
+  { value: "1 FCL", label: "Minimum order", note: "Green coffee beans MOQ — trials available for new buyers" },
 ]
 
 export const TICKER = [
@@ -337,7 +339,10 @@ export const TICKER = [
   "Versa International Traders",
   "Source anything from India",
   "Logistics & CHA",
-  "Onion trading — Nashik & big onions",
+  "EUDR compliant coffee from India",
+  "Rainforest Alliance certified coffee",
+  "Green coffee beans for UK roasters",
+  "Indian coffee for US importers",
   "Coffee bean trading — 160 MT to the UAE",
   "Spice sourcing agent",
   "BPO & customer support",
@@ -349,12 +354,12 @@ export const TICKER = [
 export const HOME = {
   eyebrow: "Versa Growth Ventures — a diversified venture group, Kochi",
   // Each line is [plain text, emphasised text?]
-  h1: [["A diversified venture group,"], ["from ", "IT and marketing"], ["to ", "onion & coffee trading,"], ["freight and finance."]] as [string, string?][],
+  h1: [["A diversified venture group,"], ["from ", "IT and marketing"], ["to ", "coffee & cardamom export,"], ["freight and finance."]] as [string, string?][],
   lede:
-    "Versa Growth Ventures is a Kochi business group with six ventures under one roof in Kakkanad. We build custom ERP systems, AI agents and automation and run SEO, AEO and digital marketing through Versa Digital & IT Solutions; ship containers port to port from India to Jebel Ali and Khorfakkan at competitive prices with Versa Logistics; trade onions — Nashik and big onions — and coffee beans worldwide through Versa International Traders, which recently traded 160 MT of coffee beans to the UAE, alongside cardamom and black pepper; run customer support and back-office work at Versa BPO; manage portfolios, trading, insurance, SIPs and mutual funds at Versa Financial; and guide students abroad with Versa Global.",
-  metaTitle: "Versa Growth Ventures — Onion & Coffee Trading, Freight, IT | Kochi",
+    "Versa Growth Ventures is a Kochi business group with six ventures under one roof in Kakkanad. We build custom ERP systems, AI agents and automation and run SEO, AEO and digital marketing through Versa Digital & IT Solutions; ship containers port to port from India to Jebel Ali and Khorfakkan at competitive prices with Versa Logistics; export Indian green coffee beans — EUDR compliant, Rainforest Alliance certified — and green cardamom to the UK, USA, UAE, Middle East and Europe through Versa International Traders, which recently traded 160 MT of coffee beans to the UAE; run customer support and back-office work at Versa BPO; manage portfolios, trading, insurance, SIPs and mutual funds at Versa Financial; and guide students abroad with Versa Global.",
+  metaTitle: "Versa Growth Ventures — Green Coffee & Cardamom Export, Freight, IT | Kochi",
   metaDescription:
-    "Versa Growth Ventures, Kochi — a diversified venture group: SEO, AEO, custom ERP, CRM and AI automation with Versa Digital & IT Solutions; port-to-port sea freight at the best price to Jebel Ali and Khorfakkan with Versa Logistics; onion trading and coffee bean trading (160 MT recently traded to the UAE) with Versa International Traders; plus Versa BPO, Versa Financial and Versa Global.",
+    "Versa Growth Ventures, Kochi — a diversified venture group: SEO, AEO, custom ERP, CRM and AI automation with Versa Digital & IT Solutions; port-to-port sea freight to Jebel Ali and Khorfakkan with Versa Logistics; Indian green coffee beans and cardamom exported to UK, USA, UAE, Middle East and Europe (EUDR compliant, Rainforest Alliance certified) with Versa International Traders; plus Versa BPO, Versa Financial and Versa Global.",
   primaryCta: { label: "Explore our ventures", href: "/ventures" },
   secondaryCta: { label: "Talk to the group", href: "/contact" },
   gridLabel: "Our ventures",
@@ -376,8 +381,8 @@ export const HOME_SECTIONS = {
   traders: {
     index: "03",
     eyebrow: "Versa International Traders",
-    title: { pre: "Versa International Traders: ", em: "bridging international buyers", post: " and Indian suppliers." },
-    body: "Onions, coffee beans, spices, agro products, snacks and coconut products — tell us your requirement, get a quotation, and we see the deal through to delivery, with logistics and CHA if you need them.",
+    title: { pre: "Indian green coffee beans and cardamom, ", em: "exported to the world", post: "." },
+    body: "Unroasted Arabica and Robusta green coffee beans and green cardamom — EUDR compliant, Rainforest Alliance certified lots available — shipped to UK, USA, UAE, Middle East and Europe. MOQ 1 FCL.",
   },
   services: {
     index: "04",
@@ -411,8 +416,8 @@ export const HOME_SECTIONS = {
   insights: {
     index: "08",
     eyebrow: "Insights",
-    title: { pre: "Guides on onion and coffee trading, ", em: "freight", post: " and growth." },
-    body: "Practical guides on organic reach, business software, freight and the onion, coffee and spice trade.",
+    title: { pre: "Guides on coffee export, EUDR, ", em: "freight", post: " and growth." },
+    body: "Practical guides on organic reach, business software, freight, EUDR compliance and the Indian coffee and cardamom export trade.",
   },
   faq: {
     index: "09",
@@ -470,7 +475,7 @@ export const ABOUT = {
     "We started Versa Growth Ventures in 2025 with a simple idea: the businesses Kerala is best at — technology, talent, spices, trade and trusted service — deserve modern, accountable operators.",
   story: [
     "Versa Growth Ventures is a privately held, diversified venture group headquartered in Kakkanad, Kochi. We operate six ventures that share one leadership team, one office and one standard of accountability: Versa Digital & IT Solutions, Versa Logistics, Versa International Traders, Versa BPO, Versa Financial and Versa Global.",
-    "The two trade-facing ventures were built to work together. Versa International Traders sources and exports fresh onions, green coffee beans, cardamom and black pepper; Versa Logistics moves them — and other shippers' cargo — by container from India to the UAE and onward markets. A buyer who sources through Versa International Traders can have the same group handle the freight, the documents and the delivery schedule.",
+    "The two trade-facing ventures were built to work together. Versa International Traders exports Indian green coffee beans — EUDR compliant, Rainforest Alliance certified lots available — and green cardamom to buyers in the UK, USA, UAE, Middle East and Europe; Versa Logistics moves them — and other shippers&apos; cargo — by container from India to the UAE and onward markets. A buyer who sources through Versa International Traders can have the same group handle the freight, the documents and the delivery schedule.",
     "Versa Digital & IT Solutions has delivered 20+ ERP and custom agent builds, 30+ AI agents and 20+ automations, and serves 20+ active marketing clients. Versa BPO handles customer support and back-office work for clients including Future Optima IT Solutions, IPB Kochi, Astrum Study Abroad and Macob IT Solutions. Versa Financial manages portfolios and trading for 50+ clients and has completed 500+ insurance policies, while Versa Global guides students abroad.",
   ],
   principles: [
@@ -490,7 +495,7 @@ export const PAGE_COPY = {
     h1: "The ventures of Versa Growth Ventures: IT, marketing, logistics, spices trading, BPO, finance and education",
     lede: "Six businesses run by one leadership team from one office in Kakkanad, Kochi — a diversified venture group built for growth.",
     answer:
-      "Versa Growth Ventures operates six ventures: Versa Digital & IT Solutions (custom ERP, AI agents, automation and digital marketing), Versa Logistics (sea freight and transportation), Versa International Traders (onion, spice and coffee trading, export and sourcing agent), Versa BPO (business process outsourcing), Versa Financial (portfolio management, trading, insurance, SIPs and mutual funds) and Versa Global (study abroad).",
+      "Versa Growth Ventures operates six ventures: Versa Digital & IT Solutions (custom ERP, AI agents, automation and digital marketing), Versa Logistics (sea freight and transportation), Versa International Traders (Indian green coffee beans and cardamom exported to UK, USA, UAE, Middle East and Europe — EUDR compliant, Rainforest Alliance certified), Versa BPO (business process outsourcing), Versa Financial (portfolio management, trading, insurance, SIPs and mutual funds) and Versa Global (study abroad).",
     ctaTitle: "Which venture can help you?",
     ctaBody: "Not sure where your enquiry belongs? Call any of our numbers and we will connect you with the right team.",
     externalLead: "Visit the live website",
@@ -519,30 +524,30 @@ export const PAGE_COPY = {
   news: {
     metaTitle: "News — Coffee Trades, Live Projects & Shipments | Versa Growth Ventures",
     metaDescription:
-      "Latest from Versa Growth Ventures, Kochi: 160 MT of coffee beans traded to the UAE, onion trading, three ERP builds, one CRM and three AI automation projects in delivery, ongoing SEO and AEO work, and container shipments of coffee beans to Jebel Ali and Khorfakkan.",
+      "Latest from Versa Growth Ventures, Kochi: 160 MT of coffee beans traded to the UAE, EUDR-compliant and Rainforest Alliance certified coffee exports to UK and Europe, three ERP builds, one CRM and three AI automation projects in delivery, ongoing SEO and AEO work, and container shipments of coffee beans to Jebel Ali and Khorfakkan.",
     eyebrow: "Newsroom",
     h1: "News, live projects and shipments from Versa Growth Ventures",
     lede: "Software builds in delivery, SEO and AEO work, container movements, new services and milestones from across the group.",
     logH2: "All news and updates",
   },
   blog: {
-    metaTitle: "Insights — Onion, Coffee, Freight & SEO Guides | Versa Growth Ventures",
+    metaTitle: "Insights — Coffee Export, EUDR, Freight & SEO Guides | Versa Growth Ventures",
     metaDescription:
-      "Guides on SEO, AEO and organic reach, ERP, CRM and AI automation, port-to-port freight and getting the best price, shipping from India to the UAE, export documents, green coffee grades, and cardamom and black pepper grading.",
+      "Guides on SEO, AEO and organic reach, ERP, CRM and AI automation, port-to-port freight, shipping from India to the UAE, EUDR compliant coffee export, Rainforest Alliance certification, Indian green coffee grades, and cardamom export.",
     eyebrow: "Insights",
-    h1: "Insights on organic reach, business systems, freight and the onion, coffee and spice trade",
-    lede: "Practical, plain-English guides for business owners, exporters, importers and spice buyers — written by the people who do the work.",
+    h1: "Insights on organic reach, business systems, freight and the Indian coffee and cardamom export trade",
+    lede: "Practical, plain-English guides for business owners, exporters, importers and coffee buyers — written by the people who do the work.",
     categoryTitles: {
       Digital: "SEO, AEO & business systems guides",
       Logistics: "Freight & shipping guides",
-      Trade: "International trade guides — sourcing, onions, coffee & more",
+      Trade: "International trade guides — coffee, cardamom, EUDR & more",
       Group: "From the group — Versa Growth Ventures",
     } as Record<string, string>,
   },
   faq: {
-    metaTitle: "FAQ — Onion & Coffee Trading, Freight, SEO & AEO | Versa Growth Ventures",
+    metaTitle: "FAQ — Coffee Export, EUDR, Freight, SEO & AEO | Versa Growth Ventures",
     metaDescription:
-      "Answers about Versa Growth Ventures: SEO, AEO, ERP, CRM and AI automation with Versa Digital & IT Solutions, port-to-port freight at the best price to Jebel Ali and Khorfakkan with Versa Logistics, and onions, green coffee, cardamom and black pepper from Versa International Traders.",
+      "Answers about Versa Growth Ventures: SEO, AEO, ERP, CRM and AI automation with Versa Digital & IT Solutions, port-to-port freight to Jebel Ali and Khorfakkan with Versa Logistics, and Indian green coffee beans and cardamom (EUDR compliant, Rainforest Alliance certified) from Versa International Traders.",
     eyebrow: "Frequently asked questions",
     h1: "Frequently asked questions about Versa Growth Ventures and its ventures",
     lede: "SEO and AEO, software projects, shipping, samples, certification and how to reach us — answered directly.",

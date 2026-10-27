@@ -1,99 +1,90 @@
 import type { DivisionPage, FAQ } from "@/types"
 import { IMAGES } from "./site"
 import { TRADERS_EXTRA_PAGES, TRADERS_EXTRA_SECTIONS } from "./traders-extra"
-import { ONION_FAQS, ONION_IMAGES, TRADERS_ONION_PAGES } from "./traders-onion"
-import { NASHIK_EXTRA_SECTIONS, ONION_TRADING_FAQS, TRADERS_ONION_TRADING_PAGES } from "./traders-onion-trading"
+import { ONION_IMAGES, TRADERS_ONION_PAGES } from "./traders-onion"
+import { NASHIK_EXTRA_SECTIONS, TRADERS_ONION_TRADING_PAGES } from "./traders-onion-trading"
 import { COFFEE_TRADE, COFFEE_TRADING_FAQS, TRADERS_COFFEE_PAGES } from "./traders-coffee"
-import { SOURCING_FAQS, TRADERS_SOURCING_PAGES } from "./traders-sourcing"
+import { INTL_COFFEE_FAQS, TRADERS_COFFEE_INTL_PAGES } from "./traders-coffee-intl"
+import { TRADERS_SOURCING_PAGES } from "./traders-sourcing"
 
 export const TRADERS_HUB = {
-  metaTitle: "Versa International Traders — India Export Sourcing, Onions & Coffee",
+  metaTitle: "Indian Green Coffee Beans & Cardamom Exporter — EUDR Compliant, Rainforest Alliance | Versa International Traders",
   metaDescription:
-    "Versa International Traders bridges international buyers and Indian suppliers — agro products, onions, coffee beans, spices, coconut products and snacks, with quotations, logistics and CHA until the deal is done. Onion trading and coffee bean trading from India — Nashik big onions and 160 MT of coffee beans recently traded to the UAE. Also an exporter of fresh onions, unroasted green coffee beans, green cardamom and black pepper, shipped from India to buyers worldwide. Bulk quantities, samples on request, full quality documents and certification.",
+    "Versa International Traders exports Indian unroasted green coffee beans and green cardamom to UK, USA, UAE, Middle East and Europe. EUDR compliant documentation, Rainforest Alliance certified lots available. Arabica and Robusta, MOQ 1 FCL. Samples, quality reports and full export certification on every shipment.",
   keywords: [
     "Versa International Traders",
-    "export sourcing India",
-    "Indian suppliers for international buyers",
-    "agro products exporter India",
-    "desiccated coconut exporter",
-    "banana chips exporter",
-    "green coffee bean exporter India",
+    "Indian green coffee beans exporter",
     "unroasted coffee beans supplier",
+    "green coffee beans UK",
+    "green coffee beans USA",
+    "green coffee beans Europe",
+    "EUDR compliant coffee India",
+    "Rainforest Alliance coffee India",
+    "Indian Arabica green coffee",
+    "Indian Robusta green coffee",
     "cardamom exporter Kerala",
-    "black pepper exporter India",
-    "bulk spices supplier India",
-    "export quality spices",
-    "spice trader Kochi",
-    "coffee bean trader",
-    "Malabar pepper exporter",
-    "onion exporter India",
-    "onion trading India",
-    "coffee bean trading India",
+    "green cardamom bulk supplier",
+    "coffee bean trader Kochi",
     "coffee beans to UAE",
-    "Nashik onion exporter",
-    "big onion exporter",
-    "fresh onion supplier",
-    "Nashik red onion exporter",
+    "coffee beans Middle East",
+    "bulk coffee beans India",
+    "MOQ 1 FCL coffee",
+    "Indian coffee exporter",
+    "Malabar coffee exporter",
+    "black pepper exporter India",
   ],
   eyebrow: "Venture — Versa International Traders",
-  h1: "Versa International Traders: bridging international buyers and Indian suppliers — onions, coffee, spices, agro products, snacks and coconut products",
+  h1: "Versa International Traders: Indian green coffee beans and cardamom exported to the UK, USA, UAE, Middle East and Europe — EUDR compliant, Rainforest Alliance certified",
   lede:
-    "Whatever you need from India, we find the supplier, send the quotation and make sure the deal is done — with logistics and CHA if you need them. Fresh onions, unroasted coffee, whole spices, agro products, snacks and coconut products, supplied in bulk to importers, roasters, wholesalers and processors worldwide — with samples first, quality documents always and certification on every shipment.",
+    "Two commodities, done properly. We export Indian unroasted green coffee beans — Arabica and Robusta — and green cardamom to buyers across the UK, USA, UAE, Middle East and Europe, with EUDR compliance documentation, Rainforest Alliance certified lots on request, samples before commitment, quality reports and full export certification on every order. MOQ is 1 FCL.",
   answer:
-    "Versa International Traders (formerly Versa Traders) is the international trading venture of Versa Growth Ventures in Kochi, Kerala. It bridges the gap between international buyers and Indian suppliers: buyers send any requirement — agro products, snacks, coconut products such as desiccated coconut, and more — and receive a quotation, with the deal followed through to delivery and logistics and CHA provided by the group if needed. Its two main desks are onion trading — Nashik red and big onions, Bangalore Rose, white and small onions — and coffee bean trading, with 160 MT of coffee beans recently traded to the UAE. It also exports green cardamom and black pepper, all in bulk quantities. Samples are provided before orders, and every shipment is supported by quality documents and export certification such as a quality analysis report, phytosanitary certificate and certificate of origin.",
+    "Versa International Traders is the international trading venture of Versa Growth Ventures, based in Kochi, Kerala. It exports two primary commodities from India: unroasted green coffee beans (Arabica and Robusta — Plantation, Arabica Cherry, Robusta Parchment, Robusta Cherry and Monsooned Malabar) and green cardamom (small cardamom, all size grades) to buyers in the UK, USA, UAE, Saudi Arabia, the wider Middle East and Europe. Coffee lots are available EUDR compliant — with GPS geolocation data, satellite forest-cover evidence and Rainforest Alliance transaction certificates — meeting the documentation requirement for EU and UK buyers. Minimum order quantity is 1 FCL. Versa International Traders recently traded 160 MT of coffee beans to the UAE, and its sister venture Versa Logistics has shipped 17 × 40ft containers of coffee beans into Jebel Ali and Khorfakkan. Every order is supported by a quality analysis report, phytosanitary certificate and certificate of origin.",
   products: [
     {
-      name: "Onions",
-      tag: "Fresh · Nashik red & small onion",
-      body: "Fresh Nashik red, Bangalore Rose, white and small onions, size-graded and mesh-bagged for importers worldwide.",
-      href: "/traders/onions",
-      image: ONION_IMAGES.meshBags,
-    },
-    {
       name: "Green Coffee Beans",
-      tag: "Unroasted · Arabica & Robusta",
-      body: "Washed and natural Arabica and Robusta from India's coffee regions, graded and bagged for roasters and importers.",
+      tag: "Arabica & Robusta · EUDR compliant · RA certified",
+      body: "Unroasted Indian Arabica and Robusta — Plantation, Cherry and Monsooned Malabar — with EUDR-compliant documentation and Rainforest Alliance certification available. MOQ 1 FCL.",
       href: "/traders/green-coffee-beans",
       image: IMAGES.coffeeBeans,
     },
     {
       name: "Green Cardamom",
-      tag: "Small cardamom · Size-graded",
-      body: "Bold, green, aromatic small cardamom from Kerala's Cardamom Hills, graded by size, colour and litre weight.",
+      tag: "Small cardamom · All variants · Size-graded",
+      body: "Bold, aromatic small cardamom from Kerala&apos;s Idukki Cardamom Hills — 8mm+, 7–8mm and 6–7mm grades, AGEB, AGB and AGS — for the Gulf, UK and European markets.",
       href: "/traders/cardamom",
       image: IMAGES.cardamomPods,
     },
     {
       name: "Black Pepper",
       tag: "Malabar · Tellicherry grades",
-      body: "Whole black pepper from the Western Ghats, from MG1 to bold Tellicherry grades, cleaned and graded for export.",
+      body: "Whole black pepper from the Western Ghats — MG1, 500 g/L, 550 g/L, TGEB and TGSEB — cleaned, graded and certified for export.",
       href: "/traders/black-pepper",
       image: IMAGES.pepperWhole,
     },
   ],
   copy: {
     heroCta: "Get a quotation",
-    heroSecondary: "Quality & certification",
+    heroSecondary: "EUDR & certifications",
     productsEyebrow: "Products",
-    productsH2: "Which onions, coffee beans and spices does Versa International Traders trade?",
+    productsH2: "What does Versa International Traders export from India?",
     deskEyebrow: "Trading desks",
-    deskH2: "Onion trading and coffee bean trading — our two main desks",
+    deskH2: "Coffee bean trading and cardamom — our two primary export commodities",
     promisesEyebrow: "The Versa International Traders standard",
-    promisesH2: "What comes with every Versa International Traders onion, coffee and spice order?",
+    promisesH2: "What comes with every Versa International Traders coffee and cardamom order?",
     processEyebrow: "How buying works",
-    processH2: "How does buying onions or coffee beans from Versa International Traders work?",
+    processH2: "How does buying coffee beans or cardamom from Versa International Traders work?",
     freightEyebrow: "Freight included, if you want it",
     freightH2: "Buy the product and the shipping from one group",
     freightBody:
-      "Our sister venture Versa Logistics has delivered 15 × 40ft containers of coffee beans into Jebel Ali and 2 × 40ft into Khorfakkan. Buy FOB and use your own forwarder, or buy CFR/CIF and let us deliver to your port.",
+      "Our sister venture Versa Logistics has delivered 15 × 40ft containers of coffee beans into Jebel Ali and 2 × 40ft into Khorfakkan, and ships cardamom and spices worldwide. Buy FOB and use your own forwarder, or buy CFR/CIF and let us deliver to your port.",
     freightCta: "About Versa Logistics",
     faqEyebrow: "FAQ",
-    faqH2: "Versa International Traders FAQs: onion trading, coffee bean trading and spices",
+    faqH2: "Versa International Traders FAQs: coffee bean trading, EUDR, Rainforest Alliance and cardamom",
     marketsEyebrow: "Where we sell",
-    marketsH2: "Markets we supply with Indian onions, coffee and spices",
+    marketsH2: "Markets we supply with Indian coffee beans and cardamom",
     ctaTitle: "Start with a sample.",
-    ctaBody: "Tell us the product, grade, quantity and destination port. We send a sample from the lot and a quote backed by our quality report.",
-    ctaSecondary: { label: "Green coffee beans", href: "/traders/green-coffee-beans" },
+    ctaBody: "Tell us the grade, quantity and destination port. We send a sample from the lot and a price quote backed by our quality report. MOQ is 1 FCL.",
+    ctaSecondary: { label: "EUDR compliant coffee", href: "/traders/eudr-compliant-coffee-beans" },
   },
   process: [
     { step: "01", title: "Enquiry", body: "Product, grade, quantity, packing, destination port and Incoterm." },
@@ -114,50 +105,47 @@ export const TRADERS_HUB = {
 
 export const TRADERS_FAQS: FAQ[] = [
   {
-    question: "What products does Versa International Traders export?",
+    question: "What does Versa International Traders export?",
     answer:
-      "Versa International Traders exports four commodities from India: fresh onions (Nashik red, Bangalore Rose, white and small onions), unroasted green coffee beans (Arabica and Robusta), green cardamom (small cardamom) and black pepper. All are export quality and available in bulk quantities.",
+      "Versa International Traders exports two primary commodities from India: unroasted green coffee beans (Arabica and Robusta — Plantation, Arabica Cherry, Robusta Parchment, Robusta Cherry, Monsooned Malabar) and green cardamom (small cardamom in all size grades). It also exports black pepper. Coffee lots are available with EUDR-compliant documentation and Rainforest Alliance certification on request.",
   },
-  ONION_FAQS[0],
-  SOURCING_FAQS[0],
-  SOURCING_FAQS[1],
   COFFEE_TRADING_FAQS[0],
-  ONION_TRADING_FAQS[2],
-  ONION_FAQS[2],
+  INTL_COFFEE_FAQS[0],
+  INTL_COFFEE_FAQS[1],
+  INTL_COFFEE_FAQS[2],
+  INTL_COFFEE_FAQS[3],
+  INTL_COFFEE_FAQS[4],
+  INTL_COFFEE_FAQS[5],
+  INTL_COFFEE_FAQS[6],
   {
     question: "Do you provide samples before a bulk order?",
     answer:
       "Yes. Samples are provided to buyers before they commit to an order, drawn from the lot being offered so what you test is what you receive. Share your address and required grade, and we will arrange dispatch.",
   },
   {
-    question: "What quality documents come with your coffee and spices?",
+    question: "What quality documents come with coffee and cardamom orders?",
     answer:
-      "Each order is supported by a quality analysis report covering the agreed parameters, plus export documents including a phytosanitary certificate, certificate of origin, commercial invoice, packing list and bill of lading. Fumigation certificates, independent laboratory reports and third-party inspection can be arranged on request.",
+      "Each order is supported by a quality analysis report covering the agreed parameters, plus export documents including a phytosanitary certificate, certificate of origin, commercial invoice, packing list and bill of lading. For EU-bound coffee, EUDR documentation — geolocation data and forest-cover evidence — is included. Rainforest Alliance transaction certificates, fumigation certificates, independent laboratory reports and third-party inspection can be arranged on request.",
   },
   {
     question: "Is Versa International Traders a certified exporter?",
     answer:
-      "Yes. Versa International Traders holds the registrations and certification required to export coffee and spices from India, and each shipment carries the certificates the destination market requires.",
-  },
-  {
-    question: "What quantities can I order?",
-    answer:
-      "Bulk quantity is available. Most buyers order in full container loads — 20ft or 40ft — and we also supply smaller trial lots for new buyers. Scheduled monthly or quarterly shipments can be arranged for regular buyers.",
+      "Yes. Versa International Traders holds the registrations and certifications required to export coffee and spices from India, including APEDA registration for coffee export. Rainforest Alliance certified lots are available with valid RA transaction certificates, and EUDR documentation is prepared for every EU-bound shipment.",
   },
   {
     question: "Which countries do you export to?",
     answer:
-      "Versa International Traders sells globally. The UAE is a key market — our group has shipped 17 × 40ft containers of coffee beans to Jebel Ali and Khorfakkan — and we supply buyers across the Middle East and other regions.",
+      "Versa International Traders exports to the UK, USA, UAE, Saudi Arabia, Oman, Bahrain, Kuwait, Qatar and other GCC markets, and to European buyers in the Netherlands, Germany, Belgium, Italy, France and elsewhere. The group has shipped 17 × 40ft containers of coffee beans to Jebel Ali and Khorfakkan (UAE), and recently traded 160 MT of coffee beans to the UAE.",
   },
   {
     question: "What Incoterms do you offer?",
     answer:
-      "We quote FOB Indian port as standard, and CFR or CIF to your destination port when you would like Versa Logistics to arrange the freight.",
+      "We quote FOB Indian port as standard, and CFR or CIF to your destination port when you would like Versa Logistics to arrange the freight. CIF to Felixstowe or Tilbury (UK), Rotterdam or Hamburg (Europe), and Jebel Ali (UAE) are the most requested delivery terms.",
   },
   {
-    question: "How do I request a price?",
+    question: "How do I request a price for green coffee or cardamom?",
     answer:
-      "Tell us the product, grade, quantity, packing, destination port and preferred Incoterm by phone (+91 97464 33133, +91 97467 33133, +91 79072 15816), WhatsApp or the contact form. Prices follow the market, so quotes are valid for a short, stated period.",
+      "Tell us the product, grade, quantity, packing, destination port and preferred Incoterm by phone (+91 97464 33133, +91 97467 33133, +91 79072 15816), WhatsApp (+91 79072 15816) or the contact form at versagrowthventures.in. Prices follow the market, so quotes are valid for a stated, short period.",
   },
 ]
 
@@ -196,6 +184,9 @@ const TRADERS_CORE_PAGES: DivisionPage[] = [
       { label: "Moisture", value: "Typically 12.5% max, per contract" },
       { label: "Packing", value: "60 kg jute bags; hermetic liners on request" },
       { label: "Load", value: "20ft ≈ 19.2 t (320 × 60 kg); 40ft by arrangement" },
+      { label: "MOQ", value: "1 FCL (≈ 19.2 MT in a 20ft container)" },
+      { label: "EUDR", value: "Compliant documentation provided for EU-bound lots" },
+      { label: "Certification", value: "Rainforest Alliance certified lots available" },
       { label: "Recent trade", value: "160 MT of coffee beans to the UAE" },
     ],
     topic: "green coffee beans",
@@ -241,27 +232,31 @@ const TRADERS_CORE_PAGES: DivisionPage[] = [
       },
       {
         question: "What is the minimum order for green coffee?",
-        answer: "Most orders are full container loads. We can also supply smaller trial lots to new buyers so they can evaluate a grade before committing to container volumes.",
+        answer: "The minimum order quantity is 1 FCL — one full container load. A 20ft container carries approximately 19.2 metric tonnes (320 × 60 kg bags) of green coffee. Trial lots below one container are available for new buyers evaluating a grade before committing to full container volumes.",
+      },
+      {
+        question: "Is Indian green coffee EUDR compliant?",
+        answer: "Yes. Indian coffee — grown in Karnataka, Kerala and Tamil Nadu — qualifies as standard-risk under the EU Deforestation Regulation (EUDR). Versa International Traders provides the GPS geolocation data, satellite forest-cover evidence and Rainforest Alliance transaction certificate (for certified lots) needed to support an EU importer&apos;s TRACES due-diligence statement.",
       },
       {
         question: "Can I get a green coffee sample?",
-        answer: "Yes. Samples are provided before orders, drawn from the lot we are offering. Tell us the grade and your delivery address.",
+        answer: "Yes. Samples are provided before orders, drawn from the lot we are offering. Tell us the grade, required certification (RA or non-RA) and your delivery address.",
       },
       {
         question: "How long does green coffee keep?",
         answer: "Stored cool and dry in jute with a hermetic liner, green coffee generally holds its quality for many months. Roast it within the period your quality team recommends for your blends.",
       },
     ],
-    related: ["coffee-bean-trading", "coffee-beans-supplier-uae-dubai", "samples-and-bulk-orders"],
+    related: ["eudr-compliant-coffee-beans", "rainforest-alliance-coffee-india", "green-coffee-beans-uk"],
   },
   {
     slug: "cardamom",
     division: "traders",
     navLabel: "Green Cardamom",
     h1: "Green cardamom exporter from Kerala: bold, aromatic small cardamom in bulk",
-    metaTitle: "Cardamom Exporter India — Green Cardamom 8mm, 7mm Bulk Supplier | Versa International Traders",
+    metaTitle: "Cardamom Exporter India — Green Cardamom All Variants, Bulk Supply to UK, UAE, Europe | Versa International Traders",
     metaDescription:
-      "Export-quality green cardamom from Kerala's Idukki Cardamom Hills. 8mm, 7–8mm and 6–7mm grades, graded by colour and litre weight. Bulk supply, samples and certification. Versa International Traders, Kochi.",
+      "Export-quality green cardamom from Kerala's Idukki Cardamom Hills — all variants, 8mm+, 7–8mm and 6–7mm grades. Bulk supply to UK, UAE, Saudi Arabia, Middle East and Europe. Samples and certification. Versa International Traders, Kochi.",
     keywords: [
       "cardamom exporter India",
       "green cardamom supplier Kerala",
@@ -269,7 +264,10 @@ const TRADERS_CORE_PAGES: DivisionPage[] = [
       "Idukki cardamom exporter",
       "small cardamom wholesale",
       "cardamom export to UAE",
+      "cardamom exporter UK",
+      "green cardamom Europe",
       "Alleppey green cardamom",
+      "cardamom all variants India",
     ],
     eyebrow: "Versa International Traders — Green Cardamom",
     lede:
@@ -284,8 +282,10 @@ const TRADERS_CORE_PAGES: DivisionPage[] = [
     specs: [
       { label: "Type", value: "Small green cardamom (Elettaria cardamomum)" },
       { label: "Origin", value: "Idukki, Kerala" },
+      { label: "Variants", value: "All variants available — size-graded and trade-graded" },
       { label: "Size grades", value: "8mm+, 7–8mm, 6–7mm" },
       { label: "Trade grades", value: "AGEB, AGB, AGS — or buyer specification" },
+      { label: "Markets", value: "UAE, Saudi Arabia, UK, Europe, USA" },
       { label: "Checked for", value: "Colour, litre weight, moisture, empty & split pods" },
       { label: "Packing", value: "Poly-lined bags or cartons, per buyer" },
     ],
@@ -614,6 +614,7 @@ export const TRADING_DESK = [
 export const TRADERS_PAGES: DivisionPage[] = [
   ...ONION_PAGE_ORDER.map((slug) => ALL_ONION_PAGES.find((p) => p.slug === slug)).filter((p): p is DivisionPage => Boolean(p)),
   ...TRADERS_COFFEE_PAGES,
+  ...TRADERS_COFFEE_INTL_PAGES,
   ...TRADERS_SOURCING_PAGES,
   ...TRADERS_CORE_PAGES.map((p) => (TRADERS_EXTRA_SECTIONS[p.slug] ? { ...p, sections: [...p.sections, TRADERS_EXTRA_SECTIONS[p.slug]] } : p)),
   ...TRADERS_EXTRA_PAGES,

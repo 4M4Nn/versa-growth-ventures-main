@@ -82,6 +82,9 @@ export const TRADERS_COFFEE_PAGES: DivisionPage[] = [
       { label: "Recent trade", value: "160 MT of coffee beans to the UAE" },
       { label: "Products", value: "Unroasted Arabica and Robusta" },
       { label: "Processing", value: "Washed (Plantation / Parchment), Natural (Cherry)" },
+      { label: "MOQ", value: "1 FCL (≈ 19.2 MT in a 20ft container)" },
+      { label: "EUDR", value: "Compliant documentation for EU/UK buyers" },
+      { label: "Certification", value: "Rainforest Alliance certified lots available" },
       { label: "Packing", value: "60 kg jute bags; liners on request" },
       { label: "Pricing", value: "Outright or differential to ICE futures" },
       { label: "Terms", value: "FOB, CFR, CIF" },
@@ -122,7 +125,7 @@ export const TRADERS_COFFEE_PAGES: DivisionPage[] = [
       },
     ],
     faqs: [COFFEE_TRADING_FAQS[0], COFFEE_TRADING_FAQS[2], COFFEE_TRADING_FAQS[3], COFFEE_TRADING_FAQS[1]],
-    related: ["green-coffee-beans", "coffee-beans-supplier-uae-dubai", "robusta-green-coffee-beans"],
+    related: ["eudr-compliant-coffee-beans", "green-coffee-beans-uk", "green-coffee-beans-usa"],
   },
   {
     slug: "coffee-beans-supplier-uae-dubai",
@@ -185,6 +188,6 @@ export const TRADERS_COFFEE_PAGES: DivisionPage[] = [
       },
     ],
     faqs: [COFFEE_TRADING_FAQS[0], COFFEE_TRADING_FAQS[5], COFFEE_TRADING_FAQS[6], COFFEE_TRADING_FAQS[4]],
-    related: ["coffee-bean-trading", "green-coffee-beans", "coffee-and-spice-supplier-uae"],
+    related: ["coffee-bean-trading", "eudr-compliant-coffee-beans", "rainforest-alliance-coffee-india"],
   },
 ]

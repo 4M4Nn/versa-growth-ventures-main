@@ -7,6 +7,7 @@ import { PORT_TO_PORT_FAQS } from "./logistics-port"
 import { ONION_FAQS } from "./traders-onion"
 import { ONION_TRADING_FAQS } from "./traders-onion-trading"
 import { COFFEE_TRADING_FAQS } from "./traders-coffee"
+import { INTL_COFFEE_FAQS } from "./traders-coffee-intl"
 import { SOURCING_FAQS, SUPPLIER_FAQS } from "./traders-sourcing"
 
 export const GROUP_FAQS: FAQ[] = [
@@ -47,9 +48,9 @@ export const GROUP_FAQS: FAQ[] = [
       "Yes. Versa International Traders, a Versa Growth Ventures company, recently traded 160 MT of coffee beans to the UAE. Separately, Versa Logistics has shipped 17 × 40ft containers of coffee beans to Jebel Ali and Khorfakkan.",
   },
   {
-    question: "Does Versa Growth Ventures export onions?",
+    question: "Does Versa International Traders supply EUDR compliant coffee for European buyers?",
     answer:
-      "Yes. Versa International Traders, a Versa Growth Ventures company, trades and exports fresh Indian onions — Nashik red, Bangalore Rose, white and small onions — in bulk to buyers worldwide, with samples, size grading, phytosanitary certification and freight through Versa Logistics.",
+      "Yes. Versa International Traders provides EUDR-compliant documentation — GPS geolocation data for the farm or estate, satellite forest-cover evidence, and Rainforest Alliance transaction certificates for certified lots — for every EU-bound green coffee shipment, supporting the EU importer&apos;s TRACES NT due-diligence statement. Indian coffee from Karnataka and Kerala is categorised as standard-risk under EUDR.",
   },
   {
     question: "Where can I find Versa Digital & IT Solutions and Versa Global?",
@@ -80,9 +81,9 @@ export const GROUP_FAQS: FAQ[] = [
     answer: "Versa Growth Ventures was founded in 2025 in Kochi, Kerala.",
   },
   {
-    question: "Can Versa International Traders source products other than coffee and onions?",
+    question: "Can Versa International Traders source agro products beyond coffee and cardamom?",
     answer:
-      "Yes. Versa International Traders sources any agro commodity buyers require from its supplier network — including black pepper, green cardamom, desiccated coconut, banana chips, other Indian snacks and grains. Send your product and quantity requirement and we will send a quotation.",
+      "Yes. In addition to its primary commodities — green coffee beans and green cardamom — Versa International Traders sources any agro commodity buyers require from its supplier network, including black pepper, desiccated coconut, banana chips, other Indian spices and grains. Send your product and quantity requirement and we will send a quotation.",
   },
   {
     question: "Does Versa Growth Ventures handle both the product and the freight for an export order?",
@@ -160,8 +161,8 @@ export const FAQ_GROUPS: FAQGroup[] = [
   { id: "freight-quotes", title: "Freight quotes & rates", items: FREIGHT_QUOTE_FAQS },
   {
     id: "traders",
-    title: "Versa International Traders — onions, coffee & spices",
-    items: TRADERS_FAQS.filter((f) => ![...ONION_FAQS, ...ONION_TRADING_FAQS, ...COFFEE_TRADING_FAQS, ...SOURCING_FAQS].some((o) => o.question === f.question)),
+    title: "Versa International Traders — coffee beans, cardamom & spices",
+    items: TRADERS_FAQS.filter((f) => ![...ONION_FAQS, ...ONION_TRADING_FAQS, ...COFFEE_TRADING_FAQS, ...SOURCING_FAQS, ...INTL_COFFEE_FAQS].some((o) => o.question === f.question)),
   },
   {
     id: "international-traders",
@@ -177,6 +178,11 @@ export const FAQ_GROUPS: FAQGroup[] = [
     id: "coffee-trading",
     title: "Coffee bean trading — India to the UAE and worldwide",
     items: COFFEE_TRADING_FAQS,
+  },
+  {
+    id: "coffee-international",
+    title: "Coffee beans — UK, USA, Europe, EUDR & Rainforest Alliance",
+    items: INTL_COFFEE_FAQS,
   },
   { id: "trade-terms", title: "Documents, payments & trade terms", items: TRADE_TERMS_FAQS },
 ]
