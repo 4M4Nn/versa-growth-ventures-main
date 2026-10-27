@@ -7,6 +7,7 @@ import { BLOG_PORT_POSTS } from "./blog-port"
 import { BLOG_ONION_POSTS } from "./blog-onion"
 import { BLOG_TRADING_POSTS } from "./blog-trading"
 import { BLOG_OCT_POSTS } from "./blog-oct"
+import { BLOG_NOV_POSTS } from "./blog-nov"
 
 const BLOG_CORE_POSTS: BlogPost[] = [
   {
@@ -679,4 +680,4 @@ const BLOG_CORE_POSTS: BlogPost[] = [
   },
 ]
 
-export const BLOG_POSTS: BlogPost[] = [...BLOG_OCT_POSTS, ...BLOG_TRADING_POSTS, ...BLOG_ONION_POSTS, ...BLOG_DIGITAL_POSTS, ...BLOG_PORT_POSTS, ...BLOG_CORE_POSTS, ...BLOG_EXTRA_POSTS, ...BLOG_LOGISTICS_POSTS]
+export const BLOG_POSTS: BlogPost[] = [...BLOG_NOV_POSTS, ...BLOG_OCT_POSTS, ...BLOG_TRADING_POSTS, ...BLOG_ONION_POSTS, ...BLOG_DIGITAL_POSTS, ...BLOG_PORT_POSTS, ...BLOG_CORE_POSTS, ...BLOG_EXTRA_POSTS, ...BLOG_LOGISTICS_POSTS]

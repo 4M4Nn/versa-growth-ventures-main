@@ -79,6 +79,16 @@ export const GROUP_FAQS: FAQ[] = [
     question: "When was Versa Growth Ventures founded?",
     answer: "Versa Growth Ventures was founded in 2025 in Kochi, Kerala.",
   },
+  {
+    question: "Can Versa International Traders source products other than coffee and onions?",
+    answer:
+      "Yes. Versa International Traders sources any agro commodity buyers require from its supplier network — including black pepper, green cardamom, desiccated coconut, banana chips, other Indian snacks and grains. Send your product and quantity requirement and we will send a quotation.",
+  },
+  {
+    question: "Does Versa Growth Ventures handle both the product and the freight for an export order?",
+    answer:
+      "Yes. Versa International Traders handles the supplier, quotation, samples, contract and quality. Versa Logistics handles sea freight and CHA (export customs clearance). Buyers can use the full service — product, freight and clearance — or either part separately.",
+  },
 ]
 
 export const TRADE_TERMS_FAQS: FAQ[] = [
@@ -115,6 +125,26 @@ export const TRADE_TERMS_FAQS: FAQ[] = [
   {
     question: "Where can I find definitions of shipping and spice trade terms?",
     answer: "Our glossary explains terms such as FCL, LCL, bill of lading, CEPA, AGEB, MG1, TGEB and Robusta Parchment in plain English.",
+  },
+  {
+    question: "What is a phytosanitary certificate?",
+    answer:
+      "A phytosanitary certificate is issued by the Plant Quarantine Department of India and confirms that an agricultural export consignment has been inspected and is free of pests and diseases. It is compulsory for exporting spices, coffee, onions and other agro commodities from India.",
+  },
+  {
+    question: "What is a fumigation certificate?",
+    answer:
+      "A fumigation certificate confirms that a consignment or its packing (typically wooden pallets or wooden packing materials) has been treated to kill pests. Methyl bromide fumigation or heat treatment is required under ISPM 15 for wooden packing going to most countries.",
+  },
+  {
+    question: "What is a switch bill of lading?",
+    answer:
+      "A switch bill of lading is a second set of bills of lading issued in place of the original set, often to hide the origin supplier, change the shipper name, or correct an error. It is issued at the transhipment port or by the carrier's agent and must be agreed in advance with the carrier.",
+  },
+  {
+    question: "What does 'free on board' mean for Indian exporters?",
+    answer:
+      "Under FOB (Free On Board), the Indian exporter is responsible for delivering the goods on board the vessel at the agreed port and obtaining the let export order. Once the goods cross the ship's rail, risk and cost pass to the buyer, who arranges and pays for the sea freight and insurance.",
   },
 ]
 
