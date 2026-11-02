@@ -6,6 +6,7 @@ import { NASHIK_EXTRA_SECTIONS, TRADERS_ONION_TRADING_PAGES } from "./traders-on
 import { COFFEE_TRADE, COFFEE_TRADING_FAQS, TRADERS_COFFEE_PAGES } from "./traders-coffee"
 import { INTL_COFFEE_FAQS, TRADERS_COFFEE_INTL_PAGES } from "./traders-coffee-intl"
 import { TRADERS_SOURCING_PAGES } from "./traders-sourcing"
+import { TRADERS_ROBUSTA_2026_PAGES } from "./traders-robusta-2026"
 
 export const TRADERS_HUB = {
   metaTitle: "Indian Green Coffee Beans & Cardamom Exporter — EUDR Compliant, Rainforest Alliance | Versa International Traders",
@@ -54,13 +55,6 @@ export const TRADERS_HUB = {
       href: "/traders/cardamom",
       image: IMAGES.cardamomPods,
     },
-    {
-      name: "Black Pepper",
-      tag: "Malabar · Tellicherry grades",
-      body: "Whole black pepper from the Western Ghats — MG1, 500 g/L, 550 g/L, TGEB and TGSEB — cleaned, graded and certified for export.",
-      href: "/traders/black-pepper",
-      image: IMAGES.pepperWhole,
-    },
   ],
   copy: {
     heroCta: "Get a quotation",
@@ -107,7 +101,7 @@ export const TRADERS_FAQS: FAQ[] = [
   {
     question: "What does Versa International Traders export?",
     answer:
-      "Versa International Traders exports two primary commodities from India: unroasted green coffee beans (Arabica and Robusta — Plantation, Arabica Cherry, Robusta Parchment, Robusta Cherry, Monsooned Malabar) and green cardamom (small cardamom in all size grades). It also exports black pepper. Coffee lots are available with EUDR-compliant documentation and Rainforest Alliance certification on request.",
+      "Versa International Traders exports two primary commodities from India: unroasted green coffee beans (Arabica and Robusta — Plantation, Arabica Cherry, Robusta Parchment, Robusta Cherry and Monsooned Malabar) and green cardamom (small cardamom, all size grades — AGEB, AGB and AGS). Coffee lots are available with EUDR-compliant documentation and Rainforest Alliance certification on request. MOQ 1 FCL.",
   },
   COFFEE_TRADING_FAQS[0],
   INTL_COFFEE_FAQS[0],
@@ -419,7 +413,7 @@ const TRADERS_CORE_PAGES: DivisionPage[] = [
     h1: "Quality documents and export certification for coffee and spices from India",
     metaTitle: "Quality Documents & Export Certification — Coffee & Spices | Versa International Traders",
     metaDescription:
-      "Every Versa International Traders shipment of green coffee, cardamom and black pepper includes a quality analysis report, phytosanitary certificate and certificate of origin. Lab testing and inspection on request.",
+      "Every Versa International Traders shipment of green coffee beans and cardamom includes a quality analysis report, phytosanitary certificate and certificate of origin. Lab testing and inspection on request.",
     keywords: [
       "spice export certification India",
       "phytosanitary certificate coffee",
@@ -433,7 +427,7 @@ const TRADERS_CORE_PAGES: DivisionPage[] = [
       "A good sample earns a first order. Correct documents earn the second. We treat both with the same seriousness.",
     image: IMAGES.cardamomBowl,
     summary:
-      "Versa International Traders supplies quality documents and proper export certification with every order of green coffee, cardamom and black pepper, including a quality analysis report, phytosanitary certificate and certificate of origin, with laboratory testing and third-party inspection on request.",
+      "Versa International Traders supplies quality documents and proper export certification with every order of green coffee beans and cardamom, including a quality analysis report, phytosanitary certificate and certificate of origin, with laboratory testing and third-party inspection on request.",
     intro: [
       "Importers need to know three things before accepting a container: that the product matches the contract, that it is safe and legal to import, and that the paperwork will clear customs without delay. Our documentation is designed to answer all three.",
     ],
@@ -502,12 +496,12 @@ const TRADERS_CORE_PAGES: DivisionPage[] = [
     h1: "Request samples and order coffee and spices in bulk from Versa International Traders",
     metaTitle: "Coffee & Spice Samples, Bulk Orders and Pricing | Versa International Traders",
     metaDescription:
-      "Request samples of green coffee beans, cardamom and black pepper, then order in bulk — trial lots to multiple containers. How samples, pricing, payment and shipping work at Versa International Traders.",
+      "Request samples of green coffee beans and cardamom, then order in bulk — trial lots to multiple containers. How samples, pricing, payment and shipping work at Versa International Traders.",
     keywords: [
       "coffee bean samples",
       "spice samples for importers",
       "bulk cardamom order",
-      "bulk black pepper order",
+      "bulk coffee FCL order",
       "green coffee bulk price",
       "spice supplier samples India",
     ],
@@ -516,7 +510,7 @@ const TRADERS_CORE_PAGES: DivisionPage[] = [
       "Test before you trust. Our buying process starts with a sample from the actual lot, and scales to as many containers as your market can take.",
     image: IMAGES.coffeeBeans,
     summary:
-      "Versa International Traders provides samples of green coffee beans, cardamom and black pepper before orders, and supplies in bulk — from trial lots to multiple full containers — with FOB, CFR and CIF pricing.",
+      "Versa International Traders provides samples of green coffee beans and cardamom before orders, and supplies in bulk — from trial lots to multiple full containers — with FOB, CFR and CIF pricing.",
     intro: [
       "Buying commodities from a new supplier is a risk. We reduce it the traditional way: by sending you a sample of the actual lot, putting the agreed specification in writing and backing the shipment with documents.",
     ],
@@ -615,6 +609,7 @@ export const TRADERS_PAGES: DivisionPage[] = [
   ...ONION_PAGE_ORDER.map((slug) => ALL_ONION_PAGES.find((p) => p.slug === slug)).filter((p): p is DivisionPage => Boolean(p)),
   ...TRADERS_COFFEE_PAGES,
   ...TRADERS_COFFEE_INTL_PAGES,
+  ...TRADERS_ROBUSTA_2026_PAGES,
   ...TRADERS_SOURCING_PAGES,
   ...TRADERS_CORE_PAGES.map((p) => (TRADERS_EXTRA_SECTIONS[p.slug] ? { ...p, sections: [...p.sections, TRADERS_EXTRA_SECTIONS[p.slug]] } : p)),
   ...TRADERS_EXTRA_PAGES,

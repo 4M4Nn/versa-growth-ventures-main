@@ -15,6 +15,66 @@ const UPDATE_SHEET = "Update at a glance"
 // Updates from Versa Digital & IT Solutions and the wider group
 export const NEWS_GROUP: NewsItem[] = [
   {
+    slug: "arabica-new-crop-2026-sun-drying-available-soon",
+    title: "Indian Arabica new crop 2026 is in sun-drying — green coffee beans available soon",
+    metaDescription:
+      "The Indian Arabica 2026 new crop is now in sun-drying at Karnataka and Kerala estates. Plantation and Arabica Cherry grades will be available soon. UK and European buyers can pre-register interest and begin EUDR documentation now.",
+    date: "2026-11-02",
+    dateLabel: "November 2026",
+    division: "traders",
+    kicker: "Crop — Arabica new crop 2026",
+    manifestTitle: "Crop sheet",
+    manifest: [
+      { label: "Commodity", value: "Indian Arabica green coffee beans" },
+      { label: "Crop year", value: "2026" },
+      { label: "Stage", value: "Sun-drying — new crop" },
+      { label: "Availability", value: "Soon — Plantation and Arabica Cherry grades" },
+      { label: "Origins", value: "Chikmagalur, Coorg (Karnataka) · Wayanad (Kerala)" },
+      { label: "Certifications", value: "EUDR documentation ready, Rainforest Alliance certified lots" },
+      { label: "MOQ", value: "1 FCL" },
+    ],
+    tag: { primary: "Arabica 2026", secondary: "New crop — sun-drying" },
+    image: IMAGES.coffeePlants,
+    lede:
+      "The Indian Arabica 2026 new crop is now in sun-drying at estates across Karnataka and Kerala. Plantation and Arabica Cherry grades will be available soon — UK, European and UAE buyers can register interest now.",
+    body: [
+      {
+        heading: "Where is the 2026 Arabica crop now?",
+        body: [
+          "Indian Arabica harvest runs from November through January across Karnataka (Chikmagalur, Coorg) and Kerala (Wayanad). The new-crop cherries are now drying — laid on raised beds or drying yards, where they will be ready for milling and grading in the coming weeks. Plantation grades (washed) are typically the first to clear milling; Arabica Cherry (natural) follows.",
+        ],
+      },
+      {
+        heading: "What grades will be available?",
+        body: [],
+        bullets: [
+          "Plantation A — washed, shade-grown, floral and mild citrus character",
+          "Plantation B — washed, consistent commercial Arabica",
+          "Arabica Cherry AB — natural sun-dried, heavier body, stone fruit and caramel",
+        ],
+      },
+      {
+        heading: "EUDR documentation for UK and European buyers",
+        body: [
+          "EUDR-compliant documentation — GPS geolocation data for each estate, satellite forest-cover evidence and Rainforest Alliance transaction certificates for certified lots — is being prepared alongside the crop. Buyers who pre-register now will have their documentation package ready at the point of offer, with no delays at EU port entry.",
+        ],
+      },
+      {
+        heading: "How to pre-register interest",
+        body: [
+          "Call +91 97464 33133, WhatsApp +91 79072 15816 or email info@versagrowthventures.in. Tell us your grade preference, quantity and destination port. We will send you a sample from the new-crop lot and a price quote as soon as availability is confirmed.",
+        ],
+      },
+    ],
+    keywords: [
+      "Indian Arabica new crop 2026",
+      "Arabica coffee available soon India",
+      "Karnataka Arabica 2026",
+      "Wayanad Arabica new crop",
+      "EUDR Arabica India 2026",
+    ],
+  },
+  {
     slug: "versa-traders-becomes-versa-international-traders",
     title: "Versa Traders becomes Versa International Traders, bridging international buyers and Indian suppliers",
     metaDescription:

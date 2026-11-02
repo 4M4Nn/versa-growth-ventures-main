@@ -101,10 +101,13 @@ export const TRADERS_EXTRA_PAGES: DivisionPage[] = [
     ],
     specs: [
       { label: "Species", value: "Coffea canephora (Robusta)" },
-      { label: "Processing", value: "Parchment (washed), Cherry (natural)" },
-      { label: "Grades", value: "AA, AB, PB, C — per contract" },
+      { label: "Processing", value: "Natural (sun-dried Cherry), Parchment (washed)" },
+      { label: "Natural grades (2026)", value: "AAA (Screen 19), AA (Screen 18), A (Screen 17), PB" },
+      { label: "Parchment grades", value: "AB, B — washed" },
+      { label: "Origin", value: "Coorg (Kodagu) / Chikmagalur, Karnataka" },
       { label: "Typical use", value: "Espresso blends, instant & soluble coffee" },
-      { label: "Packing", value: "60 kg jute bags; liners on request" },
+      { label: "Packing", value: "60 kg jute bags; GrainPro on request" },
+      { label: "MOQ", value: "1 FCL (≈ 19.2 MT)" },
     ],
     sections: [
       {
@@ -143,7 +146,7 @@ export const TRADERS_EXTRA_PAGES: DivisionPage[] = [
         answer: "Yes. Samples are provided before orders, drawn from the lot being offered.",
       },
     ],
-    related: ["green-coffee-beans", "arabica-green-coffee-beans", "samples-and-bulk-orders"],
+    related: ["robusta-aaa-natural-india-2026", "robusta-aa-natural-india-2026", "green-coffee-beans"],
   },
   {
     slug: "arabica-green-coffee-beans",
