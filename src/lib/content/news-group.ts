@@ -1,7 +1,5 @@
 import type { NewsItem } from "@/types"
 import { IMAGES } from "./site"
-import { ONION_IMAGES } from "./traders-onion"
-import { SOURCING_IMAGES } from "./traders-sourcing"
 
 const KAKKANAD = {
   src: "/images/kakkanad-infopark.jpg",
@@ -87,19 +85,19 @@ export const NEWS_GROUP: NewsItem[] = [
     manifest: [
       { label: "New name", value: "Versa International Traders" },
       { label: "Formerly", value: "Versa Traders" },
-      { label: "Role", value: "Bridging international buyers and Indian suppliers" },
-      { label: "Products", value: "Agro products, snacks, coconut, onions, coffee, spices" },
+      { label: "Role", value: "Green coffee beans and cardamom export" },
+      { label: "Primary products", value: "Green coffee beans (Arabica & Robusta), green cardamom" },
       { label: "Also provides", value: "Logistics and CHA via Versa Logistics" },
     ],
     tag: { primary: "New name", secondary: "Versa International Traders" },
-    image: SOURCING_IMAGES.snacks,
+    image: IMAGES.coffeeSack,
     lede:
-      "Versa Traders, the trading venture of Versa Growth Ventures, is now Versa International Traders — and now one of the group's main ventures, bridging the gap between international buyers and Indian suppliers.",
+      "Versa Traders, the trading venture of Versa Growth Ventures, is now Versa International Traders — focused on Indian green coffee beans and cardamom export to buyers in the UK, USA, UAE, Middle East and Europe.",
     body: [
       {
         heading: "What does Versa International Traders do?",
         body: [
-          "It connects buyers abroad with suppliers in India. Buyers send any requirement — agro products, snacks, coconut products such as desiccated coconut, onions, coffee beans, spices and more — and receive a quotation. Versa International Traders then follows the deal through samples, contract, quality checks, documents and shipment until it is done.",
+          "It exports Indian green coffee beans — Arabica and Robusta in all grades, EUDR compliant and Rainforest Alliance certified lots available — and green cardamom, to buyers in the UK, USA, UAE, Saudi Arabia, the wider Middle East and Europe. MOQ is 1 FCL. Every order is backed by a quality analysis report, phytosanitary certificate, certificate of origin and full export documentation.",
         ],
       },
       {
@@ -158,53 +156,6 @@ export const NEWS_GROUP: NewsItem[] = [
       },
     ],
     keywords: ["coffee beans to UAE", "coffee bean trading India", "Versa International Traders coffee", "160 MT coffee"],
-  },
-  {
-    slug: "versa-traders-adds-onion-export-and-trading",
-    title: "Versa International Traders adds onion export and trading from India to buyers worldwide",
-    metaDescription:
-      "Versa International Traders, Kochi, now trades and exports fresh Indian onions — Nashik red, Bangalore Rose, white and small onions — to importers in the Gulf, Asia, Africa and beyond.",
-    date: "2026-10-05",
-    dateLabel: "October 2026",
-    division: "traders",
-    kicker: "New product — Onions",
-    manifestTitle: UPDATE_SHEET,
-    manifest: [
-      { label: "Product", value: "Fresh onions" },
-      { label: "Varieties", value: "Nashik red, Bangalore Rose, white, small onion" },
-      { label: "Sizes", value: "25–65 mm+ (small onion 20–30 mm)" },
-      { label: "Markets", value: "Gulf, South & Southeast Asia, Africa, worldwide" },
-      { label: "Freight", value: "Reefer containers via Versa Logistics" },
-    ],
-    tag: { primary: "Onion export", secondary: "India → worldwide" },
-    image: ONION_IMAGES.redOnions,
-    lede:
-      "Versa International Traders, the commodity trading venture of Versa Growth Ventures, has added fresh onions to its range alongside green coffee, cardamom and black pepper, and now trades onions from India to buyers worldwide.",
-    body: [
-      {
-        heading: "Which onions does Versa International Traders supply?",
-        body: [],
-        bullets: [
-          "Nashik red onion from Maharashtra",
-          "Bangalore Rose onion from Karnataka",
-          "White onion",
-          "Small onion (shallot / sambar onion)",
-        ],
-      },
-      {
-        heading: "Where will the onions go?",
-        body: [
-          "To importers, wholesalers and distributors in the UAE and the wider Gulf, South and Southeast Asia, Africa and other markets — quoted FOB, CFR or CIF, with reefer container freight available through sister venture Versa Logistics.",
-        ],
-      },
-      {
-        heading: "How do buyers start?",
-        body: [
-          "Send the variety, size band, packing, quantity, destination port and shipment month to +91 97464 33133, WhatsApp +91 79072 15816 or the contact form. Samples and a size-grading report come before any order.",
-        ],
-      },
-    ],
-    keywords: ["onion exporter India", "Versa International Traders onions", "onion trading India", "Indian onion supplier"],
   },
   {
     slug: "versa-digital-seven-live-projects-erp-crm-ai-automation",

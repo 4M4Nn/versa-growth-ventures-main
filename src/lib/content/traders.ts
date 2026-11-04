@@ -1,8 +1,7 @@
 import type { DivisionPage, FAQ } from "@/types"
 import { IMAGES } from "./site"
 import { TRADERS_EXTRA_PAGES, TRADERS_EXTRA_SECTIONS } from "./traders-extra"
-import { ONION_IMAGES, TRADERS_ONION_PAGES } from "./traders-onion"
-import { NASHIK_EXTRA_SECTIONS, TRADERS_ONION_TRADING_PAGES } from "./traders-onion-trading"
+
 import { COFFEE_TRADE, COFFEE_TRADING_FAQS, TRADERS_COFFEE_PAGES } from "./traders-coffee"
 import { INTL_COFFEE_FAQS, TRADERS_COFFEE_INTL_PAGES } from "./traders-coffee-intl"
 import { TRADERS_SOURCING_PAGES } from "./traders-sourcing"
@@ -327,84 +326,7 @@ const TRADERS_CORE_PAGES: DivisionPage[] = [
         answer: "In a cool, dry and dark place, sealed from air and away from strong odours, so it keeps its colour and aroma.",
       },
     ],
-    related: ["black-pepper", "quality-certification", "samples-and-bulk-orders"],
-  },
-  {
-    slug: "black-pepper",
-    division: "traders",
-    navLabel: "Black Pepper",
-    h1: "Black pepper exporter from India: Malabar and Tellicherry grades, bulk supply",
-    metaTitle: "Black Pepper Exporter India — Malabar MG1 & Tellicherry TGEB in Bulk | Versa International Traders",
-    metaDescription:
-      "Export-quality whole black pepper from Kerala and the Western Ghats. MG1, 500 and 550 g/L, TGEB and TGSEB grades. Cleaned, graded and certified. Bulk quantities and samples from Versa International Traders.",
-    keywords: [
-      "black pepper exporter India",
-      "Malabar black pepper supplier",
-      "Tellicherry pepper TGEB",
-      "MG1 black pepper bulk",
-      "whole black pepper wholesale",
-      "black pepper export to UAE",
-      "Kerala pepper exporter",
-    ],
-    eyebrow: "Versa International Traders — Black Pepper",
-    lede:
-      "Kerala's Malabar Coast made pepper the most traded spice in history. We carry that trade forward with graded, cleaned, certified whole black pepper in bulk.",
-    image: IMAGES.pepperMacro,
-    summary:
-      "Versa International Traders exports whole black pepper from Kerala and India's Western Ghats in bulk — Malabar grades such as MG1 and density grades of 500–550 g/L, plus bold Tellicherry TGEB and TGSEB — cleaned, graded and certified.",
-    intro: [
-      "Indian black pepper is known for its pungency and aroma, a result of high piperine and essential-oil content. Malabar pepper and the larger, bolder Tellicherry pepper remain benchmarks in the global spice trade.",
-      "We supply whole black pepper to spice processors, grinders, packers and importers, cleaned and graded to the specification in your contract.",
-    ],
-    specs: [
-      { label: "Product", value: "Whole black pepper (Piper nigrum)" },
-      { label: "Origin", value: "Kerala & Western Ghats, India" },
-      { label: "Grades", value: "MG1, 500 g/L, 550 g/L, TGEB, TGSEB" },
-      { label: "Checked for", value: "Bulk density, moisture, light berries, extraneous matter" },
-      { label: "Processing", value: "Machine-cleaned; steam sterilised on request" },
-      { label: "Packing", value: "Jute or PP bags, per buyer" },
-    ],
-    sections: [
-      {
-        heading: "What black pepper grades are available?",
-        body: [
-          "Black pepper is graded by berry size and bulk density — the weight of one litre of berries. Higher density means more mature, heavier berries with fewer light or hollow ones.",
-        ],
-        bullets: [
-          "MG1 (Malabar Garbled Grade 1) — the classic Malabar export grade",
-          "500 g/L and 550 g/L — density grades for processors and grinders",
-          "TGEB (Tellicherry Garbled Extra Bold) — large berries of about 4.25 mm and above",
-          "TGSEB (Tellicherry Garbled Special Extra Bold) — the boldest berries, about 4.75 mm and above",
-        ],
-      },
-      {
-        heading: "How do you ensure clean, export-quality pepper?",
-        body: [
-          "Pepper is machine-cleaned to remove dust, stones, stems and light berries, then graded to size and density. Each lot is checked for moisture, bulk density, light berries and extraneous matter and documented in a quality report. For markets with microbiological or residue limits, we arrange steam sterilisation and independent laboratory testing.",
-        ],
-      },
-      {
-        heading: "Who buys black pepper from Versa International Traders?",
-        body: [
-          "Spice grinders and packers, food manufacturers, seasoning makers, wholesalers and importers — particularly in the GCC, where Indian pepper is a staple of household and restaurant cooking.",
-        ],
-      },
-    ],
-    faqs: [
-      {
-        question: "What is the difference between Malabar and Tellicherry pepper?",
-        answer: "Both come from India's Malabar Coast. Tellicherry grades are the largest, boldest berries selected from the crop, while Malabar grades such as MG1 describe the standard export size.",
-      },
-      {
-        question: "What does 550 g/L mean for pepper?",
-        answer: "It is the bulk density — one litre of the pepper weighs at least 550 grams. Higher density indicates heavier, more mature berries.",
-      },
-      {
-        question: "Do you supply white pepper or ground pepper?",
-        answer: "Our core export product is whole black pepper. Contact us for other forms and we will tell you what we can supply to specification.",
-      },
-    ],
-    related: ["cardamom", "quality-certification", "samples-and-bulk-orders"],
+    related: ["green-coffee-beans", "quality-certification", "samples-and-bulk-orders"],
   },
   {
     slug: "quality-certification",
@@ -564,31 +486,10 @@ const TRADERS_CORE_PAGES: DivisionPage[] = [
   },
 ]
 
-const withNashikExtras = (p: DivisionPage): DivisionPage =>
-  p.slug === "nashik-red-onion" ? { ...p, sections: [...p.sections, ...NASHIK_EXTRA_SECTIONS] } : p
-
-const ONION_PAGE_ORDER = ["onions", "nashik-red-onion", "big-onion-exporter", "onion-wholesale-trading-india", "onion-supplier-sri-lanka-malaysia", "onion-supplier-uae-gulf", "onion-trading-worldwide"]
-const ALL_ONION_PAGES = [...TRADERS_ONION_PAGES.map(withNashikExtras), ...TRADERS_ONION_TRADING_PAGES]
 
 export const TRADING_DESK = [
   {
-    kicker: "Desk 01 — Onion trading",
-    title: "Onion trading: Nashik and big onions, India to the world",
-    body: "Nashik red onions and big onions of 55 mm and above, plus Bangalore Rose, white and small onions — bought at India's onion markets, size-graded, mesh-bagged and shipped by the container to Asia, the Gulf and beyond.",
-    image: ONION_IMAGES.redOnions,
-    stats: [
-      { value: "55 mm+", label: "Big onion grade" },
-      { value: "Lasalgaon", label: "Nashik onion trading hub" },
-    ],
-    links: [
-      { label: "Nashik onion", href: "/traders/nashik-red-onion" },
-      { label: "Big onions", href: "/traders/big-onion-exporter" },
-      { label: "Onion wholesale trading", href: "/traders/onion-wholesale-trading-india" },
-    ],
-    cta: { label: "Get an onion price", href: "/contact?enquiry=onion" },
-  },
-  {
-    kicker: "Desk 02 — Coffee bean trading",
+    kicker: "Desk 01 — Coffee bean trading",
     title: `Coffee bean trading: ${COFFEE_TRADE.volume} recently traded to the ${COFFEE_TRADE.destination}`,
     body: "Unroasted Arabica and Robusta from India's coffee country, graded to contract and sampled first — traded to roasters and importers in the UAE and worldwide, FOB, CFR or CIF.",
     image: IMAGES.coffeeSack,
@@ -606,7 +507,6 @@ export const TRADING_DESK = [
 ]
 
 export const TRADERS_PAGES: DivisionPage[] = [
-  ...ONION_PAGE_ORDER.map((slug) => ALL_ONION_PAGES.find((p) => p.slug === slug)).filter((p): p is DivisionPage => Boolean(p)),
   ...TRADERS_COFFEE_PAGES,
   ...TRADERS_COFFEE_INTL_PAGES,
   ...TRADERS_ROBUSTA_2026_PAGES,

@@ -4,8 +4,7 @@ import { TRADERS_FAQS } from "./traders"
 import { FREIGHT_QUOTE_FAQS } from "./logistics-seo"
 import { DIGITAL_FAQS } from "./digital"
 import { PORT_TO_PORT_FAQS } from "./logistics-port"
-import { ONION_FAQS } from "./traders-onion"
-import { ONION_TRADING_FAQS } from "./traders-onion-trading"
+
 import { COFFEE_TRADING_FAQS } from "./traders-coffee"
 import { INTL_COFFEE_FAQS } from "./traders-coffee-intl"
 import { SOURCING_FAQS, SUPPLIER_FAQS } from "./traders-sourcing"
@@ -83,7 +82,7 @@ export const GROUP_FAQS: FAQ[] = [
   {
     question: "Can Versa International Traders source agro products beyond coffee and cardamom?",
     answer:
-      "Yes. In addition to its primary commodities — green coffee beans and green cardamom — Versa International Traders sources any agro commodity buyers require from its supplier network, including black pepper, desiccated coconut, banana chips, other Indian spices and grains. Send your product and quantity requirement and we will send a quotation.",
+      "Yes. In addition to its primary commodities — green coffee beans and green cardamom — Versa International Traders can source other agro commodities from its supplier network. Send your product and quantity requirement and we will send a quotation.",
   },
   {
     question: "Does Versa Growth Ventures handle both the product and the freight for an export order?",
@@ -130,7 +129,7 @@ export const TRADE_TERMS_FAQS: FAQ[] = [
   {
     question: "What is a phytosanitary certificate?",
     answer:
-      "A phytosanitary certificate is issued by the Plant Quarantine Department of India and confirms that an agricultural export consignment has been inspected and is free of pests and diseases. It is compulsory for exporting spices, coffee, onions and other agro commodities from India.",
+      "A phytosanitary certificate is issued by the Plant Quarantine Department of India and confirms that an agricultural export consignment has been inspected and is free of pests and diseases. It is compulsory for exporting coffee, spices and other agro commodities from India.",
   },
   {
     question: "What is a fumigation certificate?",
@@ -162,17 +161,12 @@ export const FAQ_GROUPS: FAQGroup[] = [
   {
     id: "traders",
     title: "Versa International Traders — coffee beans, cardamom & spices",
-    items: TRADERS_FAQS.filter((f) => ![...ONION_FAQS, ...ONION_TRADING_FAQS, ...COFFEE_TRADING_FAQS, ...SOURCING_FAQS, ...INTL_COFFEE_FAQS].some((o) => o.question === f.question)),
+    items: TRADERS_FAQS.filter((f) => ![...COFFEE_TRADING_FAQS, ...SOURCING_FAQS, ...INTL_COFFEE_FAQS].some((o) => o.question === f.question)),
   },
   {
     id: "international-traders",
     title: "Versa International Traders — sourcing, quotations, logistics & CHA",
     items: [...SOURCING_FAQS, ...SUPPLIER_FAQS],
-  },
-  {
-    id: "onions",
-    title: "Onion trading & export — Nashik and big onions",
-    items: [...ONION_FAQS, ...ONION_TRADING_FAQS],
   },
   {
     id: "coffee-trading",
