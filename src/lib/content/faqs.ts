@@ -148,6 +148,100 @@ export const TRADE_TERMS_FAQS: FAQ[] = [
   },
 ]
 
+export const DIGITAL_GEO_FAQS: FAQ[] = [
+  {
+    question: "What is GEO (Generative Engine Optimization)?",
+    answer:
+      "GEO (Generative Engine Optimization) is the practice of structuring website content so that AI tools — Google AI Overviews, ChatGPT, Perplexity, Gemini and Microsoft Copilot — cite your business in their generated answers. It goes beyond traditional SEO (ranking on a results page) and AEO (winning featured snippets) to target the AI-generated answers that now appear above all other results for most informational queries.",
+  },
+  {
+    question: "What is the difference between SEO, AEO and GEO?",
+    answer:
+      "SEO wins you a ranked position on Google's traditional blue-link results page. AEO wins you the featured snippet or 'People also ask' box — zero-position answers pulled directly from your content. GEO wins you a citation in AI-generated conversational answers from ChatGPT, Perplexity, Google AI Overviews and similar tools. In 2026, all three disciplines are needed for maximum organic visibility.",
+  },
+  {
+    question: "How much does custom ERP development cost in India in 2026?",
+    answer:
+      "Custom ERP development in India typically costs ₹5–10 lakh for a focused single-module system (inventory, billing or HR) and ₹25–60 lakh+ for a full multi-module ERP. The cost depends on number of modules, business logic complexity, integrations required (Tally, payment gateways, shipping APIs) and whether a mobile companion app is included. Versa Digital & IT Solutions scopes and prices projects on a fixed-cost basis — contact +91 97464 33133 for a scoping call.",
+  },
+  {
+    question: "What is an AI agent and how is it different from a chatbot?",
+    answer:
+      "A chatbot answers questions in a conversation window. An AI agent uses a large language model (LLM) as a reasoning engine and can take actions — reading and writing files, calling APIs, sending emails, updating databases, filling forms — to complete multi-step tasks autonomously. For example, an AI agent can read an incoming enquiry email, look up product data, draft a quote, log it in the CRM and send it, all without human intervention.",
+  },
+  {
+    question: "How quickly does AEO show results for an Indian business?",
+    answer:
+      "Well-structured AEO content on a site Google already crawls can win a featured snippet or AI Overview citation within 4–8 weeks of publishing — faster than traditional SEO, which typically takes 3–9 months for competitive keywords. Versa Digital & IT Solutions focuses on answer-first content architecture to accelerate this timeline for clients.",
+  },
+  {
+    question: "Does Versa Digital & IT Solutions do GEO and AEO for clients?",
+    answer:
+      "Yes. Versa Digital & IT Solutions provides SEO, AEO (Answer Engine Optimization) and GEO (Generative Engine Optimization) as part of its digital marketing service. The team builds answer-first content architectures, implements structured data (FAQ, HowTo, Article schema) and tracks AI Overview and featured snippet wins alongside traditional rank tracking. Contact +91 97464 33133.",
+  },
+]
+
+export const LOGISTICS_GLOBAL_FAQS: FAQ[] = [
+  {
+    question: "How long does sea freight from India to the UK take?",
+    answer:
+      "Sea freight from Kochi (Cochin) to Felixstowe or Tilbury takes approximately 24–28 days via Port Klang or Colombo transshipment. From Nhava Sheva (Mumbai) to Felixstowe it is 20–24 days. All times are for FCL (full container load) sailings; LCL (groupage) adds 2–5 days for consolidation and deconsolidation.",
+  },
+  {
+    question: "What is a CHA (Customs House Agent) and do I need one to export from India?",
+    answer:
+      "A CHA (Customs House Agent) is a CBIC-licensed agent who files your shipping bill in ICEGATE (India's customs IT portal) and coordinates Let Export Order (LEO) from customs to allow loading. While not legally mandatory, almost all commercial exporters use a CHA because customs procedures are complex, involve strict deadlines and carry penalties for incorrect filings. Versa Logistics provides CHA services as part of its export freight offering.",
+  },
+  {
+    question: "What is the difference between LCL and FCL sea freight from India?",
+    answer:
+      "LCL (Less than Container Load): your cargo shares a container with other shippers' goods; you pay per CBM. FCL (Full Container Load): you book the entire container for a flat rate. FCL is cheaper per kilo and faster above 10–12 CBM of cargo. For coffee beans, spices and dense agro commodities, FCL is almost always the right choice — a standard 20ft container holds approximately 19.2 MT of coffee beans (320 × 60 kg bags).",
+  },
+  {
+    question: "What documents do I need to export agro commodities from India to Europe or the UK?",
+    answer:
+      "For agro commodity exports (coffee, spices, grains) from India to the UK or EU: IEC (Import Export Code), commercial invoice, packing list, bill of lading, certificate of origin, shipping bill, phytosanitary certificate from the Plant Quarantine Department, and — for commodities covered by the EU/UK EUDR legislation — a due-diligence statement with GPS geolocation data for the production land. Versa Logistics and Versa International Traders supply the full document pack.",
+  },
+  {
+    question: "Can first-time exporters use Versa Logistics?",
+    answer:
+      "Yes. Versa Logistics regularly works with first-time exporters — handling CHA filing, phytosanitary coordination, freight booking and documentation from start to finish. First-time exporters need an IEC (Import Export Code from DGFT) and a confirmed order from their buyer; Versa Logistics handles the rest. Call +91 97464 33133 or use the freight quote form.",
+  },
+  {
+    question: "Does Versa Logistics ship from ports other than Kochi?",
+    answer:
+      "Yes. While Kochi (ICTT Vallarpadam and Cochin Port) is the primary gateway, Versa Logistics also ships from Nhava Sheva (Mumbai), Chennai, Mangalore and Tuticorin depending on the cargo origin and routing. For Karnataka-origin coffee, Mangalore or Nhava Sheva is sometimes more efficient; for South Kerala cardamom, Kochi is typically the best option.",
+  },
+]
+
+export const BPO_GLOBAL_FAQS: FAQ[] = [
+  {
+    question: "What BPO services does Versa BPO offer?",
+    answer:
+      "Versa BPO provides back-office outsourcing and customer support services from Kochi: customer support (voice, email, chat), data entry and processing, invoice and accounts payable processing, HR administration, sales support and CRM data management. Services are available on a per-agent or managed-team basis. Contact +91 97464 33133 or info@versagrowthventures.in.",
+  },
+  {
+    question: "How much does BPO outsourcing cost per agent in India in 2026?",
+    answer:
+      "BPO cost in India ranges from ₹25,000–40,000 per month for data entry and basic back-office agents, ₹35,000–55,000 for English customer support agents, and ₹50,000–80,000 for skilled finance or HR specialists. These rates are 60–80% lower than hiring equivalent staff in the UK, USA or UAE, and typically include infrastructure, supervision and quality assurance.",
+  },
+  {
+    question: "What countries does Versa Global help students go to?",
+    answer:
+      "Versa Global, the study-abroad venture of Versa Growth Ventures, advises on university selection, application and visa process for the UK, Ireland, Canada, Germany and Australia — the five most popular study-abroad destinations for Indian students. Each country has its own intake timelines, visa requirements and post-study work rights. Consult Versa Global for destination-specific guidance at +91 97464 33133.",
+  },
+  {
+    question: "Can Indian students work after graduating from a UK university?",
+    answer:
+      "Yes. The UK Graduate Route visa allows international students who complete an eligible UK degree to remain and work in the UK for 2 years (3 years for PhD graduates) without a job offer or sponsor. There is no minimum salary requirement and no restriction on sector or hours. Applications are made from inside the UK before the Student visa expires.",
+  },
+  {
+    question: "What financial services does Versa Financial provide?",
+    answer:
+      "Versa Financial offers portfolio management, equity and F&O trading support, insurance (life and general), SIP and mutual fund investment planning, and financial advisory. The venture is based in Kochi and serves individual and business clients across Kerala. Contact Versa Growth Ventures at +91 97464 33133 for a consultation.",
+  },
+]
+
 export const FAQ_GROUPS: FAQGroup[] = [
   { id: "group", title: "About the group", items: GROUP_FAQS },
   { id: "digital", title: "Versa Digital & IT Solutions — SEO, AEO, ERP & AI", items: DIGITAL_FAQS },
@@ -179,4 +273,7 @@ export const FAQ_GROUPS: FAQGroup[] = [
     items: INTL_COFFEE_FAQS,
   },
   { id: "trade-terms", title: "Documents, payments & trade terms", items: TRADE_TERMS_FAQS },
+  { id: "digital-geo-aeo", title: "GEO, AEO, AI agents & ERP — Versa Digital", items: DIGITAL_GEO_FAQS },
+  { id: "logistics-global", title: "Sea freight — UK, Europe & first-time exporters", items: LOGISTICS_GLOBAL_FAQS },
+  { id: "bpo-global-financial", title: "Versa BPO, Versa Global & Versa Financial", items: BPO_GLOBAL_FAQS },
 ]

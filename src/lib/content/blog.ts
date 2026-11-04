@@ -4,12 +4,12 @@ import { BLOG_EXTRA_POSTS } from "./blog-extra"
 import { BLOG_LOGISTICS_POSTS } from "./blog-logistics"
 import { BLOG_DIGITAL_POSTS } from "./blog-digital"
 import { BLOG_PORT_POSTS } from "./blog-port"
-import { BLOG_ONION_POSTS } from "./blog-onion"
 import { BLOG_TRADING_POSTS } from "./blog-trading"
 import { BLOG_OCT_POSTS } from "./blog-oct"
 import { BLOG_NOV_POSTS } from "./blog-nov"
 import { BLOG_COFFEE_MARKETS_POSTS } from "./blog-coffee-markets"
 import { BLOG_COFFEE_NOV2_POSTS } from "./blog-coffee-nov2"
+import { BLOG_SEO_NOV4_POSTS } from "./blog-seo-nov4"
 
 const BLOG_CORE_POSTS: BlogPost[] = [
   {
@@ -682,4 +682,4 @@ const BLOG_CORE_POSTS: BlogPost[] = [
   },
 ]
 
-export const BLOG_POSTS: BlogPost[] = [...BLOG_COFFEE_NOV2_POSTS, ...BLOG_COFFEE_MARKETS_POSTS, ...BLOG_NOV_POSTS, ...BLOG_OCT_POSTS, ...BLOG_TRADING_POSTS, ...BLOG_ONION_POSTS, ...BLOG_DIGITAL_POSTS, ...BLOG_PORT_POSTS, ...BLOG_CORE_POSTS, ...BLOG_EXTRA_POSTS, ...BLOG_LOGISTICS_POSTS]
+export const BLOG_POSTS: BlogPost[] = [...BLOG_SEO_NOV4_POSTS, ...BLOG_COFFEE_NOV2_POSTS, ...BLOG_COFFEE_MARKETS_POSTS, ...BLOG_NOV_POSTS, ...BLOG_OCT_POSTS, ...BLOG_TRADING_POSTS, ...BLOG_DIGITAL_POSTS, ...BLOG_PORT_POSTS, ...BLOG_CORE_POSTS, ...BLOG_EXTRA_POSTS, ...BLOG_LOGISTICS_POSTS]
