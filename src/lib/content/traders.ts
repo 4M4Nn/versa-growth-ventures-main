@@ -4,6 +4,7 @@ import { TRADERS_EXTRA_PAGES, TRADERS_EXTRA_SECTIONS } from "./traders-extra"
 
 import { COFFEE_TRADE, COFFEE_TRADING_FAQS, TRADERS_COFFEE_PAGES } from "./traders-coffee"
 import { INTL_COFFEE_FAQS, TRADERS_COFFEE_INTL_PAGES } from "./traders-coffee-intl"
+import { TRADERS_ARABICA_2026_PAGES } from "./traders-arabica-2026"
 import { TRADERS_SOURCING_PAGES } from "./traders-sourcing"
 import { TRADERS_ROBUSTA_2026_PAGES } from "./traders-robusta-2026"
 
@@ -509,6 +510,7 @@ export const TRADING_DESK = [
 export const TRADERS_PAGES: DivisionPage[] = [
   ...TRADERS_COFFEE_PAGES,
   ...TRADERS_COFFEE_INTL_PAGES,
+  ...TRADERS_ARABICA_2026_PAGES,
   ...TRADERS_ROBUSTA_2026_PAGES,
   ...TRADERS_SOURCING_PAGES,
   ...TRADERS_CORE_PAGES.map((p) => (TRADERS_EXTRA_SECTIONS[p.slug] ? { ...p, sections: [...p.sections, TRADERS_EXTRA_SECTIONS[p.slug]] } : p)),

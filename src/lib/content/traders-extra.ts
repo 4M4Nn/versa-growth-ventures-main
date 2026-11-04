@@ -9,7 +9,7 @@ export const TRADERS_EXTRA_PAGES: DivisionPage[] = [
     h1: "Spice and coffee sourcing agent in India: we find, inspect and ship on your behalf",
     metaTitle: "Spice & Coffee Sourcing Agent India — Buying Agent for Importers | Versa International Traders",
     metaDescription:
-      "Versa International Traders acts as a sourcing and buying agent for importers of Indian cardamom, black pepper, green coffee and other spices: supplier search, sampling, inspection, negotiation and shipment coordination from Kochi.",
+      "Versa International Traders acts as a sourcing and buying agent for importers of Indian green coffee beans and cardamom: supplier search, sampling, inspection, negotiation and shipment coordination from Kochi.",
     keywords: [
       "spice sourcing agent India",
       "buying agent spices Kerala",
@@ -214,122 +214,7 @@ export const TRADERS_EXTRA_PAGES: DivisionPage[] = [
         answer: "Moisture is agreed in the contract, commonly at or below 12.5%, and confirmed in the quality report.",
       },
     ],
-    related: ["green-coffee-beans", "robusta-green-coffee-beans", "quality-certification"],
-  },
-  {
-    slug: "tellicherry-black-pepper",
-    division: "traders",
-    navLabel: "Tellicherry Black Pepper",
-    h1: "Tellicherry black pepper, TGEB and TGSEB: the boldest grades of Indian black pepper, in bulk",
-    metaTitle: "Tellicherry Black Pepper TGEB & TGSEB Exporter India — Bulk Supply | Versa International Traders",
-    metaDescription:
-      "Export-quality Tellicherry black pepper from Kerala: TGEB (4.25 mm+) and TGSEB (4.75 mm+) bold grades. Cleaned, graded, certified; samples and bulk quantities from Versa International Traders.",
-    keywords: [
-      "Tellicherry black pepper exporter",
-      "TGEB pepper bulk",
-      "TGSEB black pepper",
-      "Tellicherry Garbled Extra Bold",
-      "bold black pepper India",
-      "premium black pepper supplier",
-    ],
-    eyebrow: "Versa International Traders — Tellicherry Pepper",
-    lede:
-      "Tellicherry is where the world's spice trade once weighed its finest pepper. Today the name still marks the largest, most aromatic berries of the Malabar crop.",
-    image: IMAGES.pepperMacro,
-    summary:
-      "Versa International Traders exports Tellicherry black pepper — TGEB (Tellicherry Garbled Extra Bold, about 4.25 mm and above) and TGSEB (Special Extra Bold, about 4.75 mm and above) — cleaned, graded and certified, in bulk with samples on request.",
-    intro: [
-      "Tellicherry grades are selected by size from the Malabar pepper crop of Kerala's Western Ghats. Bigger berries are more mature, with more complex aroma and fruit notes — which is why chefs, premium retail packers and gourmet spice brands specify them.",
-    ],
-    specs: [
-      { label: "TGEB", value: "≈ 4.25 mm and above" },
-      { label: "TGSEB", value: "≈ 4.75 mm and above" },
-      { label: "Origin", value: "Malabar Coast, Kerala" },
-      { label: "Buyers", value: "Premium retail, gourmet & food service" },
-      { label: "Options", value: "Steam sterilised on request" },
-    ],
-    sections: [
-      {
-        heading: "What is the difference between TGEB and TGSEB?",
-        body: [
-          "Both are Tellicherry garbled grades selected by sieve size. TGEB (Extra Bold) retains berries of about 4.25 mm and above; TGSEB (Special Extra Bold) retains only the boldest berries of about 4.75 mm and above, and is priced higher accordingly.",
-        ],
-      },
-      {
-        heading: "Why is Tellicherry pepper more expensive?",
-        body: [
-          "Only a small share of each harvest meets Tellicherry size standards, and bold berries carry more aroma. Premium retail brands pay for that consistency and visual appeal in grinders and gift packs.",
-        ],
-      },
-    ],
-    faqs: [
-      {
-        question: "Is Tellicherry pepper different from Malabar pepper?",
-        answer: "It is the boldest size selection from the same Malabar crop. Malabar grades like MG1 describe the standard export size.",
-      },
-      {
-        question: "Can you pack Tellicherry pepper for retail?",
-        answer: "We supply bulk; private-label and retail-ready packing can be discussed for regular volume buyers.",
-      },
-    ],
-    related: ["black-pepper", "malabar-black-pepper-mg1", "packaging-and-private-label"],
-  },
-  {
-    slug: "malabar-black-pepper-mg1",
-    division: "traders",
-    navLabel: "Malabar Black Pepper MG1",
-    h1: "Malabar black pepper MG1 and density grades: 500 g/L and 550 g/L whole black pepper for processors",
-    metaTitle: "Malabar Black Pepper MG1, 500 & 550 g/L Bulk Exporter India | Versa International Traders",
-    metaDescription:
-      "Bulk Malabar black pepper for grinders and food processors: MG1 (Malabar Garbled Grade 1) and density grades 500 g/L and 550 g/L. Cleaned, graded, certified — samples from Versa International Traders.",
-    keywords: [
-      "Malabar black pepper MG1",
-      "MG1 pepper exporter",
-      "550 GL black pepper bulk",
-      "500 GL black pepper",
-      "black pepper for grinding bulk",
-      "Kerala black pepper wholesale",
-    ],
-    eyebrow: "Versa International Traders — Malabar Pepper",
-    lede:
-      "MG1 is the grade the world's spice grinders built their recipes on: consistent, pungent and reliable in yield.",
-    image: IMAGES.pepperWhole,
-    summary:
-      "Versa International Traders supplies Malabar black pepper in bulk — MG1 (Malabar Garbled Grade 1) and bulk-density grades of 500 g/L and 550 g/L — cleaned and graded for spice grinders, seasoning makers and food processors, with samples and certification.",
-    intro: [
-      "Processors buy pepper for flavour and yield. Malabar MG1 and density-graded pepper give them both: good pungency from Indian pepper's high piperine content, and predictable grinding yield from a stated minimum bulk density.",
-    ],
-    specs: [
-      { label: "Grades", value: "MG1, 500 g/L, 550 g/L" },
-      { label: "Checked for", value: "Density, moisture, light berries, extraneous matter" },
-      { label: "Buyers", value: "Grinders, seasoning & food manufacturers" },
-      { label: "Packing", value: "Jute or PP bags, per buyer" },
-    ],
-    sections: [
-      {
-        heading: "What does MG1 stand for?",
-        body: [
-          "MG1 means Malabar Garbled Grade 1 — cleaned ('garbled') black pepper of the standard Malabar export size and quality, the traditional benchmark for Indian pepper in world trade.",
-        ],
-      },
-      {
-        heading: "Should a grinder buy MG1 or a density grade?",
-        body: [
-          "If your recipe or customer specifies MG1, buy MG1. If you buy purely for grinding yield and flavour, density grades such as 550 g/L let you specify exactly the maturity you need, often at better value than size-selected grades.",
-        ],
-      },
-    ],
-    faqs: [
-      {
-        question: "What is the minimum density of 550 g/L pepper?",
-        answer: "It means one litre of the pepper weighs at least 550 grams, indicating mature, heavy berries with few light ones.",
-      },
-      {
-        question: "Can you steam-sterilise MG1 pepper?",
-        answer: "Yes, steam sterilisation can be arranged for markets with microbiological limits.",
-      },
-    ],
-    related: ["black-pepper", "tellicherry-black-pepper", "quality-certification"],
+    related: ["arabica-plantation-specialty-india", "arabica-plantation-ab-india", "green-coffee-beans"],
   },
   {
     slug: "packaging-and-private-label",
@@ -338,7 +223,7 @@ export const TRADERS_EXTRA_PAGES: DivisionPage[] = [
     h1: "Export packaging and private label for coffee and spices: jute, PP, liners, cartons and your brand",
     metaTitle: "Coffee & Spice Export Packaging, Private Label Options | Versa International Traders",
     metaDescription:
-      "Export packaging for green coffee, cardamom and black pepper: 60 kg jute, PP bags, hermetic liners, cartons and private-label options for regular buyers. Versa International Traders, India.",
+      "Export packaging for green coffee beans and cardamom: 60 kg jute bags, hermetic GrainPro liners, poly-lined cartons and private-label options for regular buyers. Versa International Traders, India.",
     keywords: [
       "spice export packaging",
       "green coffee jute bags",
@@ -352,13 +237,12 @@ export const TRADERS_EXTRA_PAGES: DivisionPage[] = [
       "Good product deserves packing that protects it across an ocean — and, for regular buyers, packing that carries their own name.",
     image: IMAGES.coffeeSack,
     summary:
-      "Versa International Traders offers export packaging for green coffee, cardamom and black pepper — 60 kg jute, PP bags, hermetic liners and cartons — and private-label packing options for regular volume buyers.",
+      "Versa International Traders offers export packaging for green coffee beans and cardamom — 60 kg jute, GrainPro hermetic liners and poly-lined cartons — and private-label packing options for regular volume buyers.",
     intro: [
       "Packaging is part of quality. The right bag keeps moisture, pests and odours out; the right marking keeps customs and warehouses moving; and the right presentation helps your product sell when it arrives.",
     ],
     specs: [
       { label: "Coffee", value: "60 kg jute; hermetic liners on request" },
-      { label: "Pepper", value: "Jute or PP bags" },
       { label: "Cardamom", value: "Poly-lined bags or cartons" },
       { label: "Marking", value: "Lot, grade, weight, origin, buyer marks" },
     ],
@@ -369,7 +253,6 @@ export const TRADERS_EXTRA_PAGES: DivisionPage[] = [
         bullets: [
           "60 kg jute bags — the international standard for green coffee",
           "Hermetic liners inside jute for longer freshness of green coffee",
-          "Food-grade PP bags for black pepper and other whole spices",
           "Poly-lined bags or cartons for cardamom, protecting colour and aroma",
           "Custom bag marking with lot numbers, grades and your shipping marks",
         ],
@@ -397,31 +280,31 @@ export const TRADERS_EXTRA_PAGES: DivisionPage[] = [
     slug: "coffee-and-spice-supplier-uae",
     division: "traders",
     navLabel: "Supplier for UAE & GCC",
-    h1: "Coffee and spice supplier for the UAE and GCC: green coffee, cardamom and black pepper delivered to Dubai and Sharjah",
-    metaTitle: "Coffee & Spice Supplier UAE — Cardamom, Black Pepper, Green Coffee to Dubai | Versa International Traders",
+    h1: "Coffee and cardamom supplier for the UAE and GCC: green coffee beans and cardamom delivered to Dubai and Sharjah",
+    metaTitle: "Coffee & Cardamom Supplier UAE — Green Coffee Beans & Cardamom to Dubai | Versa International Traders",
     metaDescription:
-      "Indian coffee and spice supplier for UAE and GCC importers: green coffee beans, cardamom and black pepper delivered CIF Jebel Ali or Khorfakkan. Samples, certification and in-house freight.",
+      "Indian coffee and cardamom supplier for UAE and GCC importers: green coffee beans (Arabica & Robusta) and cardamom delivered CIF Jebel Ali or Khorfakkan. Samples, certification and in-house freight.",
     keywords: [
-      "spice supplier UAE",
+      "coffee supplier UAE",
       "cardamom supplier Dubai",
-      "black pepper supplier Dubai",
       "green coffee supplier UAE",
-      "Indian spices importer Dubai",
+      "Indian coffee importer Dubai",
       "coffee beans supplier Sharjah",
-      "spices wholesale GCC",
+      "cardamom wholesale GCC",
+      "Indian Arabica Robusta UAE",
     ],
     eyebrow: "Versa International Traders — UAE & GCC",
     lede:
-      "The Gulf is one of the world's great cardamom, pepper and coffee markets. We supply it from Kerala — with the freight handled by our own logistics venture.",
+      "The Gulf is one of the world's great cardamom and coffee markets. We supply it from Kerala — with the freight handled by our own logistics venture.",
     image: IMAGES.jebelAli,
     summary:
-      "Versa International Traders supplies UAE and GCC importers, wholesalers and roasters with Indian green coffee beans, green cardamom and black pepper, delivered CFR/CIF Jebel Ali or Khorfakkan with Versa Logistics, backed by samples, quality reports and export certification.",
+      "Versa International Traders supplies UAE and GCC importers, wholesalers and roasters with Indian green coffee beans (Arabica and Robusta) and green cardamom, delivered CFR/CIF Jebel Ali or Khorfakkan with Versa Logistics, backed by samples, quality reports and export certification.",
     intro: [
-      "Cardamom flavours Arabic coffee; black pepper is a staple of Gulf kitchens; and the UAE's roasting and café scene keeps growing. For GCC importers, India is the natural source: close by sea, familiar in trade, and producing the grades the region prefers.",
+      "Cardamom flavours gahwa (Arabic coffee) and Gulf sweets; Indian Robusta and Arabica feed the UAE's fast-growing roasting and café scene. For GCC importers, India is the natural source: close by sea, familiar in trade, and producing the grades the region prefers.",
       "Our group has already delivered 17 × 40ft containers of coffee beans into Jebel Ali and Khorfakkan.",
     ],
     specs: [
-      { label: "Products", value: "Green coffee, cardamom, black pepper" },
+      { label: "Products", value: "Green coffee beans (Arabica & Robusta), cardamom" },
       { label: "Delivery", value: "CFR/CIF Jebel Ali or Khorfakkan" },
       { label: "Freight", value: "In-house via Versa Logistics" },
       { label: "Documents", value: "COO (incl. CEPA), phytosanitary, quality report" },
@@ -432,7 +315,7 @@ export const TRADERS_EXTRA_PAGES: DivisionPage[] = [
         body: [],
         bullets: [
           "Samples from the actual lot before you commit",
-          "Grades the Gulf market prefers — bold green cardamom, MG1 and Tellicherry pepper, Robusta and Arabica",
+          "Grades the Gulf market prefers — bold green cardamom (AGEB, AGB), Indian Robusta (AAA, AA) and Arabica",
           "Delivered pricing to Jebel Ali or Khorfakkan through our own logistics venture",
           "Preferential certificate of origin under India–UAE CEPA where the product qualifies",
         ],
@@ -454,7 +337,7 @@ export const TRADERS_EXTRA_PAGES: DivisionPage[] = [
         answer: "Yes. Cargo can be landed at Khorfakkan (Sharjah) or Jebel Ali and delivered onward by the consignee's clearing agent.",
       },
     ],
-    related: ["cardamom", "black-pepper", "green-coffee-beans"],
+    related: ["cardamom", "green-coffee-beans", "coffee-beans-supplier-uae-dubai"],
   },
 ]
 
@@ -469,15 +352,6 @@ export const TRADERS_EXTRA_SECTIONS: Record<string, { heading: string; body: str
     heading: "Why is green cardamom so important in the Gulf?",
     body: [
       "Cardamom is central to Gulf hospitality: it flavours gahwa (Arabic coffee), sweets, rice and meat dishes. Gulf buyers are among the most demanding on colour and size, which is why bold, deep-green pods of 7 mm and above are the most sought-after export grades.",
-    ],
-  },
-  "black-pepper": {
-    heading: "Which black pepper grade suits your business?",
-    body: [],
-    bullets: [
-      "Premium retail and gourmet brands — Tellicherry TGEB or TGSEB",
-      "Grinders and seasoning makers — MG1 or 550 g/L density grades",
-      "Value blends and industrial use — 500 g/L density grades",
     ],
   },
   "quality-certification": {
