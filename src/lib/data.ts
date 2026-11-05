@@ -13,7 +13,6 @@ export * from "./content/services"
 export * from "./content/digital"
 export * from "./content/logistics-seo"
 export * from "./content/logistics-port"
-export { ONION_FAQS, ONION_IMAGES } from "./content/traders-onion"
-export { ONION_TRADING_FAQS } from "./content/traders-onion-trading"
+
 export { COFFEE_TRADE, COFFEE_TRADING_FAQS } from "./content/traders-coffee"
 export { INTERNATIONAL, SOURCING_FAQS, SOURCING_IMAGES } from "./content/traders-sourcing"

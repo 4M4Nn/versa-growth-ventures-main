@@ -27,7 +27,6 @@ export const INTERNATIONAL = {
   body: "Tell us what you need from India. We find it in our supplier network, send you a quotation, and stay with the deal until the goods are delivered — with logistics and CHA (customs clearance) provided by our own group if you need them.",
   categoriesH2: "What can you source from India through Versa International Traders?",
   categories: [
-    { title: "Onions & fresh produce", body: "Nashik red and big onions, small onions and other fresh agro produce.", href: "/traders/onions" },
     { title: "Coffee beans", body: "Unroasted Arabica and Robusta — 160 MT recently traded to the UAE.", href: "/traders/coffee-bean-trading" },
     { title: "Spices", body: "Green cardamom, black pepper and other whole spices.", href: "/traders/cardamom" },
     { title: "Coconut products", body: "Desiccated and grated coconut, coconut oil, copra and more.", href: "/traders/coconut-products-export" },
@@ -67,7 +66,7 @@ export const SOURCING_FAQS: FAQ[] = [
   {
     question: "Can I source any product from India through Versa International Traders?",
     answer:
-      "Send us your requirement. Our supplier network covers agro products, onions and fresh produce, coffee, spices, coconut products such as desiccated coconut, snacks and packaged foods, and more. We confirm whether we can meet the specification and send a quotation.",
+      "Send us your requirement. Our supplier network covers coffee, spices, coconut products such as desiccated coconut, snacks and packaged foods, and other agro commodities. We confirm whether we can meet the specification and send a quotation.",
   },
   {
     question: "How do I get a quotation from Versa International Traders?",
@@ -219,7 +218,7 @@ export const TRADERS_SOURCING_PAGES: DivisionPage[] = [
         heading: "Which products can we source for you?",
         body: ["Our supplier network includes, for example:"],
         bullets: [
-          "Agro products — onions, fresh produce, pulses, grains and more",
+          "Agro products — pulses, grains, fresh produce and more",
           "Coffee beans — unroasted Arabica and Robusta",
           "Spices — cardamom, black pepper and other whole spices",
           "Coconut products — desiccated and grated coconut, coconut oil, copra",

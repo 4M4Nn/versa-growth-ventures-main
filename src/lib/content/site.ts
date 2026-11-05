@@ -587,7 +587,6 @@ export const ENQUIRY_TYPES = [
   { value: "sourcing", label: "Quotation — source any product from India (Versa International Traders)" },
   { value: "supplier", label: "Supplier — export my products regularly (Versa International Traders)" },
   { value: "pepper", label: "Bulk order — Black pepper" },
-  { value: "onion", label: "Bulk order — Onions (export & trading)" },
   { value: "digital", label: "IT, ERP, AI agents or marketing — Versa Digital & IT Solutions" },
   { value: "bpo", label: "Outsourcing — Versa BPO" },
   { value: "financial", label: "Portfolio, trading, insurance or SIP — Versa Financial" },
