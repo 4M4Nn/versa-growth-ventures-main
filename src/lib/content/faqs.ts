@@ -214,6 +214,34 @@ export const LOGISTICS_GLOBAL_FAQS: FAQ[] = [
   },
 ]
 
+export const BPO_INTL_FAQS: FAQ[] = [
+  {
+    question: "Can businesses outside India use Versa BPO's services?",
+    answer:
+      "Yes. Versa BPO serves international clients including businesses in the UAE, USA, Canada, UK and Australia. Services are delivered remotely — the agent team works from Kochi and accesses client systems over secure internet connections. Engagements typically start with a 4–6 week pilot on a defined process.",
+  },
+  {
+    question: "What is the time zone for BPO services — do agents cover UAE or US hours?",
+    answer:
+      "India Standard Time (IST, UTC +5:30) overlaps naturally with UAE business hours by 5–6 hours (IST is 1.5 hours ahead of UAE time). For US clients, agents work an afternoon/evening shift (12pm–9pm IST) to cover US Eastern morning hours, or process overnight queues for the US team to find completed at start of day. Versa BPO structures shift schedules to match the client's core operating hours.",
+  },
+  {
+    question: "How much does BPO outsourcing cost for a UAE or US business?",
+    answer:
+      "A fully managed English-speaking BPO agent in India costs approximately USD 400–750 per month — covering agent salary, infrastructure, supervision and QA. This compares to USD 2,500–5,000 for a US-based equivalent or AED 5,000–9,000 for a UAE-based equivalent. A 5-agent team typically costs USD 2,000–3,500 per month from India versus USD 12,500–25,000 from the US.",
+  },
+  {
+    question: "What is the minimum engagement for international clients at Versa BPO?",
+    answer:
+      "The minimum is 1 full-time equivalent (FTE) agent on a defined process, with a recommended 4–6 week pilot period. No long-term minimum commitment is required during the pilot. After the pilot, engagements typically run on 3-month rolling terms. Contact +91 97464 33133 or info@versagrowthventures.in.",
+  },
+  {
+    question: "Is English proficiency strong enough in India for US and UK customer support?",
+    answer:
+      "India produces over 1.5 million English-speaking graduates per year and has the world's largest English-language BPO industry. Kochi's talent pool is strong in professional English for both written and voice communication. For roles where US or UK accent neutrality is critical, Versa BPO provides accent assessment during agent selection.",
+  },
+]
+
 export const BPO_GLOBAL_FAQS: FAQ[] = [
   {
     question: "What BPO services does Versa BPO offer?",
@@ -276,4 +304,5 @@ export const FAQ_GROUPS: FAQGroup[] = [
   { id: "digital-geo-aeo", title: "GEO, AEO, AI agents & ERP — Versa Digital", items: DIGITAL_GEO_FAQS },
   { id: "logistics-global", title: "Sea freight — UK, Europe & first-time exporters", items: LOGISTICS_GLOBAL_FAQS },
   { id: "bpo-global-financial", title: "Versa BPO, Versa Global & Versa Financial", items: BPO_GLOBAL_FAQS },
+  { id: "bpo-international", title: "BPO outsourcing for UAE, USA & international clients", items: BPO_INTL_FAQS },
 ]
