@@ -4,6 +4,7 @@ import { LOGISTICS_EXTRA_PAGES, LOGISTICS_EXTRA_SECTIONS } from "./logistics-ext
 import { LOGISTICS_KEYWORD_FAQS, LOGISTICS_SEO_PAGES } from "./logistics-seo"
 import { LOGISTICS_PORT_PAGES, PORT_TO_PORT_FAQS } from "./logistics-port"
 import { CHA_PAGE } from "./traders-sourcing"
+import { LOGISTICS_NHAVASHEVA_MANGALORE_PAGES } from "./logistics-nhavasheva-mangalore"
 
 export const LOGISTICS_HUB = {
   metaTitle: "Versa Logistics — Port-to-Port Freight, Best Price, Kochi",
@@ -584,5 +585,6 @@ export const LOGISTICS_PAGES: DivisionPage[] = [
   ...LOGISTICS_EXTRA_PAGES,
   ...LOGISTICS_SEO_PAGES,
   ...LOGISTICS_PORT_PAGES,
+  ...LOGISTICS_NHAVASHEVA_MANGALORE_PAGES,
   CHA_PAGE,
 ]

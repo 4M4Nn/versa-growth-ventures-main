@@ -270,6 +270,62 @@ export const BPO_GLOBAL_FAQS: FAQ[] = [
   },
 ]
 
+export const NHAVA_SHEVA_FAQS: FAQ[] = [
+  {
+    question: "What is Nhava Sheva and where is it located?",
+    answer:
+      "Nhava Sheva is the geographical name for the area that hosts Jawaharlal Nehru Port Trust (JNPT) — India's largest container port. It is located in Navi Mumbai (New Mumbai), Maharashtra, approximately 35 km south-east of Mumbai city. JNPT handles around 65% of India's containerised trade and offers the widest vessel frequency of any Indian port to the UAE, UK, Europe and the USA.",
+  },
+  {
+    question: "Does Versa Logistics provide CHA at Nhava Sheva JNPT?",
+    answer:
+      "Yes. Versa Logistics provides CHA (Customs House Agent) services at Nhava Sheva JNPT: shipping bill filing on ICEGATE, examination coordination, Let Export Order (LEO) procurement, phytosanitary certificate coordination and Coffee Board documentation for coffee and agro commodity exports. Contact +91 97464 33133.",
+  },
+  {
+    question: "What is the sea freight transit time from Nhava Sheva to Jebel Ali?",
+    answer:
+      "Direct vessel services from Nhava Sheva (JNPT) to Jebel Ali take 7–10 days. JNPT has multiple weekly direct services to Jebel Ali operated by major carriers, making it one of the best Indian ports for UAE-bound cargo in terms of vessel frequency.",
+  },
+  {
+    question: "How long does sea freight from Nhava Sheva to the UK take?",
+    answer:
+      "Sea freight from Nhava Sheva (JNPT) to Felixstowe or Tilbury (UK) takes approximately 20–24 days via Suez. Hamburg and Rotterdam (Europe) are also 20–24 days. Los Angeles (USA West Coast) is 20–24 days via the Pacific.",
+  },
+  {
+    question: "Is Nhava Sheva a good port for Karnataka coffee exports to the USA?",
+    answer:
+      "Yes — for Karnataka coffee destined for the US West Coast (Los Angeles, Long Beach), Nhava Sheva's Pacific-routed services are often the best option. Some Karnataka coffee exporters (particularly from Hassan and Bangalore) route cargo to JNPT by rail. Versa Logistics advises on whether Nhava Sheva, Kochi or Mangalore is the better port for each shipment. Call +91 97464 33133.",
+  },
+]
+
+export const MANGALORE_PORT_FAQS: FAQ[] = [
+  {
+    question: "Is Mangalore Port (NMPA) a good option for Karnataka coffee exports?",
+    answer:
+      "Yes — Mangalore Port (New Mangalore Port Authority, NMPA) is 120–150 km from Coorg (Kodagu) coffee estates and 170–200 km from Chikmagalur. This is 150–300 km closer than Kochi, reducing trucking time, cost and cargo handling risk. The port has decades of coffee export experience and regular vessel services to Jebel Ali. Versa Logistics provides CHA, freight forwarding and door-to-port trucking from Coorg and Chikmagalur to Mangalore.",
+  },
+  {
+    question: "What is the transit time from Mangalore Port to Jebel Ali?",
+    answer:
+      "Sea freight from Mangalore Port (NMPA) to Jebel Ali (UAE) takes approximately 8–12 days, either direct or via Colombo transshipment. Vessel frequency from Mangalore is lower than Nhava Sheva or Kochi — typically 1–2 sailings per week depending on the carrier and season.",
+  },
+  {
+    question: "Does Versa Logistics provide CHA at Mangalore Port?",
+    answer:
+      "Yes. Versa Logistics provides CHA services at Mangalore Port (NMPA): shipping bill filing on ICEGATE, coordination with NMPA customs for examination and LEO, phytosanitary certificate coordination with the Plant Quarantine Department, and Coffee Board documentation (Shipping Advice, Certificate of Registration). Contact +91 97464 33133.",
+  },
+  {
+    question: "Can Versa Logistics arrange trucking from Coorg coffee estates to Mangalore Port?",
+    answer:
+      "Yes. Versa Logistics arranges container trucking from Coorg (Kodagu), Chikmagalur and Hassan to Mangalore Port, including container stuffing at origin or at the port CFS, stuffing supervision and seal records. Contact +91 97464 33133 for a door-to-port quote.",
+  },
+  {
+    question: "What is the road distance from Coorg (Kodagu) to Mangalore Port?",
+    answer:
+      "Madikeri (Coorg district headquarters) to Mangalore Port (Panambur) is approximately 130 km by road — roughly 2–3 hours. Chikmagalur is approximately 170–200 km; Hassan is approximately 240–250 km. All three are significantly closer to Mangalore than to Kochi or Nhava Sheva.",
+  },
+]
+
 export const FAQ_GROUPS: FAQGroup[] = [
   { id: "group", title: "About the group", items: GROUP_FAQS },
   { id: "digital", title: "Versa Digital & IT Solutions — SEO, AEO, ERP & AI", items: DIGITAL_FAQS },
@@ -305,4 +361,6 @@ export const FAQ_GROUPS: FAQGroup[] = [
   { id: "logistics-global", title: "Sea freight — UK, Europe & first-time exporters", items: LOGISTICS_GLOBAL_FAQS },
   { id: "bpo-global-financial", title: "Versa BPO, Versa Global & Versa Financial", items: BPO_GLOBAL_FAQS },
   { id: "bpo-international", title: "BPO outsourcing for UAE, USA & international clients", items: BPO_INTL_FAQS },
+  { id: "nhava-sheva-logistics", title: "Nhava Sheva (JNPT) Mumbai — freight forwarding & CHA", items: NHAVA_SHEVA_FAQS },
+  { id: "mangalore-logistics", title: "Mangalore Port (NMPA) — Karnataka coffee & freight", items: MANGALORE_PORT_FAQS },
 ]
