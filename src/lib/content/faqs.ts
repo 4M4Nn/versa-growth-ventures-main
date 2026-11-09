@@ -326,6 +326,34 @@ export const MANGALORE_PORT_FAQS: FAQ[] = [
   },
 ]
 
+export const AIR_CARGO_FAQS: FAQ[] = [
+  {
+    question: "Does Versa Logistics provide air cargo from India?",
+    answer:
+      "Yes. Versa Logistics provides air freight from India — from Kochi (COK), Bangalore (BLR), Mumbai (BOM) and Delhi (DEL) airports — to UAE (DXB, SHJ, AUH), UK (LHR), Europe (FRA, AMS, CDG, BRU) and other destinations. Services include airside CHA (shipping bill on ICEGATE), phytosanitary certificate coordination, Air Waybill (AWB) and door-to-airport collection. Contact +91 97464 33133.",
+  },
+  {
+    question: "How long does air freight from India to Dubai take?",
+    answer:
+      "Air freight from India (Kochi, Bangalore or Mumbai) to Dubai (DXB) has a flight time of 3–4 hours. Door-to-door — including pickup in Kerala/Karnataka, airside CHA, phytosanitary at the airport, flight, UAE customs clearance and delivery — typically takes 1–2 business days.",
+  },
+  {
+    question: "Can Versa Logistics air freight green coffee beans from India?",
+    answer:
+      "Yes. Versa Logistics air freights green coffee beans and spice samples from India — from Kochi (COK) and Bangalore (BLR) airports — to UAE, UK, Europe, USA and Australia. A phytosanitary certificate (Plant Quarantine Department at the origin airport) is coordinated as part of the service. Contact +91 97464 33133.",
+  },
+  {
+    question: "What is the difference between air freight and sea freight from India to UAE?",
+    answer:
+      "Air freight from India to UAE takes 1–2 business days at a cost of approximately USD 2–5 per kg. Sea freight takes 7–12 days at a cost of approximately USD 0.04–0.10 per kg (FCL). Air freight is 30–100x more expensive per kg but essential for urgent shipments, samples, perishables and cargo where transit time matters.",
+  },
+  {
+    question: "What documents are needed for air cargo export from India?",
+    answer:
+      "Air cargo export from India requires: Air Waybill (AWB), commercial invoice and packing list, airside shipping bill filed on ICEGATE (via Versa Logistics as CHA), phytosanitary certificate (for coffee, spices, agro products), and certificate of origin. For EU/UK buyers, EUDR due-diligence documentation is also required for coffee and spices.",
+  },
+]
+
 export const FAQ_GROUPS: FAQGroup[] = [
   { id: "group", title: "About the group", items: GROUP_FAQS },
   { id: "digital", title: "Versa Digital & IT Solutions — SEO, AEO, ERP & AI", items: DIGITAL_FAQS },
@@ -363,4 +391,5 @@ export const FAQ_GROUPS: FAQGroup[] = [
   { id: "bpo-international", title: "BPO outsourcing for UAE, USA & international clients", items: BPO_INTL_FAQS },
   { id: "nhava-sheva-logistics", title: "Nhava Sheva (JNPT) Mumbai — freight forwarding & CHA", items: NHAVA_SHEVA_FAQS },
   { id: "mangalore-logistics", title: "Mangalore Port (NMPA) — Karnataka coffee & freight", items: MANGALORE_PORT_FAQS },
+  { id: "air-cargo", title: "Air cargo from India — airports, transit times & CHA", items: AIR_CARGO_FAQS },
 ]
