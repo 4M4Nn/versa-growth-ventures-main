@@ -1,6 +1,7 @@
 import type { LiveWorkItem, NewsDesk, NewsDeskCopy, NewsItem } from "@/types"
 import { DIVISION_COPY, EXTERNAL, IMAGES } from "./site"
 import { NEWS_GROUP } from "./news-group"
+import { NEWS_NOV13 } from "./news-nov13"
 
 const deskFromDivision = (d: (typeof DIVISION_COPY)[keyof typeof DIVISION_COPY]): NewsDeskCopy => ({
   name: d.name,
@@ -179,4 +180,4 @@ const NEWS_SHIPMENTS: NewsItem[] = [
   },
 ]
 
-export const NEWS: NewsItem[] = [...NEWS_GROUP, ...NEWS_SHIPMENTS]
+export const NEWS: NewsItem[] = [...NEWS_NOV13, ...NEWS_GROUP, ...NEWS_SHIPMENTS]
